@@ -1,0 +1,1012 @@
+Starting
+Loaded
+Done with reverse building
+[assembly:/textures/g2/warnings/performancewarnings_01.texture?/codeyellow.tex](ascolormap).pc_tex - 48416838975254485
+ [assembly:/common/globalresources.ini].pc_resourceidx - 31140317081498958
+[assembly:/textures/g2/warnings/performancewarnings_01.texture?/codered.tex](ascolormap).pc_tex - 5880521164269581
+ [assembly:/common/globalresources.ini].pc_resourceidx - 31140317081498958
+[assembly:/textures/g2/warnings/performancewarnings_01.texture?/codecrying.tex](ascolormap).pc_tex - 69615462987693402
+ [assembly:/common/globalresources.ini].pc_resourceidx - 31140317081498958
+[assembly:/textures/g2/poissonvectornoise2.texture?/diffuse_a.tex](ascolormap).pc_tex - 14678875834193923
+ [assembly:/common/globalresources.ini].pc_resourceidx - 31140317081498958
+[assembly:/textures/g2/defaultcolorcorrectioncube.texture?/diffuse_a.tex](ascolormap).pc_tex - 53773175777794036
+ [assembly:/common/globalresources.ini].pc_resourceidx - 31140317081498958
+[assembly:/textures/g2/defaultbillboard.texture?/diffuse_a.tex](asbillboardmap).pc_tex - 18856357311150172
+ [assembly:/common/globalresources.ini].pc_resourceidx - 31140317081498958
+[assembly:/textures/g2/colour_chart.texture?/diffuse_a.tex](ascolormap).pc_tex - 46972730675113497
+ [assembly:/materials/g2/colour_chart.mi].pc_mi - 5557603605118296
+  [assembly:/geometry/g2/gizmos.wl2?/gizmo_cubemap_01.prim].pc_prim - 67109363387204495
+  [assembly:/geometry/g2/gizmos.wl2?/gizmo_light_01.prim].pc_prim - 21204803307653461
+  [assembly:/geometry/g2/gizmos.wl2?/gizmo_light_directional_01.prim].pc_prim - 14707079533790216
+[assembly:/_pro/effects/textures/liquid/fx_decal_liquid_leakmask_2x2_01.texture?/normal_a.tex](asnormalmap).pc_tex - 54402361403044865
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_pool_01.mi].pc_mi - 55028803000882507
+  [assembly:/_pro/effects/templates/decals/fx_bloodpool.template?/fx_bloodpool.entitytemplate].pc_entitytype - 58248249203700259
+  [assembly:/_pro/effects/templates/decals/fx_bloodpool.template?/fx_e_spawnbloodpool.entitytemplate].pc_entitytype - 4989421547090756
+  [assembly:/_pro/design/setpieces/unique/setpiece_colombia_unique.template?/setpiece_colombia_unique_tattoogun.entitytemplate].pc_entitytype - 64742811137999744
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_spots.mi].pc_mi - 66243715915911876
+  [assembly:/_pro/effects/templates/impacts/fx_impacts_closequarterscombatbased.template?/fx_e_impact_katana_tip.entitytemplate].pc_entitytype - 24661597432083393
+  [assembly:/_pro/scenes/bricks/vr_setup.brick].pc_entitytype - 39145078867449877
+  [assembly:/_pro/effects/templates/impacts/fx_impacts_closequarterscombatbased.template?/fx_e_impact_slash.entitytemplate].pc_entitytype - 67894291891939848
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/materials/basic/fx_basic_white.mi].pc_mi - 30381841078862208
+  [assembly:/_pro/characters/assets/individuals/paris/philip/materials/male_reg_philip_01_tie_01.mi].pc_mi - 164075232897096
+  [assembly:/*/male_reg_dress_shirt_btndwn3_01.mi].pc_mi - 25097629783338355
+[assembly:/_pro/effects/textures/liquid/fx_decal_liquid_leakmask_2x2_01.texture?/mask_a.tex](asheightmap).pc_tex - 71765335879394812
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_pool_01.mi].pc_mi - 55028803000882507
+  [assembly:/_pro/effects/templates/decals/fx_bloodpool.template?/fx_bloodpool.entitytemplate].pc_entitytype - 58248249203700259
+  [assembly:/_pro/effects/templates/decals/fx_bloodpool.template?/fx_e_spawnbloodpool.entitytemplate].pc_entitytype - 4989421547090756
+  [assembly:/_pro/design/setpieces/unique/setpiece_colombia_unique.template?/setpiece_colombia_unique_tattoogun.entitytemplate].pc_entitytype - 64742811137999744
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_pool_dry.mi].pc_mi - 30782908209508498
+  [assembly:/_pro/scenes/missions/edgy/mission_fox/scenario_fox.brick].pc_entitytype - 33742730328793517
+  00DA1795AC867FD8.PRIM - 61387476534984664
+  [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_pool_dry.mi].pc_entitytype - 69519045092942496
+ [assembly:/_pro/effects/materials/water/fx_decal_puddle_octanebooster.mi].pc_mi - 5907241503666820
+  [assembly:/_pro/design/setpieces/unique/setpiece_miami_unique.template?/setpiece_miami_unique_democar.entitytemplate].pc_entitytype - 56188842845301928
+[assembly:/_pro/effects/textures/liquid/fx_decal_liquid_leakmask_2x2_01.texture?/mask_b.tex](asheightmap).pc_tex - 16778175910359401
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_pool_01.mi].pc_mi - 55028803000882507
+  [assembly:/_pro/effects/templates/decals/fx_bloodpool.template?/fx_bloodpool.entitytemplate].pc_entitytype - 58248249203700259
+  [assembly:/_pro/effects/templates/decals/fx_bloodpool.template?/fx_e_spawnbloodpool.entitytemplate].pc_entitytype - 4989421547090756
+  [assembly:/_pro/design/setpieces/unique/setpiece_colombia_unique.template?/setpiece_colombia_unique_tattoogun.entitytemplate].pc_entitytype - 64742811137999744
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_pool_dry.mi].pc_mi - 30782908209508498
+  [assembly:/_pro/scenes/missions/edgy/mission_fox/scenario_fox.brick].pc_entitytype - 33742730328793517
+  00DA1795AC867FD8.PRIM - 61387476534984664
+  [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_pool_dry.mi].pc_entitytype - 69519045092942496
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_pool_01.mi].pc_entitytype - 68779784133097554
+  [assembly:/_pro/scenes/missions/hokkaido/npc_mission_snowcrane.brick].pc_entitytype - 43540301270395848
+  [assembly:/_pro/environment/templates/architecture/decorative/church_deco_italy_a.template?/church_deco_italy_e_00.entitytemplate].pc_entitytype - 2406481000328968
+[assembly:/_pro/effects/textures/misc/fx_colorindex.texture?/intexblood_a.tex](ascolormap).pc_tex - 33833851045449343
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_pool_01.mi].pc_mi - 55028803000882507
+  [assembly:/_pro/effects/templates/decals/fx_bloodpool.template?/fx_bloodpool.entitytemplate].pc_entitytype - 58248249203700259
+  [assembly:/_pro/effects/templates/decals/fx_bloodpool.template?/fx_e_spawnbloodpool.entitytemplate].pc_entitytype - 4989421547090756
+  [assembly:/_pro/design/setpieces/unique/setpiece_colombia_unique.template?/setpiece_colombia_unique_tattoogun.entitytemplate].pc_entitytype - 64742811137999744
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_splat_ground.mi].pc_mi - 26882817782222501
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_flesh.template?/fx_md_char_flesh.entitytemplate].pc_entitytype - 66907939850471238
+  [assembly:/_pro/characters/templates/hero/agent47/agent47.template?/agent47_default.entitytemplate].pc_entitytype - 59470160018204346
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entitytype - 55449014478668507
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_splat_wall.mi].pc_mi - 61011458051986928
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_flesh.template?/fx_md_char_flesh.entitytemplate].pc_entitytype - 66907939850471238
+  [assembly:/_pro/characters/templates/hero/agent47/agent47.template?/agent47_default.entitytemplate].pc_entitytype - 59470160018204346
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entitytype - 55449014478668507
+[assembly:/_pro/environment/textures/constants/color_grey_200.texture?/diffuse_a.tex](ascolormap).pc_tex - 49805370982572643
+ skyscraper_support_beam_anchor_beam_a - 9203537392061726
+  [assembly:/_pro/scenes/missions/golden/mission_gecko/scenario_gecko.brick].pc_entitytype - 71797819148327135
+ [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_glossy_c.mi].pc_entitytype - 55019046614314173
+  ventilation_fan_modern_a_dark - 33600320252192651
+  ventilation_fan_modern_wall_b_dark - 4522398558368859
+  sign_android_expo_b - 12413604415870118
+ ventilation_fan_modern_a_dark - 33600320252192651
+  [assembly:/_pro/scenes/missions/golden/mission_gecko/scenario_gecko.brick].pc_entitytype - 71797819148327135
+  [assembly:/_pro/scenes/missions/opulent/mission_stingray/scenario_stingray.brick].pc_entitytype - 31583530346723801
+  [assembly:/_pro/scenes/missions/elegant/scenario_llama.brick].pc_entitytype - 36098078306999866
+[assembly:/_pro/environment/textures/generic/plastic/plastic_grey_a.texture?/normal_a.tex](asnormalmap).pc_tex - 46356541259219208
+ [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_glossy_c.mi].pc_entitytype - 55019046614314173
+  ventilation_fan_modern_a_dark - 33600320252192651
+  ventilation_fan_modern_wall_b_dark - 4522398558368859
+  sign_android_expo_b - 12413604415870118
+ ventilation_fan_modern_a_dark - 33600320252192651
+  [assembly:/_pro/scenes/missions/golden/mission_gecko/scenario_gecko.brick].pc_entitytype - 71797819148327135
+  [assembly:/_pro/scenes/missions/opulent/mission_stingray/scenario_stingray.brick].pc_entitytype - 31583530346723801
+  [assembly:/_pro/scenes/missions/elegant/scenario_llama.brick].pc_entitytype - 36098078306999866
+ [assembly:/_pro/environment/materials/generic/plastic/plastic_white_satin_a.mi].pc_entitytype - 3682924298534615
+  [assembly:/_pro/scenes/missions/golden/mission_gecko/scenario_gecko.brick].pc_entitytype - 71797819148327135
+  miami_podium_club_wall_a - 70902374084568271
+[assembly:/_pro/environment/textures/generic/plastic/plastic_grey_a.texture?/specular_a.tex](ascolormap).pc_tex - 16242738361484007
+ [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_glossy_d.mi].pc_entitytype - 66675507326870181
+  skyscraper_underatrium_section_b - 23829778097739632
+  [assembly:/_pro/scenes/missions/golden/mission_gecko/scenario_gecko.brick].pc_entitytype - 71797819148327135
+ skyscraper_underatrium_section_b - 23829778097739632
+  [assembly:/_pro/scenes/missions/golden/mission_gecko/scenario_gecko.brick].pc_entitytype - 71797819148327135
+ [assembly:/_pro/environment/materials/generic/stone/ceramic_white_a.mi].pc_entitytype - 33369967387224641
+  [assembly:/_pro/environment/templates/props/utensils/kitchen_utensils_a.template?/mortar_pestle_a.entitytemplate].pc_entitytype - 42947086209788319
+  [assembly:/_pro/design/setpieces/setpieces_traps.template?/setpiece_trap_suspended_flowerpot_c.entitytemplate].pc_entitytype - 42593553186110450
+  [assembly:/_pro/scenes/missions/skunk/scenario_skunk.brick].pc_entitytype - 57960833164481017
+[assembly:/_pro/environment/textures/constants/color_black.texture?/diffuse_a.tex](ascolormap).pc_tex - 30337097560147102
+ [assembly:/_pro/items/materials/firearms/accessories/muzzlebrakes/sniper_classic_muzzlebrake_b/sniper_classic_muzzlebrake_b.mi].pc_entitytype - 46512888601309517
+  sniper_classic_muzzlebrake_b - 44549149631033205
+  sniper_classic_muzzlebrake_d - 52994582143871282
+ [assembly:/_pro/items/materials/firearms/frames/sniper_stealth_a/sniper_stealth_a_muzzlebrake_a.mi].pc_entitytype - 50678235150508100
+  sniper_classic_muzzlebrake_b - 44549149631033205
+  sniper_classic_muzzlebrake_c - 17093165963539405
+  sniper_classic_muzzlebrake_a - 1814979912048379
+ sniper_classic_muzzlebrake_b - 44549149631033205
+  [assembly:/_pro/items/templates/firearms/sniper_stealth_a.template?/firearm_model_sniper_stealth_a.entitytemplate].pc_entitytype - 59143491636125425
+  [assembly:/_pro/items/templates/firearms/sniper_classic_a.template?/firearm_model_sniper_classic_a.entitytemplate].pc_entitytype - 24360408921048250
+  [assembly:/_pro/items/templates/firearms/sniper_woodsman_a.template?/firearm_model_sniper_woodsman_a.entitytemplate].pc_entitytype - 69874852263322531
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_tiles_2x2_01.texture?/normal_a.tex](asnormalmap).pc_tex - 15573640843935084
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_plastic_2x2_01.mi].pc_mi - 47147602050417247
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entitytype - 69734016264457800
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_plasticdevice.template?/fx_md_prop_plasticdevice.entitytemplate].pc_entitytype - 8999492537245422
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_smooth.mi].pc_mi - 71656119594859122
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_black_a_matte.mi].pc_mi - 66771186961667617
+  [assembly:/_pro/environment/materials/decals/logo/himmapan_hotel_a.mi].pc_mi - 37661000184353354
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_plasticdevice.template?/fx_md_prop_plasticdevice.entitytemplate].pc_entityresource - 26932784602965162
+  [assembly:/_pro/environment/materials/props/signs/wetfloor_sign_decals_a.mi].pc_mi - 18085895555646121
+  [assembly:/_pro/items/materials/poison/ratpoisonsick_a.mi].pc_mi - 31221047059827926
+  [assembly:/_pro/items/materials/melee/fiberwire_stethoscope_a.mi].pc_mi - 12856568649038036
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_tiles_2x2_01.texture?/height_a.tex](asheightmap).pc_tex - 6907105218339432
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_plastic_2x2_01.mi].pc_mi - 47147602050417247
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entitytype - 69734016264457800
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_plasticdevice.template?/fx_md_prop_plasticdevice.entitytemplate].pc_entitytype - 8999492537245422
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_smooth.mi].pc_mi - 71656119594859122
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_black_a_matte.mi].pc_mi - 66771186961667617
+  [assembly:/_pro/environment/materials/decals/logo/himmapan_hotel_a.mi].pc_mi - 37661000184353354
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_plasticdevice.template?/fx_md_prop_plasticdevice.entitytemplate].pc_entityresource - 26932784602965162
+  [assembly:/_pro/environment/materials/props/signs/wetfloor_sign_decals_a.mi].pc_mi - 18085895555646121
+  [assembly:/_pro/items/materials/poison/ratpoisonsick_a.mi].pc_mi - 31221047059827926
+  [assembly:/_pro/items/materials/melee/fiberwire_stethoscope_a.mi].pc_mi - 12856568649038036
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_tiles_2x2_01.texture?/diffuse_a.tex](ascolormap).pc_tex - 4057562489213505
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_plastic_2x2_01.mi].pc_mi - 47147602050417247
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entitytype - 69734016264457800
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_plasticdevice.template?/fx_md_prop_plasticdevice.entitytemplate].pc_entitytype - 8999492537245422
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_smooth.mi].pc_mi - 71656119594859122
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_black_a_matte.mi].pc_mi - 66771186961667617
+  [assembly:/_pro/environment/materials/decals/logo/himmapan_hotel_a.mi].pc_mi - 37661000184353354
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_plasticdevice.template?/fx_md_prop_plasticdevice.entitytemplate].pc_entityresource - 26932784602965162
+  [assembly:/_pro/environment/materials/props/signs/wetfloor_sign_decals_a.mi].pc_mi - 18085895555646121
+  [assembly:/_pro/items/materials/poison/ratpoisonsick_a.mi].pc_mi - 31221047059827926
+  [assembly:/_pro/items/materials/melee/fiberwire_stethoscope_a.mi].pc_mi - 12856568649038036
+[assembly:/_pro/effects/textures/liquid/fx_par_liquid_rupture_8x3_01.texture?/normal_a.tex](asnormalmap).pc_tex - 41893920292614514
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_rupture_8x3_blood_01.mi].pc_mi - 17090565574533199
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entitytype - 69734016264457800
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entitytype - 42971674912974210
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_smooth.mi].pc_mi - 71656119594859122
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_black_a_matte.mi].pc_mi - 66771186961667617
+  [assembly:/_pro/environment/materials/decals/logo/himmapan_hotel_a.mi].pc_mi - 37661000184353354
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+  [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_mi - 20414029834644689
+  [assembly:/_pro/environment/materials/generic/glass/glass_opaque_b.mi].pc_mi - 39324566795937228
+  [assembly:/_pro/environment/materials/props/food/vodkabottle_d.mi].pc_mi - 39866301636267962
+[assembly:/_pro/effects/textures/liquid/fx_par_liquid_rupture_8x3_01.texture?/emissive_a.tex](asheightmap).pc_tex - 210598159593880
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_rupture_8x3_blood_01.mi].pc_mi - 17090565574533199
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entitytype - 69734016264457800
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entitytype - 42971674912974210
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_smooth.mi].pc_mi - 71656119594859122
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_black_a_matte.mi].pc_mi - 66771186961667617
+  [assembly:/_pro/environment/materials/decals/logo/himmapan_hotel_a.mi].pc_mi - 37661000184353354
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+  [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_mi - 20414029834644689
+  [assembly:/_pro/environment/materials/generic/glass/glass_opaque_b.mi].pc_mi - 39324566795937228
+  [assembly:/_pro/environment/materials/props/food/vodkabottle_d.mi].pc_mi - 39866301636267962
+[assembly:/_pro/effects/textures/debris/fx_par_debris_cloth_4x4_01.texture?/normal_a.tex](asnormalmap).pc_tex - 28052353118854114
+ [assembly:/_pro/effects/materials/debris/fx_par_debris_cloth_4x4_01.mi].pc_mi - 36809447737949548
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_cloth_4x4_01.entitytemplate].pc_entitytype - 15067798425540903
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth.template?/fx_md_env_cloth.entitytemplate].pc_entityresource - 37397704769727729
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_smooth.mi].pc_mi - 71656119594859122
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_black_a_matte.mi].pc_mi - 66771186961667617
+  [assembly:/_pro/environment/materials/decals/logo/himmapan_hotel_a.mi].pc_mi - 37661000184353354
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth.template?/fx_md_env_cloth.entitytemplate].pc_entityresource - 37397704769727729
+  [assembly:/materials/characters/rigged_props/clothbundle/clothbundle_01.mi].pc_mi - 40765244417646370
+  [assembly:/_pro/environment/materials/generic/leather/dark_leather_a.mi].pc_mi - 39689888153283083
+  [assembly:/_pro/environment/materials/props/clothing/bag_ladies_leather_old_b.mi].pc_mi - 3153914301693742
+[assembly:/_pro/effects/textures/debris/fx_par_debris_cloth_4x4_01.texture?/diffuse_a.tex](ascolormap).pc_tex - 24590826269195603
+ [assembly:/_pro/effects/materials/debris/fx_par_debris_cloth_4x4_01.mi].pc_mi - 36809447737949548
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_cloth_4x4_01.entitytemplate].pc_entitytype - 15067798425540903
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth.template?/fx_md_env_cloth.entitytemplate].pc_entityresource - 37397704769727729
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_smooth.mi].pc_mi - 71656119594859122
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_black_a_matte.mi].pc_mi - 66771186961667617
+  [assembly:/_pro/environment/materials/decals/logo/himmapan_hotel_a.mi].pc_mi - 37661000184353354
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth.template?/fx_md_env_cloth.entitytemplate].pc_entityresource - 37397704769727729
+  [assembly:/materials/characters/rigged_props/clothbundle/clothbundle_01.mi].pc_mi - 40765244417646370
+  [assembly:/_pro/environment/materials/generic/leather/dark_leather_a.mi].pc_mi - 39689888153283083
+  [assembly:/_pro/environment/materials/props/clothing/bag_ladies_leather_old_b.mi].pc_mi - 3153914301693742
+[assembly:/_pro/effects/textures/smoke/fx_par_smoke_4t_8x8_01.texture?/emissive_b.tex](ascolormap).pc_tex - 40278913229606371
+ [assembly:/_pro/effects/materials/smoke/fx_psa_smoke_impact_4t_8x8.mi].pc_mi - 66258136951633617
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_smoke.template?/fx_pr_smoke_impact_generic_4t_8x8.entitytemplate].pc_entitytype - 62510375068292465
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_smooth.mi].pc_mi - 71656119594859122
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_black_a_matte.mi].pc_mi - 66771186961667617
+  [assembly:/_pro/environment/materials/decals/logo/himmapan_hotel_a.mi].pc_mi - 37661000184353354
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+  [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_mi - 20414029834644689
+  [assembly:/_pro/environment/materials/generic/glass/glass_opaque_b.mi].pc_mi - 39324566795937228
+  [assembly:/_pro/environment/materials/props/food/vodkabottle_d.mi].pc_mi - 39866301636267962
+[assembly:/_pro/environment/textures/constants/normalmap.texture?/normal_a.tex](asnormalmap).pc_tex - 16303672425814682
+ [assembly:/_pro/items/materials/firearms/frames/pistol_silverballer/pistol_silverballer_frame_a.mi].pc_entitytype - 58538935683743786
+  [assembly:/_pro/items/templates/firearms/pistol_classic_a.template?/firearm_model_pistol_classic_a.entitytemplate].pc_entitytype - 24822702876182712
+  [assembly:/_pro/design/items/firearm_runtimes.template?/firearms_hero_pistol01_silenced_runtime.entitytemplate].pc_entitytemplate - 4749241586498034
+  [assembly:/_pro/items/templates/firearms/silverballer.template?/firearm_model_silverballer.entitytemplate].pc_entitytype - 28179674863859189
+ [assembly:/_pro/items/materials/firearms/frames/pistol_silverballer/magazines/pistol_silverballer_magazine_a.mi].pc_entitytype - 31751551793133187
+  [assembly:/_pro/items/templates/firearms/pistol_classic_a.template?/firearm_model_pistol_classic_a.entitytemplate].pc_entitytype - 24822702876182712
+  [assembly:/_pro/design/items/firearm_runtimes.template?/firearms_hero_pistol01_silenced_runtime.entitytemplate].pc_entitytemplate - 4749241586498034
+  [assembly:/_pro/items/templates/firearms/silverballer.template?/firearm_model_silverballer.entitytemplate].pc_entitytype - 28179674863859189
+ [assembly:/_pro/items/materials/firearms/frames/sniper_stealth_a/sniper_stealth_a_muzzlebrake_a.mi].pc_entitytype - 50678235150508100
+  sniper_classic_muzzlebrake_b - 44549149631033205
+  sniper_classic_muzzlebrake_c - 17093165963539405
+  sniper_classic_muzzlebrake_a - 1814979912048379
+[assembly:/_pro/effects/textures/smoke/fx_par_smoke_4t_8x8_01.texture?/normal_b.tex](asnormalmap).pc_tex - 46175681080679321
+ [assembly:/_pro/effects/materials/smoke/fx_psa_smoke_impact_4t_8x8.mi].pc_mi - 66258136951633617
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_smoke.template?/fx_pr_smoke_impact_generic_4t_8x8.entitytemplate].pc_entitytype - 62510375068292465
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_smooth.mi].pc_mi - 71656119594859122
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_black_a_matte.mi].pc_mi - 66771186961667617
+  [assembly:/_pro/environment/materials/decals/logo/himmapan_hotel_a.mi].pc_mi - 37661000184353354
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+  [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_mi - 20414029834644689
+  [assembly:/_pro/environment/materials/generic/glass/glass_opaque_b.mi].pc_mi - 39324566795937228
+  [assembly:/_pro/environment/materials/props/food/vodkabottle_d.mi].pc_mi - 39866301636267962
+[assembly:/_pro/effects/textures/smoke/fx_par_smoke_wispy_4t_8x4_01.texture?/emissive_a.tex](ascolormap).pc_tex - 9974172789646061
+ [assembly:/_pro/effects/materials/smoke/fx_psa_smoke_wispy_4t_8x4.mi].pc_mi - 35751939643752884
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_smoke.template?/fx_pr_smoke_wispy_generic_4t_8x4.entitytemplate].pc_entitytype - 63067191283481275
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_smooth.mi].pc_mi - 71656119594859122
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_black_a_matte.mi].pc_mi - 66771186961667617
+  [assembly:/_pro/environment/materials/decals/logo/himmapan_hotel_a.mi].pc_mi - 37661000184353354
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+  [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_mi - 20414029834644689
+  [assembly:/_pro/environment/materials/generic/glass/glass_opaque_b.mi].pc_mi - 39324566795937228
+  [assembly:/_pro/environment/materials/props/food/vodkabottle_d.mi].pc_mi - 39866301636267962
+[assembly:/_pro/effects/textures/smoke/fx_par_smoke_wispy_4t_8x4_01.texture?/normal_a.tex](asnormalmap).pc_tex - 69444923181522631
+ [assembly:/_pro/effects/materials/smoke/fx_psa_smoke_wispy_4t_8x4.mi].pc_mi - 35751939643752884
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_smoke.template?/fx_pr_smoke_wispy_generic_4t_8x4.entitytemplate].pc_entitytype - 63067191283481275
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_smooth.mi].pc_mi - 71656119594859122
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_black_a_matte.mi].pc_mi - 66771186961667617
+  [assembly:/_pro/environment/materials/decals/logo/himmapan_hotel_a.mi].pc_mi - 37661000184353354
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+  [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_mi - 20414029834644689
+  [assembly:/_pro/environment/materials/generic/glass/glass_opaque_b.mi].pc_mi - 39324566795937228
+  [assembly:/_pro/environment/materials/props/food/vodkabottle_d.mi].pc_mi - 39866301636267962
+[assembly:/_pro/effects/textures/debris/fx_par_debris_soft_01.texture?/mask_a.tex](ascolormap).pc_tex - 22759275524341299
+ [assembly:/_pro/effects/materials/debris/fx_par_debris_soft_01.mi].pc_mi - 67973462056528369
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_soft_2x2_01.entitytemplate].pc_entitytype - 56633155498298633
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_rubber.template?/fx_md_env_rubber.entitytemplate].pc_entityresource - 21475170014562359
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_smooth.mi].pc_mi - 71656119594859122
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_black_a_matte.mi].pc_mi - 66771186961667617
+  [assembly:/_pro/environment/materials/decals/logo/himmapan_hotel_a.mi].pc_mi - 37661000184353354
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_rubber.template?/fx_md_env_rubber.entitytemplate].pc_entityresource - 21475170014562359
+  [assembly:/materials/characters/rigged_props/bodybag/bodybag_black.mi].pc_mi - 7614600360777717
+  [assembly:/materials/characters/rigged_props/bodybag/bodybag_text.mi].pc_mi - 43775945303634503
+  [assembly:/_pro/environment/materials/props/accessories/flashlight_a.mi].pc_mi - 9851623898973658
+[assembly:/_pro/effects/textures/debris/fx_par_debris_soft_01.texture?/normal_a.tex](asnormalmap).pc_tex - 46968996467952941
+ [assembly:/_pro/effects/materials/debris/fx_par_debris_soft_01.mi].pc_mi - 67973462056528369
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_soft_2x2_01.entitytemplate].pc_entitytype - 56633155498298633
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_rubber.template?/fx_md_env_rubber.entitytemplate].pc_entityresource - 21475170014562359
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_plastic.template?/fx_md_env_plastic.entitytemplate].pc_entityresource - 37808575288056148
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_white_a_smooth.mi].pc_mi - 71656119594859122
+  [assembly:/_pro/environment/materials/generic/plastic/plastic_black_a_matte.mi].pc_mi - 66771186961667617
+  [assembly:/_pro/environment/materials/decals/logo/himmapan_hotel_a.mi].pc_mi - 37661000184353354
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_rubber.template?/fx_md_env_rubber.entitytemplate].pc_entityresource - 21475170014562359
+  [assembly:/materials/characters/rigged_props/bodybag/bodybag_black.mi].pc_mi - 7614600360777717
+  [assembly:/materials/characters/rigged_props/bodybag/bodybag_text.mi].pc_mi - 43775945303634503
+  [assembly:/_pro/environment/materials/props/accessories/flashlight_a.mi].pc_mi - 9851623898973658
+[assembly:/_pro/environment/textures/props/accessories/smartphone_b.texture?/diffuse_a.tex](ascolormap).pc_tex - 22181632824831072
+ [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_entitytype - 59797845667011261
+  [assembly:/_pro/environment/templates/props/accessories/smartphones_a.template?/smartphone_b.entitytemplate].pc_entitytype - 62396527808339978
+ [assembly:/_pro/environment/templates/props/accessories/smartphones_a.template?/smartphone_b.entitytemplate].pc_entitytype - 62396527808339978
+  [assembly:/templates/aspectdummy.aspect]([assembly:/_pro/environment/templates/props/accessories/smartphones_a.template?/smartphone_b.entitytemplate].entitytype - 53768277726398709
+  [assembly:/_pro/environment/templates/props/shop_props/electronics_shop_a.template?/mobile_phone_onstand_c_00.entitytemplate].pc_entitytype - 24551227870699747
+ [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_mi - 20414029834644689
+  [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_entitytype - 59797845667011261
+  [assembly:/_pro/environment/geometry/props/accessories/smartphones_a.wl2?/smartphone_b.prim].pc_prim - 28852743843975128
+[assembly:/_pro/environment/textures/props/accessories/smartphone_b.texture?/normal_a.tex](asnormalmap).pc_tex - 11895529388967442
+ [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_entitytype - 59797845667011261
+  [assembly:/_pro/environment/templates/props/accessories/smartphones_a.template?/smartphone_b.entitytemplate].pc_entitytype - 62396527808339978
+ [assembly:/_pro/environment/templates/props/accessories/smartphones_a.template?/smartphone_b.entitytemplate].pc_entitytype - 62396527808339978
+  [assembly:/templates/aspectdummy.aspect]([assembly:/_pro/environment/templates/props/accessories/smartphones_a.template?/smartphone_b.entitytemplate].entitytype - 53768277726398709
+  [assembly:/_pro/environment/templates/props/shop_props/electronics_shop_a.template?/mobile_phone_onstand_c_00.entitytemplate].pc_entitytype - 24551227870699747
+ [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_mi - 20414029834644689
+  [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_entitytype - 59797845667011261
+  [assembly:/_pro/environment/geometry/props/accessories/smartphones_a.wl2?/smartphone_b.prim].pc_prim - 28852743843975128
+[assembly:/_pro/environment/textures/props/accessories/smartphone_b.texture?/specular_a.tex](ascolormap).pc_tex - 69981732932277439
+ [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_entitytype - 59797845667011261
+  [assembly:/_pro/environment/templates/props/accessories/smartphones_a.template?/smartphone_b.entitytemplate].pc_entitytype - 62396527808339978
+ [assembly:/_pro/environment/templates/props/accessories/smartphones_a.template?/smartphone_b.entitytemplate].pc_entitytype - 62396527808339978
+  [assembly:/templates/aspectdummy.aspect]([assembly:/_pro/environment/templates/props/accessories/smartphones_a.template?/smartphone_b.entitytemplate].entitytype - 53768277726398709
+  [assembly:/_pro/environment/templates/props/shop_props/electronics_shop_a.template?/mobile_phone_onstand_c_00.entitytemplate].pc_entitytype - 24551227870699747
+ [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_mi - 20414029834644689
+  [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_entitytype - 59797845667011261
+  [assembly:/_pro/environment/geometry/props/accessories/smartphones_a.wl2?/smartphone_b.prim].pc_prim - 28852743843975128
+[assembly:/_pro/environment/textures/props/accessories/smartphone_b.texture?/emissive_b.tex](ascolormap).pc_tex - 67245791539223592
+ [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_entitytype - 59797845667011261
+  [assembly:/_pro/environment/templates/props/accessories/smartphones_a.template?/smartphone_b.entitytemplate].pc_entitytype - 62396527808339978
+ [assembly:/_pro/environment/templates/props/accessories/smartphones_a.template?/smartphone_b.entitytemplate].pc_entitytype - 62396527808339978
+  [assembly:/templates/aspectdummy.aspect]([assembly:/_pro/environment/templates/props/accessories/smartphones_a.template?/smartphone_b.entitytemplate].entitytype - 53768277726398709
+  [assembly:/_pro/environment/templates/props/shop_props/electronics_shop_a.template?/mobile_phone_onstand_c_00.entitytemplate].pc_entitytype - 24551227870699747
+ [assembly:/_pro/items/templates/accessories/smartphones_a.template?/accessoryitem_smartphone_b.entitytemplate].pc_entitytype - 43931935608046874
+  [assembly:/_pro/design/actor/acts/mr.template?/dynamicact_mr_stand_phone_pace.entitytemplate].pc_entitytype - 68560808068971684
+  [assembly:/_pro/design/actor/acts/mr.template?/dynamicact_mr_stand_phone_onspot.entitytemplate].pc_entitytype - 22669761712540182
+  [assembly:/_pro/design/actor/acts/fh.template?/dynamicact_fh_stand_phone_pace.entitytemplate].pc_entitytype - 12191031928885991
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_glass_2x2_01.texture?/height_a.tex](asheightmap).pc_tex - 67375104265136659
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_glass_2x2_01.mi].pc_mi - 60104518043434959
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entitytype - 42971674912974210
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass_bulletproof.template?/fx_md_env_glass_bulletproof.entitytemplate].pc_entitytype - 29987286169995500
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+  [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_mi - 20414029834644689
+  [assembly:/_pro/environment/materials/generic/glass/glass_opaque_b.mi].pc_mi - 39324566795937228
+  [assembly:/_pro/environment/materials/props/food/vodkabottle_d.mi].pc_mi - 39866301636267962
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_glass_2x2_onesided.mi].pc_mi - 27096188325662727
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass_screenlcd.template?/fx_md_env_glass_screenlcd.entitytemplate].pc_entitytype - 9648827583925534
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass_screenlcd.template?/fx_md_env_glass_screenlcd.entitytemplate].pc_entityresource - 19352598874966312
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_glass_2x2_01.texture?/normal_a.tex](asnormalmap).pc_tex - 25330694082711337
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_glass_2x2_01.mi].pc_mi - 60104518043434959
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entitytype - 42971674912974210
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass_bulletproof.template?/fx_md_env_glass_bulletproof.entitytemplate].pc_entitytype - 29987286169995500
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+  [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_mi - 20414029834644689
+  [assembly:/_pro/environment/materials/generic/glass/glass_opaque_b.mi].pc_mi - 39324566795937228
+  [assembly:/_pro/environment/materials/props/food/vodkabottle_d.mi].pc_mi - 39866301636267962
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_glass_2x2_onesided.mi].pc_mi - 27096188325662727
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass_screenlcd.template?/fx_md_env_glass_screenlcd.entitytemplate].pc_entitytype - 9648827583925534
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass_screenlcd.template?/fx_md_env_glass_screenlcd.entitytemplate].pc_entityresource - 19352598874966312
+[assembly:/_pro/effects/textures/debris/fx_par_debris_glass_4x4_01.texture?/diffuse_a.tex](ascolormap).pc_tex - 68396958548906431
+ [assembly:/_pro/effects/materials/debris/fx_par_debris_glass_4x4_02.mi].pc_mi - 20202741451602551
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_glass_4x4_01.entitytemplate].pc_entitytype - 19885358078869582
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass_screenlcd.template?/fx_md_env_glass_screenlcd.entitytemplate].pc_entityresource - 19352598874966312
+ [assembly:/_pro/effects/materials/debris/fx_decal_debris_glass_4x4_01.mi].pc_mi - 21207351627271454
+  [assembly:/_pro/effects/templates/shatter/fx_shatter_food.template?/fx_e_shatter_food_liquidandglass.entitytemplate].pc_entitytype - 44144973882830524
+  [assembly:/_pro/effects/templates/shatter/fx_shatter_windows.template?/fx_e_shatter_window_120x70_a.entitytemplate].pc_entitytype - 64272898898419623
+  [assembly:/_pro/effects/templates/shatter/fx_shatter_lamps.template?/fx_e_shatter_lamp_spot_small.entitytemplate].pc_entitytype - 6251763797415653
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+  [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_mi - 20414029834644689
+  [assembly:/_pro/environment/materials/generic/glass/glass_opaque_b.mi].pc_mi - 39324566795937228
+  [assembly:/_pro/environment/materials/props/food/vodkabottle_d.mi].pc_mi - 39866301636267962
+[assembly:/_pro/effects/textures/debris/fx_par_debris_glass_4x4_01.texture?/normal_a.tex](asnormalmap).pc_tex - 61755687850730758
+ [assembly:/_pro/effects/materials/debris/fx_par_debris_glass_4x4_02.mi].pc_mi - 20202741451602551
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_glass_4x4_01.entitytemplate].pc_entitytype - 19885358078869582
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass_screenlcd.template?/fx_md_env_glass_screenlcd.entitytemplate].pc_entityresource - 19352598874966312
+ [assembly:/_pro/effects/materials/debris/fx_decal_debris_glass_4x4_01.mi].pc_mi - 21207351627271454
+  [assembly:/_pro/effects/templates/shatter/fx_shatter_food.template?/fx_e_shatter_food_liquidandglass.entitytemplate].pc_entitytype - 44144973882830524
+  [assembly:/_pro/effects/templates/shatter/fx_shatter_windows.template?/fx_e_shatter_window_120x70_a.entitytemplate].pc_entitytype - 64272898898419623
+  [assembly:/_pro/effects/templates/shatter/fx_shatter_lamps.template?/fx_e_shatter_lamp_spot_small.entitytemplate].pc_entitytype - 6251763797415653
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass.template?/fx_md_env_glass.entitytemplate].pc_entityresource - 50951506271049482
+  [assembly:/_pro/environment/materials/props/accessories/smartphone_b.mi].pc_mi - 20414029834644689
+  [assembly:/_pro/environment/materials/generic/glass/glass_opaque_b.mi].pc_mi - 39324566795937228
+  [assembly:/_pro/environment/materials/props/food/vodkabottle_d.mi].pc_mi - 39866301636267962
+[assembly:/textures/characters/rigged_props/clothbundle/cloth_bundle_bag_01.texture?/diffuse_a.tex](ascolormap).pc_tex - 26073703026553477
+ [assembly:/materials/characters/rigged_props/clothbundle/clothbundle_01.mi].pc_entitytype - 26172060914553665
+  [assembly:/_pro/design/gamecore/clothbundles.template?/clothbundle_basic.entitytemplate].pc_entitytype - 313817550871851
+ [assembly:/_pro/design/gamecore/clothbundles.template?/clothbundle_basic.entitytemplate].pc_entitytype - 313817550871851
+  [assembly:/common/globalresources.ini].pc_resourceidx - 31140317081498958
+ [assembly:/materials/characters/rigged_props/clothbundle/clothbundle_01.mi].pc_mi - 40765244417646370
+  [assembly:/materials/characters/rigged_props/clothbundle/clothbundle_01.mi].pc_entitytype - 26172060914553665
+  [assembly:/geometry/characters/rigged_props/clothbundle/clothbundle_01.wl2?/clothbundle_01.prim].pc_prim - 4762161831674797
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_cloth_2x2_01.texture?/normal_a.tex](asnormalmap).pc_tex - 22115245423780205
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_cloth_2x2_01.mi].pc_mi - 3478654437145412
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth.template?/fx_md_env_cloth.entitytemplate].pc_entitytype - 20068584170146152
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth.template?/fx_md_env_cloth.entitytemplate].pc_entityresource - 37397704769727729
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth_carpet.template?/fx_md_env_cloth_carpet.entitytemplate].pc_entitytype - 22044369953242451
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth.template?/fx_md_env_cloth.entitytemplate].pc_entityresource - 37397704769727729
+  [assembly:/materials/characters/rigged_props/clothbundle/clothbundle_01.mi].pc_mi - 40765244417646370
+  [assembly:/_pro/environment/materials/generic/leather/dark_leather_a.mi].pc_mi - 39689888153283083
+  [assembly:/_pro/environment/materials/props/clothing/bag_ladies_leather_old_b.mi].pc_mi - 3153914301693742
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth_carpet.template?/fx_md_env_cloth_carpet.entitytemplate].pc_entityresource - 67684372462613112
+  [assembly:/_pro/environment/materials/props/containers/egg_tray_carton_a_black.mi].pc_mi - 33653281359929639
+  [assembly:/_pro/environment/materials/props/furniture/chair_worn_simple_a.mi].pc_mi - 54618814545694329
+  [assembly:/_pro/environment/materials/props/decorative/carpet_hippie_apartment_a.mi].pc_mi - 49892357501979957
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_cloth_2x2_01.texture?/height_a.tex](asheightmap).pc_tex - 12271260586584124
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_cloth_2x2_01.mi].pc_mi - 3478654437145412
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth.template?/fx_md_env_cloth.entitytemplate].pc_entitytype - 20068584170146152
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth.template?/fx_md_env_cloth.entitytemplate].pc_entityresource - 37397704769727729
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth_carpet.template?/fx_md_env_cloth_carpet.entitytemplate].pc_entitytype - 22044369953242451
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth.template?/fx_md_env_cloth.entitytemplate].pc_entityresource - 37397704769727729
+  [assembly:/materials/characters/rigged_props/clothbundle/clothbundle_01.mi].pc_mi - 40765244417646370
+  [assembly:/_pro/environment/materials/generic/leather/dark_leather_a.mi].pc_mi - 39689888153283083
+  [assembly:/_pro/environment/materials/props/clothing/bag_ladies_leather_old_b.mi].pc_mi - 3153914301693742
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth_carpet.template?/fx_md_env_cloth_carpet.entitytemplate].pc_entityresource - 67684372462613112
+  [assembly:/_pro/environment/materials/props/containers/egg_tray_carton_a_black.mi].pc_mi - 33653281359929639
+  [assembly:/_pro/environment/materials/props/furniture/chair_worn_simple_a.mi].pc_mi - 54618814545694329
+  [assembly:/_pro/environment/materials/props/decorative/carpet_hippie_apartment_a.mi].pc_mi - 49892357501979957
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_cloth_2x2_01.texture?/diffuse_a.tex](ascolormap).pc_tex - 5968872438308168
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_cloth_2x2_01.mi].pc_mi - 3478654437145412
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth.template?/fx_md_env_cloth.entitytemplate].pc_entitytype - 20068584170146152
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth.template?/fx_md_env_cloth.entitytemplate].pc_entityresource - 37397704769727729
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth_carpet.template?/fx_md_env_cloth_carpet.entitytemplate].pc_entitytype - 22044369953242451
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth.template?/fx_md_env_cloth.entitytemplate].pc_entityresource - 37397704769727729
+  [assembly:/materials/characters/rigged_props/clothbundle/clothbundle_01.mi].pc_mi - 40765244417646370
+  [assembly:/_pro/environment/materials/generic/leather/dark_leather_a.mi].pc_mi - 39689888153283083
+  [assembly:/_pro/environment/materials/props/clothing/bag_ladies_leather_old_b.mi].pc_mi - 3153914301693742
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_cloth_carpet.template?/fx_md_env_cloth_carpet.entitytemplate].pc_entityresource - 67684372462613112
+  [assembly:/_pro/environment/materials/props/containers/egg_tray_carton_a_black.mi].pc_mi - 33653281359929639
+  [assembly:/_pro/environment/materials/props/furniture/chair_worn_simple_a.mi].pc_mi - 54618814545694329
+  [assembly:/_pro/environment/materials/props/decorative/carpet_hippie_apartment_a.mi].pc_mi - 49892357501979957
+[assembly:/textures/characters/rigged_props/bodybag/bodybag.texture?/diffuse_a.tex](ascolormap).pc_tex - 23624183913828530
+ [assembly:/materials/characters/rigged_props/bodybag/bodybag_black.mi].pc_mi - 7614600360777717
+  [assembly:/geometry/characters/rigged_props/bodybag/bodybag.wl2?/ground.weightedprim].pc_weightedprim - 10173116124618153
+[assembly:/textures/characters/rigged_props/bodybag/bodybag.texture?/normal_a.tex](asnormalmap).pc_tex - 44422860592525519
+ [assembly:/materials/characters/rigged_props/bodybag/bodybag_black.mi].pc_mi - 7614600360777717
+  [assembly:/geometry/characters/rigged_props/bodybag/bodybag.wl2?/ground.weightedprim].pc_weightedprim - 10173116124618153
+[assembly:/textures/characters/rigged_props/bodybag/bodybag.texture?/specular_a.tex](ascolormap).pc_tex - 38686892766579332
+ [assembly:/materials/characters/rigged_props/bodybag/bodybag_black.mi].pc_mi - 7614600360777717
+  [assembly:/geometry/characters/rigged_props/bodybag/bodybag.wl2?/ground.weightedprim].pc_weightedprim - 10173116124618153
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_stone_2x2_01.texture?/normal_a.tex](asnormalmap).pc_tex - 52222649606486314
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_rubber_2x2_01.mi].pc_mi - 67769694168737253
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_rubber.template?/fx_md_env_rubber.entitytemplate].pc_entitytype - 26771076378382526
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_rubber.template?/fx_md_env_rubber.entitytemplate].pc_entityresource - 21475170014562359
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_rubberrud.template?/fx_md_prop_rubberrud.entitytemplate].pc_entitytype - 31190096324094704
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_rubber.template?/fx_md_env_rubber.entitytemplate].pc_entityresource - 21475170014562359
+  [assembly:/materials/characters/rigged_props/bodybag/bodybag_black.mi].pc_mi - 7614600360777717
+  [assembly:/materials/characters/rigged_props/bodybag/bodybag_text.mi].pc_mi - 43775945303634503
+  [assembly:/_pro/environment/materials/props/accessories/flashlight_a.mi].pc_mi - 9851623898973658
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_rubberrud.template?/fx_md_prop_rubberrud.entitytemplate].pc_entityresource - 61250454008450368
+  [assembly:/_pro/items/materials/ica/rubber_duck_a.mi].pc_mi - 69021907871010660
+  [assembly:/_pro/environment/materials/props/makeup/sean_rose_face_mask_a.mi].pc_mi - 38166175029449702
+  [assembly:/_pro/items/materials/quest/gunpowderbag_a.mi].pc_mi - 20178275333509204
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_stone_2x2_01.texture?/height_a.tex](asheightmap).pc_tex - 31700392208016130
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_rubber_2x2_01.mi].pc_mi - 67769694168737253
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_rubber.template?/fx_md_env_rubber.entitytemplate].pc_entitytype - 26771076378382526
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_rubber.template?/fx_md_env_rubber.entitytemplate].pc_entityresource - 21475170014562359
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_rubberrud.template?/fx_md_prop_rubberrud.entitytemplate].pc_entitytype - 31190096324094704
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_rubber.template?/fx_md_env_rubber.entitytemplate].pc_entityresource - 21475170014562359
+  [assembly:/materials/characters/rigged_props/bodybag/bodybag_black.mi].pc_mi - 7614600360777717
+  [assembly:/materials/characters/rigged_props/bodybag/bodybag_text.mi].pc_mi - 43775945303634503
+  [assembly:/_pro/environment/materials/props/accessories/flashlight_a.mi].pc_mi - 9851623898973658
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_rubberrud.template?/fx_md_prop_rubberrud.entitytemplate].pc_entityresource - 61250454008450368
+  [assembly:/_pro/items/materials/ica/rubber_duck_a.mi].pc_mi - 69021907871010660
+  [assembly:/_pro/environment/materials/props/makeup/sean_rose_face_mask_a.mi].pc_mi - 38166175029449702
+  [assembly:/_pro/items/materials/quest/gunpowderbag_a.mi].pc_mi - 20178275333509204
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_stone_2x2_01.texture?/diffuse_a.tex](ascolormap).pc_tex - 9723612437065582
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_rubber_2x2_01.mi].pc_mi - 67769694168737253
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_rubber.template?/fx_md_env_rubber.entitytemplate].pc_entitytype - 26771076378382526
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_rubber.template?/fx_md_env_rubber.entitytemplate].pc_entityresource - 21475170014562359
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_rubberrud.template?/fx_md_prop_rubberrud.entitytemplate].pc_entitytype - 31190096324094704
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_rubber.template?/fx_md_env_rubber.entitytemplate].pc_entityresource - 21475170014562359
+  [assembly:/materials/characters/rigged_props/bodybag/bodybag_black.mi].pc_mi - 7614600360777717
+  [assembly:/materials/characters/rigged_props/bodybag/bodybag_text.mi].pc_mi - 43775945303634503
+  [assembly:/_pro/environment/materials/props/accessories/flashlight_a.mi].pc_mi - 9851623898973658
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_rubberrud.template?/fx_md_prop_rubberrud.entitytemplate].pc_entityresource - 61250454008450368
+  [assembly:/_pro/items/materials/ica/rubber_duck_a.mi].pc_mi - 69021907871010660
+  [assembly:/_pro/environment/materials/props/makeup/sean_rose_face_mask_a.mi].pc_mi - 38166175029449702
+  [assembly:/_pro/items/materials/quest/gunpowderbag_a.mi].pc_mi - 20178275333509204
+[assembly:/textures/characters/rigged_props/bodybag/coronerlogo.texture?/diffuse_a.tex](ascolormap).pc_tex - 47820886322359988
+ [assembly:/materials/characters/rigged_props/bodybag/bodybag_text.mi].pc_mi - 43775945303634503
+  [assembly:/geometry/characters/rigged_props/bodybag/bodybag.wl2?/ground.weightedprim].pc_weightedprim - 10173116124618153
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_paper_4x2_01.texture?/normal_a.tex](asnormalmap).pc_tex - 41980117506406012
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_paper_4x2_01.mi].pc_mi - 21154607393624719
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper.template?/fx_md_env_paper.entitytemplate].pc_entitytype - 14980061412521311
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper.template?/fx_md_env_paper.entitytemplate].pc_entityresource - 61827823955763200
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper_penetrable.template?/fx_md_env_paper_penetrable.entitytemplate].pc_entitytype - 587288628928101
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper.template?/fx_md_env_paper.entitytemplate].pc_entityresource - 61827823955763200
+  [assembly:/_pro/environment/materials/props/office_props/office_documents.mi].pc_mi - 67375166468723888
+  [assembly:/_pro/environment/materials/props/books/blackbook_anaconda_a.mi].pc_mi - 25018936648165956
+  [assembly:/_pro/environment/materials/props/office_props/raccoon_termination_letter_a.mi].pc_mi - 14412648825360688
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper_penetrable.template?/fx_md_env_paper_penetrable.entitytemplate].pc_entityresource - 42580507979356641
+  [assembly:/_pro/environment/materials/props/gameplay/letters/envelope_a.mi].pc_mi - 39201981614896268
+  [assembly:/_pro/environment/materials/props/accessories/magpie_killswitch_blueprint_doc_a.mi].pc_mi - 35380882830795369
+  [assembly:/_pro/environment/materials/props/papers/polaroid_miami_a.mi].pc_mi - 8668192426608256
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_paper_4x2_01.texture?/height_a.tex](asheightmap).pc_tex - 34733110725805383
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_paper_4x2_01.mi].pc_mi - 21154607393624719
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper.template?/fx_md_env_paper.entitytemplate].pc_entitytype - 14980061412521311
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper.template?/fx_md_env_paper.entitytemplate].pc_entityresource - 61827823955763200
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper_penetrable.template?/fx_md_env_paper_penetrable.entitytemplate].pc_entitytype - 587288628928101
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper.template?/fx_md_env_paper.entitytemplate].pc_entityresource - 61827823955763200
+  [assembly:/_pro/environment/materials/props/office_props/office_documents.mi].pc_mi - 67375166468723888
+  [assembly:/_pro/environment/materials/props/books/blackbook_anaconda_a.mi].pc_mi - 25018936648165956
+  [assembly:/_pro/environment/materials/props/office_props/raccoon_termination_letter_a.mi].pc_mi - 14412648825360688
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper_penetrable.template?/fx_md_env_paper_penetrable.entitytemplate].pc_entityresource - 42580507979356641
+  [assembly:/_pro/environment/materials/props/gameplay/letters/envelope_a.mi].pc_mi - 39201981614896268
+  [assembly:/_pro/environment/materials/props/accessories/magpie_killswitch_blueprint_doc_a.mi].pc_mi - 35380882830795369
+  [assembly:/_pro/environment/materials/props/papers/polaroid_miami_a.mi].pc_mi - 8668192426608256
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_paper_4x2_01.texture?/diffuse_a.tex](ascolormap).pc_tex - 36942897123870036
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_paper_4x2_01.mi].pc_mi - 21154607393624719
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper.template?/fx_md_env_paper.entitytemplate].pc_entitytype - 14980061412521311
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper.template?/fx_md_env_paper.entitytemplate].pc_entityresource - 61827823955763200
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper_penetrable.template?/fx_md_env_paper_penetrable.entitytemplate].pc_entitytype - 587288628928101
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper.template?/fx_md_env_paper.entitytemplate].pc_entityresource - 61827823955763200
+  [assembly:/_pro/environment/materials/props/office_props/office_documents.mi].pc_mi - 67375166468723888
+  [assembly:/_pro/environment/materials/props/books/blackbook_anaconda_a.mi].pc_mi - 25018936648165956
+  [assembly:/_pro/environment/materials/props/office_props/raccoon_termination_letter_a.mi].pc_mi - 14412648825360688
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper_penetrable.template?/fx_md_env_paper_penetrable.entitytemplate].pc_entityresource - 42580507979356641
+  [assembly:/_pro/environment/materials/props/gameplay/letters/envelope_a.mi].pc_mi - 39201981614896268
+  [assembly:/_pro/environment/materials/props/accessories/magpie_killswitch_blueprint_doc_a.mi].pc_mi - 35380882830795369
+  [assembly:/_pro/environment/materials/props/papers/polaroid_miami_a.mi].pc_mi - 8668192426608256
+[assembly:/_pro/effects/textures/debris/fx_par_debris_paper_4x4_01.texture?/normal_a.tex](asnormalmap).pc_tex - 62858028897180236
+ [assembly:/_pro/effects/materials/debris/fx_par_debris_paper_4x4_01.mi].pc_mi - 48777599742498315
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_paper_4x4_01.entitytemplate].pc_entitytype - 53490090688672132
+  [assembly:/_pro/environment/templates/props/consulate_props/consulate_props_a.template?/papershredder.entitytemplate].pc_entitytype - 20107128622136084
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper.template?/fx_md_env_paper.entitytemplate].pc_entityresource - 61827823955763200
+ [assembly:/_pro/effects/materials/debris/fx_decal_debris_paper_4x4_01.mi].pc_mi - 58895125291192766
+  [assembly:/_pro/design/setpieces/setpieces_containers.template?/setpiece_container_items_garbage_bin_modern_e.entitytemplate].pc_entitytype - 21790086981253120
+  [assembly:/_pro/design/setpieces/setpieces_containers.template?/setpiece_container_items_dumbster_a.entitytemplate].pc_entitytype - 62531348241212232
+  [assembly:/_pro/design/setpieces/setpieces_containers.template?/setpiece_container_items_garbage_bin_modern_c.entitytemplate].pc_entitytype - 62745668040026634
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper.template?/fx_md_env_paper.entitytemplate].pc_entityresource - 61827823955763200
+  [assembly:/_pro/environment/materials/props/office_props/office_documents.mi].pc_mi - 67375166468723888
+  [assembly:/_pro/environment/materials/props/books/blackbook_anaconda_a.mi].pc_mi - 25018936648165956
+  [assembly:/_pro/environment/materials/props/office_props/raccoon_termination_letter_a.mi].pc_mi - 14412648825360688
+[assembly:/_pro/effects/textures/debris/fx_par_debris_paper_4x4_01.texture?/diffuse_a.tex](ascolormap).pc_tex - 39118487444244841
+ [assembly:/_pro/effects/materials/debris/fx_par_debris_paper_4x4_01.mi].pc_mi - 48777599742498315
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_paper_4x4_01.entitytemplate].pc_entitytype - 53490090688672132
+  [assembly:/_pro/environment/templates/props/consulate_props/consulate_props_a.template?/papershredder.entitytemplate].pc_entitytype - 20107128622136084
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper.template?/fx_md_env_paper.entitytemplate].pc_entityresource - 61827823955763200
+ [assembly:/_pro/effects/materials/debris/fx_decal_debris_paper_4x4_01.mi].pc_mi - 58895125291192766
+  [assembly:/_pro/design/setpieces/setpieces_containers.template?/setpiece_container_items_garbage_bin_modern_e.entitytemplate].pc_entitytype - 21790086981253120
+  [assembly:/_pro/design/setpieces/setpieces_containers.template?/setpiece_container_items_dumbster_a.entitytemplate].pc_entitytype - 62531348241212232
+  [assembly:/_pro/design/setpieces/setpieces_containers.template?/setpiece_container_items_garbage_bin_modern_c.entitytemplate].pc_entitytype - 62745668040026634
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_paper.template?/fx_md_env_paper.entitytemplate].pc_entityresource - 61827823955763200
+  [assembly:/_pro/environment/materials/props/office_props/office_documents.mi].pc_mi - 67375166468723888
+  [assembly:/_pro/environment/materials/props/books/blackbook_anaconda_a.mi].pc_mi - 25018936648165956
+  [assembly:/_pro/environment/materials/props/office_props/raccoon_termination_letter_a.mi].pc_mi - 14412648825360688
+[assembly:/_pro/environment/textures/props/food/can_soda_a.texture?/normal_a.tex](asnormalmap).pc_tex - 37097755740590249
+ [assembly:/_pro/environment/materials/props/food/can_soda_a.mi].pc_entitytype - 20738645974544666
+  [assembly:/_pro/environment/templates/props/food/food_props_a.template?/can_soda_jitter_a.entitytemplate].pc_entitytype - 64177849951775564
+  [assembly:/_pro/items/templates/melee/melee.template?/itemart_can_soda_jester.entitytemplate].pc_entitytype - 5802980741933494
+  [assembly:/_pro/items/templates/melee/melee.template?/itemart_can_soda_jitter.entitytemplate].pc_entitytype - 38479871896369146
+ [assembly:/_pro/environment/templates/props/food/food_props_a.template?/can_soda_jitter_a.entitytemplate].pc_entitytype - 64177849951775564
+  [assembly:/_pro/scenes/missions/golden/mission_gecko/scenario_gecko.brick].pc_entitytype - 71797819148327135
+  [assembly:/_pro/scenes/missions/miami/location.brick].pc_entitytype - 24277631347541649
+  school_bin_metal_trash_a - 67425969542939163
+ [assembly:/_pro/environment/materials/props/food/can_soda_a.mi].pc_mi - 31453833162932730
+  [assembly:/_pro/environment/materials/props/food/can_soda_a.mi].pc_entitytype - 20738645974544666
+  [assembly:/_pro/environment/geometry/props/food/can_soda_a.wl2?/can_soda_a.linkedprim].pc_linkedprim - 38908051807750039
+  00A4633FCF4825FC.PRIM - 46271021892249084
+[assembly:/_pro/environment/textures/props/food/can_soda_a.texture?/diffuse_a.tex](ascolormap).pc_tex - 48048386877421752
+ [assembly:/_pro/environment/materials/props/food/can_soda_a.mi].pc_entitytype - 20738645974544666
+  [assembly:/_pro/environment/templates/props/food/food_props_a.template?/can_soda_jitter_a.entitytemplate].pc_entitytype - 64177849951775564
+  [assembly:/_pro/items/templates/melee/melee.template?/itemart_can_soda_jester.entitytemplate].pc_entitytype - 5802980741933494
+  [assembly:/_pro/items/templates/melee/melee.template?/itemart_can_soda_jitter.entitytemplate].pc_entitytype - 38479871896369146
+ [assembly:/_pro/environment/materials/props/food/can_soda_a.mi].pc_mi - 31453833162932730
+  [assembly:/_pro/environment/materials/props/food/can_soda_a.mi].pc_entitytype - 20738645974544666
+  [assembly:/_pro/environment/geometry/props/food/can_soda_a.wl2?/can_soda_a.linkedprim].pc_linkedprim - 38908051807750039
+  00A4633FCF4825FC.PRIM - 46271021892249084
+[assembly:/_pro/environment/textures/props/food/can_soda_a.texture?/specular_a.tex](ascolormap).pc_tex - 2556336860911269
+ [assembly:/_pro/environment/materials/props/food/can_soda_a.mi].pc_entitytype - 20738645974544666
+  [assembly:/_pro/environment/templates/props/food/food_props_a.template?/can_soda_jitter_a.entitytemplate].pc_entitytype - 64177849951775564
+  [assembly:/_pro/items/templates/melee/melee.template?/itemart_can_soda_jester.entitytemplate].pc_entitytype - 5802980741933494
+  [assembly:/_pro/items/templates/melee/melee.template?/itemart_can_soda_jitter.entitytemplate].pc_entitytype - 38479871896369146
+ [assembly:/_pro/environment/materials/props/food/can_soda_a.mi].pc_mi - 31453833162932730
+  [assembly:/_pro/environment/materials/props/food/can_soda_a.mi].pc_entitytype - 20738645974544666
+  [assembly:/_pro/environment/geometry/props/food/can_soda_a.wl2?/can_soda_a.linkedprim].pc_linkedprim - 38908051807750039
+  00A4633FCF4825FC.PRIM - 46271021892249084
+[assembly:/_pro/environment/textures/constants/color_grey.texture?/diffuse_a.tex](ascolormap).pc_tex - 17281186370117857
+ [assembly:/_pro/items/materials/firearms/frames/sniper_stealth_a/sniper_stealth_a_muzzlebrake_a.mi].pc_entitytype - 50678235150508100
+  sniper_classic_muzzlebrake_b - 44549149631033205
+  sniper_classic_muzzlebrake_c - 17093165963539405
+  sniper_classic_muzzlebrake_a - 1814979912048379
+ sniper_classic_muzzlebrake_b - 44549149631033205
+  [assembly:/_pro/items/templates/firearms/sniper_stealth_a.template?/firearm_model_sniper_stealth_a.entitytemplate].pc_entitytype - 59143491636125425
+  [assembly:/_pro/items/templates/firearms/sniper_classic_a.template?/firearm_model_sniper_classic_a.entitytemplate].pc_entitytype - 24360408921048250
+  [assembly:/_pro/items/templates/firearms/sniper_woodsman_a.template?/firearm_model_sniper_woodsman_a.entitytemplate].pc_entitytype - 69874852263322531
+ [assembly:/_pro/items/materials/firearms/accessories/scopes/scope_sniper_a/scope_sniper_a_fps.mi].pc_entitytype - 30422948140831176
+  scope_sniper_stealth_a_fps - 2226572531145819
+  sniper_leviathan_scope_a_fps - 71060399956864510
+  scope_sniper_bartoli_woodsman_a_fps - 71977079120471500
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_metal_2x2_01.texture?/normal_a.tex](asnormalmap).pc_tex - 64145064059754457
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_metal_2x2_01.mi].pc_mi - 40475837156329432
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_can.template?/fx_md_prop_can.entitytemplate].pc_entitytype - 24030308576075884
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_can.template?/fx_md_prop_can.entitytemplate].pc_entityresource - 20811460503174149
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_metal.template?/fx_md_env_metal.entitytemplate].pc_entitytype - 67852850585203414
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_can.template?/fx_md_prop_can.entitytemplate].pc_entityresource - 20811460503174149
+  [assembly:/_pro/environment/materials/props/food/can_soda_a.mi].pc_mi - 31453833162932730
+  [assembly:/_pro/items/materials/quest/spagettican_a.mi].pc_mi - 20827392700206913
+  [assembly:/_pro/environment/materials/props/food/can_beer_b.mi].pc_mi - 9144120051501861
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_metal.template?/fx_md_env_metal.entitytemplate].pc_entityresource - 2055560321759861
+  [assembly:/_pro/items/materials/firearms/frames/sniper_chinese_dragon_a/sniper_chinese_dragon_a.mi].pc_mi - 55686235914764002
+  [assembly:/_pro/items/materials/firearms/frames/sniper_chinese_dragon_a/sniper_chinese_dragon_scope_fps_a.mi].pc_mi - 52849389470643254
+  [assembly:/_pro/items/materials/gadget/detonator_remote_a.mi].pc_mi - 57528931429584317
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_metal_2x2_01.texture?/height_a.tex](asheightmap).pc_tex - 67662835371392905
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_metal_2x2_01.mi].pc_mi - 40475837156329432
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_can.template?/fx_md_prop_can.entitytemplate].pc_entitytype - 24030308576075884
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_can.template?/fx_md_prop_can.entitytemplate].pc_entityresource - 20811460503174149
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_metal.template?/fx_md_env_metal.entitytemplate].pc_entitytype - 67852850585203414
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_can.template?/fx_md_prop_can.entitytemplate].pc_entityresource - 20811460503174149
+  [assembly:/_pro/environment/materials/props/food/can_soda_a.mi].pc_mi - 31453833162932730
+  [assembly:/_pro/items/materials/quest/spagettican_a.mi].pc_mi - 20827392700206913
+  [assembly:/_pro/environment/materials/props/food/can_beer_b.mi].pc_mi - 9144120051501861
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_metal.template?/fx_md_env_metal.entitytemplate].pc_entityresource - 2055560321759861
+  [assembly:/_pro/items/materials/firearms/frames/sniper_chinese_dragon_a/sniper_chinese_dragon_a.mi].pc_mi - 55686235914764002
+  [assembly:/_pro/items/materials/firearms/frames/sniper_chinese_dragon_a/sniper_chinese_dragon_scope_fps_a.mi].pc_mi - 52849389470643254
+  [assembly:/_pro/items/materials/gadget/detonator_remote_a.mi].pc_mi - 57528931429584317
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_metal_2x2_01.texture?/diffuse_a.tex](ascolormap).pc_tex - 56681718585083866
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_metal_2x2_01.mi].pc_mi - 40475837156329432
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_can.template?/fx_md_prop_can.entitytemplate].pc_entitytype - 24030308576075884
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_can.template?/fx_md_prop_can.entitytemplate].pc_entityresource - 20811460503174149
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_metal.template?/fx_md_env_metal.entitytemplate].pc_entitytype - 67852850585203414
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_can.template?/fx_md_prop_can.entitytemplate].pc_entityresource - 20811460503174149
+  [assembly:/_pro/environment/materials/props/food/can_soda_a.mi].pc_mi - 31453833162932730
+  [assembly:/_pro/items/materials/quest/spagettican_a.mi].pc_mi - 20827392700206913
+  [assembly:/_pro/environment/materials/props/food/can_beer_b.mi].pc_mi - 9144120051501861
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_metal.template?/fx_md_env_metal.entitytemplate].pc_entityresource - 2055560321759861
+  [assembly:/_pro/items/materials/firearms/frames/sniper_chinese_dragon_a/sniper_chinese_dragon_a.mi].pc_mi - 55686235914764002
+  [assembly:/_pro/items/materials/firearms/frames/sniper_chinese_dragon_a/sniper_chinese_dragon_scope_fps_a.mi].pc_mi - 52849389470643254
+  [assembly:/_pro/items/materials/gadget/detonator_remote_a.mi].pc_mi - 57528931429584317
+[assembly:/_pro/effects/textures/misc/fx_colorindex.texture?/indexmuzzleflash_smg.tex](ascolormap).pc_tex - 28388355553815546
+ [assembly:/_pro/effects/materials/fire/fx_par_fire_muzzleflash_4tracks_8x8_back_smg.mi].pc_entitytype - 33812197162910268
+  [assembly:/_pro/scenes/missions/thefacility/location_interior.brick].pc_entitytype - 27572892462343069
+ [assembly:/_pro/effects/materials/fire/fx_par_fire_muzzleflash_4tracks_8x8_side_smg.mi].pc_entitytype - 65530080826898567
+  [assembly:/_pro/scenes/missions/thefacility/location_interior.brick].pc_entitytype - 27572892462343069
+ [assembly:/_pro/effects/materials/fire/fx_par_fire_muzzleflash_side_8x2.mi].pc_entitytype - 57635808001216510
+  [assembly:/_pro/scenes/missions/thefacility/location_interior.brick].pc_entitytype - 27572892462343069
+[assembly:/_pro/effects/textures/fire/fx_par_fire_muzzleflash_side_8x2.texture?/mask_a.tex](ascolormap).pc_tex - 21770489018551104
+ [assembly:/_pro/effects/materials/fire/fx_par_fire_muzzleflash_side_8x2.mi].pc_entitytype - 57635808001216510
+  [assembly:/_pro/scenes/missions/thefacility/location_interior.brick].pc_entitytype - 27572892462343069
+ [assembly:/_pro/scenes/missions/thefacility/location_interior.brick].pc_entitytype - 27572892462343069
+  [assembly:/_pro/scenes/missions/thefacility/trainingset_yacht.brick].pc_entityblueprint - 21540906428015018
+  [assembly:/_pro/scenes/missions/thefacility/trainingset_yacht.brick].pc_entitytype - 35362062374912935
+  [assembly:/_pro/scenes/missions/thefacility/dressing_module_002.brick].pc_entityblueprint - 30883863406011040
+ [assembly:/_pro/effects/materials/fire/fx_par_fire_muzzleflash_side_8x2.mi].pc_mi - 21926385278169712
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_fire.template?/fx_pr_fire_muzzleflash_side.entitytemplate].pc_entitytype - 25312808563852048
+  [assembly:/_pro/effects/materials/fire/fx_par_fire_muzzleflash_side_8x2.mi].pc_entitytype - 57635808001216510
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_can.template?/fx_md_prop_can.entitytemplate].pc_entityresource - 20811460503174149
+[assembly:/_pro/effects/textures/glow/fx_par_glow_sparks_4x2_01.texture?/emissive_a.tex](ascolormap).pc_tex - 2763069820538453
+ [assembly:/_pro/effects/materials/glow/fx_par_glow_sparks_4x2_01.mi].pc_mi - 63934214019458409
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_glows.template?/fx_pr_glow_sparks_4x2_01.entitytemplate].pc_entitytype - 52664531560593043
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_can.template?/fx_md_prop_can.entitytemplate].pc_entityresource - 20811460503174149
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_metal.template?/fx_md_env_metal.entitytemplate].pc_entityresource - 2055560321759861
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_can.template?/fx_md_prop_can.entitytemplate].pc_entityresource - 20811460503174149
+  [assembly:/_pro/environment/materials/props/food/can_soda_a.mi].pc_mi - 31453833162932730
+  [assembly:/_pro/items/materials/quest/spagettican_a.mi].pc_mi - 20827392700206913
+  [assembly:/_pro/environment/materials/props/food/can_beer_b.mi].pc_mi - 9144120051501861
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_metal.template?/fx_md_env_metal.entitytemplate].pc_entityresource - 2055560321759861
+  [assembly:/_pro/items/materials/firearms/frames/sniper_chinese_dragon_a/sniper_chinese_dragon_a.mi].pc_mi - 55686235914764002
+  [assembly:/_pro/items/materials/firearms/frames/sniper_chinese_dragon_a/sniper_chinese_dragon_scope_fps_a.mi].pc_mi - 52849389470643254
+  [assembly:/_pro/items/materials/gadget/detonator_remote_a.mi].pc_mi - 57528931429584317
+[assembly:/_pro/effects/textures/projections/fx_projection_3d_fire_a.texture?/diffuse_b.tex](ascolormap).pc_tex - 70088476489818997
+ [assembly:/_pro/effects/templates/weapons/fx_muzzleflashes.template?/fx_muzzleflash_light.entitytemplate].pc_entitytype - 26750023478586465
+  [assembly:/_pro/effects/templates/impacts/fx_impacts_ammunitionbased.template?/fx_e_impact_smg.entitytemplate].pc_entitytype - 47911372795688724
+  [assembly:/_pro/effects/templates/weapons/fx_muzzleflashes.template?/fx_e_muzzleflash_pistol_big.entitytemplate].pc_entitytype - 48531460093489940
+  [assembly:/_pro/effects/templates/weapons/fx_muzzleflashes.template?/fx_e_muzzleflash_pistol_small.entitytemplate].pc_entitytype - 51619872155951865
+ [assembly:/_pro/effects/templates/fire/fx_explosions.template?/fx_explosion_light.entitytemplate].pc_entitytype - 60604038456650978
+  [assembly:/_pro/effects/templates/fire/fx_fire.template?/fx_e_explosionfiresmoke_car_spritebased.entitytemplate].pc_entitytype - 21025323968235939
+  [assembly:/_pro/design/setpieces/unique/setpiece_tutorial_unique.template?/setpiece_tutorial_unique_overheadprojector.entitytemplate].pc_entitytype - 7054063010817064
+  [assembly:/_pro/scenes/missions/thefacility/trainingset_hangar.brick].pc_entitytype - 7072241878597465
+ [assembly:/_pro/effects/templates/fire/fx_explosions.template?/fx_e_explosion_c4_tiny.entitytemplate].pc_entitytype - 37973875829463330
+  prop_device_ica_modular_remote_micro_explosive - 19108474846573882
+  [assembly:/_pro/design/items/prop_explosives_runtimes.template?/prop_explosive_grenade_pen_runtime.entitytemplate].pc_entitytemplate - 21933987302895448
+  [assembly:/_pro/design/items/prop_questitems_runtimes.template?/prop_colorado_questitem_exploding_watch_battery_runtime.entitytemplate].pc_entitytemplate - 56865526418119359
+[assembly:/_pro/effects/textures/debris/fx_par_debris_concrete_4x4_01.texture?/normal_a.tex](asnormalmap).pc_tex - 16242125728913330
+ [assembly:/_pro/effects/materials/debris/fx_decal_debris_metal_4x4_01.mi].pc_mi - 34344538009718293
+  [assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_e_impact_metal.entitytemplate].pc_entitytype - 42219571485100807
+  [assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_e_impact_metal_penetrable.entitytemplate].pc_entitytype - 26209039642461099
+  [assembly:/_pro/effects/templates/shatter/fx_shatter_lamps.template?/fx_e_shatter_lamp_spot_small.entitytemplate].pc_entitytype - 6251763797415653
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_can.template?/fx_md_prop_can.entitytemplate].pc_entityresource - 20811460503174149
+  [assembly:/_pro/environment/materials/props/food/can_soda_a.mi].pc_mi - 31453833162932730
+  [assembly:/_pro/items/materials/quest/spagettican_a.mi].pc_mi - 20827392700206913
+  [assembly:/_pro/environment/materials/props/food/can_beer_b.mi].pc_mi - 9144120051501861
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_metal.template?/fx_md_env_metal.entitytemplate].pc_entityresource - 2055560321759861
+  [assembly:/_pro/items/materials/firearms/frames/sniper_chinese_dragon_a/sniper_chinese_dragon_a.mi].pc_mi - 55686235914764002
+  [assembly:/_pro/items/materials/firearms/frames/sniper_chinese_dragon_a/sniper_chinese_dragon_scope_fps_a.mi].pc_mi - 52849389470643254
+  [assembly:/_pro/items/materials/gadget/detonator_remote_a.mi].pc_mi - 57528931429584317
+[assembly:/_pro/effects/textures/debris/fx_par_debris_concrete_4x4_01.texture?/diffuse_a.tex](ascolormap).pc_tex - 67635024685843332
+ [assembly:/_pro/effects/materials/debris/fx_decal_debris_metal_4x4_01.mi].pc_mi - 34344538009718293
+  [assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_e_impact_metal.entitytemplate].pc_entitytype - 42219571485100807
+  [assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_e_impact_metal_penetrable.entitytemplate].pc_entitytype - 26209039642461099
+  [assembly:/_pro/effects/templates/shatter/fx_shatter_lamps.template?/fx_e_shatter_lamp_spot_small.entitytemplate].pc_entitytype - 6251763797415653
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_prop_can.template?/fx_md_prop_can.entitytemplate].pc_entityresource - 20811460503174149
+  [assembly:/_pro/environment/materials/props/food/can_soda_a.mi].pc_mi - 31453833162932730
+  [assembly:/_pro/items/materials/quest/spagettican_a.mi].pc_mi - 20827392700206913
+  [assembly:/_pro/environment/materials/props/food/can_beer_b.mi].pc_mi - 9144120051501861
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_metal.template?/fx_md_env_metal.entitytemplate].pc_entityresource - 2055560321759861
+  [assembly:/_pro/items/materials/firearms/frames/sniper_chinese_dragon_a/sniper_chinese_dragon_a.mi].pc_mi - 55686235914764002
+  [assembly:/_pro/items/materials/firearms/frames/sniper_chinese_dragon_a/sniper_chinese_dragon_scope_fps_a.mi].pc_mi - 52849389470643254
+  [assembly:/_pro/items/materials/gadget/detonator_remote_a.mi].pc_mi - 57528931429584317
+[assembly:/_pro/effects/textures/liquid/fx_par_liquid_splash_4t_8x4_01.texture?/mask_b.tex](ascolormap).pc_tex - 33574743817127271
+ [assembly:/_pro/effects/materials/liquid/fx_par_liquid_splash_4tracks_8x4_water_01.mi].pc_mi - 55108193669911075
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_liquids.template?/fx_pr_liquid_splash_4tracks_8x4_water_01.entitytemplate].pc_entitytype - 61467267153248965
+[assembly:/_pro/effects/textures/liquid/fx_par_liquid_splash_4t_8x4_01.texture?/normal_a.tex](asnormalmap).pc_tex - 41658849894276415
+ [assembly:/_pro/effects/materials/liquid/fx_par_liquid_splash_4tracks_8x4_water_01.mi].pc_mi - 55108193669911075
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_liquids.template?/fx_pr_liquid_splash_4tracks_8x4_water_01.entitytemplate].pc_entitytype - 61467267153248965
+[assembly:/_pro/effects/textures/debris/fx_par_debris_stone_slate_2x2_01.texture?/normal_a.tex](asnormalmap).pc_tex - 24159397943812400
+ [assembly:/_pro/effects/materials/debris/fx_par_debris_stone_slate_2x2_01.mi].pc_mi - 67051600419635042
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_stone_slate_2x2_01.entitytemplate].pc_entitytype - 2659115946701661
+ [assembly:/_pro/effects/materials/debris/fx_decal_debris_stone_slate_2x2_01.mi].pc_mi - 7947554350512279
+  [assembly:/_pro/effects/templates/shatter/fx_shatter_stone.template?/fx_shatter_stone_25x25_a.entitytemplate].pc_entitytemplate - 218941390798928
+  [assembly:/_pro/scenes/missions/colombia/scenario_hippo.brick].pc_entitytype - 38418997194354064
+  [assembly:/_pro/effects/templates/shatter/fx_shatter_stone.template?/fx_shatter_stone_adapt.entitytemplate].pc_entitytemplate - 16621038069810706
+[assembly:/_pro/effects/textures/debris/fx_par_debris_stone_slate_2x2_01.texture?/diffuse_a.tex](ascolormap).pc_tex - 25304459459640386
+ [assembly:/_pro/effects/materials/debris/fx_par_debris_stone_slate_2x2_01.mi].pc_mi - 67051600419635042
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_stone_slate_2x2_01.entitytemplate].pc_entitytype - 2659115946701661
+ [assembly:/_pro/effects/materials/debris/fx_decal_debris_stone_slate_2x2_01.mi].pc_mi - 7947554350512279
+  [assembly:/_pro/effects/templates/shatter/fx_shatter_stone.template?/fx_shatter_stone_25x25_a.entitytemplate].pc_entitytemplate - 218941390798928
+  [assembly:/_pro/scenes/missions/colombia/scenario_hippo.brick].pc_entitytype - 38418997194354064
+  [assembly:/_pro/effects/templates/shatter/fx_shatter_stone.template?/fx_shatter_stone_adapt.entitytemplate].pc_entitytemplate - 16621038069810706
+[assembly:/_pro/effects/textures/liquid/fx_par_liquid_rupture_8x3_01.texture?/normal_b.tex](asnormalmap).pc_tex - 28744670004285290
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_rupture_8x3_01.mi].pc_mi - 20314161914909363
+  [assembly:/_pro/effects/templates/shatter/fx_shatter_food.template?/fx_e_shatter_food_liquidandglass.entitytemplate].pc_entitytype - 44144973882830524
+  [assembly:/_pro/effects/templates/liquid/fx_puke.template?/fx_e_puke_b.entitytemplate].pc_entitytype - 68403071407890531
+  [assembly:/_pro/effects/templates/liquid/fx_puke.template?/fx_e_puke_a.entitytemplate].pc_entitytype - 40670424120678060
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_food_fruit_red.template?/fx_md_env_food_fruit_red.entitytemplate].pc_entityresource - 57734796899778374
+  [assembly:/_pro/environment/materials/props/food/apple_b.mi].pc_mi - 625925487114015
+  [assembly:/_pro/environment/materials/foliage/grapecluster_c.mi].pc_mi - 4976916114985083
+  [assembly:/_pro/environment/materials/props/food/water_melon_chunk_a.mi].pc_mi - 64635430933430070
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_rupture_8x3_water_01.mi].pc_mi - 72031044513727721
+  [assembly:/_pro/effects/templates/water/fx_water_toiletkill.template?/fx_water_toiletkill_old_a.entitytemplate].pc_entitytype - 49216074440821029
+  [assembly:/_pro/effects/templates/water/fx_water_toiletkill.template?/fx_water_toiletkill_modern.entitytemplate].pc_entitytype - 59669640926851504
+  [assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_e_impact_plastic_water_nosmoke.entitytemplate].pc_entitytemplate - 25846055075060025
+[assembly:/_pro/effects/textures/smoke/fx_par_smokeupwardsmain_5x5.texture?/emissive_a.tex](ascolormap).pc_tex - 55178340118042792
+ [assembly:/_pro/effects/materials/smoke/fx_par_smokeupwardsmain_5x5.mi].pc_mi - 63558118668143179
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_smoke.template?/fx_pr_smoke_upwards_main_5x5.entitytemplate].pc_entitytype - 59786371187497649
+[assembly:/_pro/effects/textures/smoke/fx_par_smokeupwardsmain_5x5.texture?/normal_a.tex](asnormalmap).pc_tex - 61238110742486242
+ [assembly:/_pro/effects/materials/smoke/fx_par_smokeupwardsmain_5x5.mi].pc_mi - 63558118668143179
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_smoke.template?/fx_pr_smoke_upwards_main_5x5.entitytemplate].pc_entitytype - 59786371187497649
+[assembly:/_pro/effects/textures/debris/fx_par_debris_shrapnel_wanimation_8x1_01.texture?/normal_a.tex](asnormalmap).pc_tex - 4550523809185991
+ [assembly:/_pro/effects/materials/debris/fx_par_debris_shrapnel_wanimation_8x1_01.mi].pc_mi - 22446427478652529
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_shrapnel_wanimation_8x1_01.entitytemplate].pc_entitytype - 21589023937687245
+ [assembly:/_pro/effects/materials/debris/fx_decal_debris_shrapnel_wanimation_8x1_01.mi].pc_mi - 45854435636934260
+  [assembly:/_pro/effects/templates/fire/fx_explosions.template?/fx_e_explosion_c4_medium.entitytemplate].pc_entitytype - 12846792475719322
+  [assembly:/_pro/effects/templates/fire/fx_explosions.template?/fx_e_explosion_c4_tiny.entitytemplate].pc_entitytype - 37973875829463330
+  [assembly:/_pro/effects/templates/fire/fx_explosions.template?/fx_e_explosion_c4_large.entitytemplate].pc_entitytype - 19523267076274464
+[assembly:/_pro/effects/textures/debris/fx_par_debris_shrapnel_wanimation_8x1_01.texture?/diffuse_a.tex](ascolormap).pc_tex - 13642900025009987
+ [assembly:/_pro/effects/materials/debris/fx_par_debris_shrapnel_wanimation_8x1_01.mi].pc_mi - 22446427478652529
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_shrapnel_wanimation_8x1_01.entitytemplate].pc_entitytype - 21589023937687245
+ [assembly:/_pro/effects/materials/debris/fx_decal_debris_shrapnel_wanimation_8x1_01.mi].pc_mi - 45854435636934260
+  [assembly:/_pro/effects/templates/fire/fx_explosions.template?/fx_e_explosion_c4_medium.entitytemplate].pc_entitytype - 12846792475719322
+  [assembly:/_pro/effects/templates/fire/fx_explosions.template?/fx_e_explosion_c4_tiny.entitytemplate].pc_entitytype - 37973875829463330
+  [assembly:/_pro/effects/templates/fire/fx_explosions.template?/fx_e_explosion_c4_large.entitytemplate].pc_entitytype - 19523267076274464
+[assembly:/_pro/effects/textures/debris/fx_par_debris_shrapnel_wanimation_8x1_01.texture?/emissive_a.tex](ascolormap).pc_tex - 3350011632371976
+ [assembly:/_pro/effects/materials/debris/fx_par_debris_shrapnel_wanimation_8x1_01.mi].pc_mi - 22446427478652529
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_shrapnel_wanimation_8x1_01.entitytemplate].pc_entitytype - 21589023937687245
+[assembly:/_pro/effects/textures/smoke/fx_par_smokeline_8x2.texture?/emissive_a.tex](ascolormap).pc_tex - 29833984845609338
+ [assembly:/_pro/effects/materials/smoke/fx_par_smokeline_8x2.mi].pc_mi - 65164718781682468
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_smoke.template?/fx_pr_smokeline_8x2_va.entitytemplate].pc_entitytype - 12438471098413429
+[assembly:/_pro/effects/textures/smoke/fx_par_smokeline_8x2.texture?/normal_a.tex](asnormalmap).pc_tex - 58967845082695843
+ [assembly:/_pro/effects/materials/smoke/fx_par_smokeline_8x2.mi].pc_mi - 65164718781682468
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_smoke.template?/fx_pr_smokeline_8x2_va.entitytemplate].pc_entitytype - 12438471098413429
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_flesh_2x2_cloth.texture?/normal_a.tex](asnormalmap).pc_tex - 30580656332965026
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_flesh_2x2_clothing.mi].pc_mi - 21869569033292809
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entitytype - 55449014478668507
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_crow.template?/fx_md_crow.entitytemplate].pc_entitytype - 64255260637101601
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/materials/basic/fx_basic_white.mi].pc_mi - 30381841078862208
+  [assembly:/_pro/characters/assets/individuals/paris/philip/materials/male_reg_philip_01_tie_01.mi].pc_mi - 164075232897096
+  [assembly:/*/male_reg_dress_shirt_btndwn3_01.mi].pc_mi - 25097629783338355
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_crow.template?/fx_md_crow.entitytemplate].pc_entityresource - 59644439072647236
+  [assembly:/_pro/effects/materials/animals/fx_crow.mi].pc_mi - 13495712568315179
+  [assembly:/_pro/effects/materials/animals/fx_bird_churrinche_a.mi].pc_mi - 22912385651966772
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_flesh_2x2_01.texture?/height_a.tex](asheightmap).pc_tex - 5181378914665935
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_flesh_2x2_clothing.mi].pc_mi - 21869569033292809
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entitytype - 55449014478668507
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_crow.template?/fx_md_crow.entitytemplate].pc_entitytype - 64255260637101601
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/materials/basic/fx_basic_white.mi].pc_mi - 30381841078862208
+  [assembly:/_pro/characters/assets/individuals/paris/philip/materials/male_reg_philip_01_tie_01.mi].pc_mi - 164075232897096
+  [assembly:/*/male_reg_dress_shirt_btndwn3_01.mi].pc_mi - 25097629783338355
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_flesh_2x2_01.mi].pc_mi - 65954338378755640
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_flesh.template?/fx_md_char_flesh.entitytemplate].pc_entitytype - 66907939850471238
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_food_flesh.template?/fx_md_env_food_flesh.entitytemplate].pc_entitytype - 67574991817888843
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_food_flesh.template?/fx_md_env_food_flesh.entitytemplate].pc_entityresource - 22477084014701323
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_bullethole_flesh_2x2_cloth.texture?/diffuse_a.tex](ascolormap).pc_tex - 32701052480039491
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_bullethole_flesh_2x2_clothing.mi].pc_mi - 21869569033292809
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entitytype - 55449014478668507
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_crow.template?/fx_md_crow.entitytemplate].pc_entitytype - 64255260637101601
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/materials/basic/fx_basic_white.mi].pc_mi - 30381841078862208
+  [assembly:/_pro/characters/assets/individuals/paris/philip/materials/male_reg_philip_01_tie_01.mi].pc_mi - 164075232897096
+  [assembly:/*/male_reg_dress_shirt_btndwn3_01.mi].pc_mi - 25097629783338355
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_crow.template?/fx_md_crow.entitytemplate].pc_entityresource - 59644439072647236
+  [assembly:/_pro/effects/materials/animals/fx_crow.mi].pc_mi - 13495712568315179
+  [assembly:/_pro/effects/materials/animals/fx_bird_churrinche_a.mi].pc_mi - 22912385651966772
+[assembly:/_pro/effects/textures/liquid/fx_decal_liquid_blood_splat_2x2.texture?/normal_a.tex](asnormalmap).pc_tex - 61574073166665417
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_splat_ground.mi].pc_mi - 26882817782222501
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_flesh.template?/fx_md_char_flesh.entitytemplate].pc_entitytype - 66907939850471238
+  [assembly:/_pro/characters/templates/hero/agent47/agent47.template?/agent47_default.entitytemplate].pc_entitytype - 59470160018204346
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entitytype - 55449014478668507
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/materials/basic/fx_basic_white.mi].pc_mi - 30381841078862208
+  [assembly:/_pro/characters/assets/individuals/paris/philip/materials/male_reg_philip_01_tie_01.mi].pc_mi - 164075232897096
+  [assembly:/*/male_reg_dress_shirt_btndwn3_01.mi].pc_mi - 25097629783338355
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_metalplated.template?/fx_md_char_metalplated.entitytemplate].pc_entityresource - 24641669949207001
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_leg_01.mi].pc_mi - 38555318827218522
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_body_01.mi].pc_mi - 2893092811369986
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_arm_01.mi].pc_mi - 49906023829999552
+[assembly:/_pro/effects/textures/liquid/fx_decal_liquid_blood_splat_2x2.texture?/mask_a.tex](asheightmap).pc_tex - 65708157290406473
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_splat_ground.mi].pc_mi - 26882817782222501
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_flesh.template?/fx_md_char_flesh.entitytemplate].pc_entitytype - 66907939850471238
+  [assembly:/_pro/characters/templates/hero/agent47/agent47.template?/agent47_default.entitytemplate].pc_entitytype - 59470160018204346
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entitytype - 55449014478668507
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/materials/basic/fx_basic_white.mi].pc_mi - 30381841078862208
+  [assembly:/_pro/characters/assets/individuals/paris/philip/materials/male_reg_philip_01_tie_01.mi].pc_mi - 164075232897096
+  [assembly:/*/male_reg_dress_shirt_btndwn3_01.mi].pc_mi - 25097629783338355
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_metalplated.template?/fx_md_char_metalplated.entitytemplate].pc_entityresource - 24641669949207001
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_leg_01.mi].pc_mi - 38555318827218522
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_body_01.mi].pc_mi - 2893092811369986
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_arm_01.mi].pc_mi - 49906023829999552
+[assembly:/_pro/effects/textures/liquid/fx_decal_liquid_blood_splat_2x2.texture?/height_a.tex](asheightmap).pc_tex - 46593189908281188
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_splat_ground.mi].pc_mi - 26882817782222501
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_flesh.template?/fx_md_char_flesh.entitytemplate].pc_entitytype - 66907939850471238
+  [assembly:/_pro/characters/templates/hero/agent47/agent47.template?/agent47_default.entitytemplate].pc_entitytype - 59470160018204346
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entitytype - 55449014478668507
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/materials/basic/fx_basic_white.mi].pc_mi - 30381841078862208
+  [assembly:/_pro/characters/assets/individuals/paris/philip/materials/male_reg_philip_01_tie_01.mi].pc_mi - 164075232897096
+  [assembly:/*/male_reg_dress_shirt_btndwn3_01.mi].pc_mi - 25097629783338355
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_metalplated.template?/fx_md_char_metalplated.entitytemplate].pc_entityresource - 24641669949207001
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_leg_01.mi].pc_mi - 38555318827218522
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_body_01.mi].pc_mi - 2893092811369986
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_arm_01.mi].pc_mi - 49906023829999552
+[assembly:/_pro/effects/textures/liquid/fx_decal_liquid_blood_splat_2x2.texture?/normal_b.tex](asnormalmap).pc_tex - 24459527762551797
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_splat_wall.mi].pc_mi - 61011458051986928
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_flesh.template?/fx_md_char_flesh.entitytemplate].pc_entitytype - 66907939850471238
+  [assembly:/_pro/characters/templates/hero/agent47/agent47.template?/agent47_default.entitytemplate].pc_entitytype - 59470160018204346
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entitytype - 55449014478668507
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/materials/basic/fx_basic_white.mi].pc_mi - 30381841078862208
+  [assembly:/_pro/characters/assets/individuals/paris/philip/materials/male_reg_philip_01_tie_01.mi].pc_mi - 164075232897096
+  [assembly:/*/male_reg_dress_shirt_btndwn3_01.mi].pc_mi - 25097629783338355
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_metalplated.template?/fx_md_char_metalplated.entitytemplate].pc_entityresource - 24641669949207001
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_leg_01.mi].pc_mi - 38555318827218522
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_body_01.mi].pc_mi - 2893092811369986
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_arm_01.mi].pc_mi - 49906023829999552
+[assembly:/_pro/effects/textures/liquid/fx_decal_liquid_blood_splat_2x2.texture?/mask_b.tex](asheightmap).pc_tex - 68709577849917747
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_splat_wall.mi].pc_mi - 61011458051986928
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_flesh.template?/fx_md_char_flesh.entitytemplate].pc_entitytype - 66907939850471238
+  [assembly:/_pro/characters/templates/hero/agent47/agent47.template?/agent47_default.entitytemplate].pc_entitytype - 59470160018204346
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entitytype - 55449014478668507
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/materials/basic/fx_basic_white.mi].pc_mi - 30381841078862208
+  [assembly:/_pro/characters/assets/individuals/paris/philip/materials/male_reg_philip_01_tie_01.mi].pc_mi - 164075232897096
+  [assembly:/*/male_reg_dress_shirt_btndwn3_01.mi].pc_mi - 25097629783338355
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_metalplated.template?/fx_md_char_metalplated.entitytemplate].pc_entityresource - 24641669949207001
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_leg_01.mi].pc_mi - 38555318827218522
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_body_01.mi].pc_mi - 2893092811369986
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_arm_01.mi].pc_mi - 49906023829999552
+[assembly:/_pro/effects/textures/liquid/fx_decal_liquid_blood_splat_2x2.texture?/height_d.tex](asheightmap).pc_tex - 60571643046861595
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_splat_wall.mi].pc_mi - 61011458051986928
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_flesh.template?/fx_md_char_flesh.entitytemplate].pc_entitytype - 66907939850471238
+  [assembly:/_pro/characters/templates/hero/agent47/agent47.template?/agent47_default.entitytemplate].pc_entitytype - 59470160018204346
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entitytype - 55449014478668507
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/materials/basic/fx_basic_white.mi].pc_mi - 30381841078862208
+  [assembly:/_pro/characters/assets/individuals/paris/philip/materials/male_reg_philip_01_tie_01.mi].pc_mi - 164075232897096
+  [assembly:/*/male_reg_dress_shirt_btndwn3_01.mi].pc_mi - 25097629783338355
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_metalplated.template?/fx_md_char_metalplated.entitytemplate].pc_entityresource - 24641669949207001
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_leg_01.mi].pc_mi - 38555318827218522
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_body_01.mi].pc_mi - 2893092811369986
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_arm_01.mi].pc_mi - 49906023829999552
+[assembly:/_pro/effects/textures/liquid/fx_decal_liquid_blood_splat_2x2.texture?/height_e.tex](asheightmap).pc_tex - 29031426440726900
+ [assembly:/_pro/effects/materials/liquid/fx_decal_liquid_blood_splat_wall.mi].pc_mi - 61011458051986928
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_flesh.template?/fx_md_char_flesh.entitytemplate].pc_entitytype - 66907939850471238
+  [assembly:/_pro/characters/templates/hero/agent47/agent47.template?/agent47_default.entitytemplate].pc_entitytype - 59470160018204346
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entitytype - 55449014478668507
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/materials/basic/fx_basic_white.mi].pc_mi - 30381841078862208
+  [assembly:/_pro/characters/assets/individuals/paris/philip/materials/male_reg_philip_01_tie_01.mi].pc_mi - 164075232897096
+  [assembly:/*/male_reg_dress_shirt_btndwn3_01.mi].pc_mi - 25097629783338355
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_metalplated.template?/fx_md_char_metalplated.entitytemplate].pc_entityresource - 24641669949207001
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_leg_01.mi].pc_mi - 38555318827218522
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_body_01.mi].pc_mi - 2893092811369986
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_arm_01.mi].pc_mi - 49906023829999552
+[assembly:/_pro/effects/textures/liquid/fx_par_liquid_splash_2t_8x8_02.texture?/diffuse_a.tex](ascolormap).pc_tex - 64907257642242937
+ [assembly:/_pro/effects/materials/liquid/fx_par_liquid_splash_2tracks_8x8_blood_01.mi].pc_mi - 13134167942291376
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_liquids.template?/fx_pr_liquid_splash_2tracks_8x8_blood_01.entitytemplate].pc_entitytype - 57341280948447835
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_metalplated.template?/fx_md_char_metalplated.entitytemplate].pc_entityresource - 24641669949207001
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/materials/basic/fx_basic_white.mi].pc_mi - 30381841078862208
+  [assembly:/_pro/characters/assets/individuals/paris/philip/materials/male_reg_philip_01_tie_01.mi].pc_mi - 164075232897096
+  [assembly:/*/male_reg_dress_shirt_btndwn3_01.mi].pc_mi - 25097629783338355
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_metalplated.template?/fx_md_char_metalplated.entitytemplate].pc_entityresource - 24641669949207001
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_leg_01.mi].pc_mi - 38555318827218522
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_body_01.mi].pc_mi - 2893092811369986
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_arm_01.mi].pc_mi - 49906023829999552
+[assembly:/_pro/effects/textures/liquid/fx_par_liquid_splash_2t_8x8_02.texture?/normal_a.tex](asnormalmap).pc_tex - 44791784033310511
+ [assembly:/_pro/effects/materials/liquid/fx_par_liquid_splash_2tracks_8x8_blood_01.mi].pc_mi - 13134167942291376
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_liquids.template?/fx_pr_liquid_splash_2tracks_8x8_blood_01.entitytemplate].pc_entitytype - 57341280948447835
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_metalplated.template?/fx_md_char_metalplated.entitytemplate].pc_entityresource - 24641669949207001
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource - 34153816441756114
+  [assembly:/_pro/effects/materials/basic/fx_basic_white.mi].pc_mi - 30381841078862208
+  [assembly:/_pro/characters/assets/individuals/paris/philip/materials/male_reg_philip_01_tie_01.mi].pc_mi - 164075232897096
+  [assembly:/*/male_reg_dress_shirt_btndwn3_01.mi].pc_mi - 25097629783338355
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_metalplated.template?/fx_md_char_metalplated.entitytemplate].pc_entityresource - 24641669949207001
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_leg_01.mi].pc_mi - 38555318827218522
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_body_01.mi].pc_mi - 2893092811369986
+  [assembly:/_pro/characters/assets/individuals/italy/dinobrosco/materials/male_reg_dinobrosco_arm_01.mi].pc_mi - 49906023829999552
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_blastmark_2x2_01.texture?/normal_a.tex](asnormalmap).pc_tex - 2056354998036089
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_blastmark_2x2_03.mi].pc_entitytype - 22800782636062418
+  [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_2x2m_a.entitytemplate].pc_entitytype - 53416519959376401
+  [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_4x4m_a.entitytemplate].pc_entitytype - 18338494001192203
+  [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_thick_4x4m_a.entitytemplate].pc_entitytype - 63645433253350251
+ [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_2x2m_a.entitytemplate].pc_entitytype - 53416519959376401
+  [assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_flammable_small.entitytemplate].pc_entitytype - 52711910139474479
+  [assembly:/_pro/vehicles/templates/vehicle_logic.template?/vehicle_core_scooter.entitytemplate].pc_entitytype - 61087139482077023
+  [assembly:/_pro/design/setpieces/unique/setpiece_sniperchallenge_unique.template?/setpiece_sc_scooter.entitytemplate].pc_entitytype - 15485408714969578
+ [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_4x4m_a.entitytemplate].pc_entitytype - 18338494001192203
+  [assembly:/_pro/vehicles/templates/vehicle_logic.template?/vehicle_core.entitytemplate].pc_entitytype - 57270570859018129
+  [assembly:/_pro/vehicles/templates/vehicle_logic.template?/vehicle_core_sniper.entitytemplate].pc_entitytype - 62966504929609875
+  [assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_flammable.entitytemplate].pc_entitytype - 56889249543671299
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_blastmark_2x2_01.texture?/height_a.tex](asheightmap).pc_tex - 36831389047297660
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_blastmark_2x2_03.mi].pc_entitytype - 22800782636062418
+  [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_2x2m_a.entitytemplate].pc_entitytype - 53416519959376401
+  [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_4x4m_a.entitytemplate].pc_entitytype - 18338494001192203
+  [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_thick_4x4m_a.entitytemplate].pc_entitytype - 63645433253350251
+ [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_2x2m_a.entitytemplate].pc_entitytype - 53416519959376401
+  [assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_flammable_small.entitytemplate].pc_entitytype - 52711910139474479
+  [assembly:/_pro/vehicles/templates/vehicle_logic.template?/vehicle_core_scooter.entitytemplate].pc_entitytype - 61087139482077023
+  [assembly:/_pro/design/setpieces/unique/setpiece_sniperchallenge_unique.template?/setpiece_sc_scooter.entitytemplate].pc_entitytype - 15485408714969578
+ [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_4x4m_a.entitytemplate].pc_entitytype - 18338494001192203
+  [assembly:/_pro/vehicles/templates/vehicle_logic.template?/vehicle_core.entitytemplate].pc_entitytype - 57270570859018129
+  [assembly:/_pro/vehicles/templates/vehicle_logic.template?/vehicle_core_sniper.entitytemplate].pc_entitytype - 62966504929609875
+  [assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_flammable.entitytemplate].pc_entitytype - 56889249543671299
+[assembly:/_pro/environment/textures/generic/rock/rock_sandstone_smooth_b.texture?/normal_a.tex](asnormalmap).pc_tex - 34530584618472254
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_blastmark_2x2_03.mi].pc_entitytype - 22800782636062418
+  [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_2x2m_a.entitytemplate].pc_entitytype - 53416519959376401
+  [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_4x4m_a.entitytemplate].pc_entitytype - 18338494001192203
+  [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_thick_4x4m_a.entitytemplate].pc_entitytype - 63645433253350251
+ [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_2x2m_a.entitytemplate].pc_entitytype - 53416519959376401
+  [assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_flammable_small.entitytemplate].pc_entitytype - 52711910139474479
+  [assembly:/_pro/vehicles/templates/vehicle_logic.template?/vehicle_core_scooter.entitytemplate].pc_entitytype - 61087139482077023
+  [assembly:/_pro/design/setpieces/unique/setpiece_sniperchallenge_unique.template?/setpiece_sc_scooter.entitytemplate].pc_entitytype - 15485408714969578
+ [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_4x4m_a.entitytemplate].pc_entitytype - 18338494001192203
+  [assembly:/_pro/vehicles/templates/vehicle_logic.template?/vehicle_core.entitytemplate].pc_entitytype - 57270570859018129
+  [assembly:/_pro/vehicles/templates/vehicle_logic.template?/vehicle_core_sniper.entitytemplate].pc_entitytype - 62966504929609875
+  [assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_flammable.entitytemplate].pc_entitytype - 56889249543671299
+[assembly:/_pro/effects/textures/bulletholes/fx_decal_blastmark_2x2_01.texture?/diffuse_a.tex](ascolormap).pc_tex - 50095265195799251
+ [assembly:/_pro/effects/materials/bulletholes/fx_decal_blastmark_2x2_03.mi].pc_entitytype - 22800782636062418
+  [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_2x2m_a.entitytemplate].pc_entitytype - 53416519959376401
+  [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_4x4m_a.entitytemplate].pc_entitytype - 18338494001192203
+  [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_thick_4x4m_a.entitytemplate].pc_entitytype - 63645433253350251
+ [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_2x2m_a.entitytemplate].pc_entitytype - 53416519959376401
+  [assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_flammable_small.entitytemplate].pc_entitytype - 52711910139474479
+  [assembly:/_pro/vehicles/templates/vehicle_logic.template?/vehicle_core_scooter.entitytemplate].pc_entitytype - 61087139482077023
+  [assembly:/_pro/design/setpieces/unique/setpiece_sniperchallenge_unique.template?/setpiece_sc_scooter.entitytemplate].pc_entitytype - 15485408714969578
+ [assembly:/_pro/effects/templates/misc/fx_oilleaks.template?/fx_oilleak_4x4m_a.entitytemplate].pc_entitytype - 18338494001192203
+  [assembly:/_pro/vehicles/templates/vehicle_logic.template?/vehicle_core.entitytemplate].pc_entitytype - 57270570859018129
+  [assembly:/_pro/vehicles/templates/vehicle_logic.template?/vehicle_core_sniper.entitytemplate].pc_entitytype - 62966504929609875
+  [assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_flammable.entitytemplate].pc_entitytype - 56889249543671299
+[assembly:/_pro/items/textures/tools/crowbar_a.texture?/diffuse_a.tex](ascolormap).pc_tex - 54123453035512087
+ [assembly:/_pro/items/materials/tools/crowbar_a.mi].pc_mi - 64231968634707308
+  [assembly:/_pro/items/geometry/tools/crowbar_a.wl2?/crowbar_a.prim].pc_prim - 13980926446742667
+[assembly:/_pro/items/textures/tools/crowbar_a.texture?/specular_a.tex](ascolormap).pc_tex - 33380659129084289
+ [assembly:/_pro/items/materials/tools/crowbar_a.mi].pc_mi - 64231968634707308
+  [assembly:/_pro/items/geometry/tools/crowbar_a.wl2?/crowbar_a.prim].pc_prim - 13980926446742667
+ [assembly:/_pro/items/materials/tools/xmas_crowbar_a.mi].pc_mi - 65743207083597754
+  00E8369BFCA57CE3.PRIM - 65362238183406819
+[assembly:/_pro/environment/textures/detailmaps/stone/detailmap_concrete_00.texture?/detail_a.tex](ascompoundnormal).pc_tex - 32015195433398302
+ [assembly:/_pro/items/materials/tools/crowbar_a.mi].pc_mi - 64231968634707308
+  [assembly:/_pro/items/geometry/tools/crowbar_a.wl2?/crowbar_a.prim].pc_prim - 13980926446742667
+ [assembly:/_pro/environment/materials/props/food/cakes_italy_a.mi].pc_mi - 49256382100002671
+  [assembly:/_pro/environment/geometry/props/containers/buffet_tray_a.wl2?/styrofoam_takeaway_food_a.prim].pc_prim - 16901178392624073
+  [assembly:/_pro/environment/geometry/props/food/cake_italy_a.wl2?/canoli_a_lod01.prim].pc_prim - 29081379074428962
+  [assembly:/_pro/environment/geometry/props/food/cake_italy_a.wl2?/cupcake_e_lod01.prim].pc_prim - 49021029623539406
+ [assembly:/_pro/environment/materials/props/sculptures/sculpture_scotland_unicorn_a.mi].pc_mi - 52760673354555893
+  [assembly:/_pro/environment/geometry/props/sculptures/statue_unicorn_a.wl2?/statue_unicorn_horn_a.prim].pc_prim - 68762788916168595
+  [assembly:/_pro/environment/geometry/props/sculptures/statue_unicorn_a.wl2?/statue_unicorn_a.prim].pc_prim - 33179053021590041
+  [assembly:/_pro/environment/geometry/props/sculptures/statue_unicorn_a.wl2?/statue_unicorn_a_shatter.linkedprim].pc_linkedprim - 14927394421247582
+[assembly:/_pro/items/textures/tools/crowbar_a.texture?/normal_a.tex](asnormalmap).pc_tex - 3126539104215672
+ [assembly:/_pro/items/materials/tools/crowbar_a.mi].pc_mi - 64231968634707308
+  [assembly:/_pro/items/geometry/tools/crowbar_a.wl2?/crowbar_a.prim].pc_prim - 13980926446742667
+ [assembly:/_pro/items/materials/tools/xmas_crowbar_a.mi].pc_mi - 65743207083597754
+  00E8369BFCA57CE3.PRIM - 65362238183406819
+[assembly:/_pro/effects/textures/glow/fx_par_glow_electric_2x2_01.texture?/emissive_a.tex](ascolormap).pc_tex - 14348562993217688
+ [assembly:/_pro/effects/materials/glow/fx_par_glow_electric_2x2_01.mi].pc_mi - 9919400075621897
+  [assembly:/_pro/effects/templates/particlerenderers/fx_pr_glows.template?/fx_pr_glow_electric_2x2_01.entitytemplate].pc_entitytype - 13635610783951120
+  [assembly:/_pro/effects/templates/electric/fx_electric_sparks.template?/fx_e_electric_spark_line.entitytemplate].pc_entitytype - 47673065526259939
+  [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass_screenlcd.template?/fx_md_env_glass_screenlcd.entitytemplate].pc_entityresource - 19352598874966312
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_glass_screenlcd.template?/fx_md_env_glass_screenlcd.entitytemplate].pc_entityresource - 19352598874966312
+  [assembly:/_pro/effects/materials/glow/fx_electric_scrolling_line.mi].pc_mi - 26934846106611960
+  [assembly:/_pro/items/materials/quest/phone_helmut_a.mi].pc_mi - 46530092775944956
+  [assembly:/_pro/environment/materials/props/electronics/mobile_phone_a_00.mi].pc_mi - 68076791546307198
+ [assembly:/_pro/effects/templates/materialdescriptors/fx_md_env_metal_electric.template?/fx_md_env_metal_electric.entitytemplate].pc_entityresource - 59409757466500815
+  [assembly:/_pro/environment/materials/props/electronic/laptop_aluminium_a.mi].pc_mi - 68087483407152265
+  [assembly:/_pro/environment/materials/props/electronics/server_cabinet_rack_mcguffin_grid_a.mi].pc_mi - 69928501395174551
+  [assembly:/_pro/characters/assets/individuals/flamingo/android/materials/android_arm.mi].pc_mi - 63819113448906378
+[assembly:/_pro/effects/textures/glow/fx_glow_electricbeam_01.texture?/emissive_b.tex](ascolormap).pc_tex - 2152809032282606
+ [assembly:/_pro/effects/materials/glow/fx_electric_scrolling_line.mi].pc_mi - 26934846106611960
+  [assembly:/_pro/effects/templates/electric/fx_electric_sparks.template?/fx_e_electric_spark_line.entitytemplate].pc_entitytype - 47673065526259939
+  [assembly:/_pro/effects/templates/electric/fx_electrocutedcharacter.template?/fx_e_electrocutedcharacter.entitytemplate].pc_entitytype - 55949713619749169
+ [assembly:/_pro/effects/materials/custom/gecko/fx_electric_scrolling_line_gecko.mi].pc_mi - 35314630085697869
+  artinstallation_sun_light_trigger - 24874731062430575
+  rave_light_cube_150x150x150_a - 25169892242621488
+  [assembly:/_pro/design/setpieces/unique/setpiece_fox_unique.template?/setpiece_fox_unique_trap_lightrig_electrocuter.entitytemplate].pc_entitytype - 31235292548855252
