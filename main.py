@@ -91,14 +91,14 @@ def guess(hash: str) -> Optional[str]:
     for d in reverse[hash]:
         if d in data:
             if data[d]['type'] == 'MATI' and len(data[d]['name']) > 0:
-                guessed_name = re.search(r"^(.*/[^\\]*)\.mi.*$", data[d]['name'], re.IGNORECASE)
-                if guessed_name is None:
+                raw_guessed_name = re.search(r"^(.*/)([^\\]*)\.mi.*$", data[d]['name'], re.IGNORECASE)
+                if raw_guessed_name is None:
                     continue
-                else:
-                    guessed_name = guessed_name.group(1)
+                guessed_name = raw_guessed_name.group(1) + raw_guessed_name.group(2)
                 guesses = [
                     guessed_name.replace('materials', 'textures'),
-                    guessed_name.replace('materials', 'textures').replace('props/', '')
+                    guessed_name.replace('materials', 'textures').replace('props/', ''),
+                    raw_guessed_name.group(2)
                 ]
                 for g in guesses:
                     a = sub_guess(g, data[hash]['type'])
