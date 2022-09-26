@@ -13,7 +13,7 @@ for hash in data:
             'correct': 0,
             'total': 0,
         }
-    if ioi_string_to_hex(data[hash]['name']) + '.' + type == hash:
+    if ioi_string_to_hex(data[hash]['name']) == hash[:-5]:
         types[type]['correct'] += 1
         types[type]['total'] += 1
     else:

@@ -13,35 +13,35 @@ are likely to change between versions.
 
 https://github.com/dado3212/hitman-hash-reversal/commit/3d2a7b525c99750e6291960919bbbe584a0fdbbc had the version of main.py that I used to actually create the current shared list in new.txt.
 
-Current state of the world (calculate using `python3 unknown_calc.py`):
+Current state of the world (calculate using `python3 unknown_calc.py`, and then run `\| +\n` -> `|\n` in regex replace):
 
 | File Type | Correct | Total | Percentage |
 | --- | --- | --- | --- |
 | AIBB | 1 | 1 | 100.0% |
 | AIBX | 1 | 1 | 100.0% |
 | AIBZ | 3 | 4 | 75.0% |
-| AIRG | 40 | 40 | 100.0% |        
-| ALOC | 14345 | 24764 | 57.9% |   
+| AIRG | 40 | 40 | 100.0% |
+| ALOC | 14345 | 24764 | 57.9% |
 | ASEB | 0 | 5368 | 0.0% |
-| ASET | 0 | 12235 | 0.0% |        
-| ASVA | 245 | 259 | 94.6% |       
-| ATMD | 5095 | 15192 | 33.5% |    
+| ASET | 0 | 12235 | 0.0% |
+| ASVA | 245 | 259 | 94.6% |
+| ATMD | 5095 | 15192 | 33.5% |
 | BMSK | 34 | 55 | 61.8% |
-| BORG | 2226 | 6350 | 35.1% |     
+| BORG | 2226 | 6350 | 35.1% |
 | BOXC | 0 | 37 | 0.0% |
-| CBLU | 1531 | 1531 | 100.0% |    
+| CBLU | 1531 | 1531 | 100.0% |
 | CLNG | 0 | 4 | 0.0% |
-| CPPT | 1531 | 1531 | 100.0% |    
+| CPPT | 1531 | 1531 | 100.0% |
 | CRMD | 41 | 42 | 97.6% |
 | DITL | 0 | 4 | 0.0% |
-| DLGE | 22459 | 47662 | 47.1% |   
+| DLGE | 22459 | 47662 | 47.1% |
 | DSWB | 19 | 43 | 44.2% |
 | ECPB | 0 | 2730 | 0.0% |
 | ECPT | 0 | 2730 | 0.0% |
-| ERES | 243 | 246 | 98.8% |       
+| ERES | 243 | 246 | 98.8% |
 | FXAC | 2 | 2 | 100.0% |
 | FXAS | 182190 | 182193 | 100.0% |
-| GFXF | 37 | 37 | 100.0% |        
+| GFXF | 37 | 37 | 100.0% |
 | GFXI | 6138 | 8158 | 75.2% |
 | GFXV | 93 | 219 | 42.5% |
 | GIDX | 1 | 1 | 100.0% |
