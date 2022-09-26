@@ -1,325 +1,645 @@
-00F09746DA4C1726.TEXT - 67720324976482086 - [assembly:/_pro/items/textures/firearms/frames/pistol_ica19_a/spraycan_silencer_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00EDAEC66FB51831.TEXT - 66901736781322289 - [assembly:/_pro/items/textures/firearms/frames/pistol_ica19_a/spraycan_silencer_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00F4881BEC2D87F1.TEXT - 68829547825301489 - [assembly:/_pro/items/textures/firearms/frames/pistol_ica19_a/spraycan_silencer_a.texture?/specular_a.tex](ascolormap).pc_tex
-0012F37036C58789.TEXT - 5334212861593481 - [assembly:/_pro/items/textures/firearms/frames/pistol_ica19_a/spraycan_silencer_a.texture?/ao_a.tex](ascolormap).pc_tex
-006F31A1519BE81E.TEXT - 31298291343550494 - [assembly:/_pro/environment/textures/props/electronic/radio_transmitter_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00CCFB1532619621.TEXT - 57696963707115041 - [assembly:/_pro/environment/textures/props/electronic/radio_transmitter_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00E50F7355E60447.TEXT - 64474757703533639 - [assembly:/_pro/environment/textures/props/electronic/radio_transmitter_a.texture?/specular_a.tex](ascolormap).pc_tex
-00B9BAC5DBDAD20D.TEXT - 52278229651345933 - [assembly:/_pro/environment/textures/props/electronic/radio_transmitter_a.texture?/emissive_a.tex](ascolormap).pc_tex
-00292E88B5BC7293.TEXT - 11591638744593043 - [assembly:/_pro/items/textures/melee/nylon_string_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-008EC48DCEFCADD3.TEXT - 40185560035012051 - [assembly:/_pro/items/textures/melee/nylon_string_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00C4743CE7B912F3.TEXT - 55296900369814259 - [assembly:/_pro/items/textures/melee/nylon_string_a.texture?/specular_a.tex](ascolormap).pc_tex
-00885C08FCEC9E06.TEXT - 38381790505508358 - [assembly:/_pro/environment/textures/props/office_props/burj_al_ghazali_pamphlet_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-004BBD4A4ACEE68B.TEXT - 21318750033602187 - [assembly:/_pro/environment/textures/props/office_props/burj_al_ghazali_pamphlet_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00459E2F0680BC17.TEXT - 19595698202786839 - [assembly:/_pro/environment/textures/props/office_props/burj_al_ghazali_pamphlet_a.texture?/specular_a.tex](ascolormap).pc_tex
-00556825A9131D9F.TEXT - 24039883980086687 - [assembly:/_pro/environment/textures/props/decorative/scaffold_tileset_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00F7C032E65DD846.TEXT - 69735644093339718 - [assembly:/_pro/environment/textures/props/decorative/scaffold_tileset_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00BBE41C82523357.TEXT - 52886631741535063 - [assembly:/_pro/environment/textures/props/decorative/scaffold_tileset_a.texture?/specular_a.tex](ascolormap).pc_tex
-00F3E4E9F008C8FF.TEXT - 68650112746309887 - [assembly:/_pro/environment/textures/decals/logos/typewriter_keys_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00CE1D855ED4B40C.TEXT - 58016303861249036 - [assembly:/_pro/environment/textures/decals/logos/typewriter_keys_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00EF1A55B10F9894.TEXT - 67301474778978452 - [assembly:/_pro/environment/textures/decals/logos/typewriter_keys_a.texture?/specular_a.tex](ascolormap).pc_tex
-004E97865EAF0E5A.TEXT - 22121651553373786 - [assembly:/_pro/environment/textures/props/lights/led_trim_light.texture?/diffuse_a.tex](ascolormap).pc_tex
-0015823B4C17E2F5.TEXT - 6054165702238965 - [assembly:/_pro/environment/textures/props/lights/led_trim_light.texture?/normal_a.tex](asnormalmap).pc_tex
-0037B758AA931074.TEXT - 15682715165855860 - [assembly:/_pro/environment/textures/props/lights/led_trim_light.texture?/specular_a.tex](ascolormap).pc_tex
-0022F77A76C19ECC.TEXT - 9842254558633676 - [assembly:/_pro/environment/textures/props/lights/led_trim_light.texture?/emissive_a.tex](ascolormap).pc_tex
-00C66E3E9D80E5DB.TEXT - 55853260598207963 - [assembly:/_pro/environment/textures/decals/decoration/gecko_decorative_leaf_band_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00E7C78EC1EB13CE.TEXT - 65240135572853710 - [assembly:/_pro/environment/textures/decals/decoration/gecko_decorative_leaf_band_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00B8FFCC69C1BAE8.TEXT - 52072649127475944 - [assembly:/_pro/environment/textures/decals/decoration/gecko_decorative_leaf_band_a.texture?/specular_a.tex](ascolormap).pc_tex
-00DC2E46550ADB4F.TEXT - 61975374485707599 - [assembly:/_pro/environment/textures/props/shop_props/medina_shopfront_c.texture?/diffuse_a.tex](ascolormap).pc_tex
-000E3317C73E7820.TEXT - 3996826893973536 - [assembly:/_pro/environment/textures/props/shop_props/medina_shopfront_c.texture?/normal_a.tex](asnormalmap).pc_tex
-00D95D5FA7505BEA.TEXT - 61182735356550122 - [assembly:/_pro/environment/textures/props/shop_props/medina_shopfront_c.texture?/specular_a.tex](ascolormap).pc_tex
-003BCA79D82140A5.TEXT - 16829648291840165 - [assembly:/_pro/environment/textures/constants/gradient_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-007391AF31833F73.TEXT - 32529803957714803 - [assembly:/_pro/environment/textures/levels/gecko/gecko_floor_pattern_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00B9B00F95ADD78B.TEXT - 52266451673667467 - [assembly:/_pro/environment/textures/generic/floor/black_gold_marble_large.texture?/diffuse_a.tex](ascolormap).pc_tex
-00A99E5EE81F5B12.TEXT - 47743401522584338 - [assembly:/_pro/environment/textures/generic/floor/black_gold_marble_large.texture?/normal_a.tex](asnormalmap).pc_tex
-00436EFB90571FFC.TEXT - 18980850177089532 - [assembly:/_pro/environment/textures/generic/floor/black_gold_marble_large.texture?/specular_a.tex](ascolormap).pc_tex
-0028A5F94E4F4E8A.TEXT - 11441489247686282 - [assembly:/_pro/environment/textures/props/decorative/palm_tree_decorative_a.texture?/normal_a.tex](asnormalmap).pc_tex
-007DD4FB7A523A5B.TEXT - 35418548642921051 - [assembly:/_pro/environment/textures/props/decorative/palm_tree_decorative_a.texture?/specular_a.tex](ascolormap).pc_tex
-003685CF8F66CA6E.TEXT - 15346775252978286 - [assembly:/_pro/environment/textures/props/decorative/palm_tree_decorative_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00174C1AE7885DA0.TEXT - 6557602901679520 - [assembly:/_pro/environment/textures/decals/signs/gecko_art_installation_quotes_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00BC10708EBB8D92.TEXT - 52935371238641042 - [assembly:/_pro/environment/textures/decals/graffiti/smiley_face_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-0033D20BEDC13D6E.TEXT - 14586172487581038 - [assembly:/_pro/environment/textures/decals/graffiti/smiley_face_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00636206B5537863.TEXT - 27973803645827171 - [assembly:/_pro/environment/textures/decals/graffiti/smiley_face_a.texture?/specular_a.tex](ascolormap).pc_tex
-00416A937E667586.TEXT - 18413055199573382 - [assembly:/_pro/environment/textures/props/signs/emergency_parachute_container_graphics_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-003306CFA4B3F3B4.TEXT - 14362712703497140 - [assembly:/_pro/environment/textures/props/signs/emergency_parachute_container_graphics_a.texture?/normal_a.tex](asnormalmap).pc_tex
-0042C838E7236117.TEXT - 18797495184482583 - [assembly:/_pro/environment/textures/props/signs/emergency_parachute_container_graphics_a.texture?/specular_a.tex](ascolormap).pc_tex
-00E882C7802AA6C4.TEXT - 65445987957253828 - [assembly:/_pro/environment/textures/decals/logo_stingray_a.texture?/normal_a.tex](asnormalmap).pc_tex
-005C611C37E49A6F.TEXT - 26002471682087535 - [assembly:/_pro/environment/textures/decals/logo_stingray_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00570152C29E28CD.TEXT - 24489777937918157 - [assembly:/_pro/environment/textures/decals/logo_stingray_a.texture?/specular_a.tex](ascolormap).pc_tex
-00B1896AF036CBBE.TEXT - 49972163267447742 - [assembly:/_pro/environment/textures/props/accessories/bulldog_papers_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00B7485BF9AA7F17.TEXT - 51589480605974295 - [assembly:/_pro/environment/textures/props/accessories/bulldog_papers_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00E96119EF231996.TEXT - 65690433587714454 - [assembly:/_pro/environment/textures/props/accessories/bulldog_papers_a.texture?/specular_a.tex](ascolormap).pc_tex
-0046B2DC7D9B9F6B.TEXT - 19899908439646059 - [assembly:/_pro/environment/textures/props/decorative/club_khatavanga_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-006D49D59EFDD75F.TEXT - 30761954305759071 - [assembly:/_pro/environment/textures/props/decorative/club_khatavanga_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00249476779C7484.TEXT - 10296335695377540 - [assembly:/_pro/environment/textures/props/decorative/club_khatavanga_a.texture?/specular_a.tex](ascolormap).pc_tex
-008B8CA9F5C497A2.TEXT - 39279683363444642 - [assembly:/_pro/environment/textures/props/papers/postits_fox_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00704832C10CD3B8.TEXT - 31604580216001464 - [assembly:/_pro/items/textures/explosives/remoteflash_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-003974DC0374D238.TEXT - 16172561972122168 - [assembly:/_pro/items/textures/explosives/remoteflash_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00C9955411248B4A.TEXT - 56740658616240970 - [assembly:/_pro/items/textures/explosives/remoteflash_a.texture?/specular_a.tex](ascolormap).pc_tex
-001C937821DD5EC3.TEXT - 8043443521412803 - [assembly:/_pro/items/textures/explosives/remoteflash_a.texture?/emissive_a.tex](ascolormap).pc_tex
-00D95A60DB72E6D9.TEXT - 61179441991313113 - [assembly:/_pro/items/textures/quest/cigar_thief_note_a.texture?/normal_b.tex](asnormalmap).pc_tex
-00DD6449DADA5457.TEXT - 62316238220186711 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_receiver_a.texture?/normal_a.tex](asnormalmap).pc_tex
-0062AF9B646FD596.TEXT - 27777629657486742 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_receiver_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-007014E9A0EAC99C.TEXT - 31548191051270556 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_receiver_a.texture?/specular_a.tex](ascolormap).pc_tex
-00E4DBA0D58C78D3.TEXT - 64417778514032851 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_receiver_a.texture?/ao_a.tex](ascolormap).pc_tex
-003E0D509CDCDCF4.TEXT - 17466088436325620 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_trigger_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00B8B6C9B85448F3.TEXT - 51992373211973875 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_trigger_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-008276C70623FC9C.TEXT - 36722344145976476 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_trigger_a.texture?/specular_a.tex](ascolormap).pc_tex
-0044684F763F0147.TEXT - 19254988911870279 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_trigger_a.texture?/ao_a.tex](ascolormap).pc_tex
-009316C7802750D7.TEXT - 41401867680829655 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_stock_a.texture?/normal_a.tex](asnormalmap).pc_tex
-005BE890489C3D0E.TEXT - 25869929271803150 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_stock_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00428E5955D0CBD8.TEXT - 18733862805883864 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_stock_a.texture?/specular_a.tex](ascolormap).pc_tex
-00EF7892C6E8096F.TEXT - 67405091231500655 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_grip_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00BB8FB616C7533D.TEXT - 52793832873874237 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_grip_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00613C06668471B6.TEXT - 27369070928359862 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_grip_a.texture?/specular_a.tex](ascolormap).pc_tex
-00DA9EE36F533DBA.TEXT - 61536244585414074 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_heatguard_a.texture?/normal_a.tex](asnormalmap).pc_tex
-0010FC83BEA5355A.TEXT - 4781242396783962 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_heatguard_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-002B693D41656C29.TEXT - 12219135809645609 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_heatguard_a.texture?/specular_a.tex](ascolormap).pc_tex
-00C4F3F9A55944CB.TEXT - 55437348981785803 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_clip_a.texture?/normal_a.tex](asnormalmap).pc_tex
-0098FCF2BD7B8C0F.TEXT - 43062315951295503 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_clip_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00C7CA3FF0D04E69.TEXT - 56235896337354345 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_clip_a.texture?/specular_a.tex](ascolormap).pc_tex
-003860E4B480CEA3.TEXT - 15869134092947107 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_barrel_a.texture?/normal_a.tex](asnormalmap).pc_tex
-009E43C23AF5CC93.TEXT - 44547547812187283 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_barrel_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-000A649F8F4FBA5B.TEXT - 2925386234051163 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_barrel_a.texture?/specular_a.tex](ascolormap).pc_tex
-00D957FD55C2BF64.TEXT - 61176815523381092 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_muzzle_a.texture?/normal_a.tex](asnormalmap).pc_tex
-009AE06AD659686C.TEXT - 43593895880779884 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_muzzle_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00D4AA8625FCBEC6.TEXT - 59860188202319558 - [assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_muzzle_a.texture?/specular_a.tex](ascolormap).pc_tex
-00F39A4B08756471.TEXT - 68568066395825265 - [assembly:/_pro/environment/textures/decals/street/road_detail_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-001AA35B7E04DE13.TEXT - 7497962746076691 - [assembly:/_pro/environment/textures/decals/street/road_detail_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00AD91860FE6B118.TEXT - 48855175949365528 - [assembly:/_pro/environment/textures/decals/street/road_detail_a.texture?/specular_a.tex](ascolormap).pc_tex
-00FE6A28383CC15E.TEXT - 71611365059248478 - [assembly:/_pro/environment/textures/props/equipment/heatgun_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00C22EC0261E8996.TEXT - 54657548290001302 - [assembly:/_pro/environment/textures/props/equipment/heatgun_a.texture?/specular_a.tex](ascolormap).pc_tex
-0020EC1EF0A6AF53.TEXT - 9266816885370707 - [assembly:/_pro/environment/textures/props/equipment/heatgun_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00FDF8F41E6046A7.TEXT - 71486896473130663 - [assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_00.texture?/diffuse_a.tex](ascolormap).pc_tex
-00CB18EDFB9335EF.TEXT - 57166830679307759 - [assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_00.texture?/normal_a.tex](asnormalmap).pc_tex
-004359E671CAC435.TEXT - 18957669726078005 - [assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_00.texture?/specular_a.tex](ascolormap).pc_tex
-0032E2DFABF7F9F8.TEXT - 14323199126272504 - [assembly:/_pro/environment/textures/architecture/walls/miami_boundary_wall_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00B0E6C9E4B6DD4C.TEXT - 49793350701079884 - [assembly:/_pro/environment/textures/architecture/walls/miami_boundary_wall_a.texture?/normal_a.tex](asnormalmap).pc_tex
-004A1C48BB0DCEB9.TEXT - 20860246978055865 - [assembly:/_pro/environment/textures/architecture/walls/miami_boundary_wall_a.texture?/specular_a.tex](ascolormap).pc_tex
-006DAA229A0358F9.TEXT - 30867838050982137 - [assembly:/_pro/environment/textures/decals/dirt/moss_variation.texture?/diffuse_a.tex](ascolormap).pc_tex
-00A743866C8B1581.TEXT - 47080565736412545 - [assembly:/_pro/environment/textures/decals/dirt/moss_variation.texture?/height_a.tex](asheightmap).pc_tex
-00E4E438AD90560C.TEXT - 64427226771248652 - [assembly:/_pro/environment/textures/decals/dirt/moss_variation.texture?/specular_a.tex](ascolormap).pc_tex
-00E0D208CAD5E19F.TEXT - 63281329987772831 - [assembly:/_pro/environment/textures/decals/dirt/moss_variation.texture?/normal_a.tex](asnormalmap).pc_tex
-0012FC44A16FF564.TEXT - 5343921277236580 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_glass_decor.texture?/specular_a.tex](ascolormap).pc_tex
-0037BCABEF611214.TEXT - 15688570360631828 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_glass_decor.texture?/normal_a.tex](asnormalmap).pc_tex
-0023E1AC5B5AE90D.TEXT - 10099754568182029 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_glass_decor.texture?/diffuse_a.tex](ascolormap).pc_tex
-00B2437CB35E6F3B.TEXT - 50176748718812987 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_glass_decor.texture?/mask_a.tex](ascolormap).pc_tex
-005BA4531E6ACB14.TEXT - 25794899780225812 - [assembly:/_pro/environment/textures/generic/cloth/camo_net_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-004C819707F3E7F1.TEXT - 21534583903479793 - [assembly:/_pro/environment/textures/generic/cloth/camo_net_a.texture?/specular_a.tex](ascolormap).pc_tex
-0014FA788604AA88.TEXT - 5904895085685384 - [assembly:/_pro/environment/textures/generic/cloth/camo_net_a.texture?/normal_a.tex](asnormalmap).pc_tex
-0010506360CF0185.TEXT - 4591987383533957 - [assembly:/_pro/environment/textures/decals/seashells_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00B26889466AACCC.TEXT - 50217484655701196 - [assembly:/_pro/environment/textures/decals/seashells_a.texture?/height_a.tex](asheightmap).pc_tex
-00D1F1BFC28CAA6A.TEXT - 59094076037573226 - [assembly:/_pro/environment/textures/decals/seashells_a.texture?/specular_a.tex](ascolormap).pc_tex
-00FCA150401B3238.TEXT - 71109060176065080 - [assembly:/_pro/environment/textures/decals/seashells_a.texture?/normal_a.tex](asnormalmap).pc_tex
-002BBBF13C3F7185.TEXT - 12310068770861445 - [assembly:/_pro/environment/textures/decals/signs/it_posters_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-009CB67475FDC32F.TEXT - 44110707678888751 - [assembly:/_pro/environment/textures/decals/signs/it_posters_a.texture?/normal_a.tex](asnormalmap).pc_tex
-002168A708043451.TEXT - 9403740834772049 - [assembly:/_pro/characters/assets/individuals/seagull/dragoneye/textures/dragoneye_eye.texture?/specular_inner.tex](ascolormap).pc_tex
-00AEDB9F0F7D40A6.TEXT - 49218122153803942 - [assembly:/_pro/characters/assets/individuals/seagull/dragoneye/textures/dragoneye_eye.texture?/diffuse_blue.tex](ascolormap).pc_tex
-00C54EF1A555FEA9.TEXT - 55537370179960489 - [assembly:/_pro/environment/textures/decals/signs/hydraulic_warning_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00D1493161F6C051.TEXT - 58908746578313297 - [assembly:/_pro/environment/textures/decals/signs/hydraulic_warning_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00891BDDE8A0B7AA.TEXT - 38592711713929130 - [assembly:/_pro/environment/textures/decals/signs/hydraulic_warning_a.texture?/specular_a.tex](ascolormap).pc_tex
-00B967A20672ADB7.TEXT - 52186816282013111 - [assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_b.texture?/normal_a.tex](asnormalmap).pc_tex
-009F0BC724E42C80.TEXT - 44767471242325120 - [assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_b.texture?/specular_a.tex](ascolormap).pc_tex
-007CDECDBACD0501.TEXT - 35147872295781633 - [assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_b.texture?/diffuse_a.tex](ascolormap).pc_tex
-00AC9C86B21E3321.TEXT - 48585798322107169 - [assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00A847E5D2D81BA6.TEXT - 47366848497851302 - [assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_a.texture?/specular_a.tex](ascolormap).pc_tex
-000619248F66479D.TEXT - 1716494675625885 - [assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00AB6F4D888CEA17.TEXT - 48254599811623447 - [assembly:/_pro/environment/textures/props/leisure/golf_grass_mat_b.texture?/diffuse_a.tex](ascolormap).pc_tex
-004860891902FEB5.TEXT - 20372340269579957 - [assembly:/_pro/environment/textures/props/leisure/golf_grass_mat_b.texture?/normal_a.tex](asnormalmap).pc_tex
-007C666DFE602CAA.TEXT - 35015519717305514 - [assembly:/_pro/environment/textures/props/leisure/golf_grass_mat_b.texture?/specular_a.tex](ascolormap).pc_tex
-00E1D615BA863690.TEXT - 63567258571912848 - [assembly:/_pro/environment/textures/props/decorative/star_pattern_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00EA1FDDB2EDC9D6.TEXT - 65900181600455126 - [assembly:/_pro/environment/textures/props/signs/vholes_diploma_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00335FF056E8D9B8.TEXT - 14460709667133880 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_other_parts.texture?/diffuse_a.tex](ascolormap).pc_tex
-00FE27706D278FEE.TEXT - 71538007905636334 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_other_parts.texture?/normal_a.tex](asnormalmap).pc_tex
-008C16B1CCFF8891.TEXT - 39431449643813009 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_other_parts.texture?/specular_a.tex](ascolormap).pc_tex
-00F4F73805678923.TEXT - 68951714298300707 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_curtains.texture?/normal_a.tex](asnormalmap).pc_tex
-0024A098D2C66A82.TEXT - 10309677393275522 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_curtains.texture?/specular_a.tex](ascolormap).pc_tex
-00B6D07B32D5CFD4.TEXT - 51457673313767380 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_curtains.texture?/diffuse_a.tex](ascolormap).pc_tex
-00FAFA3478781234.TEXT - 70643847444042292 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_wood_decor.texture?/diffuse_a.tex](ascolormap).pc_tex
-0074D5766C1B7DF2.TEXT - 32885801895034354 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_wood_decor.texture?/normal_a.tex](asnormalmap).pc_tex
-00F9F5D4BE1076C7.TEXT - 70357563271575239 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_wood_decor.texture?/specular_a.tex](ascolormap).pc_tex
-002AEA87D0592FD3.TEXT - 12079818058837971 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_mumbai_colonial_upper_window_frame.texture?/diffuse_a.tex](ascolormap).pc_tex
-0067E7CF1B8DD64E.TEXT - 29246799307724366 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_mumbai_colonial_upper_window_frame.texture?/normal_a.tex](asnormalmap).pc_tex
-00D7D5DFD1F79426.TEXT - 60752277269877798 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_mumbai_colonial_upper_window_frame.texture?/specular_a.tex](ascolormap).pc_tex
-00322864501DC736.TEXT - 14118160141502262 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_decals_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-002A56032FCADCF4.TEXT - 11916520708562164 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_decals_b.texture?/diffuse_a.tex](ascolormap).pc_tex
-00EFCBDB3D8D0845.TEXT - 67496661924776005 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_carpet.texture?/diffuse_a.tex](ascolormap).pc_tex
-0088C006F6B5E667.TEXT - 38491732974102119 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_carpet.texture?/normal_a.tex](asnormalmap).pc_tex
-004D8E01488CC6C2.TEXT - 21829709370017474 - [assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_carpet.texture?/specular_a.tex](ascolormap).pc_tex
-00C05AD38A32C134.TEXT - 54143060131627316 - [assembly:/_pro/environment/textures/generic/floor/columbia_floor_tiles_a.texture?/normal_a.tex](asnormalmap).pc_tex
-009572ED6CD0CFE3.TEXT - 42066135588327395 - [assembly:/_pro/environment/textures/generic/floor/columbia_floor_tiles_a.texture?/specular_a.tex](ascolormap).pc_tex
-0093256460320A5B.TEXT - 41417934617315931 - [assembly:/_pro/environment/textures/generic/floor/columbia_floor_tiles_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00CBDE09334E4E17.TEXT - 57383551369104919 - [assembly:/_pro/environment/textures/props/utensils/race_cup_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00DFE3C33A36FDBD.TEXT - 63019347441286589 - [assembly:/_pro/environment/textures/props/utensils/race_cup_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00C43B2B59837A6E.TEXT - 55234152806709870 - [assembly:/_pro/environment/textures/props/utensils/race_cup_a.texture?/specular_a.tex](ascolormap).pc_tex
-004F5E5ABD12C99B.TEXT - 22340266972334491 - [assembly:/_pro/environment/textures/props/electronics/hot_cabinet_details_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-0035007E99C2CD7B.TEXT - 14918717511224699 - [assembly:/_pro/environment/textures/props/electronics/hot_cabinet_details_a.texture?/normal_a.tex](asnormalmap).pc_tex
-009E767A53442128.TEXT - 44603314075345192 - [assembly:/_pro/environment/textures/props/electronics/hot_cabinet_details_a.texture?/specular_a.tex](ascolormap).pc_tex
-00A9FDC4ABA47FE2.TEXT - 47848292199202786 - [assembly:/_pro/environment/textures/props/electronics/hot_cabinet_details_a.texture?/emissive_a.tex](ascolormap).pc_tex
-0033CDC1324B6B48.TEXT - 14581453468429128 - [assembly:/_pro/environment/textures/decals/signs/kronstadt_emissive_logo_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00F256EC01A5BCD4.TEXT - 68212516003888340 - [assembly:/_pro/environment/textures/decals/signs/kronstadt_emissive_logo_a.texture?/emissive_a.tex](ascolormap).pc_tex
-00A95C9178DDE946.TEXT - 47671050931923270 - [assembly:/_pro/environment/textures/props/decorative/miami_banner_podium_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-0015AC01D782AE4A.TEXT - 6100098421534282 - [assembly:/_pro/environment/textures/generic/cloth/shade_sails_a_color.texture?/diffuse_a.tex](ascolormap).pc_tex
-00DF990DD86E3E98.TEXT - 62937204551204504 - [assembly:/_pro/environment/textures/generic/ground/tiles_marble_publicsquare_serviceaccess_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00D3FF5089C64FFA.TEXT - 59671941459890170 - [assembly:/_pro/environment/textures/generic/ground/tiles_marble_publicsquare_serviceaccess_a.texture?/normal_a.tex](asnormalmap).pc_tex
-003C7CBAC0E112F0.TEXT - 17025640144376560 - [assembly:/_pro/environment/textures/generic/ground/tiles_marble_publicsquare_serviceaccess_a.texture?/specular_a.tex](ascolormap).pc_tex
-00A8706567D73D75.TEXT - 47411376923557237 - [assembly:/_pro/environment/textures/generic/cloth/shade_sails_a_color.texture?/specular_a.tex](ascolormap).pc_tex
-00D37D5FE7727D34.TEXT - 59529070944353588 - [assembly:/_pro/effects/textures/screen/fx_screen_miami_scanner.texture?/emissive_a.tex](ascolormap).pc_tex
-0029B94FBC92E44D.TEXT - 11744226162435149 - [assembly:/_pro/environment/textures/props/papers/miami_newspaper_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-005A724128487E27.TEXT - 25458372078239271 - [assembly:/_pro/environment/textures/props/papers/miami_newspaper_a.texture?/specular_a.tex](ascolormap).pc_tex
-006C1919D3B31B09.TEXT - 30426896201358089 - [assembly:/_pro/environment/textures/decals/logos/gir_event_map_b.texture?/diffuse_a.tex](ascolormap).pc_tex
-00C9B0631BA38A77.TEXT - 56770410030795383 - [assembly:/_pro/environment/textures/props/papers/miami_newspaper_a.texture?/normal_a.tex](asnormalmap).pc_tex
-0093D34C799DDED4.TEXT - 41609146987830996 - [assembly:/_pro/environment/textures/props/decorative/sculpture_table_horse_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00AB4F922CA1F149.TEXT - 48219710250152265 - [assembly:/_pro/environment/textures/props/decorative/sculpture_table_horse_a.texture?/normal_a.tex](asnormalmap).pc_tex
-000AA8B7697C6C6A.TEXT - 3000255469349994 - [assembly:/_pro/environment/textures/props/decorative/sculpture_table_horse_a.texture?/specular_a.tex](ascolormap).pc_tex
-00457F89852B5391.TEXT - 19562002014491537 - [assembly:/_pro/characters/assets/_apparel/accessories/misc/textures/blindfold.texture?/normal_a.tex](asnormalmap).pc_tex
-00618A494D8292C1.TEXT - 27455120178582209 - [assembly:/_pro/characters/assets/_apparel/accessories/misc/textures/blindfold.texture?/specular_a.tex](ascolormap).pc_tex
-00DE41FE3BDFB271.TEXT - 62560005011780209 - [assembly:/_pro/characters/assets/_apparel/accessories/misc/textures/blindfold.texture?/diffuse_a.tex](ascolormap).pc_tex
-006AF4B226C5C3A1.TEXT - 30105393523180449 - [assembly:/_pro/environment/textures/architecture/arches/sihsha_back_arch_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00D978F8F6840F09.TEXT - 61213080629284617 - [assembly:/_pro/environment/textures/architecture/arches/sihsha_back_arch_a.texture?/normal_a.tex](asnormalmap).pc_tex
-0060F3D85183B2E8.TEXT - 27289708170293992 - [assembly:/_pro/environment/textures/architecture/arches/sihsha_back_arch_a.texture?/specular_a.tex](ascolormap).pc_tex
-00EE8D0574FF420B.TEXT - 67146099034374667 - [assembly:/_pro/environment/textures/architecture/arches/japanese_arch_wood_a.texture?/specular_a.tex](ascolormap).pc_tex
-005D93D590B82678.TEXT - 26339718299395704 - [assembly:/_pro/environment/textures/architecture/arches/japanese_arch_wood_a.texture?/normal_a.tex](asnormalmap).pc_tex
-005C03D4E3F955F2.TEXT - 25899910750098930 - [assembly:/_pro/environment/textures/generic/metal/magpie_gold_old_a.texture?/specular_a.tex](ascolormap).pc_tex
-0063BFF67A842B8F.TEXT - 28077088032697231 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shoes_01.texture?/normal_a.tex](asnormalmap).pc_tex
-00F90048CFABCF3F.TEXT - 70087581922742079 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shoes_01.texture?/specular_a.tex](ascolormap).pc_tex
-005BC885F73C6E2A.TEXT - 25834700584807978 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shoes_01.texture?/diffuse_a.tex](ascolormap).pc_tex
-002FED7566F5B0F0.TEXT - 13490412399735024 - [assembly:/_pro/environment/textures/props/signs/bus_timetable_fox_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00894A68F6BEA493.TEXT - 38643886486103187 - [assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-001A207BCE5B50D7.TEXT - 7354065509634263 - [assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_a.texture?/normal_a.tex](asnormalmap).pc_tex
-001E30449975F22D.TEXT - 8497320491872813 - [assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_a.texture?/specular_a.tex](ascolormap).pc_tex
-00EE2835FC44E0CF.TEXT - 67035256787886287 - [assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_b.texture?/diffuse_a.tex](ascolormap).pc_tex
-00A7BF8EAEE88152.TEXT - 47216940651413842 - [assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_b.texture?/normal_a.tex](asnormalmap).pc_tex
-006AE91F332FDBCD.TEXT - 30092667743361997 - [assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_b.texture?/specular_a.tex](ascolormap).pc_tex
-000C0E71A725AAA3.TEXT - 3393581018884771 - [assembly:/_pro/environment/textures/decals/graffiti/berlin_graffiti_peeled_paint_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00173FE8EA796599.TEXT - 6544194063132057 - [assembly:/_pro/environment/textures/decals/markings/scifi_panel_lines_wet_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00454AD0910E1D04.TEXT - 19504033040309508 - [assembly:/_pro/environment/textures/decals/markings/scifi_panel_lines_wet_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00C42E3F6C7114FD.TEXT - 55219945372456189 - [assembly:/_pro/environment/textures/decals/markings/scifi_panel_lines_wet_a.texture?/emissive_a.tex](ascolormap).pc_tex
-00CBDAC0D4254B1F.TEXT - 57379942000053023 - [assembly:/_pro/effects/textures/misc/fx_par_airplane.texture?/mask_a.tex](ascolormap).pc_tex
-00EFB0B348B484B6.TEXT - 67466803499271350 - [assembly:/_pro/effects/textures/misc/fx_par_airplane.texture?/normal_a.tex](asnormalmap).pc_tex
-001AC6A90FA48AB3.TEXT - 7536778808691379 - [assembly:/_pro/environment/textures/architecture/arches/japanese_arch_wood_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-0032A7179C513DA7.TEXT - 14257468684189095 - [assembly:/_pro/environment/textures/generic/ice/snow_wall_a.texture?/specular_a.tex](ascolormap).pc_tex
-00AFD1ECD55874E8.TEXT - 49488936046195944 - [assembly:/_pro/environment/textures/generic/ice/snow_wall_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00B5B6C3A566F13A.TEXT - 51147922194493754 - [assembly:/_pro/environment/textures/generic/ice/snow_wall_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-009EA01DA0E34E8E.TEXT - 44649095434030734 - [assembly:/_pro/environment/textures/generic/rock/firepit_stones_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-009047052B9D91B3.TEXT - 40610484178489779 - [assembly:/_pro/environment/textures/generic/rock/firepit_stones_a.texture?/specular_a.tex](ascolormap).pc_tex
-00E0FA1C42D35E5D.TEXT - 63325394070363741 - [assembly:/_pro/environment/textures/generic/rock/firepit_stones_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00474AED66411911.TEXT - 20067106829703441 - [assembly:/_pro/environment/textures/props/signs/fruitking_sign.texture?/diffuse_a.tex](ascolormap).pc_tex
-006B6353A8B68BA9.TEXT - 30227033472011177 - [assembly:/_pro/environment/textures/props/signs/fruitking_sign.texture?/normal_a.tex](asnormalmap).pc_tex
-00295F60A43C832D.TEXT - 11645342722065197 - [assembly:/_pro/environment/textures/props/signs/fruitking_sign.texture?/specular_a.tex](ascolormap).pc_tex
-0083781D2089F068.TEXT - 37005288444391528 - [assembly:/_pro/environment/textures/props/farmhouse_props/hay_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00C98E39AE74A527.TEXT - 56732848710001959 - [assembly:/_pro/environment/textures/props/farmhouse_props/hay_a.texture?/height_a.tex](asheightmap).pc_tex
-00BF4AC1D3F9EF4C.TEXT - 53843916897251148 - [assembly:/_pro/environment/textures/props/farmhouse_props/hay_a.texture?/normal_a.tex](asnormalmap).pc_tex
-0083D1C14163B05A.TEXT - 37103849905041498 - [assembly:/_pro/environment/textures/decals/graffiti/colorado_rabies_text_decals_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-0081F4F413C6191C.TEXT - 36579601136621852 - [assembly:/_pro/environment/textures/decals/graffiti/colorado_rabies_text_decals_a.texture?/specular_a.tex](ascolormap).pc_tex
-00290951A8FCBA2B.TEXT - 11550720377272875 - [assembly:/_pro/environment/textures/generic/stone/granite_trim_a.texture?/specular_a.tex](ascolormap).pc_tex
-006CF178B651F342.TEXT - 30664798241944386 - [assembly:/_pro/environment/textures/generic/stone/granite_trim_a.texture?/normal_a.tex](asnormalmap).pc_tex
-0091EA605CA23BA2.TEXT - 41071571214941090 - [assembly:/_pro/environment/textures/generic/stone/granite_trim_a.texture?/diffuse_c.tex](ascolormap).pc_tex
-002BD4743F21C3B9.TEXT - 12337019739030457 - [assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_zika.texture?/diffuse_a.tex](ascolormap).pc_tex
-00DE0D22720C3DE4.TEXT - 62501886423219684 - [assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_zika.texture?/normal_a.tex](asnormalmap).pc_tex
-00AD033A0EE296E6.TEXT - 48698718863660774 - [assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_zika.texture?/specular_a.tex](ascolormap).pc_tex
-0009696C8DD106A7.TEXT - 2649189747066535 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_apron_01.texture?/normal_a.tex](asnormalmap).pc_tex
-004B94E60366AE72.TEXT - 21274338873749106 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_apron_01.texture?/specular_a.tex](ascolormap).pc_tex
-001D18E0BB5A2AFA.TEXT - 8190127819598586 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_apron_01.texture?/diffuse_a.tex](ascolormap).pc_tex
-00923A5C91A7167D.TEXT - 41159515854804605 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_belt_01.texture?/normal_a.tex](asnormalmap).pc_tex
-00A73B97F2FA784E.TEXT - 47071844913281102 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_belt_01.texture?/specular_a.tex](ascolormap).pc_tex
-00F39AA65136CC4C.TEXT - 68568458458483788 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_belt_01.texture?/diffuse_a.tex](ascolormap).pc_tex
-003B2E76AC9C74F5.TEXT - 16658110862882037 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shirt_01.texture?/normal_a.tex](asnormalmap).pc_tex
-001EEAA74B44D82F.TEXT - 8702253544560687 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shirt_01.texture?/specular_a.tex](ascolormap).pc_tex
-00C79F1A5D5DCE0B.TEXT - 56188455949815307 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shirt_01.texture?/diffuse_a.tex](ascolormap).pc_tex
-00FC27070CF94A01.TEXT - 70974605367003649 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shoes.texture?/normal_a.tex](asnormalmap).pc_tex
-008C197116566AE0.TEXT - 39434470236252896 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shoes.texture?/specular_a.tex](ascolormap).pc_tex
-008A2CCE6F81FC53.TEXT - 38892811931745363 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shoes.texture?/diffuse_a.tex](ascolormap).pc_tex
-003475397135DC3D.TEXT - 14765588361894973 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_belt.texture?/normal_a.tex](asnormalmap).pc_tex
-00C922514BB7D0AA.TEXT - 56614202876874922 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_belt.texture?/specular_a.tex](ascolormap).pc_tex
-00ADF7ED193EAC25.TEXT - 48967768673791013 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_belt.texture?/diffuse_a.tex](ascolormap).pc_tex
-003AB96A16E15753.TEXT - 16529413950756691 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_apron.texture?/normal_a.tex](asnormalmap).pc_tex
-00F7075330B93735.TEXT - 69532373128656693 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_apron.texture?/specular_a.tex](ascolormap).pc_tex
-0021C9161E16B00F.TEXT - 9509771062718479 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_apron.texture?/diffuse_a.tex](ascolormap).pc_tex
-00FB9DB9F52A3AFC.TEXT - 70823641162070780 - [assembly:/_pro/environment/textures/generic/cloth/camo_net_a.texture?/emissive_a.tex](ascolormap).pc_tex
-00E047C46152C193.TEXT - 63129303555162515 - [assembly:/_pro/environment/textures/architecture/decorative/catacombs_wall_b_decal_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00079AA46C5268CA.TEXT - 2140355819628746 - [assembly:/_pro/environment/textures/architecture/decorative/catacombs_wall_b_decal_a.texture?/normal_a.tex](asnormalmap).pc_tex
-0095B356A36F070E.TEXT - 42136956220409614 - [assembly:/_pro/environment/textures/architecture/decorative/catacombs_wall_b_decal_a.texture?/specular_a.tex](ascolormap).pc_tex
-004C24E1C29300F1.TEXT - 21432650280665329 - [assembly:/_pro/environment/textures/props/signs/wetfloor_sign_italian_decals_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-0013CFB8E9A40532.TEXT - 5576417658275122 - [assembly:/_pro/environment/textures/props/signs/wetfloor_sign_italian_decals_a.texture?/specular_a.tex](ascolormap).pc_tex
-00E4843B5F7C4C15.TEXT - 64321685229947925 - [assembly:/_pro/environment/textures/props/signs/signage_wine_shop_chalk_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-002F30513E426BEA.TEXT - 13282449400425450 - [assembly:/_pro/environment/textures/props/signs/signage_wine_shop_chalk_a.texture?/specular_a.tex](ascolormap).pc_tex
-002D26A18DF0BBFD.TEXT - 12708849264933885 - [assembly:/_pro/environment/textures/props/movieset/movieset_trailers_a_glass.texture?/specular_a.tex](ascolormap).pc_tex
-001468F6D501457E.TEXT - 5744908879086974 - [assembly:/_pro/environment/textures/props/movieset/movieset_trailers_a_glass.texture?/diffuse_a.tex](asnormalmap).pc_tex
-004DAC34233302C7.TEXT - 21862913135542983 - [assembly:/_pro/environment/textures/props/signs/constructionsign_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00EE651DFC3DBF9A.TEXT - 67102223917498266 - [assembly:/_pro/environment/textures/props/signs/constructionsign_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00F6FF6E40E6B3E8.TEXT - 69523693271167976 - [assembly:/_pro/environment/textures/props/signs/constructionsign_a.texture?/specular_a.tex](ascolormap).pc_tex
-00927DAD40F18E7A.TEXT - 41233529672142458 - [assembly:/_pro/environment/textures/props/signs/constructionsign_a.texture?/emissive_a.tex](ascolormap).pc_tex
-00B608D0B05F9182.TEXT - 51238138166612354 - [assembly:/_pro/_test/nigela/textures/xmas/xmas_tinsel_square.texture?/diffuse_a.tex](ascolormap).pc_tex
-00552FE3DB099B11.TEXT - 23978028699327249 - [assembly:/_pro/_test/nigela/textures/xmas/xmas_tinsel_square.texture?/normal_a.tex](asnormalmap).pc_tex
-00EFD7A65E810942.TEXT - 67509628983904578 - [assembly:/_pro/environment/textures/foliage/banyan_cluster_a.texture?/translucency_a.tex](ascolormap).pc_tex
-00668C82F821F05F.TEXT - 28864941761097823 - [assembly:/_pro/environment/textures/foliage/banyan_cluster_a_bare.texture?/translucency_a.tex](ascolormap).pc_tex
-002F31AE209A5678.TEXT - 13283947846456952 - [assembly:/_pro/environment/textures/props/decorative/pirate_banner_a.texture?/specular_a.tex](ascolormap).pc_tex
-00D83748EEA04630.TEXT - 60859381350155824 - [assembly:/_pro/environment/textures/props/decorative/pirate_banner_a.texture?/normal_a.tex](asnormalmap).pc_tex
-0006192725C38ACB.TEXT - 1716505788254923 - [assembly:/_pro/environment/textures/props/decorative/pirate_banner_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-006C3D6BD9D23524.TEXT - 30466830909977892 - [assembly:/textures/props/general/instrument_sitar_01.texture?/diffuse_a.tex](ascolormap).pc_tex
-000FA1B4B9F88BA8.TEXT - 4399922236918696 - [assembly:/textures/props/general/instrument_sitar_01.texture?/normal_a.tex](asnormalmap).pc_tex
-009A4AAF48CA9730.TEXT - 43429263114409776 - [assembly:/_pro/environment/textures/levels/bulldog/bulldog_four_icons_a.texture?/normal_a.tex](asnormalmap).pc_tex
-002BD91D67E95E24.TEXT - 12342144319184420 - [assembly:/_pro/environment/textures/levels/bulldog/bulldog_four_icons_a.texture?/specular_a.tex](ascolormap).pc_tex
-00DC0C26810395DB.TEXT - 61937854389130715 - [assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_last_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-001B2165F4143564.TEXT - 7636546141566308 - [assembly:/_pro/environment/textures/levels/bulldog/bulldog_four_icons_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00C77E29365CE2ED.TEXT - 56152235836236525 - [assembly:/_pro/environment/textures/props/food/apple_crate_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00F3D459D3F94DCF.TEXT - 68631901614198223 - [assembly:/_pro/environment/textures/props/food/apple_crate_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00BCAE6FC7ED72FE.TEXT - 53109090740433662 - [assembly:/_pro/environment/textures/props/food/apple_crate_a.texture?/specular_a.tex](ascolormap).pc_tex
-008A3B718324EB25.TEXT - 38908905503648549 - [assembly:/_pro/environment/textures/decals/logos/biker_gang_logo_fox_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-0070441747FC5E28.TEXT - 31600064174251560 - [assembly:/_pro/environment/textures/decals/logos/biker_gang_logo_fox_a.texture?/specular_a.tex](ascolormap).pc_tex
-0047A5C029547A46.TEXT - 20166968092162630 - [assembly:/_pro/vehicles/textures/scooter_a/food_delivery_scooter_keyhole_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-0058E57BB417418D.TEXT - 25022117415698829 - [assembly:/_pro/vehicles/textures/scooter_a/food_delivery_scooter_keyhole_a.texture?/normal_a.tex](asnormalmap).pc_tex
-004BD48020F61FF6.TEXT - 21344270027202550 - [assembly:/_pro/vehicles/textures/scooter_a/food_delivery_scooter_keyhole_a.texture?/specular_a.tex](ascolormap).pc_tex
-00FAF9B03F989581.TEXT - 70643279554188673 - [assembly:/_pro/environment/textures/foliage/grapevine_a/grapecluster_b_item.texture?/ao_a.tex](ascolormap).pc_tex
-00FAE3957B57BD7D.TEXT - 70618975336643965 - [assembly:/_pro/environment/textures/foliage/grapevine_a/grapecluster_b_item.texture?/normal_a.tex](asnormalmap).pc_tex
-00527D147DA955F9.TEXT - 23218475051341305 - [assembly:/_pro/environment/textures/foliage/grapevine_a/grapecluster_b_item.texture?/specular_a.tex](ascolormap).pc_tex
-00492924B427FDEE.TEXT - 20592910917959150 - [assembly:/_pro/environment/textures/foliage/grapevine_a/grapecluster_b_item.texture?/diffuse_a.tex](ascolormap).pc_tex
-0090D18704974C9D.TEXT - 40762774474149021 - [assembly:/_pro/environment/textures/foliage/grapevine_a/grapematerial_a.texture?/normal_a.tex](asnormalmap).pc_tex
-004EBFB29E4C5BCC.TEXT - 22165822064319436 - [assembly:/_pro/environment/textures/foliage/grapevine_a/grapematerial_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00CB908CB1B8D23E.TEXT - 57298354223764030 - [assembly:/_pro/environment/textures/foliage/grapevine_a/grapematerial_a.texture?/height_a.tex](asheightmap).pc_tex
-002F2857D928DD47.TEXT - 13273681676000583 - [assembly:/_pro/environment/textures/foliage/grapevine_a/grapematerial_a.texture?/specular_a.tex](ascolormap).pc_tex
-002F3BE0FFFA6D89.TEXT - 13295161458716041 - [assembly:/_pro/environment/textures/props/signs/llama_qr_code.texture?/diffuse_a.tex](ascolormap).pc_tex
-004C5AAE9AFC22FB.TEXT - 21491804201034491 - [assembly:/_pro/environment/textures/props/signs/llama_qr_code.texture?/normal_a.tex](asnormalmap).pc_tex
-00428EA29798F730.TEXT - 18734177442133808 - [assembly:/_pro/environment/textures/props/signs/llama_qr_code.texture?/specular_a.tex](ascolormap).pc_tex
-005C36B0234DEFC6.TEXT - 25955827991834566 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod.texture?/diffuse_a.tex](ascolormap).pc_tex
-000E95F7D6DC9418.TEXT - 4105541368189976 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod.texture?/normal_a.tex](asnormalmap).pc_tex
-005431B913C6456B.TEXT - 23698569014166891 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod.texture?/specular_a.tex](ascolormap).pc_tex
-00053667D0747BC2.TEXT - 1467194390379458 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod.texture?/emissive_a.tex](ascolormap).pc_tex
-00E21FF233B3533B.TEXT - 63648469846545211 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_color.texture?/diffuse_a.tex](ascolormap).pc_tex
-0050CB6EE3834DBF.TEXT - 22741675260726719 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_color.texture?/normal_a.tex](asnormalmap).pc_tex
-00BD53ECC5E3714E.TEXT - 53291046995718478 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_color.texture?/specular_a.tex](ascolormap).pc_tex
-009272737B3C578C.TEXT - 41221186914113420 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_color.texture?/emissive_a.tex](ascolormap).pc_tex
-00964439DC483080.TEXT - 42296261806141568 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_concrete.texture?/diffuse_a.tex](ascolormap).pc_tex
-00B2EBF278AF5454.TEXT - 50361972493866068 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_concrete.texture?/normal_a.tex](asnormalmap).pc_tex
-00A2260BF7990D24.TEXT - 45640779067624740 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_concrete.texture?/specular_a.tex](ascolormap).pc_tex
-00CC0781D3C9CFA6.TEXT - 57429149434367910 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_concrete.texture?/emissive_a.tex](ascolormap).pc_tex
-0058E6C391C16F68.TEXT - 25023525588922216 - [assembly:/_pro/environment/textures/props/accessories/mouse_mat_ica_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-001FCCD41AFFBD6E.TEXT - 8950935636131182 - [assembly:/_pro/environment/textures/props/accessories/mouse_mat_ica_a.texture?/normal_a.tex](asnormalmap).pc_tex
-0057D149151EA45F.TEXT - 24718434790974559 - [assembly:/_pro/environment/textures/props/accessories/mouse_mat_ica_a.texture?/specular_a.tex](ascolormap).pc_tex
-00F2327CEBB9426A.TEXT - 68172456476099178 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_tiles.texture?/diffuse_a.tex](ascolormap).pc_tex
-006317BF19925391.TEXT - 27892132229567377 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_tiles.texture?/normal_a.tex](asnormalmap).pc_tex
-004261084FD23E48.TEXT - 18684036789714504 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_tiles.texture?/specular_a.tex](ascolormap).pc_tex
-00D8B871005200E6.TEXT - 61001390445691110 - [assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_tiles.texture?/emissive_a.tex](ascolormap).pc_tex
-002ED7ECE1253A6A.TEXT - 13185261318257258 - [assembly:/_pro/environment/textures/levels/wet/lockers_facility_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-00E1D6294C237E73.TEXT - 63567342619295347 - [assembly:/_pro/environment/textures/levels/wet/lockers_facility_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00202D1D1716ED83.TEXT - 9056802219421059 - [assembly:/_pro/environment/textures/levels/wet/lockers_facility_a.texture?/specular_a.tex](ascolormap).pc_tex
-00E2E4657F879199.TEXT - 63864469319029145 - [assembly:/_pro/environment/textures/levels/wet/aluminium_brushed_circular_copper.texture?/diffuse_a.tex](ascolormap).pc_tex
-00DEFD3FC0BD5A3D.TEXT - 62765895088167485 - [assembly:/_pro/environment/textures/levels/wet/aluminium_brushed_circular_copper.texture?/normal_a.tex](asnormalmap).pc_tex
-009FB7CBEB6F4F1B.TEXT - 44956607753178907 - [assembly:/_pro/environment/textures/levels/wet/aluminium_brushed_circular_copper.texture?/specular_a.tex](ascolormap).pc_tex
-00E0CE49158C4875.TEXT - 63277208072636533 - [assembly:/_pro/environment/textures/levels/wet/posters_rat_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-0063601D5FDECCE8.TEXT - 27971701973109992 - [assembly:/_pro/environment/textures/levels/wet/posters_rat_a.texture?/normal_a.tex](asnormalmap).pc_tex
-00F6C23D47ADD6D3.TEXT - 69456412722190035 - [assembly:/_pro/environment/textures/levels/wet/posters_rat_a.texture?/specular_a.tex](ascolormap).pc_tex
-00D66D39CC037939.TEXT - 60355740019423545 - [assembly:/_pro/effects/textures/screen/fx_screen_miami_robot.texture?/emissive_a.tex](ascolormap).pc_tex
-00963BA69A605832.TEXT - 42286833247213618 - [assembly:/_pro/environment/textures/decals/logos/prxe_tv.texture?/diffuse_a.tex](ascolormap).pc_tex
-00A39C4CB6D62BC3.TEXT - 46052274502773699 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shirt.texture?/normal_a.tex](asnormalmap).pc_tex
-00655071EF61A2B2.TEXT - 28517422925456050 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shirt.texture?/specular_a.tex](ascolormap).pc_tex
-003FF7CEA21D8AA9.TEXT - 18005390387940009 - [assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shirt.texture?/diffuse_a.tex](ascolormap).pc_tex
-009EA4A01B8DB3CB.TEXT - 44654053884277707 - [assembly:/_pro/environment/textures/generic/metal/magpie_gold_old_a.texture?/diffuse_a.tex](ascolormap).pc_tex
-0056AA81981AB317.TEXT - 24394321576506135 - [assembly:/_pro/environment/textures/generic/metal/magpie_gold_old_a.texture?/normal_a.tex](asnormalmap).pc_tex
-004EAF3C0AAB2887.TEXT - 22147720595318919 - [assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons.texture?/diffuse_a.tex](ascolormap).pc_tex
-0008D5EACFD788BC.TEXT - 2487004299757756 - [assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons.texture?/normal_a.tex](asnormalmap).pc_tex
-0030F7569F727AC0.TEXT - 13782750296439488 - [assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons.texture?/specular_a.tex](ascolormap).pc_tex
-00C7F725E057C18B.TEXT - 56285262415118731 - [assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons.texture?/emissive_a.tex](ascolormap).pc_tex
-00C323EC333405FA.TEXT - 54927117836879354 - [assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons_glass.texture?/normal_a.tex](asnormalmap).pc_tex
-00790B09D9BFE8ED.TEXT - 34070609117833453 - [assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons_glass.texture?/diffuse_a.tex](ascolormap).pc_tex
+00F09746DA4C1726.TEXT,[assembly:/_pro/items/textures/firearms/frames/pistol_ica19_a/spraycan_silencer_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00EDAEC66FB51831.TEXT,[assembly:/_pro/items/textures/firearms/frames/pistol_ica19_a/spraycan_silencer_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00F4881BEC2D87F1.TEXT,[assembly:/_pro/items/textures/firearms/frames/pistol_ica19_a/spraycan_silencer_a.texture?/specular_a.tex](ascolormap).pc_tex
+0012F37036C58789.TEXT,[assembly:/_pro/items/textures/firearms/frames/pistol_ica19_a/spraycan_silencer_a.texture?/ao_a.tex](ascolormap).pc_tex
+006F31A1519BE81E.TEXT,[assembly:/_pro/environment/textures/props/electronic/radio_transmitter_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00CCFB1532619621.TEXT,[assembly:/_pro/environment/textures/props/electronic/radio_transmitter_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00E50F7355E60447.TEXT,[assembly:/_pro/environment/textures/props/electronic/radio_transmitter_a.texture?/specular_a.tex](ascolormap).pc_tex
+00B9BAC5DBDAD20D.TEXT,[assembly:/_pro/environment/textures/props/electronic/radio_transmitter_a.texture?/emissive_a.tex](ascolormap).pc_tex
+00292E88B5BC7293.TEXT,[assembly:/_pro/items/textures/melee/nylon_string_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+008EC48DCEFCADD3.TEXT,[assembly:/_pro/items/textures/melee/nylon_string_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00C4743CE7B912F3.TEXT,[assembly:/_pro/items/textures/melee/nylon_string_a.texture?/specular_a.tex](ascolormap).pc_tex
+00885C08FCEC9E06.TEXT,[assembly:/_pro/environment/textures/props/office_props/burj_al_ghazali_pamphlet_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+004BBD4A4ACEE68B.TEXT,[assembly:/_pro/environment/textures/props/office_props/burj_al_ghazali_pamphlet_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00459E2F0680BC17.TEXT,[assembly:/_pro/environment/textures/props/office_props/burj_al_ghazali_pamphlet_a.texture?/specular_a.tex](ascolormap).pc_tex
+00556825A9131D9F.TEXT,[assembly:/_pro/environment/textures/props/decorative/scaffold_tileset_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00F7C032E65DD846.TEXT,[assembly:/_pro/environment/textures/props/decorative/scaffold_tileset_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00BBE41C82523357.TEXT,[assembly:/_pro/environment/textures/props/decorative/scaffold_tileset_a.texture?/specular_a.tex](ascolormap).pc_tex
+00F3E4E9F008C8FF.TEXT,[assembly:/_pro/environment/textures/decals/logos/typewriter_keys_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00CE1D855ED4B40C.TEXT,[assembly:/_pro/environment/textures/decals/logos/typewriter_keys_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00EF1A55B10F9894.TEXT,[assembly:/_pro/environment/textures/decals/logos/typewriter_keys_a.texture?/specular_a.tex](ascolormap).pc_tex
+004E97865EAF0E5A.TEXT,[assembly:/_pro/environment/textures/props/lights/led_trim_light.texture?/diffuse_a.tex](ascolormap).pc_tex
+0015823B4C17E2F5.TEXT,[assembly:/_pro/environment/textures/props/lights/led_trim_light.texture?/normal_a.tex](asnormalmap).pc_tex
+0037B758AA931074.TEXT,[assembly:/_pro/environment/textures/props/lights/led_trim_light.texture?/specular_a.tex](ascolormap).pc_tex
+0022F77A76C19ECC.TEXT,[assembly:/_pro/environment/textures/props/lights/led_trim_light.texture?/emissive_a.tex](ascolormap).pc_tex
+00C66E3E9D80E5DB.TEXT,[assembly:/_pro/environment/textures/decals/decoration/gecko_decorative_leaf_band_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00E7C78EC1EB13CE.TEXT,[assembly:/_pro/environment/textures/decals/decoration/gecko_decorative_leaf_band_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00B8FFCC69C1BAE8.TEXT,[assembly:/_pro/environment/textures/decals/decoration/gecko_decorative_leaf_band_a.texture?/specular_a.tex](ascolormap).pc_tex
+00DC2E46550ADB4F.TEXT,[assembly:/_pro/environment/textures/props/shop_props/medina_shopfront_c.texture?/diffuse_a.tex](ascolormap).pc_tex
+000E3317C73E7820.TEXT,[assembly:/_pro/environment/textures/props/shop_props/medina_shopfront_c.texture?/normal_a.tex](asnormalmap).pc_tex
+00D95D5FA7505BEA.TEXT,[assembly:/_pro/environment/textures/props/shop_props/medina_shopfront_c.texture?/specular_a.tex](ascolormap).pc_tex
+003BCA79D82140A5.TEXT,[assembly:/_pro/environment/textures/constants/gradient_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+007391AF31833F73.TEXT,[assembly:/_pro/environment/textures/levels/gecko/gecko_floor_pattern_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00B9B00F95ADD78B.TEXT,[assembly:/_pro/environment/textures/generic/floor/black_gold_marble_large.texture?/diffuse_a.tex](ascolormap).pc_tex
+00A99E5EE81F5B12.TEXT,[assembly:/_pro/environment/textures/generic/floor/black_gold_marble_large.texture?/normal_a.tex](asnormalmap).pc_tex
+00436EFB90571FFC.TEXT,[assembly:/_pro/environment/textures/generic/floor/black_gold_marble_large.texture?/specular_a.tex](ascolormap).pc_tex
+0028A5F94E4F4E8A.TEXT,[assembly:/_pro/environment/textures/props/decorative/palm_tree_decorative_a.texture?/normal_a.tex](asnormalmap).pc_tex
+007DD4FB7A523A5B.TEXT,[assembly:/_pro/environment/textures/props/decorative/palm_tree_decorative_a.texture?/specular_a.tex](ascolormap).pc_tex
+003685CF8F66CA6E.TEXT,[assembly:/_pro/environment/textures/props/decorative/palm_tree_decorative_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00174C1AE7885DA0.TEXT,[assembly:/_pro/environment/textures/decals/signs/gecko_art_installation_quotes_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00BC10708EBB8D92.TEXT,[assembly:/_pro/environment/textures/decals/graffiti/smiley_face_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+0033D20BEDC13D6E.TEXT,[assembly:/_pro/environment/textures/decals/graffiti/smiley_face_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00636206B5537863.TEXT,[assembly:/_pro/environment/textures/decals/graffiti/smiley_face_a.texture?/specular_a.tex](ascolormap).pc_tex
+00416A937E667586.TEXT,[assembly:/_pro/environment/textures/props/signs/emergency_parachute_container_graphics_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+003306CFA4B3F3B4.TEXT,[assembly:/_pro/environment/textures/props/signs/emergency_parachute_container_graphics_a.texture?/normal_a.tex](asnormalmap).pc_tex
+0042C838E7236117.TEXT,[assembly:/_pro/environment/textures/props/signs/emergency_parachute_container_graphics_a.texture?/specular_a.tex](ascolormap).pc_tex
+00E882C7802AA6C4.TEXT,[assembly:/_pro/environment/textures/decals/logo_stingray_a.texture?/normal_a.tex](asnormalmap).pc_tex
+005C611C37E49A6F.TEXT,[assembly:/_pro/environment/textures/decals/logo_stingray_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00570152C29E28CD.TEXT,[assembly:/_pro/environment/textures/decals/logo_stingray_a.texture?/specular_a.tex](ascolormap).pc_tex
+00B1896AF036CBBE.TEXT,[assembly:/_pro/environment/textures/props/accessories/bulldog_papers_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00B7485BF9AA7F17.TEXT,[assembly:/_pro/environment/textures/props/accessories/bulldog_papers_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00E96119EF231996.TEXT,[assembly:/_pro/environment/textures/props/accessories/bulldog_papers_a.texture?/specular_a.tex](ascolormap).pc_tex
+0046B2DC7D9B9F6B.TEXT,[assembly:/_pro/environment/textures/props/decorative/club_khatavanga_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+006D49D59EFDD75F.TEXT,[assembly:/_pro/environment/textures/props/decorative/club_khatavanga_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00249476779C7484.TEXT,[assembly:/_pro/environment/textures/props/decorative/club_khatavanga_a.texture?/specular_a.tex](ascolormap).pc_tex
+008B8CA9F5C497A2.TEXT,[assembly:/_pro/environment/textures/props/papers/postits_fox_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00704832C10CD3B8.TEXT,[assembly:/_pro/items/textures/explosives/remoteflash_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+003974DC0374D238.TEXT,[assembly:/_pro/items/textures/explosives/remoteflash_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00C9955411248B4A.TEXT,[assembly:/_pro/items/textures/explosives/remoteflash_a.texture?/specular_a.tex](ascolormap).pc_tex
+001C937821DD5EC3.TEXT,[assembly:/_pro/items/textures/explosives/remoteflash_a.texture?/emissive_a.tex](ascolormap).pc_tex
+00D95A60DB72E6D9.TEXT,[assembly:/_pro/items/textures/quest/cigar_thief_note_a.texture?/normal_b.tex](asnormalmap).pc_tex
+00DD6449DADA5457.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_receiver_a.texture?/normal_a.tex](asnormalmap).pc_tex
+0062AF9B646FD596.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_receiver_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+007014E9A0EAC99C.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_receiver_a.texture?/specular_a.tex](ascolormap).pc_tex
+00E4DBA0D58C78D3.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_receiver_a.texture?/ao_a.tex](ascolormap).pc_tex
+003E0D509CDCDCF4.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_trigger_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00B8B6C9B85448F3.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_trigger_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+008276C70623FC9C.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_trigger_a.texture?/specular_a.tex](ascolormap).pc_tex
+0044684F763F0147.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_trigger_a.texture?/ao_a.tex](ascolormap).pc_tex
+009316C7802750D7.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_stock_a.texture?/normal_a.tex](asnormalmap).pc_tex
+005BE890489C3D0E.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_stock_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00428E5955D0CBD8.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_stock_a.texture?/specular_a.tex](ascolormap).pc_tex
+00EF7892C6E8096F.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_grip_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00BB8FB616C7533D.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_grip_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00613C06668471B6.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_grip_a.texture?/specular_a.tex](ascolormap).pc_tex
+00DA9EE36F533DBA.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_heatguard_a.texture?/normal_a.tex](asnormalmap).pc_tex
+0010FC83BEA5355A.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_heatguard_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+002B693D41656C29.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_heatguard_a.texture?/specular_a.tex](ascolormap).pc_tex
+00C4F3F9A55944CB.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_clip_a.texture?/normal_a.tex](asnormalmap).pc_tex
+0098FCF2BD7B8C0F.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_clip_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00C7CA3FF0D04E69.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_clip_a.texture?/specular_a.tex](ascolormap).pc_tex
+003860E4B480CEA3.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_barrel_a.texture?/normal_a.tex](asnormalmap).pc_tex
+009E43C23AF5CC93.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_barrel_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+000A649F8F4FBA5B.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_barrel_a.texture?/specular_a.tex](ascolormap).pc_tex
+00D957FD55C2BF64.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_muzzle_a.texture?/normal_a.tex](asnormalmap).pc_tex
+009AE06AD659686C.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_muzzle_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00D4AA8625FCBEC6.TEXT,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_muzzle_a.texture?/specular_a.tex](ascolormap).pc_tex
+00F39A4B08756471.TEXT,[assembly:/_pro/environment/textures/decals/street/road_detail_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+001AA35B7E04DE13.TEXT,[assembly:/_pro/environment/textures/decals/street/road_detail_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00AD91860FE6B118.TEXT,[assembly:/_pro/environment/textures/decals/street/road_detail_a.texture?/specular_a.tex](ascolormap).pc_tex
+00FE6A28383CC15E.TEXT,[assembly:/_pro/environment/textures/props/equipment/heatgun_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00C22EC0261E8996.TEXT,[assembly:/_pro/environment/textures/props/equipment/heatgun_a.texture?/specular_a.tex](ascolormap).pc_tex
+0020EC1EF0A6AF53.TEXT,[assembly:/_pro/environment/textures/props/equipment/heatgun_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00FDF8F41E6046A7.TEXT,[assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_00.texture?/diffuse_a.tex](ascolormap).pc_tex
+00CB18EDFB9335EF.TEXT,[assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_00.texture?/normal_a.tex](asnormalmap).pc_tex
+004359E671CAC435.TEXT,[assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_00.texture?/specular_a.tex](ascolormap).pc_tex
+0032E2DFABF7F9F8.TEXT,[assembly:/_pro/environment/textures/architecture/walls/miami_boundary_wall_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00B0E6C9E4B6DD4C.TEXT,[assembly:/_pro/environment/textures/architecture/walls/miami_boundary_wall_a.texture?/normal_a.tex](asnormalmap).pc_tex
+004A1C48BB0DCEB9.TEXT,[assembly:/_pro/environment/textures/architecture/walls/miami_boundary_wall_a.texture?/specular_a.tex](ascolormap).pc_tex
+006DAA229A0358F9.TEXT,[assembly:/_pro/environment/textures/decals/dirt/moss_variation.texture?/diffuse_a.tex](ascolormap).pc_tex
+00A743866C8B1581.TEXT,[assembly:/_pro/environment/textures/decals/dirt/moss_variation.texture?/height_a.tex](asheightmap).pc_tex
+00E4E438AD90560C.TEXT,[assembly:/_pro/environment/textures/decals/dirt/moss_variation.texture?/specular_a.tex](ascolormap).pc_tex
+00E0D208CAD5E19F.TEXT,[assembly:/_pro/environment/textures/decals/dirt/moss_variation.texture?/normal_a.tex](asnormalmap).pc_tex
+0012FC44A16FF564.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_glass_decor.texture?/specular_a.tex](ascolormap).pc_tex
+0037BCABEF611214.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_glass_decor.texture?/normal_a.tex](asnormalmap).pc_tex
+0023E1AC5B5AE90D.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_glass_decor.texture?/diffuse_a.tex](ascolormap).pc_tex
+00B2437CB35E6F3B.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_glass_decor.texture?/mask_a.tex](ascolormap).pc_tex
+005BA4531E6ACB14.TEXT,[assembly:/_pro/environment/textures/generic/cloth/camo_net_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+004C819707F3E7F1.TEXT,[assembly:/_pro/environment/textures/generic/cloth/camo_net_a.texture?/specular_a.tex](ascolormap).pc_tex
+0014FA788604AA88.TEXT,[assembly:/_pro/environment/textures/generic/cloth/camo_net_a.texture?/normal_a.tex](asnormalmap).pc_tex
+0010506360CF0185.TEXT,[assembly:/_pro/environment/textures/decals/seashells_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00B26889466AACCC.TEXT,[assembly:/_pro/environment/textures/decals/seashells_a.texture?/height_a.tex](asheightmap).pc_tex
+00D1F1BFC28CAA6A.TEXT,[assembly:/_pro/environment/textures/decals/seashells_a.texture?/specular_a.tex](ascolormap).pc_tex
+00FCA150401B3238.TEXT,[assembly:/_pro/environment/textures/decals/seashells_a.texture?/normal_a.tex](asnormalmap).pc_tex
+002BBBF13C3F7185.TEXT,[assembly:/_pro/environment/textures/decals/signs/it_posters_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+009CB67475FDC32F.TEXT,[assembly:/_pro/environment/textures/decals/signs/it_posters_a.texture?/normal_a.tex](asnormalmap).pc_tex
+002168A708043451.TEXT,[assembly:/_pro/characters/assets/individuals/seagull/dragoneye/textures/dragoneye_eye.texture?/specular_inner.tex](ascolormap).pc_tex
+00AEDB9F0F7D40A6.TEXT,[assembly:/_pro/characters/assets/individuals/seagull/dragoneye/textures/dragoneye_eye.texture?/diffuse_blue.tex](ascolormap).pc_tex
+00C54EF1A555FEA9.TEXT,[assembly:/_pro/environment/textures/decals/signs/hydraulic_warning_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00D1493161F6C051.TEXT,[assembly:/_pro/environment/textures/decals/signs/hydraulic_warning_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00891BDDE8A0B7AA.TEXT,[assembly:/_pro/environment/textures/decals/signs/hydraulic_warning_a.texture?/specular_a.tex](ascolormap).pc_tex
+00B967A20672ADB7.TEXT,[assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_b.texture?/normal_a.tex](asnormalmap).pc_tex
+009F0BC724E42C80.TEXT,[assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_b.texture?/specular_a.tex](ascolormap).pc_tex
+007CDECDBACD0501.TEXT,[assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_b.texture?/diffuse_a.tex](ascolormap).pc_tex
+00AC9C86B21E3321.TEXT,[assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00A847E5D2D81BA6.TEXT,[assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_a.texture?/specular_a.tex](ascolormap).pc_tex
+000619248F66479D.TEXT,[assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00AB6F4D888CEA17.TEXT,[assembly:/_pro/environment/textures/props/leisure/golf_grass_mat_b.texture?/diffuse_a.tex](ascolormap).pc_tex
+004860891902FEB5.TEXT,[assembly:/_pro/environment/textures/props/leisure/golf_grass_mat_b.texture?/normal_a.tex](asnormalmap).pc_tex
+007C666DFE602CAA.TEXT,[assembly:/_pro/environment/textures/props/leisure/golf_grass_mat_b.texture?/specular_a.tex](ascolormap).pc_tex
+00E1D615BA863690.TEXT,[assembly:/_pro/environment/textures/props/decorative/star_pattern_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00EA1FDDB2EDC9D6.TEXT,[assembly:/_pro/environment/textures/props/signs/vholes_diploma_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00335FF056E8D9B8.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_other_parts.texture?/diffuse_a.tex](ascolormap).pc_tex
+00FE27706D278FEE.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_other_parts.texture?/normal_a.tex](asnormalmap).pc_tex
+008C16B1CCFF8891.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_other_parts.texture?/specular_a.tex](ascolormap).pc_tex
+00F4F73805678923.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_curtains.texture?/normal_a.tex](asnormalmap).pc_tex
+0024A098D2C66A82.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_curtains.texture?/specular_a.tex](ascolormap).pc_tex
+00B6D07B32D5CFD4.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_curtains.texture?/diffuse_a.tex](ascolormap).pc_tex
+00FAFA3478781234.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_wood_decor.texture?/diffuse_a.tex](ascolormap).pc_tex
+0074D5766C1B7DF2.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_wood_decor.texture?/normal_a.tex](asnormalmap).pc_tex
+00F9F5D4BE1076C7.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_wood_decor.texture?/specular_a.tex](ascolormap).pc_tex
+002AEA87D0592FD3.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_mumbai_colonial_upper_window_frame.texture?/diffuse_a.tex](ascolormap).pc_tex
+0067E7CF1B8DD64E.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_mumbai_colonial_upper_window_frame.texture?/normal_a.tex](asnormalmap).pc_tex
+00D7D5DFD1F79426.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_mumbai_colonial_upper_window_frame.texture?/specular_a.tex](ascolormap).pc_tex
+00322864501DC736.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_decals_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+002A56032FCADCF4.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_decals_b.texture?/diffuse_a.tex](ascolormap).pc_tex
+00EFCBDB3D8D0845.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_carpet.texture?/diffuse_a.tex](ascolormap).pc_tex
+0088C006F6B5E667.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_carpet.texture?/normal_a.tex](asnormalmap).pc_tex
+004D8E01488CC6C2.TEXT,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_carpet.texture?/specular_a.tex](ascolormap).pc_tex
+00C05AD38A32C134.TEXT,[assembly:/_pro/environment/textures/generic/floor/columbia_floor_tiles_a.texture?/normal_a.tex](asnormalmap).pc_tex
+009572ED6CD0CFE3.TEXT,[assembly:/_pro/environment/textures/generic/floor/columbia_floor_tiles_a.texture?/specular_a.tex](ascolormap).pc_tex
+0093256460320A5B.TEXT,[assembly:/_pro/environment/textures/generic/floor/columbia_floor_tiles_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00CBDE09334E4E17.TEXT,[assembly:/_pro/environment/textures/props/utensils/race_cup_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00DFE3C33A36FDBD.TEXT,[assembly:/_pro/environment/textures/props/utensils/race_cup_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00C43B2B59837A6E.TEXT,[assembly:/_pro/environment/textures/props/utensils/race_cup_a.texture?/specular_a.tex](ascolormap).pc_tex
+004F5E5ABD12C99B.TEXT,[assembly:/_pro/environment/textures/props/electronics/hot_cabinet_details_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+0035007E99C2CD7B.TEXT,[assembly:/_pro/environment/textures/props/electronics/hot_cabinet_details_a.texture?/normal_a.tex](asnormalmap).pc_tex
+009E767A53442128.TEXT,[assembly:/_pro/environment/textures/props/electronics/hot_cabinet_details_a.texture?/specular_a.tex](ascolormap).pc_tex
+00A9FDC4ABA47FE2.TEXT,[assembly:/_pro/environment/textures/props/electronics/hot_cabinet_details_a.texture?/emissive_a.tex](ascolormap).pc_tex
+0033CDC1324B6B48.TEXT,[assembly:/_pro/environment/textures/decals/signs/kronstadt_emissive_logo_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00F256EC01A5BCD4.TEXT,[assembly:/_pro/environment/textures/decals/signs/kronstadt_emissive_logo_a.texture?/emissive_a.tex](ascolormap).pc_tex
+00A95C9178DDE946.TEXT,[assembly:/_pro/environment/textures/props/decorative/miami_banner_podium_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+0015AC01D782AE4A.TEXT,[assembly:/_pro/environment/textures/generic/cloth/shade_sails_a_color.texture?/diffuse_a.tex](ascolormap).pc_tex
+00DF990DD86E3E98.TEXT,[assembly:/_pro/environment/textures/generic/ground/tiles_marble_publicsquare_serviceaccess_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00D3FF5089C64FFA.TEXT,[assembly:/_pro/environment/textures/generic/ground/tiles_marble_publicsquare_serviceaccess_a.texture?/normal_a.tex](asnormalmap).pc_tex
+003C7CBAC0E112F0.TEXT,[assembly:/_pro/environment/textures/generic/ground/tiles_marble_publicsquare_serviceaccess_a.texture?/specular_a.tex](ascolormap).pc_tex
+00A8706567D73D75.TEXT,[assembly:/_pro/environment/textures/generic/cloth/shade_sails_a_color.texture?/specular_a.tex](ascolormap).pc_tex
+00D37D5FE7727D34.TEXT,[assembly:/_pro/effects/textures/screen/fx_screen_miami_scanner.texture?/emissive_a.tex](ascolormap).pc_tex
+0029B94FBC92E44D.TEXT,[assembly:/_pro/environment/textures/props/papers/miami_newspaper_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+005A724128487E27.TEXT,[assembly:/_pro/environment/textures/props/papers/miami_newspaper_a.texture?/specular_a.tex](ascolormap).pc_tex
+006C1919D3B31B09.TEXT,[assembly:/_pro/environment/textures/decals/logos/gir_event_map_b.texture?/diffuse_a.tex](ascolormap).pc_tex
+00C9B0631BA38A77.TEXT,[assembly:/_pro/environment/textures/props/papers/miami_newspaper_a.texture?/normal_a.tex](asnormalmap).pc_tex
+0093D34C799DDED4.TEXT,[assembly:/_pro/environment/textures/props/decorative/sculpture_table_horse_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00AB4F922CA1F149.TEXT,[assembly:/_pro/environment/textures/props/decorative/sculpture_table_horse_a.texture?/normal_a.tex](asnormalmap).pc_tex
+000AA8B7697C6C6A.TEXT,[assembly:/_pro/environment/textures/props/decorative/sculpture_table_horse_a.texture?/specular_a.tex](ascolormap).pc_tex
+00457F89852B5391.TEXT,[assembly:/_pro/characters/assets/_apparel/accessories/misc/textures/blindfold.texture?/normal_a.tex](asnormalmap).pc_tex
+00618A494D8292C1.TEXT,[assembly:/_pro/characters/assets/_apparel/accessories/misc/textures/blindfold.texture?/specular_a.tex](ascolormap).pc_tex
+00DE41FE3BDFB271.TEXT,[assembly:/_pro/characters/assets/_apparel/accessories/misc/textures/blindfold.texture?/diffuse_a.tex](ascolormap).pc_tex
+006AF4B226C5C3A1.TEXT,[assembly:/_pro/environment/textures/architecture/arches/sihsha_back_arch_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00D978F8F6840F09.TEXT,[assembly:/_pro/environment/textures/architecture/arches/sihsha_back_arch_a.texture?/normal_a.tex](asnormalmap).pc_tex
+0060F3D85183B2E8.TEXT,[assembly:/_pro/environment/textures/architecture/arches/sihsha_back_arch_a.texture?/specular_a.tex](ascolormap).pc_tex
+00EE8D0574FF420B.TEXT,[assembly:/_pro/environment/textures/architecture/arches/japanese_arch_wood_a.texture?/specular_a.tex](ascolormap).pc_tex
+005D93D590B82678.TEXT,[assembly:/_pro/environment/textures/architecture/arches/japanese_arch_wood_a.texture?/normal_a.tex](asnormalmap).pc_tex
+005C03D4E3F955F2.TEXT,[assembly:/_pro/environment/textures/generic/metal/magpie_gold_old_a.texture?/specular_a.tex](ascolormap).pc_tex
+0063BFF67A842B8F.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shoes_01.texture?/normal_a.tex](asnormalmap).pc_tex
+00F90048CFABCF3F.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shoes_01.texture?/specular_a.tex](ascolormap).pc_tex
+005BC885F73C6E2A.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shoes_01.texture?/diffuse_a.tex](ascolormap).pc_tex
+002FED7566F5B0F0.TEXT,[assembly:/_pro/environment/textures/props/signs/bus_timetable_fox_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00894A68F6BEA493.TEXT,[assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+001A207BCE5B50D7.TEXT,[assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_a.texture?/normal_a.tex](asnormalmap).pc_tex
+001E30449975F22D.TEXT,[assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_a.texture?/specular_a.tex](ascolormap).pc_tex
+00EE2835FC44E0CF.TEXT,[assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_b.texture?/diffuse_a.tex](ascolormap).pc_tex
+00A7BF8EAEE88152.TEXT,[assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_b.texture?/normal_a.tex](asnormalmap).pc_tex
+006AE91F332FDBCD.TEXT,[assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_b.texture?/specular_a.tex](ascolormap).pc_tex
+000C0E71A725AAA3.TEXT,[assembly:/_pro/environment/textures/decals/graffiti/berlin_graffiti_peeled_paint_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00173FE8EA796599.TEXT,[assembly:/_pro/environment/textures/decals/markings/scifi_panel_lines_wet_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00454AD0910E1D04.TEXT,[assembly:/_pro/environment/textures/decals/markings/scifi_panel_lines_wet_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00C42E3F6C7114FD.TEXT,[assembly:/_pro/environment/textures/decals/markings/scifi_panel_lines_wet_a.texture?/emissive_a.tex](ascolormap).pc_tex
+00CBDAC0D4254B1F.TEXT,[assembly:/_pro/effects/textures/misc/fx_par_airplane.texture?/mask_a.tex](ascolormap).pc_tex
+00EFB0B348B484B6.TEXT,[assembly:/_pro/effects/textures/misc/fx_par_airplane.texture?/normal_a.tex](asnormalmap).pc_tex
+001AC6A90FA48AB3.TEXT,[assembly:/_pro/environment/textures/architecture/arches/japanese_arch_wood_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+0032A7179C513DA7.TEXT,[assembly:/_pro/environment/textures/generic/ice/snow_wall_a.texture?/specular_a.tex](ascolormap).pc_tex
+00AFD1ECD55874E8.TEXT,[assembly:/_pro/environment/textures/generic/ice/snow_wall_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00B5B6C3A566F13A.TEXT,[assembly:/_pro/environment/textures/generic/ice/snow_wall_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+009EA01DA0E34E8E.TEXT,[assembly:/_pro/environment/textures/generic/rock/firepit_stones_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+009047052B9D91B3.TEXT,[assembly:/_pro/environment/textures/generic/rock/firepit_stones_a.texture?/specular_a.tex](ascolormap).pc_tex
+00E0FA1C42D35E5D.TEXT,[assembly:/_pro/environment/textures/generic/rock/firepit_stones_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00474AED66411911.TEXT,[assembly:/_pro/environment/textures/props/signs/fruitking_sign.texture?/diffuse_a.tex](ascolormap).pc_tex
+006B6353A8B68BA9.TEXT,[assembly:/_pro/environment/textures/props/signs/fruitking_sign.texture?/normal_a.tex](asnormalmap).pc_tex
+00295F60A43C832D.TEXT,[assembly:/_pro/environment/textures/props/signs/fruitking_sign.texture?/specular_a.tex](ascolormap).pc_tex
+0083781D2089F068.TEXT,[assembly:/_pro/environment/textures/props/farmhouse_props/hay_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00C98E39AE74A527.TEXT,[assembly:/_pro/environment/textures/props/farmhouse_props/hay_a.texture?/height_a.tex](asheightmap).pc_tex
+00BF4AC1D3F9EF4C.TEXT,[assembly:/_pro/environment/textures/props/farmhouse_props/hay_a.texture?/normal_a.tex](asnormalmap).pc_tex
+0083D1C14163B05A.TEXT,[assembly:/_pro/environment/textures/decals/graffiti/colorado_rabies_text_decals_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+0081F4F413C6191C.TEXT,[assembly:/_pro/environment/textures/decals/graffiti/colorado_rabies_text_decals_a.texture?/specular_a.tex](ascolormap).pc_tex
+00290951A8FCBA2B.TEXT,[assembly:/_pro/environment/textures/generic/stone/granite_trim_a.texture?/specular_a.tex](ascolormap).pc_tex
+006CF178B651F342.TEXT,[assembly:/_pro/environment/textures/generic/stone/granite_trim_a.texture?/normal_a.tex](asnormalmap).pc_tex
+0091EA605CA23BA2.TEXT,[assembly:/_pro/environment/textures/generic/stone/granite_trim_a.texture?/diffuse_c.tex](ascolormap).pc_tex
+002BD4743F21C3B9.TEXT,[assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_zika.texture?/diffuse_a.tex](ascolormap).pc_tex
+00DE0D22720C3DE4.TEXT,[assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_zika.texture?/normal_a.tex](asnormalmap).pc_tex
+00AD033A0EE296E6.TEXT,[assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_zika.texture?/specular_a.tex](ascolormap).pc_tex
+0009696C8DD106A7.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_apron_01.texture?/normal_a.tex](asnormalmap).pc_tex
+004B94E60366AE72.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_apron_01.texture?/specular_a.tex](ascolormap).pc_tex
+001D18E0BB5A2AFA.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_apron_01.texture?/diffuse_a.tex](ascolormap).pc_tex
+00923A5C91A7167D.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_belt_01.texture?/normal_a.tex](asnormalmap).pc_tex
+00A73B97F2FA784E.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_belt_01.texture?/specular_a.tex](ascolormap).pc_tex
+00F39AA65136CC4C.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_belt_01.texture?/diffuse_a.tex](ascolormap).pc_tex
+003B2E76AC9C74F5.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shirt_01.texture?/normal_a.tex](asnormalmap).pc_tex
+001EEAA74B44D82F.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shirt_01.texture?/specular_a.tex](ascolormap).pc_tex
+00C79F1A5D5DCE0B.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shirt_01.texture?/diffuse_a.tex](ascolormap).pc_tex
+00FC27070CF94A01.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shoes.texture?/normal_a.tex](asnormalmap).pc_tex
+008C197116566AE0.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shoes.texture?/specular_a.tex](ascolormap).pc_tex
+008A2CCE6F81FC53.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shoes.texture?/diffuse_a.tex](ascolormap).pc_tex
+003475397135DC3D.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_belt.texture?/normal_a.tex](asnormalmap).pc_tex
+00C922514BB7D0AA.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_belt.texture?/specular_a.tex](ascolormap).pc_tex
+00ADF7ED193EAC25.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_belt.texture?/diffuse_a.tex](ascolormap).pc_tex
+003AB96A16E15753.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_apron.texture?/normal_a.tex](asnormalmap).pc_tex
+00F7075330B93735.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_apron.texture?/specular_a.tex](ascolormap).pc_tex
+0021C9161E16B00F.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_apron.texture?/diffuse_a.tex](ascolormap).pc_tex
+00FB9DB9F52A3AFC.TEXT,[assembly:/_pro/environment/textures/generic/cloth/camo_net_a.texture?/emissive_a.tex](ascolormap).pc_tex
+00E047C46152C193.TEXT,[assembly:/_pro/environment/textures/architecture/decorative/catacombs_wall_b_decal_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00079AA46C5268CA.TEXT,[assembly:/_pro/environment/textures/architecture/decorative/catacombs_wall_b_decal_a.texture?/normal_a.tex](asnormalmap).pc_tex
+0095B356A36F070E.TEXT,[assembly:/_pro/environment/textures/architecture/decorative/catacombs_wall_b_decal_a.texture?/specular_a.tex](ascolormap).pc_tex
+004C24E1C29300F1.TEXT,[assembly:/_pro/environment/textures/props/signs/wetfloor_sign_italian_decals_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+0013CFB8E9A40532.TEXT,[assembly:/_pro/environment/textures/props/signs/wetfloor_sign_italian_decals_a.texture?/specular_a.tex](ascolormap).pc_tex
+00E4843B5F7C4C15.TEXT,[assembly:/_pro/environment/textures/props/signs/signage_wine_shop_chalk_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+002F30513E426BEA.TEXT,[assembly:/_pro/environment/textures/props/signs/signage_wine_shop_chalk_a.texture?/specular_a.tex](ascolormap).pc_tex
+002D26A18DF0BBFD.TEXT,[assembly:/_pro/environment/textures/props/movieset/movieset_trailers_a_glass.texture?/specular_a.tex](ascolormap).pc_tex
+001468F6D501457E.TEXT,[assembly:/_pro/environment/textures/props/movieset/movieset_trailers_a_glass.texture?/diffuse_a.tex](asnormalmap).pc_tex
+004DAC34233302C7.TEXT,[assembly:/_pro/environment/textures/props/signs/constructionsign_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00EE651DFC3DBF9A.TEXT,[assembly:/_pro/environment/textures/props/signs/constructionsign_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00F6FF6E40E6B3E8.TEXT,[assembly:/_pro/environment/textures/props/signs/constructionsign_a.texture?/specular_a.tex](ascolormap).pc_tex
+00927DAD40F18E7A.TEXT,[assembly:/_pro/environment/textures/props/signs/constructionsign_a.texture?/emissive_a.tex](ascolormap).pc_tex
+00B608D0B05F9182.TEXT,[assembly:/_pro/_test/nigela/textures/xmas/xmas_tinsel_square.texture?/diffuse_a.tex](ascolormap).pc_tex
+00552FE3DB099B11.TEXT,[assembly:/_pro/_test/nigela/textures/xmas/xmas_tinsel_square.texture?/normal_a.tex](asnormalmap).pc_tex
+00EFD7A65E810942.TEXT,[assembly:/_pro/environment/textures/foliage/banyan_cluster_a.texture?/translucency_a.tex](ascolormap).pc_tex
+00668C82F821F05F.TEXT,[assembly:/_pro/environment/textures/foliage/banyan_cluster_a_bare.texture?/translucency_a.tex](ascolormap).pc_tex
+002F31AE209A5678.TEXT,[assembly:/_pro/environment/textures/props/decorative/pirate_banner_a.texture?/specular_a.tex](ascolormap).pc_tex
+00D83748EEA04630.TEXT,[assembly:/_pro/environment/textures/props/decorative/pirate_banner_a.texture?/normal_a.tex](asnormalmap).pc_tex
+0006192725C38ACB.TEXT,[assembly:/_pro/environment/textures/props/decorative/pirate_banner_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+006C3D6BD9D23524.TEXT,[assembly:/textures/props/general/instrument_sitar_01.texture?/diffuse_a.tex](ascolormap).pc_tex
+000FA1B4B9F88BA8.TEXT,[assembly:/textures/props/general/instrument_sitar_01.texture?/normal_a.tex](asnormalmap).pc_tex
+009A4AAF48CA9730.TEXT,[assembly:/_pro/environment/textures/levels/bulldog/bulldog_four_icons_a.texture?/normal_a.tex](asnormalmap).pc_tex
+002BD91D67E95E24.TEXT,[assembly:/_pro/environment/textures/levels/bulldog/bulldog_four_icons_a.texture?/specular_a.tex](ascolormap).pc_tex
+00DC0C26810395DB.TEXT,[assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_last_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+001B2165F4143564.TEXT,[assembly:/_pro/environment/textures/levels/bulldog/bulldog_four_icons_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00C77E29365CE2ED.TEXT,[assembly:/_pro/environment/textures/props/food/apple_crate_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00F3D459D3F94DCF.TEXT,[assembly:/_pro/environment/textures/props/food/apple_crate_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00BCAE6FC7ED72FE.TEXT,[assembly:/_pro/environment/textures/props/food/apple_crate_a.texture?/specular_a.tex](ascolormap).pc_tex
+008A3B718324EB25.TEXT,[assembly:/_pro/environment/textures/decals/logos/biker_gang_logo_fox_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+0070441747FC5E28.TEXT,[assembly:/_pro/environment/textures/decals/logos/biker_gang_logo_fox_a.texture?/specular_a.tex](ascolormap).pc_tex
+0047A5C029547A46.TEXT,[assembly:/_pro/vehicles/textures/scooter_a/food_delivery_scooter_keyhole_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+0058E57BB417418D.TEXT,[assembly:/_pro/vehicles/textures/scooter_a/food_delivery_scooter_keyhole_a.texture?/normal_a.tex](asnormalmap).pc_tex
+004BD48020F61FF6.TEXT,[assembly:/_pro/vehicles/textures/scooter_a/food_delivery_scooter_keyhole_a.texture?/specular_a.tex](ascolormap).pc_tex
+00FAF9B03F989581.TEXT,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapecluster_b_item.texture?/ao_a.tex](ascolormap).pc_tex
+00FAE3957B57BD7D.TEXT,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapecluster_b_item.texture?/normal_a.tex](asnormalmap).pc_tex
+00527D147DA955F9.TEXT,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapecluster_b_item.texture?/specular_a.tex](ascolormap).pc_tex
+00492924B427FDEE.TEXT,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapecluster_b_item.texture?/diffuse_a.tex](ascolormap).pc_tex
+0090D18704974C9D.TEXT,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapematerial_a.texture?/normal_a.tex](asnormalmap).pc_tex
+004EBFB29E4C5BCC.TEXT,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapematerial_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00CB908CB1B8D23E.TEXT,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapematerial_a.texture?/height_a.tex](asheightmap).pc_tex
+002F2857D928DD47.TEXT,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapematerial_a.texture?/specular_a.tex](ascolormap).pc_tex
+002F3BE0FFFA6D89.TEXT,[assembly:/_pro/environment/textures/props/signs/llama_qr_code.texture?/diffuse_a.tex](ascolormap).pc_tex
+004C5AAE9AFC22FB.TEXT,[assembly:/_pro/environment/textures/props/signs/llama_qr_code.texture?/normal_a.tex](asnormalmap).pc_tex
+00428EA29798F730.TEXT,[assembly:/_pro/environment/textures/props/signs/llama_qr_code.texture?/specular_a.tex](ascolormap).pc_tex
+005C36B0234DEFC6.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod.texture?/diffuse_a.tex](ascolormap).pc_tex
+000E95F7D6DC9418.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod.texture?/normal_a.tex](asnormalmap).pc_tex
+005431B913C6456B.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod.texture?/specular_a.tex](ascolormap).pc_tex
+00053667D0747BC2.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod.texture?/emissive_a.tex](ascolormap).pc_tex
+00E21FF233B3533B.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_color.texture?/diffuse_a.tex](ascolormap).pc_tex
+0050CB6EE3834DBF.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_color.texture?/normal_a.tex](asnormalmap).pc_tex
+00BD53ECC5E3714E.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_color.texture?/specular_a.tex](ascolormap).pc_tex
+009272737B3C578C.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_color.texture?/emissive_a.tex](ascolormap).pc_tex
+00964439DC483080.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_concrete.texture?/diffuse_a.tex](ascolormap).pc_tex
+00B2EBF278AF5454.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_concrete.texture?/normal_a.tex](asnormalmap).pc_tex
+00A2260BF7990D24.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_concrete.texture?/specular_a.tex](ascolormap).pc_tex
+00CC0781D3C9CFA6.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_concrete.texture?/emissive_a.tex](ascolormap).pc_tex
+0058E6C391C16F68.TEXT,[assembly:/_pro/environment/textures/props/accessories/mouse_mat_ica_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+001FCCD41AFFBD6E.TEXT,[assembly:/_pro/environment/textures/props/accessories/mouse_mat_ica_a.texture?/normal_a.tex](asnormalmap).pc_tex
+0057D149151EA45F.TEXT,[assembly:/_pro/environment/textures/props/accessories/mouse_mat_ica_a.texture?/specular_a.tex](ascolormap).pc_tex
+00F2327CEBB9426A.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_tiles.texture?/diffuse_a.tex](ascolormap).pc_tex
+006317BF19925391.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_tiles.texture?/normal_a.tex](asnormalmap).pc_tex
+004261084FD23E48.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_tiles.texture?/specular_a.tex](ascolormap).pc_tex
+00D8B871005200E6.TEXT,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_tiles.texture?/emissive_a.tex](ascolormap).pc_tex
+002ED7ECE1253A6A.TEXT,[assembly:/_pro/environment/textures/levels/wet/lockers_facility_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+00E1D6294C237E73.TEXT,[assembly:/_pro/environment/textures/levels/wet/lockers_facility_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00202D1D1716ED83.TEXT,[assembly:/_pro/environment/textures/levels/wet/lockers_facility_a.texture?/specular_a.tex](ascolormap).pc_tex
+00E2E4657F879199.TEXT,[assembly:/_pro/environment/textures/levels/wet/aluminium_brushed_circular_copper.texture?/diffuse_a.tex](ascolormap).pc_tex
+00DEFD3FC0BD5A3D.TEXT,[assembly:/_pro/environment/textures/levels/wet/aluminium_brushed_circular_copper.texture?/normal_a.tex](asnormalmap).pc_tex
+009FB7CBEB6F4F1B.TEXT,[assembly:/_pro/environment/textures/levels/wet/aluminium_brushed_circular_copper.texture?/specular_a.tex](ascolormap).pc_tex
+00E0CE49158C4875.TEXT,[assembly:/_pro/environment/textures/levels/wet/posters_rat_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+0063601D5FDECCE8.TEXT,[assembly:/_pro/environment/textures/levels/wet/posters_rat_a.texture?/normal_a.tex](asnormalmap).pc_tex
+00F6C23D47ADD6D3.TEXT,[assembly:/_pro/environment/textures/levels/wet/posters_rat_a.texture?/specular_a.tex](ascolormap).pc_tex
+00D66D39CC037939.TEXT,[assembly:/_pro/effects/textures/screen/fx_screen_miami_robot.texture?/emissive_a.tex](ascolormap).pc_tex
+00963BA69A605832.TEXT,[assembly:/_pro/environment/textures/decals/logos/prxe_tv.texture?/diffuse_a.tex](ascolormap).pc_tex
+00A39C4CB6D62BC3.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shirt.texture?/normal_a.tex](asnormalmap).pc_tex
+00655071EF61A2B2.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shirt.texture?/specular_a.tex](ascolormap).pc_tex
+003FF7CEA21D8AA9.TEXT,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shirt.texture?/diffuse_a.tex](ascolormap).pc_tex
+009EA4A01B8DB3CB.TEXT,[assembly:/_pro/environment/textures/generic/metal/magpie_gold_old_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+0056AA81981AB317.TEXT,[assembly:/_pro/environment/textures/generic/metal/magpie_gold_old_a.texture?/normal_a.tex](asnormalmap).pc_tex
+004EAF3C0AAB2887.TEXT,[assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons.texture?/diffuse_a.tex](ascolormap).pc_tex
+0008D5EACFD788BC.TEXT,[assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons.texture?/normal_a.tex](asnormalmap).pc_tex
+0030F7569F727AC0.TEXT,[assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons.texture?/specular_a.tex](ascolormap).pc_tex
+00C7F725E057C18B.TEXT,[assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons.texture?/emissive_a.tex](ascolormap).pc_tex
+00C323EC333405FA.TEXT,[assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons_glass.texture?/normal_a.tex](asnormalmap).pc_tex
+00790B09D9BFE8ED.TEXT,[assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons_glass.texture?/diffuse_a.tex](ascolormap).pc_tex
+00EAA0241800DC35.TEXD,[assembly:/_pro/items/textures/firearms/frames/pistol_ica19_a/spraycan_silencer_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+005E5238510D24F9.TEXD,[assembly:/_pro/items/textures/firearms/frames/pistol_ica19_a/spraycan_silencer_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+003D0E7C2EF0022C.TEXD,[assembly:/_pro/items/textures/firearms/frames/pistol_ica19_a/spraycan_silencer_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00EF3BD89B2102D9.TEXD,[assembly:/_pro/items/textures/firearms/frames/pistol_ica19_a/spraycan_silencer_a.texture?/ao_a.tex](ascolormap).pc_mipblock1
+0030E31886D90B27.TEXD,[assembly:/_pro/environment/textures/props/electronic/radio_transmitter_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00CCC4DF891CE288.TEXD,[assembly:/_pro/environment/textures/props/electronic/radio_transmitter_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00D1B9962A8F203E.TEXD,[assembly:/_pro/environment/textures/props/electronic/radio_transmitter_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00E1E68844163B34.TEXD,[assembly:/_pro/environment/textures/props/electronic/radio_transmitter_a.texture?/emissive_a.tex](ascolormap).pc_mipblock1
+001AA369B5016FF6.TEXD,[assembly:/_pro/items/textures/melee/nylon_string_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+002D36A20819D9FE.TEXD,[assembly:/_pro/items/textures/melee/nylon_string_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+006477C84553094E.TEXD,[assembly:/_pro/items/textures/melee/nylon_string_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00E7F0A35749420F.TEXD,[assembly:/_pro/environment/textures/props/office_props/burj_al_ghazali_pamphlet_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+004CF7FF0C932C04.TEXD,[assembly:/_pro/environment/textures/props/office_props/burj_al_ghazali_pamphlet_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+002FE1104D725D89.TEXD,[assembly:/_pro/environment/textures/props/office_props/burj_al_ghazali_pamphlet_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00047AFAC0C4ABDC.TEXD,[assembly:/_pro/environment/textures/props/decorative/scaffold_tileset_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0043DD0757A45093.TEXD,[assembly:/_pro/environment/textures/props/decorative/scaffold_tileset_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00FEB48044003E95.TEXD,[assembly:/_pro/environment/textures/props/decorative/scaffold_tileset_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+008030438E04F6F0.TEXD,[assembly:/_pro/environment/textures/decals/logos/typewriter_keys_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00F1174A48E4E885.TEXD,[assembly:/_pro/environment/textures/decals/logos/typewriter_keys_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00193E012675AC52.TEXD,[assembly:/_pro/environment/textures/decals/logos/typewriter_keys_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+009100FFBDC9CA26.TEXD,[assembly:/_pro/environment/textures/props/lights/led_trim_light.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00D591890DC8F695.TEXD,[assembly:/_pro/environment/textures/props/lights/led_trim_light.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00A2CAFCE041F7C9.TEXD,[assembly:/_pro/environment/textures/props/lights/led_trim_light.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0066B2AD751E4569.TEXD,[assembly:/_pro/environment/textures/props/lights/led_trim_light.texture?/emissive_a.tex](ascolormap).pc_mipblock1
+000316148257CAAE.TEXD,[assembly:/_pro/environment/textures/decals/decoration/gecko_decorative_leaf_band_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00CF692A318D1798.TEXD,[assembly:/_pro/environment/textures/decals/decoration/gecko_decorative_leaf_band_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00B46DED2C7B2D6C.TEXD,[assembly:/_pro/environment/textures/decals/decoration/gecko_decorative_leaf_band_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00E93DDF9D6B73DB.TEXD,[assembly:/_pro/environment/textures/props/shop_props/medina_shopfront_c.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00695C587F06EC25.TEXD,[assembly:/_pro/environment/textures/props/shop_props/medina_shopfront_c.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+001070868EF1EFCF.TEXD,[assembly:/_pro/environment/textures/props/shop_props/medina_shopfront_c.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0011BF23F0B5F66A.TEXD,[assembly:/_pro/environment/textures/constants/gradient_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00531DAF3CA5EE80.TEXD,[assembly:/_pro/environment/textures/levels/gecko/gecko_floor_pattern_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00E1D75D3B809E88.TEXD,[assembly:/_pro/environment/textures/generic/floor/black_gold_marble_large.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00FBB4A0C1B4DAEF.TEXD,[assembly:/_pro/environment/textures/generic/floor/black_gold_marble_large.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00EFA5F69282FD0B.TEXD,[assembly:/_pro/environment/textures/generic/floor/black_gold_marble_large.texture?/specular_a.tex](ascolormap).pc_mipblock1
+005039CC4373BD42.TEXD,[assembly:/_pro/environment/textures/props/decorative/palm_tree_decorative_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+007EDCF4A65E061E.TEXD,[assembly:/_pro/environment/textures/props/decorative/palm_tree_decorative_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+007AFB9941EED68E.TEXD,[assembly:/_pro/environment/textures/props/decorative/palm_tree_decorative_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00D8AFEE42176DDD.TEXD,[assembly:/_pro/environment/textures/decals/signs/gecko_art_installation_quotes_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00C2D4DE1EBA098F.TEXD,[assembly:/_pro/environment/textures/decals/graffiti/smiley_face_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00CC51A96C95BE06.TEXD,[assembly:/_pro/environment/textures/decals/graffiti/smiley_face_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0096159182167F5B.TEXD,[assembly:/_pro/environment/textures/decals/graffiti/smiley_face_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+001DC289A6BC5C27.TEXD,[assembly:/_pro/environment/textures/props/signs/emergency_parachute_container_graphics_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+003A192424F98C55.TEXD,[assembly:/_pro/environment/textures/props/signs/emergency_parachute_container_graphics_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00F4B2746C03B365.TEXD,[assembly:/_pro/environment/textures/props/signs/emergency_parachute_container_graphics_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00B386E061F4E2CD.TEXD,[assembly:/_pro/environment/textures/decals/logo_stingray_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+003EFD1C58923C6B.TEXD,[assembly:/_pro/environment/textures/decals/logo_stingray_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00A882B2EC0BFFEA.TEXD,[assembly:/_pro/environment/textures/decals/logo_stingray_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00FB9BF12E11FABF.TEXD,[assembly:/_pro/environment/textures/props/accessories/bulldog_papers_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00F9A1C65F2D76B9.TEXD,[assembly:/_pro/environment/textures/props/accessories/bulldog_papers_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00D763904760358C.TEXD,[assembly:/_pro/environment/textures/props/accessories/bulldog_papers_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00EDA9D68094CABE.TEXD,[assembly:/_pro/environment/textures/props/decorative/club_khatavanga_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+008A8D3D29A62610.TEXD,[assembly:/_pro/environment/textures/props/decorative/club_khatavanga_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+005053A92A668837.TEXD,[assembly:/_pro/environment/textures/props/decorative/club_khatavanga_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0045BB6C4A29179C.TEXD,[assembly:/_pro/environment/textures/props/papers/postits_fox_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00241E7878526EB4.TEXD,[assembly:/_pro/items/textures/explosives/remoteflash_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00C40F92533FE385.TEXD,[assembly:/_pro/items/textures/explosives/remoteflash_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+007F2868974F3744.TEXD,[assembly:/_pro/items/textures/explosives/remoteflash_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0019F05391C9962F.TEXD,[assembly:/_pro/items/textures/explosives/remoteflash_a.texture?/emissive_a.tex](ascolormap).pc_mipblock1
+00A670CC5F441B19.TEXD,[assembly:/_pro/items/textures/quest/cigar_thief_note_a.texture?/normal_b.tex](asnormalmap).pc_mipblock1
+00B10A614827BEE5.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_receiver_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00876F6247A0719E.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_receiver_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+001BFE1AC54EDCD2.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_receiver_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00984F10CE2DA4B7.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_receiver_a.texture?/ao_a.tex](ascolormap).pc_mipblock1
+009D1E00DB293695.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_trigger_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+002184A3DD4E9AE2.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_trigger_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00C09D8E7610976F.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_trigger_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00A1DB3D6C20F206.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_trigger_a.texture?/ao_a.tex](ascolormap).pc_mipblock1
+009CC37E241D6D7E.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_stock_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00E2A55C6590753C.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_stock_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00979B0DAD0B91A0.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_stock_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+008945BCB660F1A3.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_grip_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00A220EDDA3F7E5B.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_grip_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00A601DC9E1B07D3.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_grip_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00ACC9FDE30DCED8.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_heatguard_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+001E163A13C6B444.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_heatguard_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00EB8D6FE750BDD5.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_heatguard_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0089F1BB619F3C84.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_clip_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00997279B218E5FA.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_clip_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0080EB556A005EA3.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_clip_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+005E7FE4DC677175.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_barrel_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+008FFE0FB7D2782C.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_barrel_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00EA8A96F2B3741C.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_barrel_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0098731F397F8511.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_muzzle_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00BAA5AA87038D96.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_muzzle_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0008EF0DB07CF5BF.TEXD,[assembly:/_pro/items/textures/firearms/frames/ar_npc_shashka_a33_a/ar_hero_shashka_a33_ancestral_muzzle_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00C2C7DC0DDA0EAF.TEXD,[assembly:/_pro/environment/textures/decals/street/road_detail_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+001406D5C6140478.TEXD,[assembly:/_pro/environment/textures/decals/street/road_detail_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00974F6347BAD7A7.TEXD,[assembly:/_pro/environment/textures/decals/street/road_detail_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0025C51B74645BDC.TEXD,[assembly:/_pro/environment/textures/props/equipment/heatgun_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00760DFDD34EC91B.TEXD,[assembly:/_pro/environment/textures/props/equipment/heatgun_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00C100E418C8DABA.TEXD,[assembly:/_pro/environment/textures/props/equipment/heatgun_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+000FB912F4B806C9.TEXD,[assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_00.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00D7F8172AB4A799.TEXD,[assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_00.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00D3E615A1C59820.TEXD,[assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_00.texture?/specular_a.tex](ascolormap).pc_mipblock1
+005EE6B81A72C8EF.TEXD,[assembly:/_pro/environment/textures/architecture/walls/miami_boundary_wall_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+002E31449F2E49D3.TEXD,[assembly:/_pro/environment/textures/architecture/walls/miami_boundary_wall_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+004EF0B404F4B0F1.TEXD,[assembly:/_pro/environment/textures/architecture/walls/miami_boundary_wall_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00F934CA66FD8DD2.TEXD,[assembly:/_pro/environment/textures/decals/dirt/moss_variation.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00EE9EB5AE12BDF4.TEXD,[assembly:/_pro/environment/textures/decals/dirt/moss_variation.texture?/height_a.tex](asheightmap).pc_mipblock1
+0090B8D586A53181.TEXD,[assembly:/_pro/environment/textures/decals/dirt/moss_variation.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00FD9B46DED8ACC2.TEXD,[assembly:/_pro/environment/textures/decals/dirt/moss_variation.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0091B3753B8EC7CC.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_glass_decor.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00720ED637DA09DD.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_glass_decor.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0073CA68665EC8BC.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_glass_decor.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00EDEBC0FBF18F30.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_glass_decor.texture?/mask_a.tex](ascolormap).pc_mipblock1
+00C97CDD6894158E.TEXD,[assembly:/_pro/environment/textures/generic/cloth/camo_net_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00377984EA3B88A2.TEXD,[assembly:/_pro/environment/textures/generic/cloth/camo_net_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0042676F557AED90.TEXD,[assembly:/_pro/environment/textures/generic/cloth/camo_net_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00DD87839536FD06.TEXD,[assembly:/_pro/environment/textures/decals/seashells_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0049F72C2DD64C07.TEXD,[assembly:/_pro/environment/textures/decals/seashells_a.texture?/height_a.tex](asheightmap).pc_mipblock1
+0013586FC3580327.TEXD,[assembly:/_pro/environment/textures/decals/seashells_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+005BBD4B18C0A2C3.TEXD,[assembly:/_pro/environment/textures/decals/seashells_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0045251A0F782D9B.TEXD,[assembly:/_pro/environment/textures/decals/signs/it_posters_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+004D360CD2F9716F.TEXD,[assembly:/_pro/environment/textures/decals/signs/it_posters_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00CB7757D454DB36.TEXD,[assembly:/_pro/characters/assets/individuals/seagull/dragoneye/textures/dragoneye_eye.texture?/diffuse_blue.tex](ascolormap).pc_mipblock1
+00E81E9FC48F0E66.TEXD,[assembly:/_pro/environment/textures/decals/signs/hydraulic_warning_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+008433F6DC852926.TEXD,[assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_b.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+008E464D824B4FF1.TEXD,[assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_b.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00509BCCB2A5B6A6.TEXD,[assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_b.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0050D38EC4F0E19E.TEXD,[assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0063A081F1136722.TEXD,[assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00232AAC301CCB41.TEXD,[assembly:/_pro/characters/assets/individuals/magpie/arkianmaster/textures/arkianmaster_headpiece_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00FEF6611E92F6F6.TEXD,[assembly:/_pro/environment/textures/props/leisure/golf_grass_mat_b.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00FC8F35A0DA7709.TEXD,[assembly:/_pro/environment/textures/props/leisure/golf_grass_mat_b.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00B971AFB7FC2F28.TEXD,[assembly:/_pro/environment/textures/props/leisure/golf_grass_mat_b.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00808461DA94558E.TEXD,[assembly:/_pro/environment/textures/props/decorative/star_pattern_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00F6BE55987C6DE0.TEXD,[assembly:/_pro/environment/textures/props/signs/vholes_diploma_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00A7547981161E50.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_other_parts.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00BEC8B76DCF725B.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_other_parts.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00CBA1666A8ECDBF.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_other_parts.texture?/specular_a.tex](ascolormap).pc_mipblock1
+002963E13EFF3065.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_curtains.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0097A6EB3B81F814.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_curtains.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0087A81687FA48C6.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_curtains.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00154B2B24D073DA.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_wood_decor.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0038B70D68A32191.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_wood_decor.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00F312513AD39830.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_wood_decor.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00BE52C23643F6D8.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_mumbai_colonial_upper_window_frame.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00BBA7B773758FFE.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_mumbai_colonial_upper_window_frame.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+005F90DC86731209.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_mumbai_colonial_upper_window_frame.texture?/specular_a.tex](ascolormap).pc_mipblock1
+006DD3C1047F83CB.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_decals_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00EA2620A4DF2717.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_decals_b.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0072E6D020C436A7.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_carpet.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0088B03706D39419.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_carpet.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00FAE5B749869040.TEXD,[assembly:/_pro/vehicles/textures/trains_mumbai/train_colonial_mumbai_carpet.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0021CEC2D1C48597.TEXD,[assembly:/_pro/environment/textures/generic/floor/columbia_floor_tiles_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0032A8FFA35318C5.TEXD,[assembly:/_pro/environment/textures/generic/floor/columbia_floor_tiles_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00C26F6EC2DD9393.TEXD,[assembly:/_pro/environment/textures/generic/floor/columbia_floor_tiles_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00697595B012F34D.TEXD,[assembly:/_pro/environment/textures/props/utensils/race_cup_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+001FE2A4E31F5811.TEXD,[assembly:/_pro/environment/textures/props/utensils/race_cup_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00DF73849D8C164E.TEXD,[assembly:/_pro/environment/textures/props/electronics/hot_cabinet_details_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00BE3698F9B435A5.TEXD,[assembly:/_pro/environment/textures/props/electronics/hot_cabinet_details_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00F2FB0B03DAF1F4.TEXD,[assembly:/_pro/environment/textures/props/electronics/hot_cabinet_details_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0095D49286CA70B0.TEXD,[assembly:/_pro/environment/textures/props/electronics/hot_cabinet_details_a.texture?/emissive_a.tex](ascolormap).pc_mipblock1
+00474677338BB8CA.TEXD,[assembly:/_pro/environment/textures/decals/signs/kronstadt_emissive_logo_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0051809ABC567457.TEXD,[assembly:/_pro/environment/textures/decals/signs/kronstadt_emissive_logo_a.texture?/emissive_a.tex](ascolormap).pc_mipblock1
+00F629DAB1837E52.TEXD,[assembly:/_pro/environment/textures/props/decorative/miami_banner_podium_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+001AA15FEF4FDB90.TEXD,[assembly:/_pro/environment/textures/generic/cloth/shade_sails_a_color.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0085B01EAED82BF9.TEXD,[assembly:/_pro/environment/textures/generic/ground/tiles_marble_publicsquare_serviceaccess_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+009BC3523A212EDC.TEXD,[assembly:/_pro/environment/textures/generic/ground/tiles_marble_publicsquare_serviceaccess_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00EEE162AC84DD30.TEXD,[assembly:/_pro/environment/textures/generic/ground/tiles_marble_publicsquare_serviceaccess_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00BC42BEABE2697E.TEXD,[assembly:/_pro/environment/textures/generic/cloth/shade_sails_a_color.texture?/specular_a.tex](ascolormap).pc_mipblock1
+001D918BEB886866.TEXD,[assembly:/_pro/effects/textures/screen/fx_screen_miami_scanner.texture?/emissive_a.tex](ascolormap).pc_mipblock1
+00AEBFBA1ED40CC8.TEXD,[assembly:/_pro/environment/textures/props/papers/miami_newspaper_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0063246FD08C344B.TEXD,[assembly:/_pro/environment/textures/props/papers/miami_newspaper_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00BC4C516022CF9F.TEXD,[assembly:/_pro/environment/textures/decals/logos/gir_event_map_b.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00642C29CD7AD596.TEXD,[assembly:/_pro/environment/textures/props/papers/miami_newspaper_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+008122C4870BA024.TEXD,[assembly:/_pro/environment/textures/props/decorative/sculpture_table_horse_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+000D7111DB6DFEED.TEXD,[assembly:/_pro/environment/textures/props/decorative/sculpture_table_horse_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+005D41404E7CACF0.TEXD,[assembly:/_pro/environment/textures/props/decorative/sculpture_table_horse_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00C0BA1D25267E99.TEXD,[assembly:/_pro/characters/assets/_apparel/accessories/misc/textures/blindfold.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+005A5CA6ED2B0BFE.TEXD,[assembly:/_pro/characters/assets/_apparel/accessories/misc/textures/blindfold.texture?/specular_a.tex](ascolormap).pc_mipblock1
+008E129531A10D03.TEXD,[assembly:/_pro/characters/assets/_apparel/accessories/misc/textures/blindfold.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00012E4ED26A96E0.TEXD,[assembly:/_pro/environment/textures/architecture/arches/sihsha_back_arch_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0084DAB0C9849306.TEXD,[assembly:/_pro/environment/textures/architecture/arches/sihsha_back_arch_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0038DF614E8BCB11.TEXD,[assembly:/_pro/environment/textures/architecture/arches/sihsha_back_arch_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00F66B218ABF70F5.TEXD,[assembly:/_pro/environment/textures/architecture/arches/japanese_arch_wood_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0012E2DAC027FEFA.TEXD,[assembly:/_pro/environment/textures/architecture/arches/japanese_arch_wood_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+004BD1254EDBE2AB.TEXD,[assembly:/_pro/environment/textures/generic/metal/magpie_gold_old_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00DBD09F35C9E221.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shoes_01.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00389C5158F4A173.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shoes_01.texture?/specular_a.tex](ascolormap).pc_mipblock1
+004762BDC7E23932.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shoes_01.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+009F1637BF246DCD.TEXD,[assembly:/_pro/environment/textures/props/signs/bus_timetable_fox_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00166FF3CDB989CC.TEXD,[assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00B96BC49B5457A6.TEXD,[assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0033D2F84713BA11.TEXD,[assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0048AC43509ABA26.TEXD,[assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_b.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+005A4F83A0F89973.TEXD,[assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_b.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0071127A9BA3A7B8.TEXD,[assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_b.texture?/specular_a.tex](ascolormap).pc_mipblock1
+007D784ACA1986D3.TEXD,[assembly:/_pro/environment/textures/decals/graffiti/berlin_graffiti_peeled_paint_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00C6CFE0916ABA7C.TEXD,[assembly:/_pro/environment/textures/decals/markings/scifi_panel_lines_wet_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+003C1763F3D19F50.TEXD,[assembly:/_pro/environment/textures/decals/markings/scifi_panel_lines_wet_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0085A2ED64207ABD.TEXD,[assembly:/_pro/environment/textures/decals/markings/scifi_panel_lines_wet_a.texture?/emissive_a.tex](ascolormap).pc_mipblock1
+0058BE67DCE86916.TEXD,[assembly:/_pro/effects/textures/misc/fx_par_airplane.texture?/mask_a.tex](ascolormap).pc_mipblock1
+008A97440E64CCAC.TEXD,[assembly:/_pro/effects/textures/misc/fx_par_airplane.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00826FB03A32C058.TEXD,[assembly:/_pro/environment/textures/architecture/arches/japanese_arch_wood_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00EBA36E94E44C5D.TEXD,[assembly:/_pro/environment/textures/generic/ice/snow_wall_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+002F71C9CA3E66D7.TEXD,[assembly:/_pro/environment/textures/generic/ice/snow_wall_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00BF99DAEDAD49F8.TEXD,[assembly:/_pro/environment/textures/generic/ice/snow_wall_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00B78FD456DEF465.TEXD,[assembly:/_pro/environment/textures/generic/rock/firepit_stones_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0066367B580D5DEE.TEXD,[assembly:/_pro/environment/textures/generic/rock/firepit_stones_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00D028C0B9750DDA.TEXD,[assembly:/_pro/environment/textures/generic/rock/firepit_stones_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00ADE0C35ABA1FF6.TEXD,[assembly:/_pro/environment/textures/props/signs/fruitking_sign.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00D9CF9A33068B6C.TEXD,[assembly:/_pro/environment/textures/props/signs/fruitking_sign.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00967CA6C4485C8A.TEXD,[assembly:/_pro/environment/textures/props/signs/fruitking_sign.texture?/specular_a.tex](ascolormap).pc_mipblock1
+009F9F7B6FF66B22.TEXD,[assembly:/_pro/environment/textures/props/farmhouse_props/hay_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00608B197DFA0246.TEXD,[assembly:/_pro/environment/textures/props/farmhouse_props/hay_a.texture?/height_a.tex](asheightmap).pc_mipblock1
+00A892D5A2023102.TEXD,[assembly:/_pro/environment/textures/props/farmhouse_props/hay_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0041B4CD771793D8.TEXD,[assembly:/_pro/environment/textures/decals/graffiti/colorado_rabies_text_decals_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0077257E88E8CB35.TEXD,[assembly:/_pro/environment/textures/decals/graffiti/colorado_rabies_text_decals_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+006C8FE4B699EF09.TEXD,[assembly:/_pro/environment/textures/generic/stone/granite_trim_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0036012677F52D14.TEXD,[assembly:/_pro/environment/textures/generic/stone/granite_trim_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00A510E9E5910CE9.TEXD,[assembly:/_pro/environment/textures/generic/stone/granite_trim_a.texture?/diffuse_c.tex](ascolormap).pc_mipblock1
+0054042F70411B1F.TEXD,[assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_zika.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+000EF1A941F895E8.TEXD,[assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_zika.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00B39C1D62E397FA.TEXD,[assembly:/_pro/environment/textures/props/electronic/kitchen_gas_stove_a_zika.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0054ED935F3DCA11.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_apron_01.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+004981D96CA08254.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_apron_01.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00693FD940238E72.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_apron_01.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00196B919CFEA533.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_belt_01.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+001781DB034DDA78.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_belt_01.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0009DC9B6AD9F62C.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_belt_01.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+003278D58A03E914.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shirt_01.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00F880983219B082.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shirt_01.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00E595B8D8191B21.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/fem_reg_waiterbangkok_shirt_01.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+002C98A4F4F84004.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shoes.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+003710B57786460E.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shoes.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00B16F51D4390EEE.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shoes.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+006636B1402BE809.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_belt.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00E392A0455E0440.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_belt.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00FE6C45AC52BDF8.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_belt.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00565C3F0293D661.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_apron.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+004478AC20716D36.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_apron.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0006D920E3CE778D.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_apron.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00600C39B0BFE0A3.TEXD,[assembly:/_pro/environment/textures/generic/cloth/camo_net_a.texture?/emissive_a.tex](ascolormap).pc_mipblock1
+0071E3EA07BC4F21.TEXD,[assembly:/_pro/environment/textures/architecture/decorative/catacombs_wall_b_decal_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0078E739A1289C5E.TEXD,[assembly:/_pro/environment/textures/architecture/decorative/catacombs_wall_b_decal_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+005F25A1ACE741FF.TEXD,[assembly:/_pro/environment/textures/architecture/decorative/catacombs_wall_b_decal_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0066FA25850227F8.TEXD,[assembly:/_pro/environment/textures/props/signs/wetfloor_sign_italian_decals_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00819D1AFB97BA82.TEXD,[assembly:/_pro/environment/textures/props/signs/wetfloor_sign_italian_decals_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00F68209B15995BB.TEXD,[assembly:/_pro/environment/textures/props/signs/signage_wine_shop_chalk_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00632C5A4D44C614.TEXD,[assembly:/_pro/environment/textures/props/signs/signage_wine_shop_chalk_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00A9B2CCC22FC0A0.TEXD,[assembly:/_pro/environment/textures/props/movieset/movieset_trailers_a_glass.texture?/specular_a.tex](ascolormap).pc_mipblock1
+003A1D784B4E6EA6.TEXD,[assembly:/_pro/environment/textures/props/movieset/movieset_trailers_a_glass.texture?/diffuse_a.tex](asnormalmap).pc_mipblock1
+00B169232BC1E5BF.TEXD,[assembly:/_pro/environment/textures/props/signs/constructionsign_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00476B0756F0DA62.TEXD,[assembly:/_pro/environment/textures/props/signs/constructionsign_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00F2FF2AC285409F.TEXD,[assembly:/_pro/environment/textures/props/signs/constructionsign_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0080C60F16517DE7.TEXD,[assembly:/_pro/environment/textures/props/signs/constructionsign_a.texture?/emissive_a.tex](ascolormap).pc_mipblock1
+002031D452FB716F.TEXD,[assembly:/_pro/_test/nigela/textures/xmas/xmas_tinsel_square.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0016C34A25BA979C.TEXD,[assembly:/_pro/_test/nigela/textures/xmas/xmas_tinsel_square.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00063732264E8DAD.TEXD,[assembly:/_pro/environment/textures/foliage/banyan_cluster_a.texture?/translucency_a.tex](ascolormap).pc_mipblock1
+005C169E0C85F358.TEXD,[assembly:/_pro/environment/textures/props/decorative/pirate_banner_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00634BDBD5B4FE21.TEXD,[assembly:/_pro/environment/textures/props/decorative/pirate_banner_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00F17D2CF87663FF.TEXD,[assembly:/_pro/environment/textures/props/decorative/pirate_banner_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00F0EEB7ED00B46C.TEXD,[assembly:/textures/props/general/instrument_sitar_01.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+001D3C28A9CEE7E9.TEXD,[assembly:/textures/props/general/instrument_sitar_01.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00803E293F2594DE.TEXD,[assembly:/_pro/environment/textures/levels/bulldog/bulldog_four_icons_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0011F7AD80281874.TEXD,[assembly:/_pro/environment/textures/levels/bulldog/bulldog_four_icons_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+004267738F80E7E0.TEXD,[assembly:/_pro/environment/textures/architecture/fences/gate_bulldog_last_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00F7DD844342DC64.TEXD,[assembly:/_pro/environment/textures/levels/bulldog/bulldog_four_icons_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00A35178E04FCB4F.TEXD,[assembly:/_pro/environment/textures/props/food/apple_crate_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00326D882BD39183.TEXD,[assembly:/_pro/environment/textures/props/food/apple_crate_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00E44190F1DAC62A.TEXD,[assembly:/_pro/environment/textures/props/food/apple_crate_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0034F3F7737D34CC.TEXD,[assembly:/_pro/environment/textures/decals/logos/biker_gang_logo_fox_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+003E1DC010EC6A4D.TEXD,[assembly:/_pro/environment/textures/decals/logos/biker_gang_logo_fox_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00042424F070EAE1.TEXD,[assembly:/_pro/vehicles/textures/scooter_a/food_delivery_scooter_keyhole_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0091DA813C1B67FA.TEXD,[assembly:/_pro/vehicles/textures/scooter_a/food_delivery_scooter_keyhole_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0096F5C65CEBBCC2.TEXD,[assembly:/_pro/vehicles/textures/scooter_a/food_delivery_scooter_keyhole_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0054CA2B82DE8686.TEXD,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapecluster_b_item.texture?/ao_a.tex](ascolormap).pc_mipblock1
+00992B5AC3E90008.TEXD,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapecluster_b_item.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+009A631EF956BB3B.TEXD,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapecluster_b_item.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00D5FD9E106067F4.TEXD,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapecluster_b_item.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+004615776F414A1B.TEXD,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapematerial_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00F37C51BB3456C2.TEXD,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapematerial_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+005316F95A708282.TEXD,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapematerial_a.texture?/height_a.tex](asheightmap).pc_mipblock1
+004CE9A2A70098A0.TEXD,[assembly:/_pro/environment/textures/foliage/grapevine_a/grapematerial_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00760F6A47023F5C.TEXD,[assembly:/_pro/environment/textures/props/signs/llama_qr_code.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0096FBF7FAB899F5.TEXD,[assembly:/_pro/environment/textures/props/signs/llama_qr_code.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00CBE43F9BEB8061.TEXD,[assembly:/_pro/environment/textures/props/signs/llama_qr_code.texture?/specular_a.tex](ascolormap).pc_mipblock1
+002EA2B5780A7E35.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00E5766B0E2740FF.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0076516C7B6A18C6.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0068B1787ED27A3D.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod.texture?/emissive_a.tex](ascolormap).pc_mipblock1
+00EAF81DD09BCB87.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_color.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0071CCE90A70E25E.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_color.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0093ECCC599D1197.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_color.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0020963382810C46.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_color.texture?/emissive_a.tex](ascolormap).pc_mipblock1
+00C4199B6EEF8276.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_concrete.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0005EB57860623E7.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_concrete.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00D36BD5A7279774.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_concrete.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00B3BA1FAA4E0B1D.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_concrete.texture?/emissive_a.tex](ascolormap).pc_mipblock1
+00DFED0D7C60CFCF.TEXD,[assembly:/_pro/environment/textures/props/accessories/mouse_mat_ica_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+002A58CEEA637099.TEXD,[assembly:/_pro/environment/textures/props/accessories/mouse_mat_ica_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00DF1D3F8CF5B1D6.TEXD,[assembly:/_pro/environment/textures/props/accessories/mouse_mat_ica_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00EA703A519504D2.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_tiles.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00F4BCCDCD37F416.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_tiles.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+004AF66CD0EE0DE8.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_tiles.texture?/specular_a.tex](ascolormap).pc_mipblock1
+001F3161956B90AE.TEXD,[assembly:/_pro/environment/textures/levels/wet/building_backdrop_lod_tiles.texture?/emissive_a.tex](ascolormap).pc_mipblock1
+00C7B97470F1C90E.TEXD,[assembly:/_pro/environment/textures/levels/wet/lockers_facility_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00B4DAECE5B52279.TEXD,[assembly:/_pro/environment/textures/levels/wet/lockers_facility_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+001826ACB4548E14.TEXD,[assembly:/_pro/environment/textures/levels/wet/lockers_facility_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+00B84BC30C5C9F79.TEXD,[assembly:/_pro/environment/textures/levels/wet/aluminium_brushed_circular_copper.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0049B99296E8BFC4.TEXD,[assembly:/_pro/environment/textures/levels/wet/aluminium_brushed_circular_copper.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+001A4CCEA9F3F35A.TEXD,[assembly:/_pro/environment/textures/levels/wet/aluminium_brushed_circular_copper.texture?/specular_a.tex](ascolormap).pc_mipblock1
+002E87173FDF780D.TEXD,[assembly:/_pro/environment/textures/levels/wet/posters_rat_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0037086CE2B2AACD.TEXD,[assembly:/_pro/environment/textures/levels/wet/posters_rat_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0057577B881C4D8B.TEXD,[assembly:/_pro/environment/textures/levels/wet/posters_rat_a.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0036DB2CE745F4F1.TEXD,[assembly:/_pro/effects/textures/screen/fx_screen_miami_robot.texture?/emissive_a.tex](ascolormap).pc_mipblock1
+003D899D057A3AD8.TEXD,[assembly:/_pro/environment/textures/decals/logos/prxe_tv.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0098D65BCB953FF7.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shirt.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00A7A8588C4C7551.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shirt.texture?/specular_a.tex](ascolormap).pc_mipblock1
+0095131CB0E296F4.TEXD,[assembly:/_pro/characters/assets/workers/waiters_01/textures/male_reg_waiterbangkok_shirt.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+0015BC6D6BB24222.TEXD,[assembly:/_pro/environment/textures/generic/metal/magpie_gold_old_a.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00F48C57C1CED903.TEXD,[assembly:/_pro/environment/textures/generic/metal/magpie_gold_old_a.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+0021D7E8D57A2D3B.TEXD,[assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons.texture?/diffuse_a.tex](ascolormap).pc_mipblock1
+00BCBCC651C2D808.TEXD,[assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+00274280829A7D93.TEXD,[assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons.texture?/specular_a.tex](ascolormap).pc_mipblock1
+006168FACEAB5260.TEXD,[assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons.texture?/emissive_a.tex](ascolormap).pc_mipblock1
+00B6C24DF24AE39A.TEXD,[assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons_glass.texture?/normal_a.tex](asnormalmap).pc_mipblock1
+005700331D25B746.TEXD,[assembly:/_pro/vehicles/textures/american_ambulance_a/ambulance_addons_glass.texture?/diffuse_a.tex](ascolormap).pc_mipblock1

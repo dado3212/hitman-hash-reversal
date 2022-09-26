@@ -1,2 +1,4 @@
 *.json
 *.pickle
+.DS_STORE
+__pycache__
