@@ -152,3 +152,15 @@ for switch in real_switch_groups:
             print(hash + '.DSWB,' + filename)
         if hash + '.WSWB' in data:
             print(hash + '.WSWB,' + filename)
+
+with open('wordlist_1.txt', 'r') as f:
+    words = [x.strip() for x in f.readlines()]
+
+for word in words:
+    for missing in missing_switch_group:
+        filename = f"[assembly:/sound/wwise/exportedwwisedata/switches/{word}/{missing}.wwiseswitchgroup].pc_entityblueprint"
+        hash = ioi_string_to_hex(filename)
+        if hash + '.DSWB' in data:
+            print(hash + '.DSWB,' + filename)
+        if hash + '.WSWB' in data:
+            print(hash + '.WSWB,' + filename)

@@ -4,6 +4,10 @@ Checked all CSS color names from https://css-tricks.com/snippets/css/named-color
 - b for cyan, yellow
 - c for yellow
 
+wordlist_1.txt and wordlist_3.txt are downloaded from https://www.keithv.com/software/wlist/ and are used as a very
+low quality hashing dictionary. Really we should be using a Hitman-specific wordlist, but as of right now
+I haven't built one.
+
 Potential patterns:
 [assembly:/_pro/environment/textures/generic/metal/gold_clean_a.texture?/diffuse_a.tex](ascolormap).pc_tex
 
