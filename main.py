@@ -2,55 +2,6 @@ import json, hashlib, re, pickle
 from typing import Optional, List, Dict, Any
 from utils import ioi_string_to_hex
 
-# Missing names:
-'''
-{
-    'LOCR': 604,
-    'MATE': 386,
-    'TEXT': 10605,
-    'ORES': 2,
-    'LINE': 5933,
-    'ASET': 7251,
-    'ECPB': 2730,
-    'ECPT': 2730,
-    'ASEB': 3969,
-    'JSON': 19,
-    'YSHP': 1,
-    'BMSK': 21,
-    'MJBA': 11752,
-    'PRIM': 20910,
-    'ATMD': 10096,
-    'ALOC': 10419,
-    'BORG': 4124,
-    'VIDB': 88,
-    'ASVA': 14,
-    'WBNK': 1,
-    'DITL': 4,
-    'CLNG': 4,
-    'DLGE': 2601,
-    'GFXI': 2019,
-    'FXAS': 3,
-    'BOXC': 37,
-    'MRTR': 722,
-    'VTXD': 2590,
-    'TEXD': 10392,
-    'RTLV': 6,
-    'MRTN': 1149,
-    'WWEV': 181,
-    'WWEM': 108,
-    'ERES': 3,
-    'AIBZ': 1,
-    'SCDA': 59,
-    'CRMD': 1,
-    'NAVP': 1,
-    'WSWB': 2,
-    'WSGB': 2,
-    'WSGT': 2,
-    'WSWT': 2,
-    'GFXV': 1
-}
-'''
-
 # Find solvable hashes
 # What is a solvable hash?
 #  it has no name
