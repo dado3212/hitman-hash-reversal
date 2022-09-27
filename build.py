@@ -52,3 +52,21 @@ with open('./texture_folders.pickle', 'wb') as handle:
 
 with open('./texture_suffixes.pickle', 'wb') as handle:
     pickle.dump(texture_suffixes, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+# Build material patterns
+material_folders = set([])
+for hash in data:
+    if data[hash]['type'] == 'MATI':
+        name = data[hash]['name']
+        if 'assembly' in name:
+            info = re.search(r"^(.*)/[^\\]*\.mi\]\.pc_mi$", name, re.IGNORECASE)
+            if info is None:
+                print(name)
+                break
+            else:
+                material_folders.add(info.group(1))
+
+print(material_folders)
+
+with open('./material_folders.pickle', 'wb') as handle:
+    pickle.dump(material_folders, handle, protocol=pickle.HIGHEST_PROTOCOL)
