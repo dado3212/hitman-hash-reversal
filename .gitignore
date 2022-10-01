@@ -1,5 +1,5 @@
 *.json
 *.pickle
+*.txt
 .DS_STORE
 __pycache__
-tmp.txt

@@ -54,21 +54,15 @@ def guess(hash: str) -> Optional[str]:
     return None
 
 for file in data:
-    if data[file]['type'] == 'TEXT' and len(data[file]['name']) > 0:
+    if data[file]['type'] == 'TEXT' and len(data[file]['name']) == 0:
         materials: List[Any] = []
         if file in reverse:
             for d in reverse[file]:
                 if d in data:
                     if data[d]['type'] == 'MATI' and 'assembly' in data[d]['name']:
                         materials.append(data[d])
-        # There are 10,257 unknown
-        # 3360 have 1 material
-        # 5571 have 0 materials
-        # 698 have 2, and it goes down from there
         if len(materials) == 1:
-            guessed_name = guess(file)
-            if guessed_name is None:
-                print(materials[0]['name'] + "\t" + data[file]['name'])
+            print(materials[0]['name'])
             # print(data[file]['name'], materials)
         elif len(materials) > 1:
             # Ignore these for now
