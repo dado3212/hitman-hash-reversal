@@ -49,10 +49,9 @@ start = [
     '[assembly:/_pro/environment/textures/logos/',
 
     '[assembly:/_pro/environment/textures/levels/bangkok/',
-    '[assembly:/_pro/environment/textures/levels/bangkok/himmapan_hotel_a/',
-    '[assembly:/_pro/environment/textures/levels/tiger/himmapan_hotel_a/',
     '[assembly:/_pro/environment/textures/levels/tiger/',
 ]
+
 base = [
     'himmapan_hotel_b',
     'himmapan_hotel_a',
@@ -66,6 +65,12 @@ for n in base:
             new = n[0:i] + ' ' + n[i:]
             name.append(new)
 
+for n in name[::]:
+    name.append(n.replace('himmapan_', ''))
+    name.append(n.replace('himmapan_', 'bangok_'))
+    name.append(n.replace('hotel_', ''))
+    name.append(n.replace('himmapan_hotel_', 'hotel_bangkok_'))
+
 for n in base:
     for i in range(len(n)):
         if n[i] == '_':
@@ -76,23 +81,30 @@ for n in base:
     name.append('logo_' + n)
 
 for n in name[::]:
-    name.append(n + 'w')
-
-for n in name[::]:
-    name.append(n.replace('himmapan_', ''))
-    name.append(n.replace('hotel_', ''))
-
-for n in name[::]:
     name.append(n + '_decal')
     name.append(n + '_a')
     name.append(n + '_decal_a')
 
+for n in name[::]:
+    name.append(n.replace('himmapan_', ''))
+    name.append(n.replace('himmapan_', 'bangok_'))
+    name.append(n.replace('hotel_', ''))
+    name.append(n.replace('himmapan_hotel_', 'hotel_bangkok_'))
+
 print(name)
+print(len(name))
 
 for s in start:
     for n in name:
         for suffix in texture_suffixes:
             file = s + n + '.texture' + suffix
+            if (ioi_string_to_hex(file) in success):
+                print(file)
+
+for s in start:
+    for n in name:
+        for suffix in texture_suffixes:
+            file = s + n + '/' + n + '.texture' + suffix
             if (ioi_string_to_hex(file) in success):
                 print(file)
 
