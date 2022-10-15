@@ -10,7 +10,7 @@ Then you'll need to run `python3 build.py`. After that, the other scripts will w
 are likely to change between versions.
 
 Recommended scripts after a new version bump:
-* `python3 letter_changes.py` - does some letter futzing for known files
+* `python3 futzing.py` - does some letter futzing for known files (this takes around 30 minutes to run currently)
 * `python3 main.py > tmp.txt` and follow up with `python3 text_to_texd.py` and combine them for trivial TEXT/D bashing
 
 ## Current Progress
