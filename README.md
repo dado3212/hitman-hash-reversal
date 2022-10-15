@@ -1,21 +1,18 @@
-Checked all CSS color names from https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/
-- found black,blue,cyan,grey,green,purple,red,white,yellow no other matches, and all are named
-- '[assembly:/_pro/environment/textures/constants/color_' + color + '.texture?/diffuse_a.tex](ascolormap).pc_tex'
-- b for cyan, yellow
-- c for yellow
+# Hitman Hash Reversal
 
-wordlist_1.txt and wordlist_3.txt are downloaded from https://www.keithv.com/software/wlist/ and are used as a very
-low quality hashing dictionary. Really we should be using a Hitman-specific wordlist, but as of right now
-I haven't built one.
+This repo is a collection of scripts that I've written for trying to crack IOI
+hashes. I make no promises of efficacy.
 
-Potential patterns:
-[assembly:/_pro/environment/textures/generic/metal/gold_clean_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+## General Steps
 
-You'll need to copy hashes.json to this folder from the latest release on my repo: https://github.com/dado3212/hitman-hashes-json/releases.
+You'll need to copy hashes.json to this folder from the latest release on my other repo: https://github.com/dado3212/hitman-hashes-json/releases.
 Then you'll need to run `python3 build.py`. After that, the other scripts will work, though they're all WIP and
 are likely to change between versions.
 
-https://github.com/dado3212/hitman-hash-reversal/commit/3d2a7b525c99750e6291960919bbbe584a0fdbbc had the version of main.py that I used to actually create the current shared list in new.txt.
+Recommended scripts after a new version bump:
+* `python3 letter_changes.py` - does some letter futzing for known files
+
+## Current Progress
 
 Current state of the world (calculate using `python3 unknown_calc.py`, and then run `\| +\n` -> `|\n` in regex replace):
 
@@ -84,3 +81,20 @@ Current state of the world (calculate using `python3 unknown_calc.py`, and then 
 | WWES | 184994 | 184994 | 100.0% |
 | WWEV | 1982 | 8112 | 24.4% |
 | YSHP | 2 | 3 | 66.7% |
+
+## Raw Notes
+
+Checked all CSS color names from https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/
+- found black,blue,cyan,grey,green,purple,red,white,yellow no other matches, and all are named
+- '[assembly:/_pro/environment/textures/constants/color_' + color + '.texture?/diffuse_a.tex](ascolormap).pc_tex'
+- b for cyan, yellow
+- c for yellow
+
+wordlist_1.txt and wordlist_3.txt are downloaded from https://www.keithv.com/software/wlist/ and are used as a very
+low quality hashing dictionary. Really we should be using a Hitman-specific wordlist, but as of right now
+I haven't built one.
+
+Potential patterns:
+[assembly:/_pro/environment/textures/generic/metal/gold_clean_a.texture?/diffuse_a.tex](ascolormap).pc_tex
+
+https://github.com/dado3212/hitman-hash-reversal/commit/3d2a7b525c99750e6291960919bbbe584a0fdbbc had the version of main.py that I used to actually create the current shared list in new.txt.
