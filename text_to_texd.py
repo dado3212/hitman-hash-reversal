@@ -4,10 +4,10 @@ import pickle
 with open('hashes.pickle', 'rb') as handle:
     data = pickle.load(handle)
 
-with open('new.txt', 'r') as f:
+with open('tmp.txt', 'r', encoding='utf-16') as f:
     lines = f.readlines()
     for line in lines:
-        a = line.strip().split(',')
+        a = line.strip().split(',', 1)
         name_t = a[0]
         file_t = a[1]
         file_d = file_t[:-6] + 'pc_mipblock1'

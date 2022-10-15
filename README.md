@@ -11,6 +11,7 @@ are likely to change between versions.
 
 Recommended scripts after a new version bump:
 * `python3 letter_changes.py` - does some letter futzing for known files
+* `python3 main.py > tmp.txt` and follow up with `python3 text_to_texd.py` and combine them for trivial TEXT/D bashing
 
 ## Current Progress
 

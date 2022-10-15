@@ -7,8 +7,6 @@ from utils import ioi_string_to_hex
 #  it has no name
 #  reverse shows
 
-print("starting loading")
-
 with open('hashes.pickle', 'rb') as handle:
     data: Dict[str, Any] = pickle.load(handle)
 
@@ -16,12 +14,10 @@ with open('reverse.pickle', 'rb') as handle:
     reverse: Dict[str, str] = pickle.load(handle)
 
 with open('texture_folders.pickle', 'rb') as handle:
-    texture_folders: Dict[int, str] = pickle.load(handle)
+    texture_folders: List[str] = pickle.load(handle)
 
 with open('texture_suffixes.pickle', 'rb') as handle:
-    texture_suffixes: Dict[int, str] = pickle.load(handle)
-
-print("finished loading")
+    texture_suffixes: List[str] = pickle.load(handle)
 
 # search_names('whiskey', 'TEXT')
 def sub_guess(prefix: str, type_str: str) -> Optional[str]:
@@ -38,7 +34,6 @@ def guess(hash: str) -> Optional[str]:
         # Can this even happen?
         return None
     # Check if we have a parent material
-    possible = []
     for d in reverse[hash]:
         if d in data:
             if data[d]['type'] == 'MATI' and len(data[d]['name']) > 0:
@@ -72,4 +67,4 @@ for hash in data:
         # if path is None:
         #     print(data[hash]['hex'] + ' - ' + hash + ' - Unknown')
         if path is not None:
-            print(hash + ' - ' + path)
+            print(hash + ',' + path)
