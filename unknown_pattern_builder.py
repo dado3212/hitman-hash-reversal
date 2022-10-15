@@ -56,15 +56,22 @@ def guess(hash: str) -> Optional[str]:
 for file in data:
     if data[file]['type'] == 'TEXT' and len(data[file]['name']) == 0:
         materials: List[Any] = []
+        any_mats = False
         if file in reverse:
             for d in reverse[file]:
                 if d in data:
-                    if data[d]['type'] == 'MATI' and 'assembly' in data[d]['name']:
-                        materials.append(data[d])
+                    if data[d]['type'] == 'MATI':
+                        any_mats = True
+                        if 'assembly' in data[d]['name']:
+                            materials.append(data[d])
         if len(materials) == 1:
-            print(materials[0]['name'])
+            continue
+            # print(materials[0]['name'])
             # print(data[file]['name'], materials)
         elif len(materials) > 1:
             # Ignore these for now
             continue
+        else:
+            if not any_mats:
+                print(file)
 
