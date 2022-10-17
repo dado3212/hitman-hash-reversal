@@ -1,8 +1,17 @@
 import unittest
-from build_wordlist import extract_words
+from build_wordlist import extract_words, compound_words
 from futzing import num_alts, replaceable_sections, replacements
 
 class UtilsTest(unittest.TestCase):
+
+    def test_compound_words(self):
+        words = compound_words('sunrise')
+        assert words is not None
+        self.assertEqual(sorted(list(words)), ['rise', 'sun', 'sunrise'])
+
+        words = compound_words('tequilasunrisesuit')
+        assert words is not None
+        self.assertEqual(sorted(list(words)), ['rise', 'suit', 'sun', 'sunrise', 'tequila'])
 
     def test_extract_words(self):
         words = extract_words('[assembly:/runtimeresources/vertexpaint/_pro/environment/templates/levels/fox/abandoned_building_fox_a/abandoned_building_kit_fox_inner_wall_9m_a_29_1a25694801db41bb9cb01474bbff9a3c.vertexdata].pc_vertexdata')

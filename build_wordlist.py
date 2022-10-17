@@ -1,5 +1,5 @@
 import pickle, re
-from typing import List
+from typing import List, Optional
 
 # Load raw words
 _end = '_end_'
@@ -14,6 +14,28 @@ def is_valid_word(word: str) -> bool:
 
 with open('w12_trie.pickle', 'rb') as handle:
     trie = pickle.load(handle)
+
+def compound_words(word: str) -> Optional[set[str]]:
+    if len(word) < 4:
+        if is_valid_word(word):
+            return {word}
+        else:
+            return None
+    total_words: set[str] = set()
+    if is_valid_word(word):
+        total_words.add(word)
+    for i in range(1, len(word)-1):
+        first_part = word[:i]
+        if is_valid_word(first_part):
+            compound = compound_words(word[i:])
+            if compound is not None:
+                total_words.add(first_part)
+                total_words = total_words.union(compound)
+    if len(total_words) == 0:
+        return None
+    else:
+        return total_words
+
 
 def extract_words(word: str) -> List[str]:
     # First, split on slashes. We'll never(?) have a word that spans a slash
