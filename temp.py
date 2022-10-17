@@ -9,14 +9,15 @@ with open('hitman_wordlist.txt', 'r') as f:
     words = [x.strip() for x in f.readlines()]
     # prefixes = [f'[assembly:/_pro/environment/templates/props/{x}/{x}_props_a.template?/' for x in words]
     # prefixes = [f'[assembly:/_pro/environment/templates/props/{x}_props/{x}_props_a.template?/' for x in words]
-    prefixes = [f'[assembly:/_pro/environment/templates/props/{x}/{x}_a.template?/' for x in words]
+    # prefixes = [f'[assembly:/_pro/environment/templates/props/{x}/{x}_a.template?/' for x in words]
+    prefixes = [f'[assembly:/_pro/environment/templates/props/{x}/{x}.template?/' for x in words]
 
 print('Processing')
 unknown: Dict[str, str] = {}
 for hash in data:
     if data[hash]['type'] == 'TEMP':
         if (len(data[hash]['name']) > 0 and 
-            not data[hash]['current_name']
+            not data[hash]['correct_name']
             and data[hash]['name'] != 'geomentity01'):
             unknown[hash] = data[hash]['name']
 

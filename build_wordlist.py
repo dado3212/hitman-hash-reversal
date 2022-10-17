@@ -50,12 +50,10 @@ def extract_words(word: str) -> List[str]:
             continue
         result.append(word)
         # Check if it's a compound word (currently only doing two letter words)
-        for i in range(1, len(word)):
-            first = word[:i]
-            second = word[i:]
-            if len(first) > 1 and len(second) > 1 and is_valid_word(first) and is_valid_word(second):
-                result.append(first)
-                result.append(second)
+        compound = compound_words(word)
+        if compound is not None:
+            for w in compound:
+                result.append(w)
             
     return list(set(result))
 

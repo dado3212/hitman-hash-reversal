@@ -1,29 +1,37 @@
 from utils import ioi_string_to_hex
-import pickle
+import pickle, re
 from typing import List
 
 replacements = [
-    ('.pc_tex', '.pc_mipblock1'),
-    ('.prim].pc_prim', '.prim].pc_entitytype'),
-    ('.prim].pc_prim', '.linkedprim].pc_bonerig'),
-    ('.prim].pc_prim', '.linkedprim].pc_coll'),
-    ('.prim].pc_prim', '.linkedprim].pc_entitytype'),
-    ('.prim].pc_prim', '.linkedprim].pc_linkedprim'),
-    ('.pc_entitytype', '.pc_entityblueprint'),
-    ('.pc_entitytemplate', '.pc_entityblueprint'),
+    # Simple replacements (will be ran both ways)
+    (False, '.pc_tex', '.pc_mipblock1'),
+    (False, '.prim].pc_prim', '.prim].pc_entitytype'),
+    (False, '.prim].pc_prim', '.linkedprim].pc_bonerig'),
+    (False, '.prim].pc_prim', '.linkedprim].pc_coll'),
+    (False, '.prim].pc_prim', '.linkedprim].pc_entitytype'),
+    (False, '.prim].pc_prim', '.linkedprim].pc_linkedprim'),
+    (False, '.pc_entitytype', '.pc_entityblueprint'),
+    (False, '.pc_entitytemplate', '.pc_entityblueprint'),
+    # Regex replacements (are unidirectional)
+    # [assembly:/_pro/environment/templates/props/street_props/street_props_mumbai_a.template?/tent_street_mumbai_f.entitytemplate].pc_entitytype
+    # [assembly:/_pro/environment/geometry/props/street_props/tent_street_mumbai_a.wl2?/tent_street_mumbai_f.prim].pc_entitytype
 ]
 
 def find_alternate_paths(file: str, run_again: bool = True) -> dict[str, str]:
     alt_paths: dict[str, str] = dict()
     for replacement in replacements:
-        if file.endswith(replacement[0]):
-            new_file = file.removesuffix(replacement[0]) + replacement[1]
-            new_hash = ioi_string_to_hex(new_file)
-            alt_paths[new_hash] = new_file
-        if file.endswith(replacement[1]):
-            new_file = file.removesuffix(replacement[1]) + replacement[0]
-            new_hash = ioi_string_to_hex(new_file)
-            alt_paths[new_hash] = new_file
+        # Regex
+        if replacement[0]:
+            continue
+        else:
+            if file.endswith(replacement[1]):
+                new_file = file.removesuffix(replacement[1]) + replacement[2]
+                new_hash = ioi_string_to_hex(new_file)
+                alt_paths[new_hash] = new_file
+            if file.endswith(replacement[2]):
+                new_file = file.removesuffix(replacement[2]) + replacement[1]
+                new_hash = ioi_string_to_hex(new_file)
+                alt_paths[new_hash] = new_file
     if run_again:
         iterated_paths = list(alt_paths.keys())[::]
         for hash in iterated_paths:
@@ -51,10 +59,10 @@ if __name__ == '__main__':
             file = a[1].strip()
             expanded_lines.append(hash + ', ' + file)
             alt_paths = find_alternate_paths(file)
-            print(alt_paths)
             for hash in alt_paths:
                 if hash in data and not data[hash]['correct_name']:
                     expanded_lines.append(hash + ', ' + alt_paths[hash])
+                    print(hash + ', ' + alt_paths[hash])
 
     expanded_lines = list(set(expanded_lines))
 

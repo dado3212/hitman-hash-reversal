@@ -3,3 +3,4 @@
 *.txt
 .DS_STORE
 __pycache__
+!hitman_wordlist.txt
