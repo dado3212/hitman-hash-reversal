@@ -1,8 +1,18 @@
-import pickle, re
-from typing import List, Optional
+from distutils.command.build import build
+import pickle, re, os
+from typing import List, Optional, Any, Dict
 
 # Load raw words
 _end = '_end_'
+
+def build_trie(words: List[str]):
+    trie: Dict[str, Any] = dict()
+    for word in words:
+        current_dict = trie
+        for letter in word:
+            current_dict = current_dict.setdefault(letter, {})
+        current_dict[_end] = _end
+    return trie
 
 def is_valid_word(word: str) -> bool:
     current_dict = trie
@@ -12,8 +22,19 @@ def is_valid_word(word: str) -> bool:
         current_dict = current_dict[letter]
     return _end in current_dict
 
-with open('w12_trie.pickle', 'rb') as handle:
-    trie = pickle.load(handle)
+# Need to fix this, it takes literally forever because my compound_word calculation is ass
+if os.path.exists('hitman_wordlist.txt') and False:
+    with open('wordlist_12.txt', 'r') as f:
+        words = [x.strip() for x in f.readlines()]
+
+    with open('hitman_wordlist.txt', 'r') as f:
+        words_two = [x.strip() for x in f.readlines()]
+
+    combined_words = list(set(words).union(set(words_two)))
+    trie = build_trie(combined_words)
+else:
+    with open('w12_trie.pickle', 'rb') as handle:
+        trie = pickle.load(handle)
 
 def compound_words(word: str) -> Optional[set[str]]:
     if len(word) < 4:
