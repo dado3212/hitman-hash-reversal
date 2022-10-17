@@ -9,7 +9,7 @@ match = {
     '00B476579A770AB6': 3,
 }
 
-with open('wordlist_3.txt', 'r') as f:
+with open('hitman_wordlist.txt', 'r') as f:
     words = [x.strip() for x in f.readlines()]
 
 # def foo(l: str, str_length: int):
@@ -18,7 +18,7 @@ with open('wordlist_3.txt', 'r') as f:
 last_perc = 0.0
 print(len(words))
 print('0%')
-# got up to 6.4% with word_word2 and nothing
+# got up to 6.4% with word_word2 and wordlist_3
 for i in range(len(words)):
     new_perc = round(i * 100.0 / len(words), 1)
     if new_perc > last_perc:
