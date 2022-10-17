@@ -57,8 +57,8 @@ for k in known:
 
 for possible in known:
     file_name = f"[assembly:/animations/bonemasks/{possible}.bonemask](assembly:/geometry/characters/_export_rigs/biped~~.xml).pc_bonemask"
-    possible_hash = ioi_string_to_hex(file_name) + '.BMSK'
+    possible_hash = ioi_string_to_hex(file_name)
     if possible_hash in data:
-        if len(data[possible_hash]['name']) == 0:
+        if not data[possible_hash]['correct_name']:
             print(possible_hash + ',' + file_name)
 

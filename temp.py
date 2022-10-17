@@ -16,9 +16,9 @@ unknown: Dict[str, str] = {}
 for hash in data:
     if data[hash]['type'] == 'TEMP':
         if (len(data[hash]['name']) > 0 and 
-            ioi_string_to_hex(data[hash]['name']) != hash[:-5]
+            not data[hash]['current_name']
             and data[hash]['name'] != 'geomentity01'):
-            unknown[hash[:-5]] = data[hash]['name']
+            unknown[hash] = data[hash]['name']
 
 last_perc = 0.0
 num_prefixes = len(prefixes)

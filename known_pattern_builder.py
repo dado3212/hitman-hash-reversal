@@ -17,7 +17,7 @@ print("finished loading")
 def sub_guess(prefix: str, hash: str) -> Optional[str]:
     for suffix in texture_suffixes:
         path_guess = prefix + '.texture' + suffix
-        if ioi_string_to_hex(path_guess) == hash[:-5]:
+        if ioi_string_to_hex(path_guess) == hash:
             return path_guess
     return None
 

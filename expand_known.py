@@ -3,29 +3,27 @@ import pickle
 from typing import List
 
 replacements = [
-    (('.pc_tex', 'TEXT'), ('.pc_mipblock1', 'TEXD')),
-    (('.prim].pc_prim', 'PRIM'), ('.prim].pc_entitytype', 'TEMP')),
-    (('.prim].pc_prim', 'PRIM'), ('.linkedprim].pc_bonerig', 'BORG')),
-    (('.prim].pc_prim', 'PRIM'), ('.linkedprim].pc_coll', 'ALOC')),
-    (('.prim].pc_prim', 'PRIM'), ('.linkedprim].pc_entitytype', 'TEMP')),
-    (('.prim].pc_prim', 'PRIM'), ('.linkedprim].pc_linkedprim', 'PRIM')),
-    (('.pc_entitytype', 'TEMP'), ('.pc_entityblueprint', 'TBLU')),
-    (('.pc_entitytemplate', 'TEMP'), ('.pc_entityblueprint', 'TBLU')),
+    ('.pc_tex', '.pc_mipblock1'),
+    ('.prim].pc_prim', '.prim].pc_entitytype'),
+    ('.prim].pc_prim', '.linkedprim].pc_bonerig'),
+    ('.prim].pc_prim', '.linkedprim].pc_coll'),
+    ('.prim].pc_prim', '.linkedprim].pc_entitytype'),
+    ('.prim].pc_prim', '.linkedprim].pc_linkedprim'),
+    ('.pc_entitytype', '.pc_entityblueprint'),
+    ('.pc_entitytemplate', '.pc_entityblueprint'),
 ]
 
 def find_alternate_paths(file: str, run_again: bool = True) -> dict[str, str]:
     alt_paths: dict[str, str] = dict()
     for replacement in replacements:
-        if file.endswith(replacement[0][0]):
-            new_file = file.removesuffix(replacement[0][0]) + replacement[1][0]
+        if file.endswith(replacement[0]):
+            new_file = file.removesuffix(replacement[0]) + replacement[1]
             new_hash = ioi_string_to_hex(new_file)
-            new_name = new_hash + '.' + replacement[1][1]
-            alt_paths[new_name] = new_file
-        if file.endswith(replacement[1][0]):
-            new_file = file.removesuffix(replacement[1][0]) + replacement[0][0]
+            alt_paths[new_hash] = new_file
+        if file.endswith(replacement[1]):
+            new_file = file.removesuffix(replacement[1]) + replacement[0]
             new_hash = ioi_string_to_hex(new_file)
-            new_name = new_hash + '.' + replacement[0][1]
-            alt_paths[new_name] = new_file
+            alt_paths[new_hash] = new_file
     if run_again:
         iterated_paths = list(alt_paths.keys())[::]
         for hash in iterated_paths:
@@ -55,7 +53,7 @@ if __name__ == '__main__':
             alt_paths = find_alternate_paths(file)
             print(alt_paths)
             for hash in alt_paths:
-                if hash in data and len(data[hash]['name']) == 0:
+                if hash in data and not data[hash]['correct_name']:
                     expanded_lines.append(hash + ', ' + alt_paths[hash])
 
     expanded_lines = list(set(expanded_lines))

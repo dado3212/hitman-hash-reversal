@@ -99,8 +99,8 @@ if __name__ == '__main__':
             if num_alt_strings > 0 and num_alt_strings < 100000:
                 possible_names = replacements(sections)
                 for possible_name in possible_names:
-                    new_hash = ioi_string_to_hex(possible_name) + '.' + data[hash]['type']
-                    if new_hash in data and len(data[new_hash]['name']) == 0 and new_hash not in unique_found:
+                    new_hash = ioi_string_to_hex(possible_name)
+                    if new_hash in data and not data[new_hash]['correct_name'] and new_hash not in unique_found:
                         print(new_hash + ',' + possible_name)
                         unique_found[new_hash] = possible_name
             elif num_alt_strings > 0:

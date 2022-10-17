@@ -15,7 +15,7 @@ with open('hash_list.txt', 'r') as f:
     for line in f.readlines():
         split = line.split(',', 1)
         ioi_string = split[1].rstrip()
-        hash = split[0]
+        hash = split[0][:-5]
         extension = split[0][-4:]
         if extension == 'CRMD':
             if hash in data:

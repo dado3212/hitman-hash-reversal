@@ -12,7 +12,7 @@ for hash in data:
     if data[hash]['type'] == 'DSWB' or data[hash]['type'] == 'WSWB':
         if len(data[hash]['name']) > 0:
             current = data[hash]['name']
-            if (ioi_string_to_hex(data[hash]['name']) != hash[:-5]):
+            if not data[hash]['correct_name']:
                 relevant = re.search(r".*/(.*).wwiseswitchgroup.*",data[hash]['name'], re.IGNORECASE)
                 assert relevant is not None
                 missing_switch_group.append(relevant.group(1))
@@ -28,7 +28,7 @@ for hash in data:
     if data[hash]['type'] == 'WWEV':
         if len(data[hash]['name']) > 0:
             current = data[hash]['name']
-            if (ioi_string_to_hex(data[hash]['name']) == hash[:-5]):
+            if data[hash]['correct_name']:
                 # print(data[hash]['name'])
                 relevant = re.search(r"\[assembly:/sound/wwise/exportedwwisedata/events/([^\/]*)/.*",data[hash]['name'], re.IGNORECASE)
                 assert relevant is not None
@@ -148,10 +148,8 @@ for switch in real_switch_groups:
     for missing in missing_switch_group:
         filename = f"[assembly:/sound/wwise/exportedwwisedata/switches/{switch}/{missing}.wwiseswitchgroup].pc_entityblueprint"
         hash = ioi_string_to_hex(filename)
-        if hash + '.DSWB' in data:
-            print(hash + '.DSWB,' + filename)
-        if hash + '.WSWB' in data:
-            print(hash + '.WSWB,' + filename)
+        if hash in data:
+            print(hash + ', ' + filename)
 
 with open('wordlist_1.txt', 'r') as f:
     words = [x.strip() for x in f.readlines()]
@@ -160,7 +158,5 @@ for word in words:
     for missing in missing_switch_group:
         filename = f"[assembly:/sound/wwise/exportedwwisedata/switches/{word}/{missing}.wwiseswitchgroup].pc_entityblueprint"
         hash = ioi_string_to_hex(filename)
-        if hash + '.DSWB' in data:
-            print(hash + '.DSWB,' + filename)
-        if hash + '.WSWB' in data:
-            print(hash + '.WSWB,' + filename)
+        if hash in data:
+            print(hash + ', ' + filename)

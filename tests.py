@@ -7,7 +7,7 @@ class UtilsTest(unittest.TestCase):
 
     def test_find_alternate_paths(self):
         alts = find_alternate_paths('[assembly:/_pro/environment/geometry/props/lamps/table_lamp_b.wl2?/table_lamp_b.prim].pc_prim')
-        self.assertEqual(sorted(list(alts.keys())), ['002FD1C467166E5E.ALOC', '0030A0D22171B48E.PRIM', '003ECCF5A8D38451.TEMP', '006303F1C897C52D.TEMP', '008A3519919395F0.BORG'])
+        self.assertEqual(sorted(list(alts.keys())), ['002FD1C467166E5E', '0030A0D22171B48E', '00358562D91EA649', '003ECCF5A8D38451', '0057B95F2B255C6D', '006303F1C897C52D', '008A3519919395F0', '00E3C72FE24E4993'])
 
     def test_compound_words(self):
         words = compound_words('sunrise')

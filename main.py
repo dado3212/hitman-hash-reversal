@@ -19,11 +19,11 @@ with open('texture_folders.pickle', 'rb') as handle:
 with open('texture_suffixes.pickle', 'rb') as handle:
     texture_suffixes: List[str] = pickle.load(handle)
 
-# search_names('whiskey', 'TEXT')
-def sub_guess(prefix: str, type_str: str) -> Optional[str]:
+# search_names('whiskey')
+def sub_guess(prefix: str) -> Optional[str]:
     for suffix in texture_suffixes:
         path_guess = prefix + '.texture' + suffix
-        if ioi_string_to_hex(path_guess) + '.' + type_str == hash:
+        if ioi_string_to_hex(path_guess) == hash:
             return path_guess
     return None
 
@@ -47,7 +47,7 @@ def guess(hash: str) -> Optional[str]:
                     raw_guessed_name.group(2)
                 ]
                 for g in guesses:
-                    a = sub_guess(g, data[hash]['type'])
+                    a = sub_guess(g)
                     if a is not None:
                         return a
     # Check all of the parents and figure out the folder structures that we might guess

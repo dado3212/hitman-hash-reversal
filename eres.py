@@ -10,7 +10,7 @@ real_switch_groups: List[str] = []
 missing_switch_group: List[str] = []
 for hash in data:
     if data[hash]['type'] == 'ERES':
-        if len(data[hash]['name']) == 0:
+        if not data[hash]['correct_name']:
             for d in data[hash]['depends']:
                 if d in data and data[d]['type'] == 'TEMP':
                     # Try this
@@ -20,5 +20,5 @@ for hash in data:
                         print(data[d]['name'])
                     else:
                         filename = f"{relevant.group(1)}.pc_entityresource"
-                    if ioi_string_to_hex(filename) == hash[:-5]:
+                    if ioi_string_to_hex(filename) == hash:
                         print(hash, filename)
