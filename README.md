@@ -11,7 +11,7 @@ are likely to change between versions.
 
 Recommended scripts after a new version bump:
 * `python3 futzing.py` - does some letter futzing for known files (this takes around 30 minutes to run currently)
-* `python3 main.py > tmp.txt` and follow up with `python3 text_to_texd.py` and combine them for trivial TEXT/D bashing
+* `python3 main.py > tmp.txt` and follow up with `python3 expand_known.py` which will do some trivial checks and save it into `tmp2.txt`.
 
 ## Current Progress
 
