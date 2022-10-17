@@ -1,3 +1,4 @@
+# coding=utf8
 from utils import ioi_string_to_hex
 import pickle, re
 from typing import List
@@ -64,7 +65,7 @@ if __name__ == '__main__':
                     expanded_lines.append(hash + ', ' + alt_paths[hash])
                     print(hash + ', ' + alt_paths[hash])
 
-    expanded_lines = list(set(expanded_lines))
+    expanded_lines = sorted(list(set(expanded_lines)), key=lambda x: x.split(', ', 1)[1])
 
     with open('tmp2.txt', 'w') as f:
         for line in expanded_lines:

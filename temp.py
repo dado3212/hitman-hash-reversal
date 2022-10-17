@@ -10,8 +10,9 @@ with open('hitman_wordlist.txt', 'r') as f:
     # prefixes = [f'[assembly:/_pro/environment/templates/props/{x}/{x}_props_a.template?/' for x in words]
     # prefixes = [f'[assembly:/_pro/environment/templates/props/{x}_props/{x}_props_a.template?/' for x in words]
     # prefixes = [f'[assembly:/_pro/environment/templates/props/{x}/{x}_a.template?/' for x in words]
-    prefixes = [f'[assembly:/_pro/environment/templates/props/{x}/{x}.template?/' for x in words]
-
+    # prefixes = [f'[assembly:/_pro/environment/templates/props/{x}/{x}.template?/' for x in words]
+    prefixes = [f'[assembly:/_pro/environment/templates/props/signs/signs_{x}_a.template?/' for x in words]
+    
 print('Processing')
 unknown: Dict[str, str] = {}
 for hash in data:
