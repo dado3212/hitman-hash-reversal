@@ -5,10 +5,11 @@ from futzing import num_alts, replaceable_sections, replacements
 class UtilsTest(unittest.TestCase):
 
     def test_extract_words(self):
-        words = extract_words('[assembly:/shaders/win32/glare.fx](dx11,fx50).pc_mate')
-        correct = ['assembly', 'assembly:', 'shaders', 'win32', 'glare', 'fx', 'dx11', 'fx50', '(dx11,fx50)', 'pc', 'mate', 'pc_mate']
-        # Currently this is wrong
-        # self.assertEqual(sorted(words), sorted(correct))
+        words = extract_words('[assembly:/runtimeresources/vertexpaint/_pro/environment/templates/levels/fox/abandoned_building_fox_a/abandoned_building_kit_fox_inner_wall_9m_a_29_1a25694801db41bb9cb01474bbff9a3c.vertexdata].pc_vertexdata')
+        self.assertEqual(sorted(words), ['29', '9m', 'a', 'abandoned', 'assembly', 'building', 'data', 'environment', 'fox', 'inner', 'kit', 'levels', 'paint', 'pc', 'pro', 'runtimeresources', 'templates', 'vertex', 'vertexdata', 'vertexpaint', 'wall'])
+
+        words = extract_words('[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_npcs_paris.sweetmenutext?/outfits_paris_worker_fashionmodel_f_hpa912_description_dbad44de-8ff1-4ef8-8b74-596adf32b40e.sweetline].pc_sweetline')
+        self.assertEqual(sorted(words), ['assembly', 'conversations', 'description', 'f', 'fashion', 'fashionmodel', 'fits', 'hitman6', 'hpa912', 'is', 'line', 'localization', 'model', 'npcs', 'on', 'online', 'out', 'outfits', 'par', 'paris', 'pc', 'pro', 'repository', 'sweet', 'sweetline', 'sweetmenutext', 'ui', 'worker'])
 
     def test_replaceable_sections(self):
         string = '[assembly:/_pro/environment/geometry/props/paintings/pictures_tamagozake.wl2?/portrait.prim].pc_prim'

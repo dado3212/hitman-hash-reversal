@@ -1,5 +1,5 @@
 import json, re, pickle, zipfile, os, requests
-from typing import List, Dict
+from typing import List, Dict, Any
 
 print('Starting!')
 if not os.path.exists('hashes.json'):
@@ -88,5 +88,37 @@ with open('./texture_suffixes.pickle', 'wb') as handle:
 
 with open('./material_folders.pickle', 'wb') as handle:
     pickle.dump(material_folders, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+print('Building wordlist pickles...')
+
+_end = '_end_'
+
+def build_trie(words: List[str]):
+    trie: Dict[str, Any] = dict()
+    for word in words:
+        current_dict = trie
+        for letter in word:
+            current_dict = current_dict.setdefault(letter, {})
+        current_dict[_end] = _end
+    return trie
+
+# convert this to a trie for quick lookups
+with open('wordlist_3.txt', 'r') as f:
+    words = [x.strip() for x in f.readlines()]
+    trie = build_trie(words)
+    with open('./w3_trie.pickle', 'wb') as handle:
+        pickle.dump(trie, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+with open('wordlist_1.txt', 'r') as f:
+    words = [x.strip() for x in f.readlines()]
+    trie = build_trie(words)
+    with open('./w1_trie.pickle', 'wb') as handle:
+        pickle.dump(trie, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+with open('wordlist_12.txt', 'r') as f:
+    words = [x.strip() for x in f.readlines()]
+    trie = build_trie(words)
+    with open('./w12_trie.pickle', 'wb') as handle:
+        pickle.dump(trie, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 print('Done. Closing!')
