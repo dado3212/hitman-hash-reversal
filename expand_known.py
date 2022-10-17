@@ -3,9 +3,30 @@ import pickle
 from typing import List
 
 replacements = [
-    (('.pc_tex', 'TEXT'), ('.pc_mpblock1', 'TEXD')),
-
+    (('.pc_tex', 'TEXT'), ('.pc_mipblock1', 'TEXD')),
+    (('.prim].pc_prim', 'PRIM'), ('.prim].pc_entitytype', 'TEMP')),
+    (('.prim].pc_prim', 'PRIM'), ('.linkedprim].pc_bonerig', 'BORG')),
+    (('.prim].pc_prim', 'PRIM'), ('.linkedprim].pc_coll', 'ALOC')),
+    (('.prim].pc_prim', 'PRIM'), ('.linkedprim].pc_entitytype', 'TEMP')),
+    (('.prim].pc_prim', 'PRIM'), ('.linkedprim].pc_linkedprim', 'PRIM')),
+    (('.pc_entitytype', 'ZZZZ'), ('.pc_entityblueprint', 'ZZZZ')),
+    (('.pc_entitytemplate', 'ZZZZ'), ('.pc_entityblueprint', 'ZZZZ')),
 ]
+
+def find_alternate_paths(file: str) -> dict[str, str]:
+    alt_paths: dict[str, str] = dict()
+    for replacement in replacements:
+        if file.endswith(replacement[0][0]):
+            new_file = file.removesuffix(replacement[0][0]) + replacement[1][0]
+            new_hash = ioi_string_to_hex(new_file)
+            new_name = new_hash + '.' + replacement[1][1]
+            alt_paths[new_name] = new_file
+        if file.endswith(replacement[1][0]):
+            new_file = file.removesuffix(replacement[1][0]) + replacement[0][0]
+            new_hash = ioi_string_to_hex(new_file)
+            new_name = new_hash + '.' + replacement[0][1]
+            alt_paths[new_name] = new_file
+    return alt_paths
 
 if __name__ == '__main__':
     with open('hashes.pickle', 'rb') as handle:
@@ -22,31 +43,10 @@ if __name__ == '__main__':
                 hash = hash[:-5]
             file = a[1].strip()
             expanded_lines.append(hash + ', ' + file)
-
-            for replacement in replacements:
-                if file.endswith(replacement[0][0]):
-                    new_file = file.removesuffix(replacement[0][0]) + replacement[1][0]
-                    new_hash = ioi_string_to_hex(new_file)
-                    new_name = new_hash + '.' + replacement[1][1]
-                    if new_name in data and len(data[new_name]['name']) == 0:
-                        expanded_lines.append(new_hash + ', ' + new_file)
-                if file.endswith(replacement[1][0]):
-                    new_file = file.removesuffix(replacement[1][0]) + replacement[0][0]
-                    new_hash = ioi_string_to_hex(new_file)
-                    new_name = new_hash + '.' + replacement[0][1]
-                    if new_name in data and len(data[new_name]['name']) == 0:
-                        expanded_lines.append(new_hash + ', ' + new_file)
-
-            # '.prim].pc_prim > .prim].pc_entitytype (TEMP)
-            # .pc_entitytype > .pc_entityblueprint
-            # .pc_entitytemplate > .pc_entityblueprint
-            # .prim].pc_prim > .linkedprim].pc_bonerig (BORG)
-            # .prim].pc_prim > .linkedprim].pc_coll (ALOC)
-            # > .linkedprim].pc_entitytype (TEMP)
-            # > .linkedprim].pc_linkedprim (PRIM)
-            # pc_coll 
-            # pc_bonerig (BORG)
-            # .pc_entitytype -> pc_entityblueprint
+            alt_paths = find_alternate_paths(file)
+            for hash in alt_paths:
+                if hash in data and len(data[hash]['name']) == 0:
+                    expanded_lines.append(hash + ', ' + alt_paths[hash])
 
     expanded_lines = list(set(expanded_lines))
 

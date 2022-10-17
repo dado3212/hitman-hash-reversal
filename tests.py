@@ -1,8 +1,13 @@
 import unittest
 from build_wordlist import extract_words, compound_words
 from futzing import num_alts, replaceable_sections, replacements
+from expand_known import find_alternate_paths
 
 class UtilsTest(unittest.TestCase):
+
+    def test_find_alternate_paths(self):
+        alts = find_alternate_paths('[assembly:/_pro/environment/geometry/props/lamps/table_lamp_b.wl2?/table_lamp_b.prim].pc_prim')
+        self.assertEqual(sorted(list(alts.keys())), ['002FD1C467166E5E.ALOC', '0030A0D22171B48E.PRIM', '003ECCF5A8D38451.TEMP', '006303F1C897C52D.TEMP', '008A3519919395F0.BORG'])
 
     def test_compound_words(self):
         words = compound_words('sunrise')
