@@ -9,11 +9,11 @@ replacements = [
     (('.prim].pc_prim', 'PRIM'), ('.linkedprim].pc_coll', 'ALOC')),
     (('.prim].pc_prim', 'PRIM'), ('.linkedprim].pc_entitytype', 'TEMP')),
     (('.prim].pc_prim', 'PRIM'), ('.linkedprim].pc_linkedprim', 'PRIM')),
-    (('.pc_entitytype', 'ZZZZ'), ('.pc_entityblueprint', 'ZZZZ')),
-    (('.pc_entitytemplate', 'ZZZZ'), ('.pc_entityblueprint', 'ZZZZ')),
+    (('.pc_entitytype', 'TEMP'), ('.pc_entityblueprint', 'TBLU')),
+    (('.pc_entitytemplate', 'TEMP'), ('.pc_entityblueprint', 'TBLU')),
 ]
 
-def find_alternate_paths(file: str) -> dict[str, str]:
+def find_alternate_paths(file: str, run_again: bool = True) -> dict[str, str]:
     alt_paths: dict[str, str] = dict()
     for replacement in replacements:
         if file.endswith(replacement[0][0]):
@@ -26,6 +26,13 @@ def find_alternate_paths(file: str) -> dict[str, str]:
             new_hash = ioi_string_to_hex(new_file)
             new_name = new_hash + '.' + replacement[0][1]
             alt_paths[new_name] = new_file
+    if run_again:
+        iterated_paths = list(alt_paths.keys())[::]
+        for hash in iterated_paths:
+            alt_paths2 = find_alternate_paths(alt_paths[hash], False)
+            for hash2 in alt_paths2:
+                if hash2 not in alt_paths:
+                    alt_paths[hash2] = alt_paths2[hash2]
     return alt_paths
 
 if __name__ == '__main__':
@@ -37,6 +44,8 @@ if __name__ == '__main__':
     with open('tmp.txt', 'r', encoding='utf-16') as f:
         lines = f.readlines()
         for line in lines:
+            if ',' not in line:
+                continue
             a = line.strip().split(',', 1)
             hash = a[0].strip()
             if '.' in hash:
@@ -44,6 +53,7 @@ if __name__ == '__main__':
             file = a[1].strip()
             expanded_lines.append(hash + ', ' + file)
             alt_paths = find_alternate_paths(file)
+            print(alt_paths)
             for hash in alt_paths:
                 if hash in data and len(data[hash]['name']) == 0:
                     expanded_lines.append(hash + ', ' + alt_paths[hash])
