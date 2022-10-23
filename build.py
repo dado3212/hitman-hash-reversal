@@ -50,6 +50,7 @@ print('Building pattern pickes...')
 texture_folders = set([])
 texture_suffixes = set([])
 material_folders = set([])
+template_folders = set([])
 with open('hash_list.txt', 'r') as f:
     # completion
     f.readline()
@@ -80,6 +81,16 @@ with open('hash_list.txt', 'r') as f:
                 else:
                     material_folders.add(info.group(1))
 
+        elif extension == 'TBLU' or extension == 'TEMP':
+            if 'assembly' in ioi_string:
+                # [assembly:/_pro/environment/templates/backdrop/ground/backdrop_ground_skunk_a.template?/backdrop_ground_skunk_a.entitytemplate].pc_entityblueprint
+                info = re.search(r"^(.*\.template\?).*$", ioi_string, re.IGNORECASE)
+                if info is None:
+                    continue
+                else:
+                    template_folders.add(info.group(1))
+
+
 with open('./texture_folders.pickle', 'wb') as handle:
     pickle.dump(texture_folders, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
@@ -88,6 +99,9 @@ with open('./texture_suffixes.pickle', 'wb') as handle:
 
 with open('./material_folders.pickle', 'wb') as handle:
     pickle.dump(material_folders, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+with open('./template_folders.pickle', 'wb') as handle:
+    pickle.dump(template_folders, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 print('Building wordlist pickles...')
 
