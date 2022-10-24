@@ -85,6 +85,15 @@ Current state of the world (calculate using `python3 unknown_calc.py`, and then 
 
 ## Raw Notes
 
+### Future TODOs
+1. Extract strings from hex files. Especially ECPB -> MAT[ITB]
+
+### TBLU
+
+
+
+### Misc
+
 Checked all CSS color names from https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/
 - found black,blue,cyan,grey,green,purple,red,white,yellow no other matches, and all are named
 - '[assembly:/_pro/environment/textures/constants/color_' + color + '.texture?/diffuse_a.tex](ascolormap).pc_tex'

@@ -51,6 +51,7 @@ texture_folders = set([])
 texture_suffixes = set([])
 material_folders = set([])
 template_folders = set([])
+wwev_folders = set([])
 with open('hash_list.txt', 'r') as f:
     # completion
     f.readline()
@@ -89,6 +90,15 @@ with open('hash_list.txt', 'r') as f:
                     continue
                 else:
                     template_folders.add(info.group(1))
+        
+        elif extension == 'WWEV':
+            if 'assembly' in ioi_string:
+                # [assembly:/sound/wwise/exportedwwisedata/events/ambience_events/amb_marrakesh/amb_marrakesh_elements/amb_e_market/play_amb_e_lamp_jangle_array.wwiseevent].pc_wwisebank
+                info = re.search(r"^(.*\/)[^\/]*.wwiseevent.*$", ioi_string, re.IGNORECASE)
+                if info is None:
+                    continue
+                else:
+                    wwev_folders.add(info.group(1))
 
 
 with open('./texture_folders.pickle', 'wb') as handle:
@@ -102,6 +112,9 @@ with open('./material_folders.pickle', 'wb') as handle:
 
 with open('./template_folders.pickle', 'wb') as handle:
     pickle.dump(template_folders, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+with open('./wwev_folders.pickle', 'wb') as handle:
+    pickle.dump(wwev_folders, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 print('Building wordlist pickles...')
 
