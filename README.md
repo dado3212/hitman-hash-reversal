@@ -18,7 +18,7 @@ Recommended scripts after a new version bump:
 Current state of the world (calculate using `python3 unknown_calc.py`, and then run `\| +\n` -> `|\n` in regex replace):
 
 | File Type | Total | Correct | Correct Percentage | Searchable | Searchable Percentage |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 | AIBB | 1 | 1 | 100.0% | 1 | 100.0% |
 | AIBX | 1 | 1 | 100.0% | 1 | 100.0% |
 | AIBZ | 4 | 3 | 75.0% | 3 | 75.0% |

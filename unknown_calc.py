@@ -22,7 +22,7 @@ for hash in data:
 
 keys = sorted(types.keys())
 print('| File Type | Total | Correct | Correct Percentage | Searchable | Searchable Percentage |')
-print('| --- | --- | --- | --- |')
+print('| --- | --- | --- | --- | --- | --- |')
 for type in keys:
     correct_perc = round(types[type]['correct'] * 100.0 / types[type]['total'], 1)
     searchable_perc = round(types[type]['searchable'] * 100.0 / types[type]['total'], 1)
