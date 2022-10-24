@@ -10,19 +10,21 @@ for hash in data:
     type = data[hash]['type']
     if type not in types:
         types[type] = {
-            'correct': 0,
             'total': 0,
+            'correct': 0,
+            'searchable': 0,
         }
+    types[type]['total'] += 1
+    if len(data[hash]['name']) > 0:
+        types[type]['searchable'] += 1
     if data[hash]['correct_name']:
         types[type]['correct'] += 1
-        types[type]['total'] += 1
-    else:
-        types[type]['total'] += 1
 
 keys = sorted(types.keys())
-print('| File Type | Correct | Total | Percentage |')
+print('| File Type | Total | Correct | Correct Percentage | Searchable | Searchable Percentage |')
 print('| --- | --- | --- | --- |')
 for type in keys:
-    perc = round(types[type]['correct'] * 100.0 / types[type]['total'], 1)
-    print(f"| {type} | {types[type]['correct']} | {types[type]['total']} | {perc}% |")
+    correct_perc = round(types[type]['correct'] * 100.0 / types[type]['total'], 1)
+    searchable_perc = round(types[type]['searchable'] * 100.0 / types[type]['total'], 1)
+    print(f"| {type} | {types[type]['total']} | {types[type]['correct']} | {correct_perc}% | {types[type]['searchable']} | {searchable_perc}% |")
 
