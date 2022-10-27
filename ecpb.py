@@ -18,4 +18,3 @@ for hash in data:
                 hex = ioi_string_to_hex(potential_path)
                 if hex in data and not data[hex]['correct_name']:
                     print(hex + ',' + potential_path)
-        

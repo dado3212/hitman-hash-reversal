@@ -86,6 +86,9 @@ Current state of the world (calculate using `python3 unknown_calc.py`, and then 
 ## Raw Notes
 
 ### Future TODOs
+NOTE: v a lot of this needs us to remove the truncation that we do on XOR/LZ4 decompression
+for large files.
+
 1. Extract strings from hex files. Especially ECPB -> MAT[ITB] (done)
 2. ORES blob files -> strings for GFXI file names
 3. LINE -> trivial futzing

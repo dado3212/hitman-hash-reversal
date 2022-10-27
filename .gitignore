@@ -2,6 +2,7 @@
 *.pickle
 *.txt
 .DS_STORE
+.DS_Store
 __pycache__
 !hitman_wordlist.txt
 !wordlist_1.txt
