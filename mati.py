@@ -10,16 +10,24 @@ with open('material_folders.pickle', 'rb') as handle:
 
 for hash in data: 
     if data[hash]['type'] == 'MATI':
-        # This is just true as of right now
-        assert len(data[hash]['name']) > 0
         if not data[hash]['correct_name']:
-            info = re.search(r"^\[unknown:/\*/(.*)$", data[hash]['name'], re.IGNORECASE)
-            if info is None:
-                print(data[hash]['name'])
-                continue
-            for folder in material_folders:
-                file_name = f"{folder}/{info.group(1)}"
-                if ioi_string_to_hex(file_name) == hash:
-                    print(hash + ',' + file_name)
+            names = [x.lower() for x in data[hash]['hex_strings'] if '.mi' in x]
+            found = False
+            for name in names:
+                for folder in material_folders:
+                    file_name = f"{folder}/{name}].pc_mi"
+                    if ioi_string_to_hex(file_name) == hash:
+                        print(hash + ',' + file_name)
+                        found = True
+            if not found:
+                if len(names) == 0:
+                    # this is because my string extraction is too stringent
+                    # 00615023F867E70E -> bindi.mi
+                    #print(hash)
+                    continue
+                unknown_name = f'[unknown:/*/{names[0]}].pc_mi'
+                if unknown_name != data[hash]['name'] and data[hash]['name'] == '':
+                    print(hash + ',' + unknown_name)
+        
 
 

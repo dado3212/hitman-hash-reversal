@@ -88,6 +88,8 @@ Current state of the world (calculate using `python3 unknown_calc.py`, and then 
 ### Future TODOs
 1. Extract strings from hex files. Especially ECPB -> MAT[ITB] (done)
 2. ORES blob files -> strings for GFXI file names
+3. LINE -> trivial futzing
+
 
 ### TBLU
 
