@@ -13,6 +13,7 @@ replacements = [
     (False, '.prim].pc_prim', '.linkedprim].pc_linkedprim'),
     (False, '.pc_entitytype', '.pc_entityblueprint'),
     (False, '.pc_entitytemplate', '.pc_entityblueprint'),
+    (False, '.pc_entitytype', '.pc_mi'),
     # Regex replacements (are unidirectional)
     # [assembly:/_pro/environment/templates/props/street_props/street_props_mumbai_a.template?/tent_street_mumbai_f.entitytemplate].pc_entitytype
     # [assembly:/_pro/environment/geometry/props/street_props/tent_street_mumbai_a.wl2?/tent_street_mumbai_f.prim].pc_entitytype

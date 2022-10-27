@@ -6,6 +6,39 @@ from utils import ioi_string_to_hex
 ## KNOWN
 ############################
 
+def guess(guessed_name: str) -> Optional[str]:
+    for wwev_folder in wwev_folders:
+        path = wwev_folder + guessed_name + '.wwiseevent].pc_wwisebank'
+        if ioi_string_to_hex(path) == hash:
+            return path
+
+with open('hashes.pickle', 'rb') as handle:
+    data: Dict[str, Any] = pickle.load(handle)
+
+with open('wwev_folders.pickle', 'rb') as handle:
+    wwev_folders: List[str] = pickle.load(handle)
+
+print('Processing')
+for hash in data:
+    if not data[hash]['correct_name'] and data[hash]['type'] == 'WWEV':
+        if len(data[hash]['hex_strings']) == 0:
+            continue
+        guessed_name: str = data[hash]['hex_strings'][0].lower()
+        guessed_path = guess(guessed_name)
+        if guessed_path is not None:
+            print(hash + ',' + guessed_path)
+        else:
+            # Don't do this until the lz4 decode is fixed. Broken example:
+            temp_path = f'[unknown:/sound/wwise/exportedwwisedata/events/unknown/{guessed_name}.wwiseevent].pc_wwisebank'
+            if temp_path != data[hash]['name'] and data[hash]['name'] == '':
+                print(hash + ',' + temp_path)
+                continue
+exit()
+
+############################
+## GUESSING
+############################
+
 # unique: set[str] = set()
 # with open('hash_list.txt', 'r') as f:
 #     # completion
