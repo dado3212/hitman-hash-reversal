@@ -91,7 +91,7 @@ for large files.
 
 1. Extract strings from hex files. Especially ECPB -> MAT[ITB] (done)
 2. ORES blob files -> strings for GFXI file names
-3. LINE -> trivial futzing
+3. LINE -> trivial futzing, need JSON extraction working correctly for localization files
 
 
 ### TBLU
