@@ -95,6 +95,14 @@ for large files.
     c. MRTR
 2. LINE -> trivial futzing, need JSON extraction working correctly for localization files
 3. WBNK -> should be able to crack the last one
+4. DLGE -> all of these have different paths but basically the same. Missing something about the folder structure.
+00F477D5E622EBAB
+005366CD58EAF59E
+00D9EE72519B89B9
+0072750B687220AF
+00B81A231C11FC4D
+005F0A31EA67B2EC
+007C84ADA21F5322
 
 ### TBLU
 
