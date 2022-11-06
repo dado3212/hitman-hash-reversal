@@ -8,15 +8,29 @@ with open('hashes.pickle', 'rb') as handle:
 with open('hitman_wordlist.txt', 'r') as f:
     words = [x.strip() for x in f.readlines()]
 
+last_perc = 0.0
+num_words = len(words)
+#print('0%')
+
+for i in range(len(words)):
+    new_perc = round(i * 100.0 / len(words), 1)
+    if new_perc > last_perc:
+        last_perc = new_perc
+        print(new_perc, '%')
+    word = words[i]
+    for word2 in words:
+        file = f'[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_{word}_{word2}.sweetmenutext].pc_localized-textlist'
+        hash = ioi_string_to_hex(file)
+        if hash in data and not data[hash]['correct_name']:
+            print(hash + ', ' + file)
+
+exit()
+
 relevant: Dict[str, List[bool]] = {}
 for hash in data:
     if data[hash]['type'] == 'LOCR':
         relevant[hash] = [data[hash]['correct_name'], False]
 
-last_perc = 0.0
-num_words = len(words)
-#print('0%')
-# got up to 6.4% with word_word2 and wordlist_3
 for i in range(num_words):
     new_perc = round(i * 100.0 / num_words, 1)
     if new_perc > last_perc:

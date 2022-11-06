@@ -36,7 +36,7 @@ Current state of the world (calculate using `python3 unknown_calc.py`, and then 
 | CPPT | 1531 | 1531 | 100.0% | 1531 | 100.0% |
 | CRMD | 42 | 41 | 97.6% | 41 | 97.6% |
 | DITL | 4 | 0 | 0.0% | 0 | 0.0% |
-| DLGE | 47670 | 22459 | 47.1% | 45061 | 94.5% |
+| DLGE | 47670 | 22549 | 47.3% | 45151 | 94.7% |
 | DSWB | 43 | 26 | 60.5% | 43 | 100.0% |
 | ECPB | 2730 | 0 | 0.0% | 0 | 0.0% |
 | ECPT | 2730 | 0 | 0.0% | 0 | 0.0% |
@@ -45,15 +45,15 @@ Current state of the world (calculate using `python3 unknown_calc.py`, and then 
 | FXAS | 184999 | 184996 | 100.0% | 184996 | 100.0% |
 | GFXF | 37 | 37 | 100.0% | 37 | 100.0% |
 | GFXI | 8575 | 6546 | 76.3% | 6547 | 76.3% |
-| GFXV | 219 | 93 | 42.5% | 218 | 99.5% |
+| GFXV | 219 | 93 | 42.5% | 219 | 100.0% |
 | GIDX | 1 | 1 | 100.0% | 1 | 100.0% |
 | JSON | 1349 | 1199 | 88.9% | 1330 | 98.6% |
-| LINE | 10570 | 4616 | 43.7% | 4616 | 43.7% |
-| LOCR | 779 | 162 | 20.8% | 162 | 20.8% |
-| MATB | 5151 | 4485 | 87.1% | 5148 | 99.9% |
+| LINE | 10570 | 4617 | 43.7% | 4617 | 43.7% |
+| LOCR | 779 | 163 | 20.9% | 163 | 20.9% |
+| MATB | 5151 | 4487 | 87.1% | 5150 | 100.0% |
 | MATE | 824 | 456 | 55.3% | 456 | 55.3% |
-| MATI | 17575 | 16178 | 92.1% | 17562 | 99.9% |
-| MATT | 5151 | 4485 | 87.1% | 5148 | 99.9% |
+| MATI | 17575 | 16188 | 92.1% | 17575 | 100.0% |
+| MATT | 5151 | 4487 | 87.1% | 5150 | 100.0% |
 | MJBA | 17388 | 5629 | 32.4% | 5629 | 32.4% |
 | MRTN | 2091 | 942 | 45.1% | 942 | 45.1% |
 | MRTR | 796 | 68 | 8.5% | 68 | 8.5% |
@@ -62,7 +62,7 @@ Current state of the world (calculate using `python3 unknown_calc.py`, and then 
 | PREL | 100 | 100 | 100.0% | 100 | 100.0% |
 | PRIM | 39604 | 18571 | 46.9% | 18748 | 47.3% |
 | REPO | 1 | 1 | 100.0% | 1 | 100.0% |
-| RTLV | 119 | 0 | 0.0% | 113 | 95.0% |
+| RTLV | 119 | 0 | 0.0% | 114 | 95.8% |
 | SCDA | 774 | 715 | 92.4% | 715 | 92.4% |
 | SDEF | 499 | 499 | 100.0% | 499 | 100.0% |
 | TBLU | 50959 | 31905 | 62.6% | 50959 | 100.0% |
@@ -80,7 +80,7 @@ Current state of the world (calculate using `python3 unknown_calc.py`, and then 
 | WSWT | 49 | 27 | 55.1% | 47 | 95.9% |
 | WWEM | 7006 | 0 | 0.0% | 6894 | 98.4% |
 | WWES | 184994 | 184994 | 100.0% | 184994 | 100.0% |
-| WWEV | 8112 | 1982 | 24.4% | 7914 | 97.6% |
+| WWEV | 8112 | 2233 | 27.5% | 8112 | 100.0% |
 | YSHP | 3 | 2 | 66.7% | 2 | 66.7% |
 
 ## Raw Notes
@@ -94,6 +94,7 @@ for large files.
     b. MRTN -> pull names out
     c. MRTR
 2. LINE -> trivial futzing, need JSON extraction working correctly for localization files
+3. WBNK -> should be able to crack the last one
 
 ### TBLU
 
