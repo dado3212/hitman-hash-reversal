@@ -83,6 +83,8 @@ Current state of the world (calculate using `python3 unknown_calc.py`, and then 
 | WWEV | 8112 | 2233 | 27.5% | 8112 | 100.0% |
 | YSHP | 3 | 2 | 66.7% | 2 | 66.7% |
 
+https://wiki.glaciermodding.org/glacier2/fileformats
+
 ## Raw Notes
 
 ### Future TODOs
