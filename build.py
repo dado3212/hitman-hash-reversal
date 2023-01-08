@@ -52,6 +52,7 @@ texture_suffixes = set([])
 material_folders = set([])
 template_folders = set([])
 wwev_folders = set([])
+mrtn_folders = set([])
 with open('hash_list.txt', 'r') as f:
     # completion
     f.readline()
@@ -100,6 +101,15 @@ with open('hash_list.txt', 'r') as f:
                 else:
                     wwev_folders.add(info.group(1))
 
+        elif extension == 'MRTN':
+            if 'assembly' in ioi_string:
+                # [assembly:/animationnetworks/hitman01/disguiseacts/safezones/s03_hm_lip_sit_mindcontrolexperiment.aln].pc_rtn
+                info = re.search(r"^(.*\/)[^\/]*.aln.*$", ioi_string, re.IGNORECASE)
+                if info is None:
+                    continue
+                else:
+                    mrtn_folders.add(info.group(1))
+
 
 with open('./texture_folders.pickle', 'wb') as handle:
     pickle.dump(texture_folders, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -115,6 +125,9 @@ with open('./template_folders.pickle', 'wb') as handle:
 
 with open('./wwev_folders.pickle', 'wb') as handle:
     pickle.dump(wwev_folders, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+with open('./mrtn_folders.pickle', 'wb') as handle:
+    pickle.dump(mrtn_folders, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 print('Building wordlist pickles...')
 

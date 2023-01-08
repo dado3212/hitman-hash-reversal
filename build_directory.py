@@ -46,7 +46,7 @@ def build_paths(current_dict: Dict[str, Any], prefix: str):
     return paths
 
 if __name__ == '__main__':
-    directory = build_directory('DLGE')
+    directory = build_directory('MRTN')
     paths = build_paths(directory, '[assembly:')
     print(len(paths))
     print_directory(directory)
