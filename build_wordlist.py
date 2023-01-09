@@ -56,12 +56,12 @@ def compound_words(word: str) -> Optional[set[str]]:
     else:
         return total_words
 
-
+split_pattern = re.compile(r"[\[\]\:\/\_\?\. \(\)]")
 def extract_words(word: str) -> List[str]:
     # First, split on slashes. We'll never(?) have a word that spans a slash
     chunks = ''
     # split on symbols
-    words = re.split(r"[\[\]\:\/\_\?\. \(\)]", word)
+    words = re.split(split_pattern, word)
     words = [w for w in words if w != '']
 
     result: List[str] = []
@@ -84,17 +84,23 @@ if __name__ == '__main__':
     with open('hashes.pickle', 'rb') as handle:
         data = pickle.load(handle)
 
-    words: List[str] = []
+    words: set[str] = set()
 
     for hash in data:
         name = data[hash]['name']
         for x in extract_words(name):
-            words.append(x)
-        
-    words = sorted(list(set(words)))
+            words.add(x)
+        # this should be for only some hash lists
+        # also we need to extract punctuation
+        # also we need to remove super long strings
+        # for string in data[hash]['hex_strings']:
+        #     for x in extract_words(string.lower()):
+        #         words.add(x)
+            
+    ordered_words = sorted(list(words))
     with open('hitman_wordlist.txt', 'w') as fp:
-        for word in words:
+        for word in ordered_words:
             # write each item on a new line
-            fp.write(word + '\n')
+            fp.write(word.encode("ascii", errors="ignore").decode() + '\n')
 
 

@@ -1,4 +1,4 @@
-import json, re, pickle, zipfile, os, requests
+import json, re, pickle, os, requests
 from typing import List, Dict, Any
 
 print('Starting!')
@@ -12,15 +12,16 @@ try:
 except OSError:
     pass
 
-r = requests.get('https://hitmandb.notex.app/latest-hashes.zip', stream=True)
-with open('hash_list.zip', 'wb') as fd:
+# Download latest hashes
+r = requests.get('https://hitmandb.notex.app/latest-hashes.7z', stream=True)
+with open('latest-hashes.7z', 'wb') as fd:
     for chunk in r.iter_content(chunk_size=128):
         fd.write(chunk)
 
-with zipfile.ZipFile('hash_list.zip') as zf:
-    zf.extractall('./')
+# Fix this for your setup
+os.system('"C:\\Program Files\\7-Zip\\7z.exe" e ./latest-hashes.7z')
 
-os.remove('hash_list.zip')
+os.remove('./latest-hashes.7z')
 print('Extracted hash_list.txt.')
 
 print('Building hashes pickle...')
