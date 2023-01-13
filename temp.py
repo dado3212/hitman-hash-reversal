@@ -1,14 +1,36 @@
-from utils import ioi_string_to_hex, load_data
-import pickle, re, json
-from typing import List, Tuple, Dict, Optional
+from utils import crack
 
-data = load_data()
+# path = crack(
+#     '007416F01870D27E',
+#     ['golden', 'challenges', 'challenge', 'repository', 'gecko', 'dubai', 'mission', 'location', 'missions', 's3', 'default', ],
+#     '[assembly:/localization/hitman6/conversations/ui/pro/online/',
+#     1,
+#     5
+# )
 
-with open('reverse.pickle', 'rb') as handle:
-    reverse: Dict[str, str] = pickle.load(handle)
+path = crack(
+    '00489C6AE025588E',
+    '[assembly:/localization/hitman6/conversations/ui/pro/online/challenges/',
+    '.sweetmenutext].pc_localized-textlist',
+    ['challenges', 'prison', 'sniperchallenge', 'sniperchallenges', 'missions', 'sniper', 'hawk', 'falcon', 'contract', 'mission', 'caged', 'salty', 'seagul', 'seagull', 'snipers', 'challenge', 's3', 's2', 'sc'],
+    ['sniperchallenge'],
+    1,
+    6
+)
+print(path)
 
-for hash in data:
-    if data[hash]['type'] == 'LINE' and not data[hash]['correct_name']:
-        # It's not correct, but we have a REPO, and a LOCR with the correct name
-        if any([dep for dep in data[hash]['depends'] if dep in data and data[dep]['type'] == 'LOCR' and data[dep]['correct_name']]) and any([v for v in reverse[hash] if v in data and data[v]['type'] == 'REPO']):
-            print(hash)
+# hippo quest items?
+# path = crack(
+#     '0078EA900300649C',
+#     '[assembly:/localization/hitman6/conversations/ui/pro/online/',
+#     '.sweetmenutext].pc_localized-textlist',
+#     ['default/cloudstorage/resources/', 'quest', 'item', 'items', 'quests', 'hippo', 'map', 'colombia',
+#         'setpiece', 'missions', 'scenario', 'mission', 'scene', 'brick', 'story', 'runtime', 'runtimes',
+#         'gamecore', 'design', 'keywords', 'keyword', 'prop', 'general'],
+#     ['hippo', 'item'],
+#     2,
+#     6,
+# )
+# # menusystem/elements/settings/playeraid/items/interactionprompt.json
+# print(path)
+

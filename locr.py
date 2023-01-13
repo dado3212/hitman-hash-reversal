@@ -43,6 +43,45 @@ def guess_other_from_wordlist():
             if hash in data and not data[hash]['correct_name']:
                 print(hash + ', ' + file)
 
+def guess_challenges_from_wordlist():
+    with open('hitman_wordlist.txt', 'r') as f:
+        words = [x.strip() for x in f.readlines()]
+
+    last_perc = 0.0
+    #print('0%')
+
+    for i in range(len(words)):
+        new_perc = round(i * 100.0 / len(words), 1)
+        if new_perc > last_perc:
+            last_perc = new_perc
+            print(new_perc, '%')
+        word = words[i]
+        for word2 in words:
+            file = f'[assembly:/localization/hitman6/conversations/ui/pro/online/challenges/challenges_{word}_{word2}.sweetmenutext].pc_localized-textlist'
+            hash = ioi_string_to_hex(file)
+            if hash in data and not data[hash]['correct_name']:
+                print(hash + ', ' + file)
+
+def guess_online_folder_from_wordlist():
+    with open('hitman_wordlist.txt', 'r') as f:
+        words = [x.strip() for x in f.readlines()]
+
+    words = [word for word in words if word.isalpha()]
+
+    last_perc = 0.0
+    #print('0%')
+
+    for i in range(len(words)):
+        new_perc = round(i * 100.0 / len(words), 1)
+        if new_perc > last_perc:
+            last_perc = new_perc
+            print(new_perc, '%')
+        word = words[i]
+        for word2 in words:
+            file = f'[assembly:/localization/hitman6/conversations/ui/pro/online/{word}/{word}_{word2}.sweetmenutext].pc_localized-textlist'
+            hash = ioi_string_to_hex(file)
+            if hash in data and not data[hash]['correct_name']:
+                print(hash + ', ' + file)
 
 def other_formats():
     with open('hitman_wordlist.txt', 'r') as f:
@@ -119,17 +158,10 @@ def season_expansion_from_known():
         if new_hash in data and not data[new_hash]['correct_name']:
             print(new_hash + ', ' + guess)
 
-# with open('hitman_wordlist.txt', 'r') as f:
-#     words = [x.strip() for x in f.readlines()]
+guess_online_folder_from_wordlist()
 
-# for word in words:
-#     file = f'[assembly:/localization/hitman6/conversations/ui/pro/online/repository/{word}_{word}.sweetmenutext].pc_localized-textlist'
-#     hash = ioi_string_to_hex(file)
-#     if hash in data and not data[hash]['correct_name']:
-#         print(hash + ', ' + file)
-
-season_expansion_from_known()
-guess_other_from_wordlist()
+# season_expansion_from_known()
+# guess_other_from_wordlist()
 # [x for x in data if data[x]['type'] == 'LOCR' and any([f for f in data[x]['hex_strings'] if 'ghost' in f.lower() and 'coin' in f.lower()])]
 # [x for x in data if data[x]['type'] == 'LOCR' and any([f for f in data[x]['hex_strings'] if 'blueprint' in f.lower() and 'submarine' in f.lower()])]
 
