@@ -1,5 +1,5 @@
-import pickle, re
-from typing import List, Dict, Any, Optional
+import pickle
+from typing import Dict, Any
 from utils import ioi_string_to_hex
 
 with open('hashes.pickle', 'rb') as handle:

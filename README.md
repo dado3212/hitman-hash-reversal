@@ -120,6 +120,8 @@ MRTN -> MJBA -> ATMD
   * TEMP -> ASET
 * prim.py
   * TBLU + MATI -> PRIM
+* ecpb.py
+  * ECPB -> MATI, MATB, MATT
 
 * expand_known.py
   * ASET <-> ASEB

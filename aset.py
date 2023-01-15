@@ -18,7 +18,6 @@ for hash in data:
             if depends in data and data[depends]['correct_name'] and data[depends]['name'].endswith('.pc_entitytype'):
                 temp_name = data[depends]['name'].removesuffix('.pc_entitytype')
                 guesses = guesses.union([f'[assembly:/templates/aspectdummy.aspect]({temp_name}.entitytype{suffix}' for suffix in aset_suffixes])
-        found = False
         for guess in guesses:
             possible_hash = ioi_string_to_hex(guess)
             if possible_hash in data and not data[possible_hash]['correct_name']:
