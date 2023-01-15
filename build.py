@@ -54,6 +54,7 @@ material_folders = set([])
 template_folders = set([])
 wwev_folders = set([])
 mrtn_folders = set([])
+aset_suffixes = set([])
 with open('hash_list.txt', 'r') as f:
     # completion
     f.readline()
@@ -111,6 +112,15 @@ with open('hash_list.txt', 'r') as f:
                 else:
                     mrtn_folders.add(info.group(1))
 
+        elif extension == 'ASET':
+            if 'assembly' in ioi_string:
+                # [assembly:/templates/aspectdummy.aspect]([assembly:/templates/sound/wwise/soundentities.template?/3daudioemitter.entitytemplate].entitytype,[modules:/zboneattachaspect.class].entitytype).pc_entitytype
+                info = re.search(r"^\[assembly:/templates/aspectdummy.aspect\]\(\[[^\]]*\].entitytype(.*)$", ioi_string, re.IGNORECASE)
+                if info is None:
+                    continue
+                else:
+                    aset_suffixes.add(info.group(1))
+
 
 with open('./texture_folders.pickle', 'wb') as handle:
     pickle.dump(texture_folders, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -129,6 +139,9 @@ with open('./wwev_folders.pickle', 'wb') as handle:
 
 with open('./mrtn_folders.pickle', 'wb') as handle:
     pickle.dump(mrtn_folders, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+with open('./aset_suffixes.pickle', 'wb') as handle:
+    pickle.dump(aset_suffixes, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 print('Building wordlist pickles...')
 

@@ -14,6 +14,7 @@ replacements = [
     (False, '.pc_entitytype', '.pc_entityblueprint'),
     (False, '.pc_entitytemplate', '.pc_entityblueprint'),
     (False, '.pc_entitytype', '.pc_mi'),
+    (False, '.prim].pc_prim', '.prim].pc_coll')
     # Regex replacements (are unidirectional)
     # [assembly:/_pro/environment/templates/props/street_props/street_props_mumbai_a.template?/tent_street_mumbai_f.entitytemplate].pc_entitytype
     # [assembly:/_pro/environment/geometry/props/street_props/tent_street_mumbai_a.wl2?/tent_street_mumbai_f.prim].pc_entitytype
@@ -49,22 +50,30 @@ if __name__ == '__main__':
     
     # To add
     expanded_lines: List[str] = []
-    with open('tmp.txt', 'r', encoding='utf-16') as f:
-        lines = f.readlines()
-        for line in lines:
-            if ',' not in line:
-                continue
-            a = line.strip().split(',', 1)
-            hash = a[0].strip()
-            if '.' in hash:
-                hash = hash[:-5]
-            file = a[1].strip()
-            expanded_lines.append(hash + ', ' + file)
-            alt_paths = find_alternate_paths(file)
-            for hash in alt_paths:
-                if hash in data and not data[hash]['correct_name']:
-                    expanded_lines.append(hash + ', ' + alt_paths[hash])
-                    print(hash + ', ' + alt_paths[hash])
+
+    # If I manually paste stuff in it's utf-8 if it's pipe it's utf-16,
+    # just try both if one fails
+    try:
+        with open('tmp.txt', 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+    except UnicodeDecodeError:
+        with open('tmp.txt', 'r', encoding='utf-16') as f:
+            lines = f.readlines()
+
+    for line in lines:
+        if ',' not in line:
+            continue
+        a = line.strip().split(',', 1)
+        hash = a[0].strip()
+        if '.' in hash:
+            hash = hash[:-5]
+        file = a[1].strip()
+        expanded_lines.append(hash + ', ' + file)
+        alt_paths = find_alternate_paths(file)
+        for hash in alt_paths:
+            if hash in data and not data[hash]['correct_name']:
+                expanded_lines.append(hash + ', ' + alt_paths[hash])
+                print(hash + ', ' + alt_paths[hash])
 
     expanded_lines = sorted(list(set(expanded_lines)), key=lambda x: x.split(', ', 1)[1])
 

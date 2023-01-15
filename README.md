@@ -115,6 +115,15 @@ MRTN -> MJBA -> ATMD
 
 ### TBLU
 
+### Script Expansions
+* aset.py
+  * TEMP -> ASET
+* prim.py
+  * TBLU + MATI -> PRIM
+
+* expand_known.py
+  * ASET <-> ASEB
+
 ### Misc
 
 Checked all CSS color names from https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/
