@@ -1,6 +1,6 @@
 import re
-from typing import List, Dict, Iterable
-from utils import ioi_string_to_hex, load_data
+from typing import List, Iterable
+from utils import ioi_string_to_hex, load_data, hashcat
 
 data = load_data()
 
@@ -45,7 +45,6 @@ def extract_from_dependent_mati():
                         print(path_hash + ', ' + path_name)
 
 # Credit to Notex for guessing this pattern 1:54am PST 1/13/2023
-# TODO: Really this should use the hashcat_exporter method or it's much too slow.
 def broadly_guess_from_tblu_mati_synthesis():
     prefixes: Iterable[str] = set()
     tblu_suffixes: List[List[str]] = []
@@ -63,26 +62,8 @@ def broadly_guess_from_tblu_mati_synthesis():
 
     suffixes = suffixes.union(*tblu_suffixes)
 
-    print(len(prefixes))
-    print(len(suffixes))
-    prefixes = list(prefixes)
-
-    new: Dict[str, str] = {}
-
-    last_perc = 0.0
-    for i in range(len(prefixes)):
-        new_perc = round(i * 100.0 / len(prefixes), 1)
-        if new_perc > last_perc:
-            last_perc = new_perc
-            print(new_perc, '%')
-        prefix = prefixes[i]
-        for suffix in suffixes:
-            path_name = f'[assembly:/{prefix}.wl2?/{suffix}.prim].pc_prim'
-            path_hash = ioi_string_to_hex(path_name)
-            if path_hash in data and not data[path_hash]['correct_name']:
-                new[path_hash] = path_name
-    
-    for path_hash in new:
-        print(path_hash + ', ' + new[path_hash])
+    hashes = hashcat('PRIM', prefixes, suffixes, ['[assembly:/', '.wl2?/', '.prim].pc_prim'], data)
+    for hash in hashes:
+        print(hash + ', ' + hashes[hash])
 
 broadly_guess_from_tblu_mati_synthesis()
