@@ -41,16 +41,14 @@ def hashcat(
     left: set[str],
     right: set[str],
     format: List[str],
-    data: Optional[Dict[str, HashData]] = None
+    data: Optional[Dict[str, HashData]] = None,
+    override_hashes: Optional[set[str]] = None,
 ) -> Dict[str, str]:
     # Confirm that format is wellformed
     if len(format) != 3:
         print('The format must contain three values, one for before the first set, then in-between the sets, then after the second set.')
         exit()
-    # If you happen to be generating lists from raw wordlists without loading
-    # data, then we will need to load it to get our target hashes
-    if (data is None):
-        data = load_data()
+
     # TODO: Flag this in README
     hashcat_path = 'hashcat-6.2.4'
     # Confirm that the path exists
@@ -62,7 +60,14 @@ def hashcat(
 
     # Filter the hash list down to what we're targeting. Without this the target
     # hash list will be redundant, and also too big.
-    possible_hashes = [hash for hash in data if data[hash]['type'] == target_type and not data[hash]['correct_name']]
+    if override_hashes is not None:
+        possible_hashes = override_hashes
+    else:
+        # If you happen to be generating lists from raw wordlists without loading
+        # data, then we will need to load it to get our target hashes
+        if (data is None):
+            data = load_data()
+        possible_hashes = [hash for hash in data if data[hash]['type'] == target_type and not data[hash]['correct_name']]
     print(f'Saving temporary wordlists: {len(left)} left, {len(right)} right, targeting {len(possible_hashes)} unknown hashes.')
     with open(f'{hashcat_path}/left.txt', 'w', encoding='utf-8') as f:
         f.write("\n".join(left))
@@ -117,12 +122,12 @@ def hashcat(
         line = process.stdout.readline()
         if not line:
             break
-        # TODO: Filter down to progress and candidates.#1 and maybe hardware
-        # Time.Estimated
-        # Progress
-        # Candidates.#1
-        # Hardware.Mon.#1
-        print(line.strip().decode('utf-8'))
+
+        line = line.strip().decode('utf-8')
+        if line.startswith('Time.Estimated') or line.startswith('Progress') or line.startswith('Candidates.#1'):
+            print(line)
+        elif line.startswith('Hardware.Mon.#1'):
+            print(line + '\n')
 
     # Read the new hashes
     new_hashes: Dict[str, str] = {}

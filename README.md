@@ -122,9 +122,13 @@ MRTN -> MJBA -> ATMD
   * TBLU + MATI -> PRIM
 * ecpb.py
   * ECPB -> MATI, MATB, MATT
+* wswb_dswb.py
+  * wordlist -> WSWB, DSWB
 
 * expand_known.py
   * ASET <-> ASEB
+  * WSWB <-> WSWT
+  * more
 
 ### Misc
 
