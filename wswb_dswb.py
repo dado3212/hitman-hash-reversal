@@ -1,5 +1,5 @@
-from utils import ioi_string_to_hex, hashcat, load_data
-from typing import List, Dict, Optional
+from utils import hashcat, load_data
+from typing import Dict, Optional
 import string
 
 # As of Jan 15th, 2023 this gets everything we know
