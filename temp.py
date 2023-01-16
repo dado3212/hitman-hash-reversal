@@ -1,36 +1,37 @@
-from utils import crack
+# This is only named for finding TEMP files
 
-# path = crack(
-#     '007416F01870D27E',
-#     ['golden', 'challenges', 'challenge', 'repository', 'gecko', 'dubai', 'mission', 'location', 'missions', 's3', 'default', ],
-#     '[assembly:/localization/hitman6/conversations/ui/pro/online/',
-#     1,
-#     5
-# )
+from utils import hashcat, load_data
+from typing import Dict, Optional
+import string
 
-path = crack(
-    '00489C6AE025588E',
-    '[assembly:/localization/hitman6/conversations/ui/pro/online/challenges/',
-    '.sweetmenutext].pc_localized-textlist',
-    ['challenges', 'prison', 'sniperchallenge', 'sniperchallenges', 'missions', 'sniper', 'hawk', 'falcon', 'contract', 'mission', 'caged', 'salty', 'seagul', 'seagull', 'snipers', 'challenge', 's3', 's2', 'sc'],
-    ['sniperchallenge'],
-    1,
-    6
-)
-print(path)
 
-# hippo quest items?
-# path = crack(
-#     '0078EA900300649C',
-#     '[assembly:/localization/hitman6/conversations/ui/pro/online/',
-#     '.sweetmenutext].pc_localized-textlist',
-#     ['default/cloudstorage/resources/', 'quest', 'item', 'items', 'quests', 'hippo', 'map', 'colombia',
-#         'setpiece', 'missions', 'scenario', 'mission', 'scene', 'brick', 'story', 'runtime', 'runtimes',
-#         'gamecore', 'design', 'keywords', 'keyword', 'prop', 'general'],
-#     ['hippo', 'item'],
-#     2,
-#     6,
-# )
-# # menusystem/elements/settings/playeraid/items/interactionprompt.json
-# print(path)
+data = load_data()
 
+for hash in data:
+    if data[hash]['type'] == 'TEMP' and not data[hash]['correct_name'] and 'quixel' in data[hash]['name']:
+
+
+    allowed = set(string.ascii_lowercase + '_')
+    with open('hitman_wordlist.txt', 'r') as f:
+        hitman_wordlist = set([x.strip() for x in f.readlines()])
+    with open('wordlist_12.txt', 'r') as f:
+        wordlist_12 = set([x.strip() for x in f.readlines()])
+    
+    wordlist = hitman_wordlist.union(wordlist_12)
+    wordlist = set([word for word in wordlist if set(word) <= allowed])
+        
+    ending = f'/{name}.wwiseswitchgroup].pc_entityblueprint'
+    formats = [
+        ['[assembly:/sound/wwise/exportedwwisedata/switches/','_switches/switches_',ending],
+        ['[assembly:/sound/wwise/exportedwwisedata/switches/','_switch/switches_',ending],
+        ['[assembly:/sound/wwise/exportedwwisedata/switches/','_switches/switch_',ending],
+        ['[assembly:/sound/wwise/exportedwwisedata/switches/','_switch/switch_',ending],
+        ['[assembly:/sound/wwise/exportedwwisedata/switches/','_',ending],
+        ['[assembly:/sound/wwise/exportedwwisedata/switches/','_','_switch'+ending],
+        ['[assembly:/sound/wwise/exportedwwisedata/switches/switch_','_',ending],
+    ]
+    target_hashes = set([hash])
+    for format in formats:
+        hashes = hashcat('WSWB', wordlist, wordlist, format, override_hashes=target_hashes)
+        if hash in hashes:
+            print(hash + ', ' + hashes[hash])

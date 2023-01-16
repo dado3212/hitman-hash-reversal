@@ -1,5 +1,5 @@
 from typing import List, TypedDict, Dict, Optional
-import hashlib, pickle, itertools, os, subprocess, time
+import hashlib, pickle, itertools, os, subprocess, string
 
 class HashData(TypedDict):
     name: str
@@ -138,6 +138,28 @@ def hashcat(
             new_hashes[line[0].upper()] = line[1].rstrip()
 
     return new_hashes
+
+def targeted_hashcat(
+    hash: str,
+    formats: List[List[str]],
+) -> Optional[str]:
+    # Only use ascii and _ in the guessing for these paths
+    # Not suitable for everything
+    allowed = set(string.ascii_lowercase + '_')
+    with open('hitman_wordlist.txt', 'r') as f:
+        hitman_wordlist = set([x.strip() for x in f.readlines()])
+    with open('wordlist_12.txt', 'r') as f:
+        wordlist_12 = set([x.strip() for x in f.readlines()])
+    
+    wordlist = hitman_wordlist.union(wordlist_12)
+    wordlist = set([word for word in wordlist if set(word) <= allowed])
+        
+    target_hashes = set([hash])
+    for format in formats:
+        hashes = hashcat('targeted', wordlist, wordlist, format, override_hashes=target_hashes)
+        if hash in hashes:
+            return hashes[hash]
+    return None
 
 def crack(
     target: str,
