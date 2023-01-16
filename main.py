@@ -80,6 +80,6 @@ for hash in data:
         alt_paths = find_alternate_paths(data[hash]['name'])
         for alt_hash in alt_paths:
             if alt_hash in data and not data[alt_hash]['correct_name'] and alt_hash not in new_paths:
-                print(alt_hash + '.' + data[alt_hash]['type'] + ', ' + alt_paths[hash])
-                new_paths[alt_hash] = alt_paths[hash]
+                print(alt_hash + '.' + data[alt_hash]['type'] + ', ' + alt_paths[alt_hash])
+                new_paths[alt_hash] = alt_paths[alt_hash]
                 
