@@ -111,7 +111,7 @@ LOCR
 PRIM
 MJBA (ATMD)
 
-MRTN -> MJBA -> ATMD
+MRTN -> MJBA -> ATMD, MRTR
 
 ### TBLU
 
@@ -129,6 +129,7 @@ MRTN -> MJBA -> ATMD
   * ASET <-> ASEB
   * WSWB <-> WSWT
   * WSGB <-> WSGT
+  * PRIM <-> BORG
   * more
 
 ### Misc
@@ -151,4 +152,4 @@ https://github.com/dado3212/hitman-hash-reversal/commit/3d2a7b525c99750e62919609
 # Adhoc hashcat
 `./hashcat.exe -a 3 -m 92100 -1 abcdefghijklmnopqrstuvwxyz0123456789_/ 00F1C98E21AC5D76 "[assembly:/_pro/online/contracts/?1?1?1?1?1?1?1?1?1/Ancestral_bulldog_Death_In_755984a8-fb0b-4673-8637-95cfe7d34e0f.contracts.json].pc_json" --increment --increment-min 2 --increment-max 3`
 ## did 5, 6, 7
-./hashcat.exe -a 3 -m 92100 -1 abcdefghijklmnopqrstuvwxyz0123456789_/ 006BF37145EFFA5D "[assembly:/_pro/scenes/missions/miami/scene_?1?1?1?1?1?1?1.navp].pc_navp"  --outfile-autohex-disable --status --status-timer 3 --force --potfile-disable -o miami-cracked.txt
+./hashcat.exe -a 3 -m 92100 -1 abcdefghijklmnopqrstuvwxyz0123456789_/ 006BF37145EFFA5D "[assembly:/_pro/scenes/missions/miami/scene_?1?1?1?1?1?1?1?1.navp].pc_navp"  --outfile-autohex-disable --status --status-timer 3 --force --potfile-disable -o miami-cracked.txt
