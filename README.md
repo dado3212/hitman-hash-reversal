@@ -124,8 +124,23 @@ MJBA (ATMD)
 
 MRTN -> MJBA -> ATMD, MRTR
 
-# Status on each of them
-* 
+## Status on non-complete
+* DSWB (same as WSWB)
+  Names come from hex_strings, wordlist guessing for the directory.
+* GFXV
+  Names come from hex_strings, wordlist guessing for the directory (and maybe ORES?)
+* MATI
+  Names come from hex_strings, wordlist guessing for the directory (shared with TEXT/PRIM dependencies).
+* TBLU
+  Names come from hex_strings, directories from TBLU/TEMP dependencies.
+* TEMP
+  Names come from PRIM/TBLU dependencies.
+* WWEV
+  Names come from hex_strings, directories from wordlists.
+
+* AIBZ
+  
+
 
 ### Script Expansions
 * aset.py
