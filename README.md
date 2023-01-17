@@ -152,6 +152,9 @@ MRTN -> MJBA -> ATMD, MRTR
   Comes from MJBA, exhaustive. Has CPPT/CBLU names in it. Also has some unknown stuff like saudioanimationeventdata.
 * BMSK
   Comes from wordlist.
+* BORG
+  Comes from PRIM, reverse dependency. Also can come from modified TEMP files, as well as non-linked PRIMs.
+* 
 
 ### Script Expansions
 * aibz.py
