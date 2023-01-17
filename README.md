@@ -154,7 +154,26 @@ MRTN -> MJBA -> ATMD, MRTR
   Comes from wordlist.
 * BORG
   Comes from PRIM, reverse dependency. Also can come from modified TEMP files, as well as non-linked PRIMs.
-* 
+* CLNG
+  No info.
+* CRMD
+  Comes from wordlist and reverse TEMP.
+* DITL
+  No info.
+* DLGE
+  Futzing from SDEF and known DLGE paths. <- do more here
+* ECPB
+  No info. Source of a lot of MATI strings.
+* ECPT
+  No info.
+* ERES
+  From TEMP dependency (materialdescriptor) <- can do temporary ones if we need it
+* FXAS
+  From hex_strings, except for 3 of them <- can do more here to try and get the last 3
+* ORES
+  From ORES hex_strings. Maybe futzing?
+
+  # WBNK
 
 ### Script Expansions
 * aibz.py
