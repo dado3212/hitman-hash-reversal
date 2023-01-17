@@ -6,6 +6,22 @@ data = load_data()
 
 print('loaded')
 
+'''
+Some helper commands to answer basic questions:
+
+Q. Do all PRIMs's have a MATI dependency.
+A. No. 20 do not. They depend on unknown hashes though, which we can't do much about.
+[hash for hash in data if data[hash]['type'] == 'PRIM' and not any([x for x in data[hash]['depends'] if x in data and data[x]['type'] == 'MATI'])]
+
+Q. Do all PRIMs have a reverse dependency TEMP?
+A. Nope. 13 do not. Most are light gizmo's, and then there's 00A2A8F4A90A06C2.
+[(hash, data[hash]['name']) for hash in data if data[hash]['type'] == 'PRIM' and (hash not in reverse or not any([x for x in reverse[hash] if x in data and data[x]['type'] == 'TEMP']))]
+
+Q. Do all PRIMs have a named reverse dependency TEMP have a name?
+A. Yes (as long as you filter to the right type).
+[hash for hash in data if data[hash]['type'] == 'PRIM' and not data[hash]['correct_name'] and any([x for x in reverse[hash] if x in data and data[x]['type'] == 'TEMP' and data[x]['correct_name'] and 'geometry' in data[x]['name']])]
+'''
+
 # with open('reverse.pickle', 'rb') as handle:
 #     reverse: Dict[str, str] = pickle.load(handle)
 

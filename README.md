@@ -178,10 +178,45 @@ MRTN -> MJBA -> ATMD, MRTR
   From LOCR and hex_strings. Also REPO, maybe a little JSON TODO?
 * LOCR
   From REPO (maybe a little JSON TODO)?
+* MATB
+  From MATT with a different ending, exhaustively.
+* MATE
+  I have no idea. TODO: explore this. It looks like hex_strings and wordlist
+* MATT
+  From MATI with a different ending.
+* MJBA
+  From MRTN. Potentially other places too?
+* MRTN
+  From hex_strings (usually with hm or mr), with maybe wordlist directories? <- we can do searchable easily
+* MRTR
+  From MJBA with reverse dependency, exhaustively. Also hex_strings but modified, which can help the other direction.
 * ORES
   From ORES hex_strings. Maybe futzing?
+* PRIM
+  From MATI dependency and TEMP reverse dependency. They basically all have MATI.
+* RTLV
+  No info, just guesses.
+* SCDA
+  From reverse TEMP hex_strings. Need to fix up large brick extraction before we can verify this.
+* TEXD
+  From reverse TEXT dependency. Basically exhaustive.
+* TEXT
+  From reverse MATI dependency, futzing, and wordlists.
+* VIDB
+  From hex_strings, missing extension. <- should do easily searchable
+* VTXD
+  From reverse TEMP hex_strings. Need to fix up large brick extraction before we can verify this.
+* WBNK
+  Wordlists, based on reverse dependencies. <- should take an updated cracking look at the last one
+* WWEM
+  From reverse WWEV hex_strings, and wordlists. <- should take an updated cracking look at this, and verify inverse for all others
 
-  # WBNK
+
+
+More broadly, can we check any JSON/ORES/REPO strings with 'assembly' in them
+and see if they match a known name?
+Ditto for file extensions.
+  scattermap from temp
 
 ### Script Expansions
 * aibz.py
@@ -203,6 +238,8 @@ MRTN -> MJBA -> ATMD, MRTR
   * WSGB <-> WSGT
   * PRIM <-> BORG
   * ALOC <-> TEMP
+  * MATT <-> MATB
+  * TEXT <-> TEXD
   * more
 
 ### Misc
@@ -235,3 +272,12 @@ https://github.com/dado3212/hitman-hash-reversal/commit/3d2a7b525c99750e62919609
 
 ## tried 1-6
 ./hashcat.exe -a 3 -m 92100 -1 abcdefghijklmnopqrstuvwxyz 00AF9CBF71D4D99A "[assembly:/animationfacefx/?1?1?1?1?1?1.animset].pc_animset"  --outfile-autohex-disable --status --status-timer 3 --force --potfile-disable -o fxas-cracked.txt
+
+# Setting up and want to copy paste:
+```
+from utils import load_data, hashcat, targeted_hashcat, ioi_string_to_hex
+import re, json, pickle
+data = load_data()
+with open('reverse.pickle', 'rb') as handle:
+    reverse = pickle.load(handle)
+```

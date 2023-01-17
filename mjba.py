@@ -2,6 +2,24 @@ from utils import ioi_string_to_hex, load_data
 import pickle, re
 from typing import List, Tuple
 
+'''
+Some helper commands to answer basic questions:
+
+Q. Do all MJBA's have a reverse dependency MRTN?
+A. No. 6,020 do not.
+[hash for hash in data if data[hash]['type'] == 'MJBA' and (hash not in reverse or not any([x for x in reverse[hash] if x in data and data[x]['type'] == 'MRTN']))]
+
+Q. Do all MJBA's without a reverse dependency MRTN have a reverse dependency ASVA?
+A. Nop. 3,433 do not. Some of them 
+[hash for hash in data if data[hash]['type'] == 'MJBA' and (hash not in reverse or (not any([x for x in reverse[hash] if x in data and data[x]['type'] == 'MRTN']) and not any([x for x in reverse[hash] if x in data and data[x]['type'] == 'ASVA'])))]
+
+Q. Do any MJBA's without a reverse dependency MRTN have a name?
+A. Yes. But it may be because of other MRTNs that for some reason aren't direct dependencies.
+[hash for hash in data if data[hash]['type'] == 'MJBA' and data[hash]['correct_name'] and (hash not in reverse or not any([x for x in reverse[hash] if x in data and data[x]['type'] == 'MRTN']))]
+# Example:
+[(hash, data[hash]['type']) for hash in data if any([x for x in data[hash]['hex_strings'] if 'mr_carryplate_pickup_putdown_75cm' in x.lower()])]
+'''
+
 data = load_data()
 
 # Extract from ATMDs
