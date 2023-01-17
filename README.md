@@ -273,6 +273,10 @@ https://github.com/dado3212/hitman-hash-reversal/commit/3d2a7b525c99750e62919609
 ## tried 1-6
 ./hashcat.exe -a 3 -m 92100 -1 abcdefghijklmnopqrstuvwxyz 00AF9CBF71D4D99A "[assembly:/animationfacefx/?1?1?1?1?1?1.animset].pc_animset"  --outfile-autohex-disable --status --status-timer 3 --force --potfile-disable -o fxas-cracked.txt
 
+# tried 1-7
+./hashcat.exe -a 3 -m 92100 -1 abcdefghijklmnopqrstuvwxyz_ 00D63DA408C1369A "[assembly:/sound/wwise/exportedwwisedata/soundbanks/globaldata/?1?1?1?1?1?1?1.wwisesoundbank].pc_wwisebank" --outfile-autohex-disable --status --status-timer 3 --force --potfile-disable -o wbnk-cracked.txt
+
+
 # Setting up and want to copy paste:
 ```
 from utils import load_data, hashcat, targeted_hashcat, ioi_string_to_hex
