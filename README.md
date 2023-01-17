@@ -167,9 +167,13 @@ MRTN -> MJBA -> ATMD, MRTR
 * ECPT
   No info.
 * ERES
-  From TEMP dependency (materialdescriptor) <- can do temporary ones if we need it
+  From TEMP dependency (materialdescriptor).
 * FXAS
-  From hex_strings, except for 3 of them <- can do more here to try and get the last 3
+  From hex_strings, except for 3 of them (two of them are in a known form)
+* GFXI
+  Names from ORES and REPO file. Appears to be missing a lot of info.
+* JSON
+  
 * ORES
   From ORES hex_strings. Maybe futzing?
 
@@ -224,3 +228,6 @@ https://github.com/dado3212/hitman-hash-reversal/commit/3d2a7b525c99750e62919609
 
 ## tried 1, 2, 3, 4, 5, 6
 ./hashcat.exe -a 3 -m 92100 -1 abcdefghijklmnopqrstuvwxyz 005F87B4C57FD0FF "[assembly:/ai/behaviortrees/custom/?1?1?1?1?1?1?1.aibt].pc_aibz"  --outfile-autohex-disable --status --status-timer 3 --force --potfile-disable -o aibz-cracked.txt
+
+## tried 1-6
+./hashcat.exe -a 3 -m 92100 -1 abcdefghijklmnopqrstuvwxyz 00AF9CBF71D4D99A "[assembly:/animationfacefx/?1?1?1?1?1?1.animset].pc_animset"  --outfile-autohex-disable --status --status-timer 3 --force --potfile-disable -o fxas-cracked.txt
