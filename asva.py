@@ -45,7 +45,7 @@ def smart_guessing():
         reverse: Dict[str, str] = pickle.load(handle)
 
     for hash in data:
-        if data[hash]['type'] == 'ASVA':
+        if data[hash]['type'] == 'ASVA' and not data[hash]['correct_name']:
             # [assembly:/animations/animationdatabases/hm5_weapons.aset?/
             # [assembly:/animations/animationdatabases/hm5_animations.aset?/
             # [assembly:/animations/animationdatabases/actor_reactions.aset?/
@@ -66,6 +66,7 @@ def smart_guessing():
                         lambda x: x,
                         lambda x: f'prop_{x}',
                         lambda x: f'prop_1h_{x}',
+                        lambda x: x.replace('carry_', ''),
                         lambda x: x.replace('male_', ''),
                         lambda x: x.replace('vri_', ''),
                         lambda x: x.replace('civ_', 'civ_male_'),
@@ -100,7 +101,7 @@ def smart_guessing():
                         lambda x: '_'.join(x.split('_')[:-2]) + '_' + x.split('_')[-2] + '_' + x.split('_')[-1] if len(x.split('_')) > 2 else x,
                     ]
                     names = set([chunk.removeprefix('animset_')])
-                    for i in range(0, 4):
+                    for i in range(0, 5):
                         for name in list(names)[::]:
                             for change in changes:
                                 names.add(change(name))
@@ -125,4 +126,5 @@ def smart_guessing():
                     print('Unknown: ' + hash)
                     print(raw_chunks)
 
-hashcat_guessing()
+# hashcat_guessing()
+smart_guessing()
