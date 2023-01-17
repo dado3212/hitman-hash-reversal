@@ -139,10 +139,25 @@ MRTN -> MJBA -> ATMD, MRTR
   Names come from hex_strings, directories from wordlists.
 
 * AIBZ
-  
-
+  Comes from wordlist
+* ALOC
+  Comes directly from TEMP dependency with a different suffix (AFAIK)
+* ASEB
+  Comes directly from ASET dependency with a different suffix, exhaustive.
+* ASET
+  Comes from TEMP children, CPPT, and maybe ECPT though we don't have any yet.
+* ASVA
+  Comes from TEMP dependencies, with some name mangling.
+* ATMD
+  Comes from MJBA, exhaustive. Has CPPT/CBLU names in it. Also has some unknown stuff like saudioanimationeventdata.
+* BMSK
+  Comes from wordlist.
 
 ### Script Expansions
+* aibz.py
+  * wordlist -> AIBZ
+* aseb.py
+  * Literally does nothing but verify that it's a subset of ASET
 * aset.py
   * TEMP -> ASET
 * prim.py
@@ -157,6 +172,7 @@ MRTN -> MJBA -> ATMD, MRTR
   * WSWB <-> WSWT
   * WSGB <-> WSGT
   * PRIM <-> BORG
+  * ALOC <-> TEMP
   * more
 
 ### Misc
@@ -180,3 +196,9 @@ https://github.com/dado3212/hitman-hash-reversal/commit/3d2a7b525c99750e62919609
 `./hashcat.exe -a 3 -m 92100 -1 abcdefghijklmnopqrstuvwxyz0123456789_/ 00F1C98E21AC5D76 "[assembly:/_pro/online/contracts/?1?1?1?1?1?1?1?1?1/Ancestral_bulldog_Death_In_755984a8-fb0b-4673-8637-95cfe7d34e0f.contracts.json].pc_json" --increment --increment-min 2 --increment-max 3`
 ## did 5, 6, 7
 ./hashcat.exe -a 3 -m 92100 -1 abcdefghijklmnopqrstuvwxyz0123456789_/ 006BF37145EFFA5D "[assembly:/_pro/scenes/missions/miami/scene_?1?1?1?1?1?1?1?1.navp].pc_navp"  --outfile-autohex-disable --status --status-timer 3 --force --potfile-disable -o miami-cracked.txt
+
+## tried 1, 2, 3, 4, 5, 6, 7
+./hashcat.exe -a 3 -m 92100 -1 abcdefghijklmnopqrstuvwxyz 005F87B4C57FD0FF "[assembly:/ai/behaviortrees/?1?1?1?1?1?1?1.aibt].pc_aibz"  --outfile-autohex-disable --status --status-timer 3 --force --potfile-disable -o aibz-cracked.txt
+
+## tried 1, 2, 3, 4, 5, 6
+./hashcat.exe -a 3 -m 92100 -1 abcdefghijklmnopqrstuvwxyz 005F87B4C57FD0FF "[assembly:/ai/behaviortrees/custom/?1?1?1?1?1?1?1.aibt].pc_aibz"  --outfile-autohex-disable --status --status-timer 3 --force --potfile-disable -o aibz-cracked.txt

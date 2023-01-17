@@ -17,6 +17,7 @@ replacements = [
     (False, '.pc_entitytemplate', '.pc_entityblueprint'),
     (False, '.pc_entitytype', '.pc_mi'),
     (False, '.prim].pc_prim', '.prim].pc_coll'),
+    (False, '.pc_coll', '.pc_entitytype'),
     (False, '.xmdtake].pc_rtr', '.xmdtake](cutsequence).pc_animation')
     # Regex replacements (are unidirectional)
     # [assembly:/_pro/environment/templates/props/street_props/street_props_mumbai_a.template?/tent_street_mumbai_f.entitytemplate].pc_entitytype
