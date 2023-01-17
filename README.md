@@ -171,7 +171,7 @@ MRTN -> MJBA -> ATMD, MRTR
 * FXAS
   From hex_strings, except for 3 of them (two of them are in a known form)
 * GFXI
-  Names from ORES and REPO file. Appears to be missing a lot of info.
+  Names from ORES, REPO, and JSON files. Appears to be missing a lot of info.
 * JSON
   
 * ORES

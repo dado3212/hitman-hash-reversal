@@ -1,4 +1,4 @@
-from typing import List, TypedDict, Dict, Optional
+from typing import List, TypedDict, Dict, Optional, Any
 import hashlib, pickle, itertools, os, subprocess, string
 
 class HashData(TypedDict):
@@ -23,6 +23,23 @@ def ioi_string_to_hex(path: str) -> str:
 def load_data() -> Dict[str, HashData]:
     with open('hashes.pickle', 'rb') as handle:
         return pickle.load(handle)
+
+# Takes in a search string and json_data and returns a list of string matches
+def recursive_search_json(search_str: str, json_data: Any) -> set[str]:
+    # Check if it's a string
+    result: set[str] = set()
+    if isinstance(json_data, str):
+        if search_str in json_data:
+            return set([json_data])
+    elif isinstance(json_data, list):
+        for key in json_data: #pyright: ignore [reportUnknownVariableType]
+            options = recursive_search_json(search_str, key)
+            result = result.union(options)
+    elif isinstance(json_data, dict):
+        for key in json_data: #pyright: ignore [reportUnknownVariableType]
+            options = recursive_search_json(search_str, json_data[key]) #pyright: ignore [reportUnknownArgumentType]
+            result = result.union(options)
+    return result
 
 '''
 To use this file, you will need to copy the hashcat 6.2.4 build from GitHub
