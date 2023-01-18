@@ -1,7 +1,7 @@
 
 import pickle, re, json, string
 from typing import List, Dict, Any, Optional
-from utils import ioi_string_to_hex, load_data, hashcat, recursive_search_json, targeted_hashcat
+from utils import ioi_string_to_hex, load_data, hashcat, extract_strings_from_json, targeted_hashcat
 
 def guess_from_internal_files():
     data = load_data()
@@ -9,14 +9,15 @@ def guess_from_internal_files():
 
     unique_json_files: set[str] = set()
 
-    json_files: List[set[str]] = []
+    json_files: List[List[str]] = []
     for hash in data:
         # Extract from JSON files
         if data[hash]['type'] == 'JSON':
             for hex in data[hash]['hex_strings']:
                 # There are comments inline, which will cause the parser to choke unless they're removed
                 json_data = json.loads(re.sub(r'/\*.*?\*/', '', hex, flags=re.S))
-                json_files.append(recursive_search_json('.json', json_data))
+                json_strings = [x.lower() for x in extract_strings_from_json(json_data)]
+                json_files.append([x for x in json_strings if '.json' in x])
         # Extract from ORES
         if data[hash]['type'] == 'ORES':
             for file in data[hash]['hex_strings']:
@@ -45,6 +46,7 @@ def guess_from_internal_files():
             #  - menusystem/actions/availability/data/packageids/packageid_main.json
             print(file)
 
+guess_from_internal_files()
 '''
 TODO:
 # images/opportunities/paris/a_drink_to_die_for.jpg

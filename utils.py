@@ -24,20 +24,19 @@ def load_data() -> Dict[str, HashData]:
     with open('hashes.pickle', 'rb') as handle:
         return pickle.load(handle)
 
-# Takes in a search string and json_data and returns a list of string matches
-def recursive_search_json(search_str: str, json_data: Any) -> set[str]:
+# Takes in a json_data and returns a list of strings
+def extract_strings_from_json(json_data: Any) -> set[str]:
     # Check if it's a string
     result: set[str] = set()
     if isinstance(json_data, str):
-        if search_str in json_data:
-            return set([json_data])
+        return set([json_data])
     elif isinstance(json_data, list):
         for key in json_data: #pyright: ignore [reportUnknownVariableType]
-            options = recursive_search_json(search_str, key)
+            options = extract_strings_from_json(key)
             result = result.union(options)
     elif isinstance(json_data, dict):
         for key in json_data: #pyright: ignore [reportUnknownVariableType]
-            options = recursive_search_json(search_str, json_data[key]) #pyright: ignore [reportUnknownArgumentType]
+            options = extract_strings_from_json(json_data[key]) #pyright: ignore [reportUnknownArgumentType]
             result = result.union(options)
     return result
 

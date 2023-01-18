@@ -203,15 +203,13 @@ MRTN -> MJBA -> ATMD, MRTR
 * TEXT
   From reverse MATI dependency, futzing, and wordlists.
 * VIDB
-  From hex_strings, missing extension. <- should do easily searchable
+  From hex_strings, missing extension (also from TEMP -> TBLU dependency). <- should do easily searchable
 * VTXD
   From reverse TEMP hex_strings. Need to fix up large brick extraction before we can verify this.
 * WBNK
   Wordlists, based on reverse dependencies. <- should take an updated cracking look at the last one
 * WWEM
   From reverse WWEV hex_strings, and wordlists. <- should take an updated cracking look at this, and verify inverse for all others
-
-
 
 More broadly, can we check any JSON/ORES/REPO strings with 'assembly' in them
 and see if they match a known name?
@@ -276,6 +274,8 @@ https://github.com/dado3212/hitman-hash-reversal/commit/3d2a7b525c99750e62919609
 # tried 1-7
 ./hashcat.exe -a 3 -m 92100 -1 abcdefghijklmnopqrstuvwxyz_ 00D63DA408C1369A "[assembly:/sound/wwise/exportedwwisedata/soundbanks/globaldata/?1?1?1?1?1?1?1.wwisesoundbank].pc_wwisebank" --outfile-autohex-disable --status --status-timer 3 --force --potfile-disable -o wbnk-cracked.txt
 
+# tried 1-6, on 7 so boost increment-min to 102
+./hashcat.exe -a 3 -m 92100 -1 abcdefghijklmnopqrstuvwxyz 006CF07CF75C7EBF "[assembly:/_pro/scenes/frontend/videodatabase/videodatabase_dlc_1_harveywallbanger.entity].pc_?1?1?1?1?1?1?1?1?1?1" --outfile-autohex-disable --status --status-timer 3 --force --potfile-disable -o rtlv-cracked.txt --increment --increment-min 95 --increment-max 105
 
 # Setting up and want to copy paste:
 ```
