@@ -14,7 +14,7 @@ def get_mati_names() -> set[str]:
                         mati_names.add(x.lower())
     return mati_names
 
-def find_folder_patterns() -> set[str]:
+def find_folder_patterns(unique_threshold: int = 5) -> set[str]:
     with open('material_folders.pickle', 'rb') as handle:
         material_folders: List[str] = list(pickle.load(handle))
 
@@ -77,7 +77,9 @@ def find_folder_patterns() -> set[str]:
                         # kind of arbitrary tbh
                         # maybe want to compare to length of elements in terms
                         # of how much it compresses
-                        if len(unique) <= 5:
+                        # Currently defaulting to 5 and comparing with other
+                        # lengths
+                        if len(unique) <= unique_threshold:
                             refined_format.append([x for x in unique])
                         else:
                             refined_format.append(['*'])
@@ -149,10 +151,9 @@ def guess_folders():
     for hash in found_hashes:
         print(hash + '.' + data[hash]['type'] + ', ' + found_hashes[hash])
 
-def find_folder_patterns_and_guess():
-    patterns = find_folder_patterns()
-    print('found patterns')
-
+# Currently this only supports patterns with one '*'
+# TODO: Expand this
+def guess_from_folder_patterns(patterns: set[str]):
     mati_names = get_mati_names()
     print('found mati names')
 
@@ -186,6 +187,11 @@ def find_folder_patterns_and_guess():
     for hash in found_hashes:
         print(hash + '.' + data[hash]['type'] + ', ' + found_hashes[hash])
 
-find_folder_patterns_and_guess()
+paths_5 = find_folder_patterns()
+paths_50 = find_folder_patterns(10)
+new_patterns = paths_50.difference(paths_5)
+print(len(new_patterns))
+guess_from_folder_patterns(new_patterns)
+# guess_from_folder_patterns(find_folder_patterns())
 # Try and guess quixel hash
 # print(targeted_hashcat('00B813C4D7BED527', [['[assembly:/_pro/_licensed/quixel/materials/', '/', '/quixel_debris_b.mi].pc_mi']]))
