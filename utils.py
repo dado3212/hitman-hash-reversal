@@ -40,18 +40,40 @@ def extract_strings_from_json(json_data: Any) -> set[str]:
             result = result.union(options)
     return result
 
-'''
-To use this file, you will need to copy the hashcat 6.2.4 build from GitHub
-(https://github.com/hashcat/hashcat/releases/tag/v6.2.4) and also download
-grappigegovert's patch from https://github.com/grappigegovert/hashcat
-(https://cdn.discordapp.com/attachments/815577522958893096/909394928403107961/hashcat_ioihash_fixed.zip).
+def hashcat_multiple(
+    target_type: str,
+    wordlists: List[set[str]],
+    format: List[str],
+    data: Optional[Dict[str, HashData]] = None,
+    override_hashes: Optional[set[str]] = None,
+) -> Dict[str, str]:
+    if len(wordlists) < 2:
+        print('Wordlist count should be at least two')
+        exit()
+    # Just forward this
+    if len(wordlists) == 2:
+        return hashcat(target_type, wordlists[0], wordlists[1], format, data, override_hashes)
+    # Confirm that format is wellformed
+    if len(format) != len(wordlists) + 1:
+        print(f'The format must contain {len(wordlists)+1} values to fully wrap the {len(wordlists)} wordlists.')
+        exit()
 
-Move the 6.2.4 folder into this one, and from the patch copy in the files to the
-modules and OpenCL folders.
+    # Create the temporary wordlists
+    # ['assembly', '/', '/', '.pc_entitytemplate']
+    
 
-Sample command:
-hashcat('PRIM', ['test'], ['test'], ['[assembly:/', '.wl2?/', '.prim].pc_prim'])
-'''
+    # for now we'll be a little dumb with it
+    # TODO: Shard this in a way that wordlists are minimal length
+    first_bits = wordlists[:-1]
+    starts: set[str] = set()
+    for combo in itertools.product(*first_bits):
+        word = combo[0]
+        for i in range(1, len(wordlists) - 1):
+            word += format[i] + combo[i]
+        starts.add(word)
+
+    return hashcat(target_type, starts, wordlists[-1], [format[0], *format[-2:]], data, override_hashes)
+
 def hashcat(
     target_type: str,
     left: set[str],

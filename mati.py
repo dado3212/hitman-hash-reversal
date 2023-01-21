@@ -1,4 +1,4 @@
-from utils import load_data, hashcat, targeted_hashcat
+from utils import load_data, hashcat, targeted_hashcat, hashcat_multiple
 import pickle, re, string
 from typing import List, Dict
 
@@ -14,7 +14,7 @@ def get_mati_names() -> set[str]:
                         mati_names.add(x.lower())
     return mati_names
 
-def find_folder_patterns(unique_threshold: int = 5) -> set[str]:
+def find_folder_patterns(unique_threshold: int = 5, max_wildcards: int = 1) -> set[str]:
     with open('material_folders.pickle', 'rb') as handle:
         material_folders: List[str] = list(pickle.load(handle))
 
@@ -93,7 +93,7 @@ def find_folder_patterns(unique_threshold: int = 5) -> set[str]:
                             # exit()
 
             # for now only do one wildcard
-            if wildcard_count == 1:
+            if 1 <= wildcard_count <= max_wildcards:
                 result: List[str] = ['']
                 for elem in refined_format:
                     if len(elem) == 1:
@@ -187,11 +187,48 @@ def guess_from_folder_patterns(patterns: set[str]):
     for hash in found_hashes:
         print(hash + '.' + data[hash]['type'] + ', ' + found_hashes[hash])
 
-paths_5 = find_folder_patterns()
-paths_50 = find_folder_patterns(10)
-new_patterns = paths_50.difference(paths_5)
-print(len(new_patterns))
-guess_from_folder_patterns(new_patterns)
+def temporary_multiple():
+    mati_names = get_mati_names()
+    print('found mati names')
+
+    # Only use ascii and _ in the guessing for these paths
+    # Not suitable for everything
+    allowed = set(string.ascii_lowercase + '_')
+    with open('hitman_wordlist.txt', 'r') as f:
+        hitman_wordlist = set([x.strip() for x in f.readlines()])
+    with open('wordlist_12.txt', 'r') as f:
+        wordlist_12 = set([x.strip() for x in f.readlines()])
+    
+    wordlist = hitman_wordlist.union(wordlist_12)
+    wordlist = set([word for word in wordlist if set(word) <= allowed])
+
+    # bolster from mati names
+    for mati_name in mati_names:
+        if '_' in mati_name:
+            wordlist.add('_'.join(mati_name.split('_')[:-1]))
+
+    #
+    found_hashes = hashcat_multiple(
+        'MATI',
+        [wordlist, wordlist, mati_names],
+        ['[assembly:/_pro/characters/assets/','/hokkaido/','/materials/', '].pc_mi'],
+        data
+    )
+    for hash in found_hashes:
+        print(hash + '.' + data[hash]['type'] + ', ' + found_hashes[hash])
+
+# hashcat_multiple
+# paths_50 = find_folder_patterns(5, 2)
+# print(paths_50)
+
+temporary_multiple()
+
+# paths_5 = find_folder_patterns()
+# paths_50 = find_folder_patterns(10)
+# new_patterns = paths_50.difference(paths_5)
+# print(len(new_patterns))
+# guess_from_folder_patterns(new_patterns)
+
 # guess_from_folder_patterns(find_folder_patterns())
 # Try and guess quixel hash
 # print(targeted_hashcat('00B813C4D7BED527', [['[assembly:/_pro/_licensed/quixel/materials/', '/', '/quixel_debris_b.mi].pc_mi']]))
