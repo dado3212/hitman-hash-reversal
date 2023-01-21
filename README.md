@@ -199,7 +199,7 @@ MRTN -> MJBA -> ATMD, MRTR
 * RTLV
   No info, just guesses.
 * SCDA
-  From reverse TEMP hex_strings. Need to fix up large brick extraction before we can verify this.
+  From reverse TEMP hex_strings. There are SCDA paths in the large .brick files that appear to be unused.
 * TEXD
   From reverse TEXT dependency. Basically exhaustive.
 * TEXT
@@ -207,7 +207,7 @@ MRTN -> MJBA -> ATMD, MRTR
 * VIDB
   From hex_strings, missing extension (also from TEMP -> TBLU dependency). <- should do easily searchable
 * VTXD
-  From reverse TEMP hex_strings. Need to fix up large brick extraction before we can verify this.
+  From reverse TEMP hex_strings. There are VTXD paths in the large .brick files that appear to be unused.
 * WBNK
   Wordlists, based on reverse dependencies. <- should take an updated cracking look at the last one
 * WWEM
