@@ -1,7 +1,7 @@
 # coding=utf8
 from utils import ioi_string_to_hex
 import pickle, re
-from typing import List
+from typing import List, Optional
 
 replacements = [
     # Simple replacements (will be ran both ways)
@@ -23,6 +23,25 @@ replacements = [
     # [assembly:/_pro/environment/templates/props/street_props/street_props_mumbai_a.template?/tent_street_mumbai_f.entitytemplate].pc_entitytype
     # [assembly:/_pro/environment/geometry/props/street_props/tent_street_mumbai_a.wl2?/tent_street_mumbai_f.prim].pc_entitytype
 ]
+
+def mati_expansion(file: str, texture_suffixes: List[str]) -> dict[str, str]:
+    possible_hashes: dict[str, str] = {}
+    raw_guessed_name = re.search(r"^(.*/)([^\\]*)\.mi.*$", file, re.IGNORECASE)
+    if raw_guessed_name is None:
+        return {}
+    guessed_name = raw_guessed_name.group(1) + raw_guessed_name.group(2)
+    guesses = [
+        guessed_name.replace('materials', 'textures'),
+        guessed_name.replace('materials', 'textures').replace('props/', ''),
+        raw_guessed_name.group(2)
+    ]
+
+    for g in guesses:
+        for suffix in texture_suffixes:
+            path_guess = g + '.texture' + suffix
+            possible_hashes[ioi_string_to_hex(path_guess)] = path_guess
+
+    return possible_hashes
 
 def find_alternate_paths(file: str, run_again: bool = True) -> dict[str, str]:
     alt_paths: dict[str, str] = dict()
@@ -51,6 +70,9 @@ def find_alternate_paths(file: str, run_again: bool = True) -> dict[str, str]:
 if __name__ == '__main__':
     with open('hashes.pickle', 'rb') as handle:
         data = pickle.load(handle)
+
+    with open('texture_suffixes.pickle', 'rb') as handle:
+        texture_suffixes: List[str] = pickle.load(handle)
     
     # To add
     expanded_lines: List[str] = []
@@ -69,15 +91,22 @@ if __name__ == '__main__':
             continue
         a = line.strip().split(',', 1)
         hash = a[0].strip()
+        # Handle if we're including the suffix
         if '.' in hash:
             hash = hash[:-5]
         file = a[1].strip()
-        expanded_lines.append(hash + ', ' + file)
+        expanded_lines.append(hash + '.' + data[hash]['type'] + ', ' + file)
         alt_paths = find_alternate_paths(file)
-        for hash in alt_paths:
-            if hash in data and not data[hash]['correct_name']:
-                expanded_lines.append(hash + ', ' + alt_paths[hash])
-                print(hash + ', ' + alt_paths[hash])
+        for alt_hash in alt_paths:
+            if alt_hash in data and not data[alt_hash]['correct_name']:
+                expanded_lines.append(alt_hash + '.' + data[alt_hash]['type'] + ', ' + alt_paths[alt_hash])
+                print(alt_hash + '.' + data[alt_hash]['type'] + ', ' + alt_paths[alt_hash])
+        if data[hash]['type'] == 'MATI':
+            mati_paths = mati_expansion(file, texture_suffixes)
+            for mati_hash in mati_paths:
+                if mati_hash in data and not data[mati_hash]['correct_name']:
+                    expanded_lines.append(mati_hash + '.' + data[mati_hash]['type'] + ', ' + mati_paths[mati_hash])
+                    print(mati_hash + '.' + data[mati_hash]['type'] + ', ' + mati_paths[mati_hash])
 
     expanded_lines = sorted(list(set(expanded_lines)), key=lambda x: x.split(', ', 1)[1])
 

@@ -124,6 +124,8 @@ MJBA (ATMD)
 
 MRTN -> MJBA -> ATMD, MRTR
 
+* when you get MATI -> 
+
 ## Status on non-complete
 * DSWB (same as WSWB)
   Names come from hex_strings, wordlist guessing for the directory.

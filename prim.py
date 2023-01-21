@@ -60,8 +60,8 @@ def extract_from_dependent_mati():
                     if path_hash in data and not data[path_hash]['correct_name']:
                         print(path_hash + ', ' + path_name)
 
-# Credit to Notex for guessing this pattern 1:54am PST 1/13/2023
-def broadly_guess_from_tblu_mati_synthesis():
+# Credit to Notex for guessing this pattern
+def broadly_guess_from_tblu_prefix_synthesis():
     prefixes: Iterable[str] = set()
     tblu_suffixes: List[List[str]] = []
     suffixes: set[str] = set()
@@ -73,8 +73,22 @@ def broadly_guess_from_tblu_mati_synthesis():
             prefix = pieces.group(1).replace('materials', 'geometry', 1)
             prefixes.add(f'{prefix}{pieces.group(2)}')
             suffixes.add(pieces.group(2))
+        if data[hash]['type'] == 'TEMP' and data[hash]['correct_name']:
+            pieces = re.search(r"^\[assembly:/(.*\/)([^\/]*)\.template.*$", data[hash]['name'], re.IGNORECASE)
+            if pieces is None:
+                continue
+            prefix = pieces.group(1).replace('templates', 'geometry', 1)
+            prefixes.add(f'{prefix}{pieces.group(2)}')
         if data[hash]['type'] == 'TBLU':
+            if data[hash]['correct_name']:
+                pieces = re.search(r"^\[assembly:/(.*\/)([^\/]*)\.template.*$", data[hash]['name'], re.IGNORECASE)
+                if pieces is None:
+                    continue
+                prefix = pieces.group(1).replace('templates', 'geometry', 1)
+                prefixes.add(f'{prefix}{pieces.group(2)}')
+
             tblu_suffixes.append([x.lower() for x in data[hash]['hex_strings']])
+            tblu_suffixes.append(['_'.join(x.lower().split('_')[:-1]) for x in data[hash]['hex_strings'] if '_' in x])
 
     suffixes = suffixes.union(*tblu_suffixes)
 
@@ -82,4 +96,4 @@ def broadly_guess_from_tblu_mati_synthesis():
     for hash in hashes:
         print(hash + ', ' + hashes[hash])
 
-broadly_guess_from_tblu_mati_synthesis()
+broadly_guess_from_tblu_prefix_synthesis()
