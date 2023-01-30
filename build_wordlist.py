@@ -1,5 +1,6 @@
 import pickle, re, os
 from typing import List, Optional, Any, Dict
+from utils import load_data, HashData
 
 # Load raw words
 _end = '_end_'
@@ -57,22 +58,28 @@ def compound_words(word: str) -> Optional[set[str]]:
         return total_words
 
 split_pattern = re.compile(r"[\[\]\:\/\_\?\. \(\)]")
+md5_pattern = re.compile(r"^[a-f0-9\-]{30,}")
+remove_pattern = re.compile(r"d[ar]\d{3,}")
 def extract_words(word: str) -> List[str]:
     # First, split on slashes. We'll never(?) have a word that spans a slash
     chunks = ''
     # split on symbols
     words = re.split(split_pattern, word)
-    words = [w for w in words if w != '']
+    words = set([w for w in words if w != ''])
 
     result: List[str] = []
     for word in words:
-        if re.match(r"^[a-f0-9\-]{30,}", word):
+        # remove md5-esque strings
+        if re.match(md5_pattern, word):
             continue
         result.append(word)
         # Check if it's a compound word (currently only doing two letter words)
         compound = compound_words(word)
         if compound is not None:
             for w in compound:
+                # Some simple filtering
+                if re.match(remove_pattern, w):
+                    continue
                 result.append(w)
             
     return list(set(result))
@@ -80,9 +87,26 @@ def extract_words(word: str) -> List[str]:
 # convert into assembly, _pro, pro, environment, templates, props, paintings, pictures, tamagozake, a, template, vodka, bottle, d, 00, entitytemplate, pc, entitytype, pc_entitytype
 # words = extract_words('[assembly:/_pro/environment/templates/props/paintings/pictures_tamagozake_a.template?/vodka_bottle_d_00.entitytemplate].pc_entitytype')
 
+# Takes all known names, and gets all of the folders
+# Then we just spit them out
+def build_folder_wordlist(data: Dict[str, HashData]):
+    folder_pieces: set[str] = set()
+
+    for hash in data:
+        if data[hash]['correct_name']:
+            parts = data[hash]['name'].split('.', 1)[0].split('/')
+            for i in range(1, len(parts) - 1):
+                folder_pieces.add(parts[i])
+
+    ordered_words = sorted(list(folder_pieces))
+    with open('hitman_folder_wordlist.txt', 'w') as fp:
+        for word in ordered_words:
+            # write each item on a new line
+            fp.write(word.encode("ascii", errors="ignore").decode() + '\n')
+
 if __name__ == '__main__':
-    with open('hashes.pickle', 'rb') as handle:
-        data = pickle.load(handle)
+    # Extract folders from known files
+    data = load_data()
 
     words: set[str] = set()
 
@@ -93,10 +117,10 @@ if __name__ == '__main__':
         # this should be for only some hash lists
         # also we need to extract punctuation
         # also we need to remove super long strings
-        # for string in data[hash]['hex_strings']:
-        #     for x in extract_words(string.lower()):
-        #         words.add(x)
-            
+        for string in data[hash]['hex_strings']:
+            for x in extract_words(string.lower()):
+                words.add(x)
+
     ordered_words = sorted(list(words))
     with open('hitman_wordlist.txt', 'w') as fp:
         for word in ordered_words:

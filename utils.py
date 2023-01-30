@@ -1,5 +1,5 @@
 from typing import List, TypedDict, Dict, Optional, Any
-import hashlib, pickle, itertools, os, subprocess, string
+import hashlib, pickle, itertools, os, subprocess, string, functools
 
 class HashData(TypedDict):
     name: str
@@ -40,6 +40,25 @@ def extract_strings_from_json(json_data: Any) -> set[str]:
             result = result.union(options)
     return result
 
+def _combine_wordlists(wordlists: List[set[str]], joins: List[str]) -> set[str]:
+    if len(wordlists) == 1:
+        return wordlists[0]
+    # TODO: Inline more of them, for now just handle 1 and 2 manually
+    elif len(wordlists) == 2:
+        glue = joins[0]
+        return set([f'{a}{glue}{b}' for a in wordlists[0] for b in wordlists[1]])
+    # Have some pseudocode but it's not actually supported right now
+    else:
+        print('Yikes')
+        return set()
+        # starts: set[str] = set()
+        # for combo in itertools.product(*first_bits):
+        #     word = combo[0]
+        #     for i in range(1, len(wordlists) - 1):
+        #         word += format[i] + combo[i]
+        #     starts.add(word)
+
+# This will crash your computer if you run it with multiple large wordlists
 def hashcat_multiple(
     target_type: str,
     wordlists: List[set[str]],
@@ -47,8 +66,10 @@ def hashcat_multiple(
     data: Optional[Dict[str, HashData]] = None,
     override_hashes: Optional[set[str]] = None,
 ) -> Dict[str, str]:
+    print('This will crash your computer')
+    exit()
     if len(wordlists) < 2:
-        print('Wordlist count should be at least two')
+        print('If you only have one wordlist just run it with ioi_string_to_hash.')
         exit()
     # Just forward this
     if len(wordlists) == 2:
@@ -58,21 +79,28 @@ def hashcat_multiple(
         print(f'The format must contain {len(wordlists)+1} values to fully wrap the {len(wordlists)} wordlists.')
         exit()
 
-    # Create the temporary wordlists
-    # ['assembly', '/', '/', '.pc_entitytemplate']
-    
+    # Determine where to split the wordlists
+    min_total_words = None
+    min_pos = 0
+    wordlist_sizes = [len(x) for x in wordlists]
+    for i in range(1, len(wordlists)):
+        first_chunk = functools.reduce(lambda a, b: a * b, wordlist_sizes[:i])
+        second_chunk = functools.reduce(lambda a, b: a * b, wordlist_sizes[i:])
+        if min_total_words is None or (first_chunk + second_chunk) < min_total_words:
+            min_total_words = first_chunk + second_chunk
+            min_pos = i
 
-    # for now we'll be a little dumb with it
-    # TODO: Shard this in a way that wordlists are minimal length
-    first_bits = wordlists[:-1]
-    starts: set[str] = set()
-    for combo in itertools.product(*first_bits):
-        word = combo[0]
-        for i in range(1, len(wordlists) - 1):
-            word += format[i] + combo[i]
-        starts.add(word)
+    first_chunk = wordlists[:min_pos]
+    second_chunk = wordlists[min_pos:]
 
-    return hashcat(target_type, starts, wordlists[-1], [format[0], *format[-2:]], data, override_hashes)
+    print(f'Splitting on {min_pos}')
+
+    first_wordlist = _combine_wordlists(first_chunk, format[1:min_pos])
+    second_wordlist = _combine_wordlists(second_chunk, format[min_pos+1:-1])
+
+    print('Created wordlists')
+
+    return hashcat(target_type, first_wordlist, second_wordlist, [format[0], format[min_pos], format[-1]], data, override_hashes)
 
 def hashcat(
     target_type: str,
@@ -107,10 +135,10 @@ def hashcat(
             data = load_data()
         possible_hashes = [hash for hash in data if data[hash]['type'] == target_type and not data[hash]['correct_name']]
     print(f'Saving temporary wordlists: {len(left)} left, {len(right)} right, targeting {len(possible_hashes)} unknown hashes.')
-    with open(f'{hashcat_path}/left.txt', 'w', encoding='utf-8') as f:
+    with open(f'{hashcat_path}/left.txt', 'w', encoding='utf-8', buffering=1) as f:
         f.write("\n".join(left))
 
-    with open(f'{hashcat_path}/right.txt', 'w', encoding='utf-8') as f:
+    with open(f'{hashcat_path}/right.txt', 'w', encoding='utf-8', buffering=1) as f:
         f.write("\n".join(right))
 
     with open(f'{hashcat_path}/hashes.txt', 'w', encoding='utf-8') as f:
