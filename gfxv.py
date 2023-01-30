@@ -1,9 +1,8 @@
 import pickle, re
 from typing import List, Dict, Any, Optional
-from utils import ioi_string_to_hex
+from utils import ioi_string_to_hex, load_data
 
-with open('hashes.pickle', 'rb') as handle:
-    data: Dict[str, Any] = pickle.load(handle)
+data = load_data()
 
 with open('hitman_wordlist.txt', 'r') as f:
     words = [x.strip() for x in f.readlines()]

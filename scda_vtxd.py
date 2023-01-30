@@ -6,6 +6,8 @@ data = load_data()
 
 print('loaded data')
 
+# TODO: This is also extractable from TEMPs like in 00BE3CB1AA73547D
+
 def extract_from_hex_strings():
     known_names: dict[str, str] = {}
     with open('hash_list.txt', 'r') as f:
@@ -138,4 +140,4 @@ def guess_weird_suffixes():
 
     hashcat('SCDA', bases, set(suffixes), ['', 'scattercontainer_', '.scatterdata].pc_scatterdata'], data)
 
-guess_weird_suffixes()
+extract_from_hex_strings()

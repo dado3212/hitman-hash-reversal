@@ -1,6 +1,6 @@
-import pickle, re, os
+import pickle, re, os, json, string
 from typing import List, Optional, Any, Dict
-from utils import load_data, HashData
+from utils import load_data, HashData, extract_strings_from_json
 
 # Load raw words
 _end = '_end_'
@@ -117,11 +117,82 @@ if __name__ == '__main__':
         # this should be for only some hash lists
         # also we need to extract punctuation
         # also we need to remove super long strings
-        for string in data[hash]['hex_strings']:
-            for x in extract_words(string.lower()):
-                words.add(x)
-
-    ordered_words = sorted(list(words))
+        # 
+        # for now we can proxy this by just filtering
+        # out some types. We really should extract from these though. Especially
+        # DLGE and JSON
+        # if data[hash]['type'] == 'JSON': # handle ORES, REPO
+        #     for hex_string in data[hash]['hex_strings']:
+        #         try:
+        #             # There are comments inline, which will cause the parser to choke unless they're removed
+        #             json_data = json.loads(re.sub(r'/\*.*?\*/', '', hex_string, flags=re.S))
+        #             json_strings = [x.lower() for x in extract_strings_from_json(json_data)]
+        #             json_strings = [x for x in json_strings if 'assembly:' in x]
+        #             found = found.union(json_strings)
+        #         except:
+        #             found.add(f)
+        potential_words: set[str] = set()
+        if data[hash]['type'] in ['DLGE', 'RTLV']:
+            for hex_string in data[hash]['hex_strings']:
+                # Remove the spacing between the portions of dialogue
+                hex_string = re.sub(r'\/\/\(.*?\)\\\\', ' ', hex_string)
+                # Remove all punctuation
+                hex_string = re.sub(r'[^\w\s]', '', hex_string)
+                # Split on spaces
+                for f in hex_string.split(' '):
+                    if len(f) > 0:
+                        potential_words.add(f.lower())
+        elif data[hash]['type'] == 'WWES':
+            for hex_string in data[hash]['hex_strings']:
+                if hex_string.count('_') > 1:
+                    for f in hex_string.split('_')[1:-1]:
+                        potential_words.add(f.lower())
+        elif data[hash]['type'] == 'LOCR':
+            for hex_string in data[hash]['hex_strings']:
+                # Remove the spacing between the portions of dialogue
+                hex_string = re.sub(r'<\/?li>', ' ', hex_string)
+                # Split on spaces
+                for f in hex_string.split(' '):
+                    if len(f) > 0:
+                        potential_words.add(f.lower())
+        # GFXF has real stuff but needs better extraction
+        elif data[hash]['type'] not in ['JSON', 'BORG', 'CRMD', 'DLGE', 'REPO', 'MATE', 'GFXF', 'ORES']:
+            for hex_string in data[hash]['hex_strings']:
+                # We need to handle / and _ better for things that are clearly pathlike
+                # and therefore have both of them
+                if '/' in hex_string:
+                    for x in hex_string.lower().split('/'):
+                        if len(x) > 0:
+                            potential_words.add(x)
+                elif '\\' in hex_string:
+                    for x in hex_string.lower().split('\\'):
+                        if len(x) > 0:
+                            potential_words.add(x)
+                elif ' ' in hex_string:
+                    for x in hex_string.lower().split(' '):
+                        if len(x) > 0:
+                            potential_words.add(x)
+                elif '_' in hex_string:
+                    for x in hex_string.lower().split('_'):
+                        if len(x) > 0:
+                            potential_words.add(x)
+                elif '<' in hex_string:
+                    continue # just fail out for now
+                else:
+                    # best effort, should use extract_word
+                    potential_words.add(hex_string.lower())
+        for w in potential_words:
+            # run the _ splitting again
+            if '_' in w:
+                array_of_words = w.split('_')
+            else:
+                array_of_words = [w]
+            for word in array_of_words:
+                if not re.match(md5_pattern, word):
+                    words.add(re.sub(r'[^\w\d_]', '', word))
+    # For now, remove trailing digits. This will leave a lot of stuff on the table
+    # but who cares.
+    ordered_words = sorted(set([x.rstrip(string.digits) for x in words if len(x) > 0 and not x.isspace()]))
     with open('hitman_wordlist.txt', 'w') as fp:
         for word in ordered_words:
             # write each item on a new line

@@ -36,12 +36,10 @@ def guess_from_ores():
             #    print(hash + ', ' + path)
 
 def guess_from_repo():
-    # You will need to extract the REPO file from chunk0patch2 in RPKG and rename
-    # it to repo.json in this directory
-    with open('repo.json', 'r', encoding='utf-8') as f:
-        repo = json.load(f)
-
     data = load_data()
+
+    repo = [data[hash] for hash in data if data[hash]['type'] == 'REPO'][0]
+    repo = json.loads(repo['hex_strings'][0])
 
     print('loaded')
 
@@ -134,7 +132,11 @@ def paris_guess():
     ], data))
     # [assembly:/_pro/online/default/cloudstorage/resources/images/locations/location_coastaltown_copperhead/background.jpg].pc_gfx
 
+# For new updates
+# guess_from_ores()
+# guess_from_repo()
 
-paris_guess()
+# testing
+# paris_guess()
 
 # a9debd40-0840-4d44-a035-477295f3d001 <- from sweetline to image, are all of them already listed?

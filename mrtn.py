@@ -26,23 +26,24 @@ def attempt_one():
                         if possible_hash in data and not data[possible_hash]['correct_name']:
                             print(possible_hash + ', ' + possible_path)
 
-with open('hitman_wordlist.txt', 'r') as f:
-    words = [x.strip() for x in f.readlines()]
+attempt_one()
+# with open('hitman_wordlist.txt', 'r') as f:
+#     words = [x.strip() for x in f.readlines()]
 
-for hash in data:
-    if data[hash]['type'] == 'MRTN' and not data[hash]['correct_name']:
-        for hex_string in data[hash]['hex_strings']:
-            hex_string = hex_string.lower()
-            # Can also do s03
-            if not hex_string.startswith('mr_'):
-                continue
-            for word in words:
-                possible_paths = [
-                    f'[assembly:/animationnetworks/actors/acts/generic/{word}/{hex_string}.aln].pc_rtn',
-                    f'[assembly:/animationnetworks/actors/acts/levels/{word}/{hex_string}.aln].pc_rtn',
-                ]
-                for possible_path in possible_paths:
-                    possible_hash = ioi_string_to_hex(possible_path)
-                    if possible_hash in data and not data[possible_hash]['correct_name']:
-                        print(possible_hash + ', ' + possible_path)
+# for hash in data:
+#     if data[hash]['type'] == 'MRTN' and not data[hash]['correct_name']:
+#         for hex_string in data[hash]['hex_strings']:
+#             hex_string = hex_string.lower()
+#             # Can also do s03
+#             if not hex_string.startswith('mr_'):
+#                 continue
+#             for word in words:
+#                 possible_paths = [
+#                     f'[assembly:/animationnetworks/actors/acts/generic/{word}/{hex_string}.aln].pc_rtn',
+#                     f'[assembly:/animationnetworks/actors/acts/levels/{word}/{hex_string}.aln].pc_rtn',
+#                 ]
+#                 for possible_path in possible_paths:
+#                     possible_hash = ioi_string_to_hex(possible_path)
+#                     if possible_hash in data and not data[possible_hash]['correct_name']:
+#                         print(possible_hash + ', ' + possible_path)
         

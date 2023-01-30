@@ -70,5 +70,5 @@ def extract_from_mrtns():
                             print(possible_hash + ', ' + possible_path)
 
 
-# extract_from_atmds()
-extract_from_mrtns()
+extract_from_atmds()
+# extract_from_mrtns()
