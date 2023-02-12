@@ -1,4 +1,4 @@
-from utils import ioi_string_to_hex, load_data, hashcat, targeted_hashcat
+from utils import ioi_string_to_hex, load_data, hashcat, targeted_hashcat, find_folder_patterns
 import pickle, re, itertools, string
 from typing import List, Dict
 from futzing import replaceable_sections, num_alts, replacements
@@ -288,10 +288,72 @@ def guess_tblus():
     for hash in hashes:
         print(hash + '.' + data[hash]['type'] + ', ' + hashes[hash])
 
+def get_tblu_names() -> set[str]:
+    # Man it'd be great to filter this down...a lot. But for now fuck it
+    data = load_data()
+
+    tblu_names: set[str] = set()
+    for hash in data: 
+        if data[hash]['type'] == 'TBLU':
+            if not data[hash]['correct_name']:
+                for x in data[hash]['hex_strings']:
+                    tblu_names.add(x.lower())
+    return tblu_names    
+
+# This does not work because patterns are more complex for TBLUs.
+def guess_tblus_from_patterns():
+    with open('template_folders.pickle', 'rb') as handle:
+        template_folders = list(pickle.load(handle))
+    
+    patterns = find_folder_patterns(template_folders)
+
+    tblu_names = get_tblu_names()
+    print('found tblu names')
+
+    # Only use ascii and _ in the guessing for these paths
+    # Not suitable for everything
+    allowed = set(string.ascii_lowercase + '_')
+    with open('hitman_wordlist.txt', 'r') as f:
+        hitman_wordlist = set([x.strip() for x in f.readlines()])
+    with open('wordlist_12.txt', 'r') as f:
+        wordlist_12 = set([x.strip() for x in f.readlines()])
+    
+    wordlist = hitman_wordlist.union(wordlist_12)
+    wordlist = set([word for word in wordlist if set(word) <= allowed])
+
+    # bolster from mati names
+    for tblu_name in tblu_names:
+        if '_' in tblu_name:
+            wordlist.add('_'.join(tblu_name.split('_')[:-1]))
+
+    formats: List[List[str]] = []
+    for pattern in patterns:
+        pattern_pieces = pattern.split('*')
+        formats.append([pattern_pieces[0], pattern_pieces[1], '].pc_mi'])
+
+    index = 0
+    found_hashes: Dict[str, str] = {}
+    for format in formats:
+        index += 1
+        hashes = hashcat('MATI', wordlist, mati_names, format, data)
+        print(f'For hash {index} of {len(formats)}, found {len(hashes)} hashes.')
+        for hash in hashes:
+            found_hashes[hash] = hashes[hash]
+        
+    for hash in found_hashes:
+        print(hash + '.' + data[hash]['type'] + ', ' + found_hashes[hash])
+
+    for pattern in patterns:
+        print(pattern)
+
+
 # When new stuff omes out
 # guess_tblus()
 
 # Idle speculation
+# guess_tblus_from_patterns()
+names = get_tblu_names()
+print(len(names))
 # print_unknown_tblus()
 # print(targeted_hashcat('0015E4293A91BF0A', [
 #     ['[assembly:/_pro/environment/templates/levels/the_ark/the_ark_',' _','_a.template?/gallery_int_ceiling_room_a.entitytemplate].pc_entityblueprint']
