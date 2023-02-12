@@ -137,9 +137,10 @@ def guess_folders():
         # ['[assembly:/_pro/_licensed/quixel/materials/generic/', '/', '].pc_mi'],
         # ['[assembly:/_pro/_licensed/quixel/materials/props/', '/', '].pc_mi'],
         # ['[assembly:/_pro/_licensed/quixel/materials/decals/', '/', '].pc_mi'],
-        ['[assembly:/_pro/characters/assets/crowd/male/','/materials/','].pc_mi'],
+        # ['[assembly:/_pro/characters/assets/crowd/male/','/materials/','].pc_mi'],
         # TODO: Can do more gender futzing
-        ['[assembly:/_pro/characters/assets/crowd/female/','/materials/','].pc_mi'],
+        # ['[assembly:/_pro/characters/assets/crowd/female/','/materials/','].pc_mi'],
+        ['[assembly:/_pro/environment/materials/generic/','/','].pc_mi'],
     ]
 
     found_hashes: Dict[str, str] = {}
@@ -178,9 +179,12 @@ def guess_from_folder_patterns(patterns: set[str]):
         pattern_pieces = pattern.split('*')
         formats.append([pattern_pieces[0], pattern_pieces[1], '].pc_mi'])
 
+    index = 0
     found_hashes: Dict[str, str] = {}
     for format in formats:
+        index += 1
         hashes = hashcat('MATI', wordlist, mati_names, format, data)
+        print(f'For hash {index} of {len(formats)}, found {len(hashes)} hashes.')
         for hash in hashes:
             found_hashes[hash] = hashes[hash]
         
@@ -220,11 +224,19 @@ def temporary_multiple():
     for hash in found_hashes:
         print(hash + '.' + data[hash]['type'] + ', ' + found_hashes[hash])
 
+# To run on new update
+patterns = find_folder_patterns()
+guess_from_folder_patterns(patterns)
+
+# EXPLORATORY
+
 # hashcat_multiple
 # paths_50 = find_folder_patterns(5, 2)
 # print(paths_50)
 
 # temporary_multiple()
+
+# guess_folders()
 
 # have run up to 50
 # last_paths = find_folder_patterns(30)
@@ -237,67 +249,69 @@ def temporary_multiple():
 # Try and guess quixel hash
 # print(targeted_hashcat('00B813C4D7BED527', [['[assembly:/_pro/_licensed/quixel/materials/', '/', '/quixel_debris_b.mi].pc_mi']]))
 
-mati_names = get_mati_names()
-print('found mati names')
+# --------------------------------------------------------
 
-# Only use ascii and _ in the guessing for these paths
-# Not suitable for everything
-allowed = set(string.ascii_lowercase + '_')
-with open('hitman_wordlist.txt', 'r') as f:
-    hitman_wordlist = set([x.strip() for x in f.readlines()])
-with open('wordlist_12.txt', 'r') as f:
-    wordlist_12 = set([x.strip() for x in f.readlines()])
-with open('hitman_folder_wordlist.txt', 'r') as f:
-    hitman_folder_wordlist = set([x.strip() for x in f.readlines()])
+# mati_names = get_mati_names()
+# print('found mati names')
 
-wordlist = hitman_wordlist.union(wordlist_12)
-wordlist = set([word for word in wordlist if set(word) <= allowed])
-wordlist = set(wordlist.union(hitman_folder_wordlist))
+# # Only use ascii and _ in the guessing for these paths
+# # Not suitable for everything
+# allowed = set(string.ascii_lowercase + '_')
+# with open('hitman_wordlist.txt', 'r') as f:
+#     hitman_wordlist = set([x.strip() for x in f.readlines()])
+# with open('wordlist_12.txt', 'r') as f:
+#     wordlist_12 = set([x.strip() for x in f.readlines()])
+# with open('hitman_folder_wordlist.txt', 'r') as f:
+#     hitman_folder_wordlist = set([x.strip() for x in f.readlines()])
 
-# bolster from mati names
-for mati_name in mati_names:
-    if '_' in mati_name:
-        wordlist.add('_'.join(mati_name.split('_')[:-1]))
-    pieces = re.search(r"^male_reg_(.*)_([^_]*?)_(\d+).mi", mati_name, re.IGNORECASE)
-    if pieces is None:
-        continue
-    wordlist.add(pieces.group(1))
-    wordlist.add(f'male_reg_{pieces.group(1)}')
+# wordlist = hitman_wordlist.union(wordlist_12)
+# wordlist = set([word for word in wordlist if set(word) <= allowed])
+# wordlist = set(wordlist.union(hitman_folder_wordlist))
 
-formats: List[List[str]] = [
-    # ['[assembly:/_pro/characters/assets/individuals/hokkaido/','/materials/', '].pc_mi'],
-    # ['[assembly:/_pro/characters/assets/individuals/marrakesh/','/materials/', '].pc_mi'],
-    # ['[assembly:/_pro/characters/assets/individuals/italy/','/materials/', '].pc_mi'],
-    # ['[assembly:/_pro/characters/assets/workers/','_/materials/', '].pc_mi'],
-    # ['[assembly:/_pro/characters/assets/individuals/','/materials/', '].pc_mi'],
-    # ['[assembly:/_pro/characters/assets/guards/','/materials/', '].pc_mi'],
-    # ['[assembly:/_pro/characters/assets/_apparel/accessories/','s/materials/','].pc_mi'],
-    # ['[assembly:/_pro/characters/assets/crowd/male/','/materials/','].pc_mi'],
-    # ['[assembly:/_pro/characters/assets/hero/agent47/','/materials/','].pc_mi'],
-    # ['[assembly:/_pro/characters/assets/hero/agent47/outfits/','/materials/','].pc_mi'],
-    # ['[assembly:/_pro/characters/assets/hero/','/agent47/materials/','].pc_mi'],
-    # ['[assembly:/_pro/environment/materials/props/','_','/colombia_road_detail_a.mi].pc_mi'], # wordlist, wordlist
-    # ['[assembly:/_pro/characters/materials/mongoose/','/','].pc_mi'],
-    # ['[assembly:/_pro/characters/materials/','/mongoose/','].pc_mi'],
-    # ['[assembly:/_pro/characters/assets/','/male/casual/materials/','].pc_mi'],
-    ['[assembly:/_pro/characters/assets/','/male/','/materials/male_reg_protester_04_bandana_01.mi].pc_mi].pc_mi']
-]
+# # bolster from mati names
+# for mati_name in mati_names:
+#     if '_' in mati_name:
+#         wordlist.add('_'.join(mati_name.split('_')[:-1]))
+#     pieces = re.search(r"^male_reg_(.*)_([^_]*?)_(\d+).mi", mati_name, re.IGNORECASE)
+#     if pieces is None:
+#         continue
+#     wordlist.add(pieces.group(1))
+#     wordlist.add(f'male_reg_{pieces.group(1)}')
 
-all_found: dict[str, str] = {}
-for format in formats:
-    found_hashes = hashcat(
-        'MATI',
-        wordlist,
-        wordlist,
-        format,
-        data
-    )
+# formats: List[List[str]] = [
+#     # ['[assembly:/_pro/characters/assets/individuals/hokkaido/','/materials/', '].pc_mi'],
+#     # ['[assembly:/_pro/characters/assets/individuals/marrakesh/','/materials/', '].pc_mi'],
+#     # ['[assembly:/_pro/characters/assets/individuals/italy/','/materials/', '].pc_mi'],
+#     # ['[assembly:/_pro/characters/assets/workers/','_/materials/', '].pc_mi'],
+#     # ['[assembly:/_pro/characters/assets/individuals/','/materials/', '].pc_mi'],
+#     # ['[assembly:/_pro/characters/assets/guards/','/materials/', '].pc_mi'],
+#     # ['[assembly:/_pro/characters/assets/_apparel/accessories/','s/materials/','].pc_mi'],
+#     # ['[assembly:/_pro/characters/assets/crowd/male/','/materials/','].pc_mi'],
+#     # ['[assembly:/_pro/characters/assets/hero/agent47/','/materials/','].pc_mi'],
+#     # ['[assembly:/_pro/characters/assets/hero/agent47/outfits/','/materials/','].pc_mi'],
+#     # ['[assembly:/_pro/characters/assets/hero/','/agent47/materials/','].pc_mi'],
+#     # ['[assembly:/_pro/environment/materials/props/','_','/colombia_road_detail_a.mi].pc_mi'], # wordlist, wordlist
+#     # ['[assembly:/_pro/characters/materials/mongoose/','/','].pc_mi'],
+#     # ['[assembly:/_pro/characters/materials/','/mongoose/','].pc_mi'],
+#     # ['[assembly:/_pro/characters/assets/','/male/casual/materials/','].pc_mi'],
+#     ['[assembly:/_pro/characters/assets/','/male/','/materials/male_reg_protester_04_bandana_01.mi].pc_mi].pc_mi']
+# ]
 
-    for hash in found_hashes:
-        all_found[hash] = found_hashes[hash]
+# all_found: dict[str, str] = {}
+# for format in formats:
+#     found_hashes = hashcat(
+#         'MATI',
+#         wordlist,
+#         wordlist,
+#         format,
+#         data
+#     )
 
-for hash in all_found:
-    print(hash + '.' + data[hash]['type'] + ', ' + all_found[hash])
+#     for hash in found_hashes:
+#         all_found[hash] = found_hashes[hash]
+
+# for hash in all_found:
+#     print(hash + '.' + data[hash]['type'] + ', ' + all_found[hash])
 
 # -----------------------------------
 
