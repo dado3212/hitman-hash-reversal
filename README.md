@@ -293,4 +293,12 @@ with open('reverse.pickle', 'rb') as handle:
     reverse = pickle.load(handle)
 ```
 
+Search for string 
+```
+[hash for hash in data if any([x for x in data[hash]['hex_strings'] if 'frosted_glass_strip_emissive_a_twosided' in x.lower()])]
+```
+
+# Running tests
+`python3 tests.py`
+
 TODO: PREL conversion for Freelancer

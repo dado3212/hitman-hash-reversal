@@ -1,4 +1,4 @@
-from utils import load_data, hashcat, targeted_hashcat, hashcat_multiple
+from utils import load_data, hashcat, targeted_hashcat, hashcat_multiple, find_folder_patterns
 import pickle, re, string
 from typing import List, Dict
 
@@ -12,100 +12,7 @@ def get_mati_names() -> set[str]:
                 for x in data[hash]['hex_strings']:
                     if '.mi' in x.lower():
                         mati_names.add(x.lower())
-    return mati_names
-
-def find_folder_patterns(unique_threshold: int = 5, max_wildcards: int = 1) -> set[str]:
-    with open('material_folders.pickle', 'rb') as handle:
-        material_folders: List[str] = list(pickle.load(handle))
-
-    print('loaded')
-
-    unique_formats: set[str] = set()
-    for i in range(len(material_folders)):
-        folder1 = material_folders[i].split('/')
-        
-        # We're going to guess that this is a format
-        num = len(folder1)
-        format: List[List[str]] = [[x] for x in folder1]
-        # Initialize to 1 because folder1 matches it by default
-        num_matching = 1
-
-        # We don't need to iterate through anything earlier because it will
-        # already be considered as a format
-        for j in range(i + 1, len(material_folders)):
-            folder2 = material_folders[j].split('/')
-            # for now only look at them if they're the same length
-            # TODO: could potentially be expanded to levenshtein in the future
-            if len(folder2) != num:
-                continue
-        
-            differences = 0
-            changes: Dict[int, str] = {}
-            for pos in range(num):
-                if folder2[pos] == folder1[pos]:
-                    # In this case it's matching the format
-                    continue
-                else:
-                    # Something's different. Store the difference in case the 
-                    # total difference ends up being small enough
-                    differences += 1
-                    changes[pos] = folder2[pos]
-            
-            # For now only look at formats with two changes. There may be
-            # real paths with more, but not sure what they are
-            # TODO: run this with 3 and compare the diffset
-            if differences <= 2:
-                for change_index in changes:
-                    format[change_index].append(changes[change_index])
-                num_matching += 1
-
-        # This means the format matches more than one thing
-        if num_matching > 1:
-            refined_format: List[List[str]] = []
-            wildcard_count = 0
-            for element in format:
-                if len(element) == 1:
-                    refined_format.append([element[0]])
-                else:
-                    # Check if this is different for everything
-                    unique = set(element)
-                    if len(unique) == len(element):
-                        # TODO: Maybe want to check if this is only two or something
-                        refined_format.append(['*'])
-                        wildcard_count += 1
-                    else:
-                        # kind of arbitrary tbh
-                        # maybe want to compare to length of elements in terms
-                        # of how much it compresses
-                        # Currently defaulting to 5 and comparing with other
-                        # lengths
-                        if len(unique) <= unique_threshold:
-                            refined_format.append([x for x in unique])
-                        else:
-                            refined_format.append(['*'])
-                            wildcard_count += 1
-                            # can revisit this in the future
-                            # usually this is stuff like 'paris' and 'marrakesh'
-                            # print(len(element))
-                            # print(len(unique))
-                            # print(element)
-                            # print(format)
-                            # exit()
-
-            # for now only do one wildcard
-            if 1 <= wildcard_count <= max_wildcards:
-                result: List[str] = ['']
-                for elem in refined_format:
-                    if len(elem) == 1:
-                        result = [prefix + elem[0] + '/' for prefix in result]
-                    else:
-                        temp_result: List[str] = []
-                        for word in elem:
-                            for prefix in result:
-                                temp_result.append(prefix + word + '/')
-                        result = temp_result
-                unique_formats = unique_formats.union(result)
-    return unique_formats      
+    return mati_names    
         
 def use_known_folders():
     mati_names = get_mati_names()
@@ -224,9 +131,16 @@ def temporary_multiple():
     for hash in found_hashes:
         print(hash + '.' + data[hash]['type'] + ', ' + found_hashes[hash])
 
+def smart_wordlist_mapping():
+    with open('material_folders.pickle', 'rb') as handle:
+        material_folders: List[str] = list(pickle.load(handle))
+
+    print('loaded')
+    patterns = find_folder_patterns(material_folders)
+    guess_from_folder_patterns(patterns)
+
 # To run on new update
-patterns = find_folder_patterns()
-guess_from_folder_patterns(patterns)
+smart_wordlist_mapping()
 
 # EXPLORATORY
 
