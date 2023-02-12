@@ -1,4 +1,4 @@
-from utils import ioi_string_to_hex, load_data
+from utils import ioi_string_to_hex, load_data, hashcat
 import pickle, re
 from typing import List, Optional
 
@@ -13,18 +13,21 @@ def attempt_one():
         mrtn_folders.add(folder.replace('hitman01', 'hitman02'))
         mrtn_folders.add(folder.replace('hitman01', 'hitman03'))
 
+    all_folders: set[str] = set()
+    for folder in mrtn_folders:
+        all_folders.add(folder)
+        all_folders.add(folder + 'mr_')
+    
+    mrtn_strings: set[str] = set()
+
     for hash in data:
         if data[hash]['type'] == 'MRTN':
             for hex_string in data[hash]['hex_strings']:
-                for folder in mrtn_folders:
-                    possible_paths = [
-                        f'{folder}{hex_string.lower()}.aln].pc_rtn',
-                        f'{folder}mr_{hex_string.lower()}.aln].pc_rtn',
-                    ]
-                    for possible_path in possible_paths:
-                        possible_hash = ioi_string_to_hex(possible_path)
-                        if possible_hash in data and not data[possible_hash]['correct_name']:
-                            print(possible_hash + ', ' + possible_path)
+                mrtn_strings.add(hex_string.lower())
+
+    found = hashcat('MRTN', all_folders, mrtn_strings, ['', '', '.aln].pc_rtn'])
+    for hash in found:
+        print(hash + '.' + data[hash]['type'] + ', ' + found[hash])
 
 attempt_one()
 # with open('hitman_wordlist.txt', 'r') as f:

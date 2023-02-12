@@ -241,6 +241,7 @@ Ditto for file extensions.
   * ALOC <-> TEMP
   * MATT <-> MATB
   * TEXT <-> TEXD
+  * PREL <-> TBLU(/TEMP/NAVP)
   * more
 
 ### Misc

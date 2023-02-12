@@ -1,47 +1,26 @@
 from typing import Dict, List
 import re
-from utils import ioi_string_to_hex, load_data
+from utils import ioi_string_to_hex, load_data, hashcat
 
 data = load_data()
 
 def guess_outfits_from_wordlist():
     with open('hitman_wordlist.txt', 'r') as f:
         words = [x.strip() for x in f.readlines()]
+    words = set(words)
 
-    last_perc = 0.0
-    #print('0%')
+    known = hashcat('LOCR', words, words, ['[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_', '_', '.sweetmenutext].pc_localized-textlist'], data)
+    for hash in known:
+        print(hash + '.' + data[hash]['type'] + ', ' + known[hash])
 
-    for i in range(len(words)):
-        new_perc = round(i * 100.0 / len(words), 1)
-        if new_perc > last_perc:
-            last_perc = new_perc
-            print(new_perc, '%')
-        word = words[i]
-        for word2 in words:
-            file = f'[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_{word}_{word2}.sweetmenutext].pc_localized-textlist'
-            hash = ioi_string_to_hex(file)
-            if hash in data and not data[hash]['correct_name']:
-                print(hash + ', ' + file)
-
-# ran with the two of them
 def guess_other_from_wordlist():
     with open('hitman_wordlist.txt', 'r') as f:
         words = [x.strip() for x in f.readlines()]
+    words = set(words)
 
-    last_perc = 0.0
-    #print('0%')
-
-    for i in range(len(words)):
-        new_perc = round(i * 100.0 / len(words), 1)
-        if new_perc > last_perc:
-            last_perc = new_perc
-            print(new_perc, '%')
-        word = words[i]
-        for word2 in words:
-            file = f'[assembly:/localization/hitman6/conversations/ui/pro/online/repository/{word}_{word2}.sweetmenutext].pc_localized-textlist'
-            hash = ioi_string_to_hex(file)
-            if hash in data and not data[hash]['correct_name']:
-                print(hash + ', ' + file)
+    known = hashcat('LOCR', words, words, ['[assembly:/localization/hitman6/conversations/ui/pro/online/repository/', '_', '.sweetmenutext].pc_localized-textlist'], data)
+    for hash in known:
+        print(hash + '.' + data[hash]['type'] + ', ' + known[hash])
 
 def guess_challenges_from_wordlist():
     with open('hitman_wordlist.txt', 'r') as f:
@@ -87,53 +66,41 @@ def other_formats():
     with open('hitman_wordlist.txt', 'r') as f:
         words = [x.strip() for x in f.readlines()]
 
-    last_perc = 0.0
-    num_words = len(words)
+    all_words: set[str] = set()
+    for word in words:
+        all_words.add(word)
+        all_words.add(f'{word}_vr')
+        all_words.add(f'{word}_s2')
+        all_words.add(f'{word}_s3')
+        all_words.add(f's2_{word}')
+        all_words.add(f's3_{word}')
 
-    relevant: Dict[str, List[bool]] = {}
-    for hash in data:
-        if data[hash]['type'] == 'LOCR':
-            relevant[hash] = [data[hash]['correct_name'], False]
-
-    for i in range(num_words):
-        new_perc = round(i * 100.0 / num_words, 1)
-        if new_perc > last_perc:
-            last_perc = new_perc
-            print(str(new_perc) + '%' + ' - ' + str(i))
-        current_word = words[i]
-        total_paths: set[str] = set()
-        for word in [current_word, f'{current_word}_vr', f'{current_word}_s2', f'{current_word}_s3', f's2_{current_word}', f's3_{current_word}']:
-            for extension in ['pc_localized-textlist', 'pc_multilanguage-textlist']:
-                paths = set([
-                    f'[assembly:/localization/hitman6/conversations/ui/{word}.sweetmenutext].{extension}',
-                    f'[assembly:/localization/hitman6/conversations/ui/pro/{word}.sweetmenutext].{extension}',
-                    f'[assembly:/localization/hitman6/conversations/ui/pro/online/repository/{word}.sweetmenutext].{extension}',
-                    f'[assembly:/localization/hitman6/conversations/ui/pro/menutext_{word}.sweetmenutext].{extension}',
-                    f'[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_{word}.sweetmenutext].{extension}',
-                    f'[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_npcs_{word}.sweetmenutext].{extension}',
-                    f'[assembly:/localization/hitman6/conversations/ui/pro/online/challenges/challenges_{word}.sweetmenutext].{extension}',
-                    f'[assembly:/localization/hitman6/conversations/ui/pro/online/challenges/challenges_et_{word}.sweetmenutext].{extension}',
-                    f'[assembly:/localization/hitman6/conversations/ui/pro/online/challenges/challenges_orbis_{word}.sweetmenutext].{extension}',
-                    f'[assembly:/localization/hitman6/conversations/ui/pro/online/gamechangers/gamechangers_{word}.sweetmenutext].{extension}',
-                    f'[assembly:/localization/textlists/ui/{word}/{word}.localized-textlist].{extension}',
-                    f'[assembly:/localization/textlists/ui/common/{word}.localized-textlist].{extension}',
-                    f'[assembly:/localization/textlists/ui/items/{word}.localized-textlist].{extension}',
-                    f'[assembly:/localization/hitman6/conversations/ui/pro/hud_{word}.sweetmenutext].{extension}',
-                    f'[assembly:/localization/hitman6/conversations/ui/pro/online/repository/actor_{word}.sweetmenutext].{extension}',
-                    f'[assembly:/localization/hitman6/conversations/ui/pro/online/repository/items_{word}.sweetmenutext].{extension}'
-                ])
-                total_paths = total_paths.union(paths)
-        for path in total_paths:
-            hash = ioi_string_to_hex(path)
-            if hash in data:
-                relevant[hash][1] = True
-                if not data[hash]['correct_name']:
-                    print(hash + ', ' + path)
-
-    print('Relevant')
-    for hash in relevant:
-        if relevant[hash][1] == False and relevant[hash][0] == True:
-            print(hash + ' - ' + data[hash]['name'])
+    extensions: set[str] = set(['pc_localized-textlist', 'pc_multilanguage-textlist'])
+    formats: List[List[str]] = [
+        ['[assembly:/localization/hitman6/conversations/ui/','.sweetmenutext].',''],
+        ['[assembly:/localization/hitman6/conversations/ui/pro/','.sweetmenutext].',''],
+        ['[assembly:/localization/hitman6/conversations/ui/pro/online/repository/','.sweetmenutext].',''],
+        ['[assembly:/localization/hitman6/conversations/ui/pro/menutext_','.sweetmenutext].',''],
+        ['[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_','.sweetmenutext].',''],
+        ['[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_npcs_','.sweetmenutext].',''],
+        ['[assembly:/localization/hitman6/conversations/ui/pro/online/challenges/challenges_','.sweetmenutext].',''],
+        ['[assembly:/localization/hitman6/conversations/ui/pro/online/challenges/challenges_et_','.sweetmenutext].',''],
+        ['[assembly:/localization/hitman6/conversations/ui/pro/online/challenges/challenges_orbis_','.sweetmenutext].',''],
+        ['[assembly:/localization/hitman6/conversations/ui/pro/online/gamechangers/gamechangers_','.sweetmenutext].',''],
+        # # ['[assembly:/localization/textlists/ui/','/','.localized-textlist].',''], -> can't be supported
+        ['[assembly:/localization/textlists/ui/common/','.localized-textlist].',''],
+        ['[assembly:/localization/textlists/ui/items/','.localized-textlist].',''],
+        ['[assembly:/localization/hitman6/conversations/ui/pro/hud_','.sweetmenutext].',''],
+        ['[assembly:/localization/hitman6/conversations/ui/pro/online/repository/actor_','.sweetmenutext].',''],
+        ['[assembly:/localization/hitman6/conversations/ui/pro/online/repository/items_','.sweetmenutext].',''],
+    ]
+    all_found: dict[str, str] = {}
+    for format in formats:
+        found = hashcat('LOCR', all_words, extensions, format, data)
+        for hash in found:
+            all_found[hash] = found[hash]
+    for hash in all_found:
+        print(hash + '.' + data[hash]['type'] + ', ' + all_found[hash])
 
 # Goes through the current LOCRs, find things using sc/s3/etc and swaps them
 def season_expansion_from_known():
@@ -158,7 +125,14 @@ def season_expansion_from_known():
         if new_hash in data and not data[new_hash]['correct_name']:
             print(new_hash + ', ' + guess)
 
-guess_online_folder_from_wordlist()
+# To run on new update
+# guess_outfits_from_wordlist()
+# guess_other_from_wordlist()
+# guess_online_folder_from_wordlist() -> this isn't onboarded to hashcat yet
+other_formats()
+
+# Current noodling
+# guess_online_folder_from_wordlist()
 
 # season_expansion_from_known()
 # guess_other_from_wordlist()

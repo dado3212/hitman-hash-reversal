@@ -74,13 +74,10 @@ def extract_from_locrs():
                             continue
 
 # A lot of names/descriptions are stored in the REPO file. If we get new LOCR
-# bases then we can guess a lot of files using this technique. See the note
-# around importing the file correctly though.
+# bases then we can guess a lot of files using this technique.
 def guess_from_repo():
-    # You will need to extract the REPO file from chunk0patch2 in RPKG and rename
-    # it to repo.json in this directory
-    with open('repo.json', 'r', encoding='utf-8') as f:
-        repo = json.load(f)
+    repo = [data[hash] for hash in data if data[hash]['type'] == 'REPO'][0]
+    repo = json.loads(repo['hex_strings'][0])
 
     prefixes: set[str] = set()
 
@@ -152,8 +149,8 @@ def futz_names():
 # missing from the LOCR values because they don't have a known LOCR. We can use
 # them to guess.
 def find_unowned_hashes():
-    with open('repo.json', 'r', encoding='utf-8') as f:
-        repo = json.load(f)
+    repo = [data[hash] for hash in data if data[hash]['type'] == 'REPO'][0]
+    repo = json.loads(repo['hex_strings'][0])
 
     correct_lines: Dict[str, str] = {}
     for hash in data:
@@ -183,10 +180,8 @@ def find_unowned_hashes():
 # it for LINE expansions. If the LOCR is already in the hash_list then you can 
 # just use `guess_from_repo` instead which will automtically find it
 def search_repo_for_new_locr(prefix: str):
-    # You will need to extract the REPO file from chunk0patch2 in RPKG and rename
-    # it to repo.json in this directory
-    with open('repo.json', 'r', encoding='utf-8') as f:
-        repo = json.load(f)
+    repo = [data[hash] for hash in data if data[hash]['type'] == 'REPO'][0]
+    repo = json.loads(repo['hex_strings'][0])
 
     for item in repo:
         guesses: set[str] = set()
@@ -210,4 +205,9 @@ def are_we_dumb():
             if any([dep for dep in data[hash]['depends'] if dep in data and data[dep]['type'] == 'LOCR' and data[dep]['correct_name']]) and any([v for v in reverse[hash] if v in data and data[v]['type'] == 'REPO']):
                 print(hash)
 
-search_repo_for_new_locr('[assembly:/localization/hitman6/conversations/ui/pro/online/repository/firearms_sc.sweetmenutext')
+# When a new update comes out
+# extract_from_locrs()
+# guess_from_repo()
+
+# Noodling
+search_repo_for_new_locr('[assembly:/localization/hitman6/conversations/ui/pro/gamemode_evergreen/outfits_hero_evergreen.sweetmenutext')

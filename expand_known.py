@@ -18,7 +18,9 @@ replacements = [
     (False, '.pc_entitytype', '.pc_mi'),
     (False, '.prim].pc_prim', '.prim].pc_coll'),
     (False, '.pc_coll', '.pc_entitytype'),
-    (False, '.xmdtake].pc_rtr', '.xmdtake](cutsequence).pc_animation')
+    (False, '.xmdtake].pc_rtr', '.xmdtake](cutsequence).pc_animation'),
+    (False, '.pc_entityblueprint', '.pc_preload'),
+    (False, '.entity].pc_entityblueprint', '.navp].pc_navp')
     # Regex replacements (are unidirectional)
     # [assembly:/_pro/environment/templates/props/street_props/street_props_mumbai_a.template?/tent_street_mumbai_f.entitytemplate].pc_entitytype
     # [assembly:/_pro/environment/geometry/props/street_props/tent_street_mumbai_a.wl2?/tent_street_mumbai_f.prim].pc_entitytype

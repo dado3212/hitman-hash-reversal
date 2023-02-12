@@ -40,16 +40,18 @@ from futzing import replaceable_sections, num_alts, replacements
 ## UNKNOWN
 ############################
 
-# with open('hashes.pickle', 'rb') as handle:
-#     data = pickle.load(handle)
+def print_unknown_tblus():
+    data = load_data()
 
-# unknown: set[str] = set()
-# for hash in data:
-#     if (data[hash]['type'] == 'TBLU' or data[hash]['type'] == 'TEMP') and not data[hash]['correct_name']:
-#         unknown.add(data[hash]['name'])
-# sort = sorted(list(unknown))
-# for s in sort:
-#     print(s)
+    unique: set[str] = set()
+
+    for hash in data:
+        if data[hash]['type'] == 'TBLU' and not data[hash]['correct_name'] and len(data[hash]['hex_strings']) == 1:
+            unique.add(data[hash]['hex_strings'][0].lower())
+    
+    sorted_unique = sorted(unique)
+    for f in sorted_unique:
+        print(f)
 
 ############################
 ## FUTZING
@@ -105,8 +107,7 @@ from futzing import replaceable_sections, num_alts, replacements
 ############################
 
 def guessing_first_attempt():
-    with open('hashes.pickle', 'rb') as handle:
-        data = pickle.load(handle)
+    data = load_data()
 
     with open('hitman_wordlist.txt', 'r') as f:
         words = [x.strip() for x in f.readlines()]
@@ -153,7 +154,7 @@ def guessing_first_attempt():
         # _kit_, [assembly:/_pro/environment/templates/levels/{x}/{x}_a.template?/
         # everything, [assembly:/_pro/environment/templates/kits/suburban_house/suburban_{x}_a.template?/
         # lamp, [assembly:/_pro/environment/templates/props/lamps/lamps_{x}_a.template?/ (lamps_{x}_a, lamps_outdoor_{x}_a, lamps_indoor_{x}_a, and without _a)
-        prefixes = [f'[assembly:/_pro/environment/templates/props/lamps/lamps_{x}.template?/' for x in words]
+        ## prefixes = [f'[assembly:/_pro/environment/templates/props/lamps/lamps_{x}.template?/' for x in words]
         # kitchen_kit
         # gecko_penthouse
 
@@ -270,9 +271,35 @@ def guess_quixels_with_hashcat():
     for hash in hashes:
         print(hash + '.' + data[hash]['type'] + ', ' + hashes[hash])
 
-print(targeted_hashcat('001455A7C354D6C6', [
-    ['[assembly:/_pro/_licensed/quixel/templates/quixel_', '_', '_a.template?/quixel_cactus_c.entitytemplate].pc_entityblueprint'],
-]))
+def guess_tblus():
+    data = load_data()
+    
+    with open('template_folders.pickle', 'rb') as handle:
+        template_folders = pickle.load(handle)
+
+    possible_names: set[str] = set()
+
+    for hash in data:
+        if data[hash]['type'] == 'TBLU' and not data[hash]['correct_name']:
+            for name in data[hash]['hex_strings']:
+                possible_names.add(name.lower())
+    
+    hashes = hashcat('TBLU', template_folders, possible_names, ['', '/', '.entitytemplate].pc_entityblueprint'], data)
+    for hash in hashes:
+        print(hash + '.' + data[hash]['type'] + ', ' + hashes[hash])
+
+# When new stuff omes out
+# guess_tblus()
+
+# Idle speculation
+# print_unknown_tblus()
+# print(targeted_hashcat('0015E4293A91BF0A', [
+#     ['[assembly:/_pro/environment/templates/levels/the_ark/the_ark_',' _','_a.template?/gallery_int_ceiling_room_a.entitytemplate].pc_entityblueprint']
+# ]))
+
+# print(targeted_hashcat('001455A7C354D6C6', [
+#     ['[assembly:/_pro/_licensed/quixel/templates/quixel_', '_', '_a.template?/quixel_cactus_c.entitytemplate].pc_entityblueprint'],
+# ]))
 # print(targeted_hashcat('00357EF86D7AA4AD', [
 #     ['[assembly:/_pro/environment/templates/props/rocks/', '_', '_b.template?/quixel_mossy_rock_llama_d.entitytemplate].pc_entityblueprint'],
 # ]))
