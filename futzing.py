@@ -1,11 +1,11 @@
-from utils import ioi_string_to_hex
+from utils import ioi_string_to_hex, load_data
 import pickle, string, re, itertools
 from typing import Dict, List, Tuple
 
 def replaceable_sections(ioi_string: str) -> List[Tuple[str, bool]]:
     pieces: List[Tuple[str, bool]] = []
     curr_index = 0
-    for m in re.finditer(r"_([\d]+|[a-z])[\./_]", ioi_string):
+    for m in re.finditer(r"_([\d]+|[a-z]|(left|right))[\./_]", ioi_string):
         pieces.append((ioi_string[curr_index:m.start(0) + 1], False))
         pieces.append((ioi_string[m.start(0) + 1:m.end(1)], True))
         curr_index = m.end(1)
@@ -45,7 +45,15 @@ def replacements(sections: List[Tuple[str, bool]]) -> set[str]:
             # Handle the first replaceable section
             if section[1] == True:
                 # If it's alphabetical
-                if section[0].isalpha():
+                if section[0] == 'left':
+                    new = [*sections[:section_index], ('right', False), *sections[section_index+1:]]
+                    options = options.union(replacements(new))
+                    return options
+                elif section[0] == 'right':
+                    new = [*sections[:section_index], ('left', False), *sections[section_index+1:]]
+                    options = options.union(replacements(new))
+                    return options
+                elif section[0].isalpha():
                     for replacement_letter in string.ascii_lowercase:
                         new = [*sections[:section_index], (replacement_letter, False), *sections[section_index+1:]]
                         options = options.union(replacements(new))
@@ -69,8 +77,7 @@ def replacements(sections: List[Tuple[str, bool]]) -> set[str]:
             
 if __name__ == '__main__':
 
-    with open('hashes.pickle', 'rb') as handle:
-        data = pickle.load(handle)
+    data = load_data()
 
     print('loaded')
 
