@@ -1,6 +1,6 @@
 import pickle, re, string
 from typing import List, Dict, Optional
-from utils import ioi_string_to_hex, load_data, hashcat
+from utils import ioi_string_to_hex, load_data, hashcat, crack
 
 data = load_data()
 
@@ -161,33 +161,36 @@ def approach_two():
                 new_hashes[hash] = new_path
 
 def approach_basic():
-    for hash in data:
-        if data[hash]['type'] == 'DLGE':
-            if not data[hash]['correct_name']:
-                path = guess(hash)
-                if path is not None:
-                    print(hash + ', ' + path)
+    # I think this is different because sometimes the dependency structure
+    # is wrong?
 
-    # This might be the same thing?
-    # found: Dict[str, str] = dict()
     # for hash in data:
-    #     if data[hash]['type'] == 'WWES':
-    #         # try and guess from
-    #         # [assembly:/sound/wwise/originals/voices/english(us)/evergreen/handler/ed060_clbrtcmpnmegawinpost_diana_004.wav].pc_wes
-    #         # 00AEC061AB63C8F3.DLGE,[assembly:/localization/hitman6/conversations/evergreen/handler/ed060_clbrtcmpnmegawinpost.sweetdialog].pc_dialogevent
-    #         # Get all of the WWES dependencies
-    #         wwes = re.search(r"^\[assembly:\/sound\/wwise\/originals\/voices\/english\(us\)\/(.*)\/(.*)\.wav\].pc_wes$", data[hash]['name'], re.IGNORECASE)
-    #         if wwes is None:
-    #             continue
-    #         suffix_chunks = wwes.group(2).split('_')
-    #         for i in range(1, len(suffix_chunks)+1):
-    #             suffix = '_'.join(suffix_chunks[:i])
-    #             possible_path = f'[assembly:/localization/hitman6/conversations/{wwes.group(1)}/{suffix}.sweetdialog].pc_dialogevent'
-    #             possible_hash = ioi_string_to_hex(possible_path)
-    #             if possible_hash in data and not data[possible_hash]['correct_name'] and possible_hash not in found:
-    #                 print(possible_hash + ', ' + possible_path)
-    #                 found[possible_hash] = possible_path
-    #                 continue
+    #     if data[hash]['type'] == 'DLGE':
+    #         if not data[hash]['correct_name']:
+    #             path = guess(hash)
+    #             if path is not None:
+    #                 print(hash + ', ' + path)
+
+    found: Dict[str, str] = dict()
+    for hash in data:
+        if data[hash]['type'] == 'WWES' and hash == '008ABE28340A0AE5':
+            # try and guess from
+            # [assembly:/sound/wwise/originals/voices/english(us)/evergreen/handler/ed060_clbrtcmpnmegawinpost_diana_004.wav].pc_wes
+            # 00AEC061AB63C8F3.DLGE,[assembly:/localization/hitman6/conversations/evergreen/handler/ed060_clbrtcmpnmegawinpost.sweetdialog].pc_dialogevent
+            # Get all of the WWES dependencies
+            wwes = re.search(r"^\[assembly:/sound/wwise/originals/voices/english\(us\)/(.*)/(.*)\.wav\].pc_wes$", data[hash]['name'], re.IGNORECASE)
+            if wwes is None:
+                print(data[hash]['name']  + ' does not match')
+                continue
+            suffix_chunks = wwes.group(2).split('_')
+            for i in range(1, len(suffix_chunks)+1):
+                suffix = '_'.join(suffix_chunks[:i])
+                possible_path = f'[assembly:/localization/hitman6/conversations/{wwes.group(1)}/{suffix}.sweetdialog].pc_dialogevent'
+                possible_hash = ioi_string_to_hex(possible_path)
+                if possible_hash in data and possible_hash not in found: # and not data[possible_hash]['correct_name']:
+                    print(possible_hash + ', ' + possible_path)
+                    found[possible_hash] = possible_path
+                    continue
 
 # When a new update comes out
 # approach_basic()
@@ -202,45 +205,12 @@ def missing_pattern():
             if guess(hash) is None:
                 print(hash + ', ' + data[hash]['name'])
 
-actor_names: set[str] = set()
-action_names: set[str] = set()
-sdef_actor_names: set[str] = set()
-for hash in data:
-    if data[hash]['type'] == 'SDEF':
-        sdef_actor_name = re.search(r"^\[assembly:/sound/sounddefinitions/(.*).sdefs].pc_sdefs$", data[hash]['name'], re.IGNORECASE)
-        if sdef_actor_name is None:
-            print('WHOA!', hash)
-            exit()
-        sdef_actor_names.add(sdef_actor_name.group(1))
-        depends = [x for x in data[hash]['depends'] if x in data and data[x]['type'] == 'DLGE' and data[x]['correct_name']]
-        names = [data[x]['name'] for x in depends]
-        for name in names:
-            extract = re.search(r"^\[assembly:/localization/hitman6/conversations/ai/(.*?)/(.*)_\1.sweetdialog\].pc_dialogevent$", name, re.IGNORECASE)
-            if extract is not None:
-                actor_name = extract.group(1)
-                action_name = extract.group(2)
-                actor_names.add(actor_name)
-                action_names.add(action_name)
-    if data[hash]['type'] == 'WWES' and data[hash]['correct_name']:
-        extract = re.search(r"^\[assembly:/sound/wwise/originals/voices/english(us)/ai/(.*?)/(.*)_\1_\1_\d+\.wav\].pc_wes$", data[hash]['name'], re.IGNORECASE)
-        # [assembly:/sound/wwise/originals/voices/english(us)/ai/agent47/47_slappers_agent47_agent47_021.wav].pc_wes
-        if extract is not None:
-            actor_name = extract.group(1)
-            actor_names.add(actor_name)
+crack('0058E57C6A9F3CE8',
+    '[assembly:/localization/hitman6/conversations/marrakech/16000_ambience/',
+    '.sweetdialog].pc_dialogevent',
+    ['dr16010', 'cafecouchconv','cafe','couch','conv','richmale','rich','male','0','1','2','3','4'],
+    [],
+    1,
+    8)
 
-            action_name = extract.group(2)
-            action_names.add(action_name)
-
-# We're missing these
-print(sdef_actor_names.difference(actor_names))
-
-# Just brute force the rest
-actor_names = actor_names.union(sdef_actor_names)
-for actor_name in actor_names:
-    for action_name in action_names:
-        path = f'[assembly:/localization/hitman6/conversations/ai/{actor_name}/{action_name}_{actor_name}.sweetdialog].pc_dialogevent'
-        hash = ioi_string_to_hex(path)
-        if hash in data and not data[hash]['correct_name']:
-            data[hash]['name'] = path
-            data[hash]['correct_name'] = True
-            print(hash + ', ' + path)
+# [hash for hash in data if data[hash]['type'] not in ['WWES', 'FXAS'] and data[hash]['correct_name'] and 'gen_grt47' in data[hash]['name']]
