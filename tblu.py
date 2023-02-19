@@ -3,6 +3,19 @@ import pickle, re, itertools, string
 from typing import List, Dict
 from futzing import replaceable_sections, num_alts, replacements
 
+'''
+Q. Are any of the 'geomentity01' TBLU's named?
+A. [(hash, data[hash]['name']) for hash in data if data[hash]['type'] == 'TBLU' and len(data[hash]['hex_strings']) == 1 and data[hash]['hex_strings'][0].lower() == 'geomentity01' and data[hash]['correct_name']]
+
+Q. How many geomentity01 TBLU's are there?
+A. 2837
+len([hash for hash in data if data[hash]['type'] == 'TBLU' and len(data[hash]['hex_strings']) == 1 and data[hash]['hex_strings'][0].lower() == 'geomentity01'])
+
+Q. How many geomentity01 TBLU's are there?
+A. 2837
+len([hash for hash in data if data[hash]['type'] == 'TBLU' and len(data[hash]['hex_strings']) == 1 and data[hash]['hex_strings'][0].lower() == 'geomentity01'])
+'''
+
 ############################
 ## KNOWN
 ############################
@@ -352,8 +365,8 @@ def guess_tblus_from_patterns():
 
 # Idle speculation
 # guess_tblus_from_patterns()
-names = get_tblu_names()
-print(len(names))
+# names = get_tblu_names()
+# print(len(names))
 # print_unknown_tblus()
 # print(targeted_hashcat('0015E4293A91BF0A', [
 #     ['[assembly:/_pro/environment/templates/levels/the_ark/the_ark_',' _','_a.template?/gallery_int_ceiling_room_a.entitytemplate].pc_entityblueprint']
@@ -366,3 +379,15 @@ print(len(names))
 #     ['[assembly:/_pro/environment/templates/props/rocks/', '_', '_b.template?/quixel_mossy_rock_llama_d.entitytemplate].pc_entityblueprint'],
 # ]))
 # [assembly:/_pro/environment/templates/props/plants/plants_potplants_b.template?/quixel_flowerpot_sizeb_bulldog_a.entitytemplate].pc_entityblueprint
+
+allowed = set(string.ascii_lowercase + '_')
+with open('hitman_wordlist.txt', 'r') as f:
+    hitman_wordlist = set([x.strip() for x in f.readlines()])
+with open('wordlist_12.txt', 'r') as f:
+    wordlist_12 = set([x.strip() for x in f.readlines()])
+
+wordlist = hitman_wordlist.union(wordlist_12)
+wordlist = set([word for word in wordlist if set(word) <= allowed])
+f = hashcat('TBLU', wordlist, wordlist, ['[assembly:/templates/geometrytemplate','','.template?/geomentity01.entitytemplate].pc_entityblueprint'])
+for k in f:
+    print(k + ', ' + f[k])
