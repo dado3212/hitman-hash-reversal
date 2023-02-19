@@ -191,6 +191,7 @@ MRTN -> MJBA -> ATMD, MRTR
   From MRTN. Potentially other places too?
 * MRTN
   From hex_strings (usually with hm or mr), with maybe wordlist directories? <- we can do searchable easily
+  Also from reverse TEMP, which has TBLU
 * MRTR
   From MJBA with reverse dependency, exhaustively. Also hex_strings but modified, which can help the other direction.
 * ORES
@@ -301,7 +302,7 @@ with open('reverse.pickle', 'rb') as handle:
 
 Search for string 
 ```
-[hash for hash in data if any([x for x in data[hash]['hex_strings'] if 'dth_snore' in x.lower()])]
+[hash for hash in data if any([x for x in data[hash]['hex_strings'] if 'carry/carryplate' in x.lower()])]
 [hash + '.' + data[hash]['type'] for hash in data if any([x for x in data[hash]['hex_strings'] if 'hud.swf' in x.lower()])]
 ```
 

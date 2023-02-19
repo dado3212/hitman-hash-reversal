@@ -11,7 +11,9 @@ A. Just that one!
 
 [(data[hash]['name'], data[hash]['hex_strings'], hash) for hash in data if data[hash]['correct_name'] and data[hash]['type'] == 'MRTN' and any([x for x in data[hash]['hex_strings'] if 'hm_disguise' in x.lower()])]
 
+[hash for hash in data if data[hash]['type'] == 'MRTN' and any([x for x in data[hash]['hex_strings'] if 'hm_weapon_arm_and_grip_poses_1h' in x.lower()])]
 
+[hash for hash in data if data[hash]['type'] == 'MRTN' and not data[hash]['correct_name'] and any([x for x in data[hash]['hex_strings'] if 'hm_disguise' in x.lower()])]
 '''
 
 data = load_data()
@@ -56,6 +58,8 @@ Returns a tuple of the guessed base name, and its confidence level.
 2 - split strong confidence (this should be combined with 3, TODO)
 3 - this one was the prefix for multiple...but who knows
 4 - only one potential. this is really at the level of 1b
+5 - there were multiple that had the same prefix, like a worse 3
+6 - there were no likely names...but there were potential names
 '''
 def guess_mrtn_name(hash: str) -> List[Tuple[str, int]]:
     # Load its hex strings
@@ -71,7 +75,7 @@ def guess_mrtn_name(hash: str) -> List[Tuple[str, int]]:
             hex_string.startswith('fr_')):
             likely_names.add(hex_string)
 
-        if hex_string not in ['ioivariation1', '__network__']:
+        if hex_string not in ['ioivariation1', '__network__', 'controlparameters']:
             potential_names.add(hex_string)
 
     if len(likely_names) == 1:
@@ -93,18 +97,24 @@ def guess_mrtn_name(hash: str) -> List[Tuple[str, int]]:
                 filtered_likely.add(likely)
             elif multiFound >= 2:
                 filtered_unlikely.add(likely)
+        if len(filtered_likely) == 0 and len(filtered_unlikely) == 0:
+            return [(h, 2) for h in likely_names]
+        if len(filtered_likely) == 0:
+            if len(filtered_unlikely) == 1:
+                # Even LESS likely
+                # Ex. 00F3D1A4356768BC
+                return [(filtered_unlikely.pop(), 3)]
+            else:
+                return [(h, 5) for h in filtered_unlikely]
         if len(filtered_likely) == 1:
             return [(filtered_likely.pop(), 1)]
-        elif len(filtered_likely) == 0 and len(filtered_unlikely) == 1:
-            # Even LESS likely
-            # Ex. 00F3D1A4356768BC
-            return [(filtered_unlikely.pop(), 3)]
-        return [(h, 2) for h in filtered_likely]
+        else:
+            return [(h, 2) for h in filtered_likely]
     else:
         if len(potential_names) == 1:
             # Example is 00E0560CEEE1C676
             return [('mr_' + potential_names.pop(), 4)]
-    return []
+        return [(h, 6) for h in potential_names]
 
 def loose_expand(orig_guesses: List[Tuple[str, int]]) -> set[str]:
     looser_guesses: set[str] = set()
@@ -124,11 +134,64 @@ def loose_expand(orig_guesses: List[Tuple[str, int]]) -> set[str]:
                 looser_guesses.add(f'{knockdown_version}_poison_01')
                 if knockdown_version.endswith('_02'):
                     looser_guesses.add(f'{knockdown_version[:-3]}_poison_02')
+        # '0074CEBF259295F9', # mr_stand_rail_lean_100cm -> mr_stand_rail_lean
+        if guess.endswith('cm'):
+            looser_guesses.add('_'.join(guess.split('_')[:-1]))
+        # '00F078E11C62DE9E', # huntact_checkhighcover_pistol_right_aggressive -> huntact_checkhighcover_pistol_right
+        if guess.endswith('_aggressive'):
+            looser_guesses.add(guess.removesuffix('_aggressive'))
+        # 004917F96BE6BA2E, # mr_bodyguard_start_alarm -> bodyguard_start_alarm
+        if guess.startswith('mr_'):
+            looser_guesses.add(guess.removeprefix('mr_'))
+        # 005B61579DDCE049, # fr_staff_stand_japanesebow -> fr_stand_japanesebow
+        if '_staff_' in guess:
+            looser_guesses.add(guess.replace('_staff_', '_'))
+        # 0048DC89E83F6F1B, # mr_carryplate_pickup_putdown_75cm -> mr_carryplate_putdown_75cm
+        if '_pickup_putdown_' in guess:
+            looser_guesses.add(guess.replace('_pickup_putdown_', '_pickup_'))
+            looser_guesses.add(guess.replace('_pickup_putdown_', '_putdown_'))
+        # '002DB94AA986D1EF', # hm_disguise_hips_coffin_altenterexit -> disguisesafezonecoffin_altenterexit
+        # '008A8778030C24C5', # hm_disguise_hips_coffin -> disguisesafezonecoffin
+        # '001C64C3F221DC93', # hm_disguise_hips_railing -> disguisesafezonerailing
+        if 'hm_disguise_hips_' in guess:
+            looser_guesses.add(guess.replace('hm_disguise_hips_', 'disguisesafezone'))
+            # '007B79FCA15E280A', # hm_disguise_hips_bodyguard_stand -> disguisesafezonebodyguardstand
+            looser_guesses.add(guess.replace('hm_disguise_hips_', 'disguisesafezone').replace('_', ''))
+        # '00AF21190B40D4FB', # hm_disguise_blendin_microscope -> disguisesafezonemicroscope
+        # '0001297A2543AAAA', # hm_disguise_blendin_scarecrow -> disguisesafezonescarecrow
+        if 'hm_disguise_blendin_' in guess:
+            looser_guesses.add(guess.replace('hm_disguise_blendin_', 'disguisesafezone'))
+        # '00E98DB69697ACBF', # fh_stand_clipboard -> fr_stand_clipboard
+        # '002472F589824BBB', # fh_stand_impatient -> fr_stand_impatient
+        if guess.startswith('fh_stand_'):
+            looser_guesses.add('fr_stand_' + guess.removeprefix('fh_stand_'))
+        # 00342898A1FEADF5, # mr_cross_stand_impatient -> mr_cross_stand_angry
+        if guess.endswith('_impatient'):
+            looser_guesses.add(guess.removesuffix('_impatient') + '_angry')
+        # 0096B19F9FC0B735, # mr_stand_table_lean_forward_drink_120cm_01 -> mr_stand_table_lean_forward_drink_120cm
+        if re.match(r'.*_\d+$', guess):
+            looser_guesses.add('_'.join(guess.split('_')[:-1]))
+        # 006F50D89CD7F69E, # mr_stand_planning_table_act02_100cm -> mr_stand_planning_table_02_100cm
+        if '_act' in guess:
+            looser_guesses.add(re.sub(r'_act(\d+)', r'_\1', guess))
+        # 009EE8284A331A10, # mr_military_stand_riffle_var1 -> mr_military_stand_riffle_var01
+        # 00FBD313412B952C, # mr_military_stand_riffle_var2 -> mr_military_stand_riffle_var02
+        if guess[-1].isnumeric():
+            looser_guesses.add(guess[:-1] + '0' + guess[-1])            
+            
     return looser_guesses
 
 # attempt_one()
 # with open('hitman_wordlist.txt', 'r') as f:
 #     words = [x.strip() for x in f.readlines()]
+
+# for word in words:
+#     # {word}suit
+#     path = '[assembly:/animationnetworks/hitman01/idles/{word}suit_idle.aln].pc_rtn'
+#     hash = ioi_string_to_hex(path)
+#     if hash in data and not data[hash]['correct_name']:
+#         print(hash + ', ' + path)
+# exit()
 
 # words = set(words)
 # possible_hex: set[str] = set()
@@ -146,20 +209,26 @@ def loose_expand(orig_guesses: List[Tuple[str, int]]) -> set[str]:
 # for hash in solved:
 #     print(hash + ', ' + solved[hash])
 
-# print(guess_mrtn_name('00E0560CEEE1C676'))
+# print(guess_mrtn_name('00545ACF3EC44F60'))
 # exit()
 
 print('Loaded')
 
-known_broken = [
+known_exceptions = [
     '00D48551E6479601',
     '00942EC0A63F14DF',
     '00EC06ECA85A09B8',
     '007584610AE12FE5',
     '0056E8A0D2783184', # darksnipersuit_idle
     '0020CB240F4A51DC', # clownsuit_idle (<- you can fix this TODO)
-    '002DB94AA986D1EF', # hm_disguise_hips_coffin_altenterexit -> disguisesafezonecoffin_altenterexit
-    '008A8778030C24C5', # hm_disguise_hips_coffin -> disguisesafezonecoffin
+    '0006FD4A21D6857C', # cowboysuit_idle
+
+    # TODO: we should do neutral stands for everyone
+    '00380C7C35DA0DFA', # fh_stand_neutral/fh_model_stand_wait_1/fh_model_mr_stylist_stand_makeup - fh_model_stand_neutral
+
+    '0030C9AB45CBB928', # hm_disguise_hips_sit_tablet -> disguisesafezone_readtablet_sit
+
+    '00FDB60A24B6C619', # mr_sato_stand_neutral -> mr_sato_stand_champagne
     '00B3731113F4D6E6', # hm_push_elevator_button -> elevatorpushbutton
     '00027A8D19596880', # hm_weapon_arm_and_grip_poses_1h_remote_detonator_detonate -> hm_remote_activate_detonator
     '00D572BC26F9B5DA', # hm_interact_vial_bottle_100cm_1 -> hm_interact_vialknife_bottle_100cm
@@ -168,10 +237,56 @@ known_broken = [
     '009C5F666D1F2403', # mr_stand_sick_throw_up -> mr_stand_sick
     '008EF93363C43FDD', # hm_idle_stand_bat -> baseball_bat_idle
     '00441D3D4B28F351', # hm_interact_vial_bottle_100cm -> hm_interact_vial_glass_120cm
+    '006DA32411BEF322', # hm_weapon_arm_and_grip_poses_1h_remote_detonator_detonate_wolverine -> hm_remote_activate_detonator_wolverine
+    '00884A91011B01F1', # hm_placement_place_stand_60cm_down -> hm_interact_placement_placeobject_60cm
+    '00D22202379F2D01', # hm_placement_retrieve_stand_60cm_down -> hm_interact_placement_retrieveobject_60cm
+    '00351B1B304FE62F', # mr_stand_bardesk -> mr_stand_clean_surface_100cm
+    '005942F321735694', # mr_guard_stand_handcrossed -> mr_guard_stand_handscrossed
+    '00317C847FB2BE14', # mr_kneel_inspect_tieshoes_work -> mr_kneel_inspect
+    '006F8644D9A8F2D1', # mr_stand_phone_text_pace -> mr_stand_phone_pace_text
+    # LMAOOOO
+    '00DD13648025C431', # mr_stand_wall_lean_side_shoulder_left -> mr_stand_wall_lean_side_shoulder_right
+    '005A8982427113DC', # hm_interact_flip_switches_horiz_140cm -> hm_interact_flip_switches_140cm_up
+    '00385A27CB01A94A', # hm_interact_flip_switches_horiz_140cm_1 -> hm_interact_flip_switches_140cm_down
+    '00005A83449DFF02', # hm_push_button_100cm_prologexit -> hm_interact_push_button_100cm_prologexit
+    '0021DD8CC33BB8A7', # hm_interact_dumbwaiter_mid_put_take_1 -> hm_interact_placement_swapobjects_110cm
+    '001A6D9FC79DE34C', # lots of stuff -> mr_hunting_act_guard
+    '00AF6E8ED89C6D5F', # stand_pour_wodka_100cm_1 -> mr_stand_invitetodrink
+    '00A8C00F771F36BA', # mr_military_stand_attention_push_up -> mr_military_full_behaviour
+    '009C6E1AED0772FB', # hm_mr_chessgame_100cm -> mr_stand_chessgame
+    # Huh.
+    '0097BCCD01FD6FCB', # mr_stand_submissive_01 -> mr_stand_sumissive_01
+    '007DB78C218A7E45', # mr_stand_knightkgb_projectorreaction_1 -> mr_kgb_stand_reactionprojector
+    '008B0958B5469A06', # <nothing> -> disguisesafezoneclipboard
+    '000A03C9A2ED26AF', # hm_disguise_blendin_mop -> disguisesafezonejanitormop
+    '00B8829435F03EEA', # mr_stand_wall_lean_back_transition -> talkact_mr_leanwall_back
+    '00FC0D312CE3E152', # act_stand_piano_lean_enter_openlid -> mr_stand_piano_lean_open_lid
+    '004E9772057E7550', # act_stand_piano_lean_death -> mr_stand_piano_knockdown
+    # Huh
+    '00D5C32CF62A6807', # mr_stand_neutral -> mr_stand_frisk_b
+    '004FF13FD2A8A822', # mr_stand_neutral -> mr_stand_frisk_a
+    '0045FA0563952C3D', # fh_stand_phone_pace_02 -> fr_stand_phone_pace_slow
+    '00E7F814499080A1', # mr_guard_stand_walk_fire -> mr_military_stand_aim
+    '008E399A3E93E530', # mr_guard_stand_walk_fire -> mr_military_stand_aim_toaimvri
+    '007280B3FD792FDC', # hm_interact_dumbwaiter_mid_put -> hm_interact_place_object_110_cm
+    '00BAB00D29EC3256', # fr_waiter_stand_armsback -> fr_staff_stand_wei_greet_armsback
+    '005D7D844BFD9B9A', # mr_kneel_inspect_tieshoes_work -> mr_kneel_tie_shoes
+    # Convertable
+    '001E41A51B2D321B', # fh_sit_head_in_hands -> fh_sit_headinhands
+    # Convertable
+    '00623F7103A4641C', # fr_heidi_sit_guitar_playing -> fr_heidi_sit_guitar
+    '00E5721B66CCF47C', # mr_carryglass_putpick_100cm -> mr_stand_neutral_glass_putdown_100cm
+    '0099CBEA613CC81C', # mr_carryglass_putpick_100cm_1 -> mr_stand_neutral_glass_pickup_100cm
+    '00D914D1177D6383', # fh_model_seamstress_mr_stylist_act -> mr_stylist_kneel_style_main_model
+    '000212131CD9E496', # fh_model_seamstress_mr_stylist_act -> mr_stylist_stand_style_main_model
+    # THIS IS GETTABLE FROM REVERSE TEMP -> TBLU TODO: run this
+    '00C83D876754731A', # mr_stand_neutral -> mr_surgeon_stand_remove_bandage
 ]
 
+count = 0
 for hash in data:
     if data[hash]['type'] == 'MRTN':
+        count += 1
         # If the hash has the correct name, we should be able to guess it
         if not data[hash]['correct_name']:
             continue
@@ -183,10 +298,14 @@ for hash in data:
         names = guess_mrtn_name(hash)
         
         # TODO: Idle should be guessable
-        if len(names) == 0 and hash not in known_broken and 'idle' not in data[hash]['name']:
+        if 'idle' in data[hash]['name'] or hash in known_exceptions:
+            continue
+        if len(names) == 0:
+            print(f'Found nothing ({count})')
             print(hash)
+            print(data[hash]['name'])
             exit()
-        elif hash not in known_broken:
+        else:
             found = False
             # for each guessed name, it should be in it?
             for f in names:
@@ -199,7 +318,7 @@ for hash in data:
                     if l in data[hash]['name']:
                         looseFound = True
                 if not looseFound:
-                    print('Was wrong.')
+                    print(f'Was wrong.  ({count})')
                     print(hash)
                     print(data[hash]['name'])
                     print(names)
