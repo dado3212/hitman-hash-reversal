@@ -46,20 +46,20 @@ def attempt_one():
     for hash in found:
         print(hash + '.' + data[hash]['type'] + ', ' + found[hash])
 
-def guess_mrtn_name_from_tblu(hash: str) -> Optional[str]:
+def guess_mrtn_name_from_tblu(hash: str) -> set[str]:
     # Check reverse hash from TEMP -> TBLU
+    possible: set[str] = set()
     if hash in reverse:
         # For now, only one
-        if len(reverse[hash]) == 1:
-            for r in reverse[hash]:
-                if r in data and data[r]['type'] == 'TEMP':
-                    for d in data[r]['depends']:
-                        if d in data and data[d]['type'] == 'TBLU':
-                            for h in data[d]['hex_strings']:
-                                h = h.lower()
-                                if h.startswith('act_'):
-                                    return h.removeprefix('act_')
-    return None
+        for r in reverse[hash]:
+            if r in data and data[r]['type'] == 'TEMP':
+                for d in data[r]['depends']:
+                    if d in data and data[d]['type'] == 'TBLU':
+                        for h in data[d]['hex_strings']:
+                            h = h.lower()
+                            if h.startswith('act_'):
+                                possible.add(h.removeprefix('act_'))
+    return possible
 
 '''
 Things that this fails on:
@@ -88,7 +88,8 @@ def guess_mrtn_name(hash: str) -> List[Tuple[str, int]]:
         if (hex_string.startswith('mr_') or
             hex_string.startswith('hm_') or
             hex_string.startswith('fh_') or
-            hex_string.startswith('fr_')):
+            hex_string.startswith('fr_') or
+            hex_string.startswith('s03_hm_')):
             likely_names.add(hex_string)
 
         if hex_string not in ['ioivariation1', '__network__', 'controlparameters']:
@@ -184,6 +185,9 @@ def loose_expand(orig_guesses: List[Tuple[str, int]]) -> set[str]:
         # 00342898A1FEADF5, # mr_cross_stand_impatient -> mr_cross_stand_angry
         if guess.endswith('_impatient'):
             looser_guesses.add(guess.removesuffix('_impatient') + '_angry')
+        # '0082187AFCEE2CE0', # mr_s02_hm_interact_torch_ignite_0cm -> s03_hm_interact_torch_ignite_0cm
+        if guess.startswith('mr_s02_'):
+            looser_guesses.add('s03_' + guess.removeprefix('mr_s02_'))
         # 0096B19F9FC0B735, # mr_stand_table_lean_forward_drink_120cm_01 -> mr_stand_table_lean_forward_drink_120cm
         if re.match(r'.*_\d+$', guess):
             looser_guesses.add('_'.join(guess.split('_')[:-1]))
@@ -196,6 +200,139 @@ def loose_expand(orig_guesses: List[Tuple[str, int]]) -> set[str]:
             looser_guesses.add(guess[:-1] + '0' + guess[-1])            
             
     return looser_guesses
+
+
+'''
+Used for debugging the detection scripts. This tries to find all the ones that are known
+'''
+def check_known_mrtns():
+    known_exceptions = [
+        '00D48551E6479601', # hm_interact_place_sneak_60cm -> hm_interact_placement
+        '007584610AE12FE5', # mr_sit_bench_sick -> mr_sit_bench_poison_sick
+        # '0056E8A0D2783184', # darksnipersuit_idle
+        # '0020CB240F4A51DC', # clownsuit_idle (<- you can fix this TODO)
+        # '0006FD4A21D6857C', # cowboysuit_idle
+
+        # TODO: we should do neutral stands for everyone
+        '00380C7C35DA0DFA', # fh_stand_neutral/fh_model_stand_wait_1/fh_model_mr_stylist_stand_makeup - fh_model_stand_neutral
+
+        '0030C9AB45CBB928', # hm_disguise_hips_sit_tablet -> disguisesafezone_readtablet_sit
+
+        '00B3731113F4D6E6', # hm_push_elevator_button -> elevatorpushbutton
+        '00027A8D19596880', # hm_weapon_arm_and_grip_poses_1h_remote_detonator_detonate -> hm_remote_activate_detonator
+        '00D572BC26F9B5DA', # hm_interact_vial_bottle_100cm_1 -> hm_interact_vialknife_bottle_100cm
+        '00D180C1A5D45737', # hm_interact_vial_bottle_100cm -> hm_interact_vial_food_100cm
+        '003A7A583C6DDFFE', # hm_interact_vial_bottle_100cm -> hm_interact_vial_glass_100cm
+        '00441D3D4B28F351', # hm_interact_vial_bottle_100cm -> hm_interact_vial_glass_120cm
+        '006DA32411BEF322', # hm_weapon_arm_and_grip_poses_1h_remote_detonator_detonate_wolverine -> hm_remote_activate_detonator_wolverine
+        '00884A91011B01F1', # hm_placement_place_stand_60cm_down -> hm_interact_placement_placeobject_60cm
+        '00D22202379F2D01', # hm_placement_retrieve_stand_60cm_down -> hm_interact_placement_retrieveobject_60cm
+        '006F8644D9A8F2D1', # mr_stand_phone_text_pace -> mr_stand_phone_pace_text
+        # # LMAOOOO
+        '00DD13648025C431', # mr_stand_wall_lean_side_shoulder_left -> mr_stand_wall_lean_side_shoulder_right
+        '005A8982427113DC', # hm_interact_flip_switches_horiz_140cm -> hm_interact_flip_switches_140cm_up
+        '00385A27CB01A94A', # hm_interact_flip_switches_horiz_140cm_1 -> hm_interact_flip_switches_140cm_down
+        '00005A83449DFF02', # hm_push_button_100cm_prologexit -> hm_interact_push_button_100cm_prologexit
+        '0021DD8CC33BB8A7', # hm_interact_dumbwaiter_mid_put_take_1 -> hm_interact_placement_swapobjects_110cm
+        '001A6D9FC79DE34C', # lots of stuff -> mr_hunting_act_guard
+        # # Huh.
+        '0097BCCD01FD6FCB', # mr_stand_submissive_01 -> mr_stand_sumissive_01
+        '007DB78C218A7E45', # mr_stand_knightkgb_projectorreaction_1 -> mr_kgb_stand_reactionprojector
+        '008B0958B5469A06', # <nothing> -> disguisesafezoneclipboard
+        '000A03C9A2ED26AF', # hm_disguise_blendin_mop -> disguisesafezonejanitormop
+        '00B8829435F03EEA', # mr_stand_wall_lean_back_transition -> talkact_mr_leanwall_back
+        '00FC0D312CE3E152', # act_stand_piano_lean_enter_openlid -> mr_stand_piano_lean_open_lid
+        '007280B3FD792FDC', # hm_interact_dumbwaiter_mid_put -> hm_interact_place_object_110_cm
+        '00E5721B66CCF47C', # mr_carryglass_putpick_100cm -> mr_stand_neutral_glass_putdown_100cm
+        '0099CBEA613CC81C', # mr_carryglass_putpick_100cm_1 -> mr_stand_neutral_glass_pickup_100cm
+        # TODO: gettable
+        '006D48AE8E519E86', # fr_heidi_stand_angry_gesture/listen/stand/behaviour -> fr_heidi_stand_angry
+        '007DE788C98E33C5', # fh_catwalk_end_act_01 -> fh_model_catwalk_end_act03
+        '00B079A44EB37E64', # fh_catwalk_end_act_02 -> fh_model_catwalk_end_act04
+        '009123995FFEFAC4', # fh_carryglass_putpick_120cm -> fh_stand_neutral_glass_putdown_120cm
+        '0070CCC9BC1E1EE2', # mr_stand_phone_filming -> mr_stand_filming_phone
+        '00EC77B2BAEE4D74', # mr_mime_standidle -> mr_mime_stand_perform
+        '002419E880E53C4E', # lots of stuff -> hm_interact_pickup_object_110_cm
+    ]
+
+    count = 0
+    for hash in data:
+        if data[hash]['type'] == 'MRTN':
+            count += 1
+            # If the hash has the correct name, we should be able to guess it
+            if not data[hash]['correct_name']:
+                continue
+            if len(data[hash]['hex_strings']) > 70: # really 1000 is a better limit
+                # For now, just ignore these
+                # Ex. 00CEC267BD1B5133 (TODO: are we extracting everything from here?)
+                # Ex. 005C40E612CC9242 (only 72, should we be able to fix this?)
+                continue
+            names = guess_mrtn_name(hash)
+            from_tblu = guess_mrtn_name_from_tblu(hash)
+            for f in from_tblu:
+                names.append((f, 1))
+            
+            # TODO: Idle should be guessable
+            if 'idle' in data[hash]['name'] or hash in known_exceptions:
+                continue
+            if len(names) == 0:
+                print(f'Found nothing ({count})')
+                print(hash)
+                print(data[hash]['name'])
+                if count > 1400:
+                    exit()
+            else:
+                found = False
+                # for each guessed name, it should be in it?
+                for f in names:
+                    if f[0] in data[hash]['name']:
+                        found = True
+                if not found:
+                    loose = loose_expand(names)
+                    looseFound = False
+                    for l in loose:
+                        if l in data[hash]['name']:
+                            looseFound = True
+                    if not looseFound:
+                        print(f'Was wrong.  ({count})')
+                        print(hash)
+                        print(data[hash]['name'])
+                        print(names)
+                        print(loose)
+                        if count > 1400:
+                            exit()
+
+def attempt_smarter():
+    # Open the prefixes
+    with open('mrtn_folders.pickle', 'rb') as handle:
+        mrtn_folders: set[str] = set(pickle.load(handle))
+
+    for folder in list(mrtn_folders):
+        mrtn_folders.add(folder.replace('hitman01', 'hitman02'))
+        mrtn_folders.add(folder.replace('hitman01', 'hitman03'))
+
+    all_folders: set[str] = set()
+    for folder in mrtn_folders:
+        all_folders.add(folder)
+        all_folders.add(folder + 'mr_')
+
+    mrtn_strings: List[set[str]] = []
+
+    for hash in data:
+        if data[hash]['type'] == 'MRTN':
+            names = guess_mrtn_name(hash)
+            from_tblu = guess_mrtn_name_from_tblu(hash)
+            for f in from_tblu:
+                names.append((f, 1))
+            loose = loose_expand(names)
+            mrtn_strings.append(loose)
+    unique_mrtn_strings: set[str] = set()
+    unique_mrtn_strings = unique_mrtn_strings.union(*mrtn_strings)
+
+    found = hashcat('MRTN', all_folders, unique_mrtn_strings,
+                    ['', '', '.aln].pc_rtn'])
+    for hash in found:
+        print(hash + '.' + data[hash]['type'] + ', ' + found[hash])
 
 # attempt_one()
 # with open('hitman_wordlist.txt', 'r') as f:
@@ -229,92 +366,4 @@ def loose_expand(orig_guesses: List[Tuple[str, int]]) -> set[str]:
 # exit()
 
 print('Loaded')
-
-known_exceptions = [
-    '00D48551E6479601', # hm_interact_place_sneak_60cm -> hm_interact_placement
-    '007584610AE12FE5', # mr_sit_bench_sick -> mr_sit_bench_poison_sick
-    # '0056E8A0D2783184', # darksnipersuit_idle
-    # '0020CB240F4A51DC', # clownsuit_idle (<- you can fix this TODO)
-    # '0006FD4A21D6857C', # cowboysuit_idle
-
-    # TODO: we should do neutral stands for everyone
-    '00380C7C35DA0DFA', # fh_stand_neutral/fh_model_stand_wait_1/fh_model_mr_stylist_stand_makeup - fh_model_stand_neutral
-
-    '0030C9AB45CBB928', # hm_disguise_hips_sit_tablet -> disguisesafezone_readtablet_sit
-
-    '00B3731113F4D6E6', # hm_push_elevator_button -> elevatorpushbutton
-    '00027A8D19596880', # hm_weapon_arm_and_grip_poses_1h_remote_detonator_detonate -> hm_remote_activate_detonator
-    '00D572BC26F9B5DA', # hm_interact_vial_bottle_100cm_1 -> hm_interact_vialknife_bottle_100cm
-    '00D180C1A5D45737', # hm_interact_vial_bottle_100cm -> hm_interact_vial_food_100cm
-    '003A7A583C6DDFFE', # hm_interact_vial_bottle_100cm -> hm_interact_vial_glass_100cm
-    '00441D3D4B28F351', # hm_interact_vial_bottle_100cm -> hm_interact_vial_glass_120cm
-    '006DA32411BEF322', # hm_weapon_arm_and_grip_poses_1h_remote_detonator_detonate_wolverine -> hm_remote_activate_detonator_wolverine
-    '00884A91011B01F1', # hm_placement_place_stand_60cm_down -> hm_interact_placement_placeobject_60cm
-    '00D22202379F2D01', # hm_placement_retrieve_stand_60cm_down -> hm_interact_placement_retrieveobject_60cm
-    '006F8644D9A8F2D1', # mr_stand_phone_text_pace -> mr_stand_phone_pace_text
-    # # LMAOOOO
-    '00DD13648025C431', # mr_stand_wall_lean_side_shoulder_left -> mr_stand_wall_lean_side_shoulder_right
-    '005A8982427113DC', # hm_interact_flip_switches_horiz_140cm -> hm_interact_flip_switches_140cm_up
-    '00385A27CB01A94A', # hm_interact_flip_switches_horiz_140cm_1 -> hm_interact_flip_switches_140cm_down
-    '00005A83449DFF02', # hm_push_button_100cm_prologexit -> hm_interact_push_button_100cm_prologexit
-    '0021DD8CC33BB8A7', # hm_interact_dumbwaiter_mid_put_take_1 -> hm_interact_placement_swapobjects_110cm
-    '001A6D9FC79DE34C', # lots of stuff -> mr_hunting_act_guard
-    # # Huh.
-    '0097BCCD01FD6FCB', # mr_stand_submissive_01 -> mr_stand_sumissive_01
-    '007DB78C218A7E45', # mr_stand_knightkgb_projectorreaction_1 -> mr_kgb_stand_reactionprojector
-    '008B0958B5469A06', # <nothing> -> disguisesafezoneclipboard
-    '000A03C9A2ED26AF', # hm_disguise_blendin_mop -> disguisesafezonejanitormop
-    '00B8829435F03EEA', # mr_stand_wall_lean_back_transition -> talkact_mr_leanwall_back
-    '00FC0D312CE3E152', # act_stand_piano_lean_enter_openlid -> mr_stand_piano_lean_open_lid
-    '007280B3FD792FDC', # hm_interact_dumbwaiter_mid_put -> hm_interact_place_object_110_cm
-    '00E5721B66CCF47C', # mr_carryglass_putpick_100cm -> mr_stand_neutral_glass_putdown_100cm
-    '0099CBEA613CC81C', # mr_carryglass_putpick_100cm_1 -> mr_stand_neutral_glass_pickup_100cm
-]
-
-count = 0
-for hash in data:
-    if data[hash]['type'] == 'MRTN':
-        count += 1
-        # If the hash has the correct name, we should be able to guess it
-        if not data[hash]['correct_name']:
-            continue
-        if len(data[hash]['hex_strings']) > 70: # really 1000 is a better limit
-            # For now, just ignore these
-            # Ex. 00CEC267BD1B5133 (TODO: are we extracting everything from here?)
-            # Ex. 005C40E612CC9242 (only 72, should we be able to fix this?)
-            continue
-        names = guess_mrtn_name(hash)
-        from_tblu = guess_mrtn_name_from_tblu(hash)
-        if from_tblu is not None:
-            names.append((from_tblu, 1))
-        
-        # TODO: Idle should be guessable
-        if 'idle' in data[hash]['name'] or hash in known_exceptions:
-            continue
-        if len(names) == 0:
-            print(f'Found nothing ({count})')
-            print(hash)
-            print(data[hash]['name'])
-            if count > 1400:
-                exit()
-        else:
-            found = False
-            # for each guessed name, it should be in it?
-            for f in names:
-                if f[0] in data[hash]['name']:
-                    found = True
-            if not found:
-                loose = loose_expand(names)
-                looseFound = False
-                for l in loose:
-                    if l in data[hash]['name']:
-                        looseFound = True
-                if not looseFound:
-                    print(f'Was wrong.  ({count})')
-                    print(hash)
-                    print(data[hash]['name'])
-                    print(names)
-                    print(loose)
-                    if count > 1400:
-                        exit()
-
+attempt_smarter()
