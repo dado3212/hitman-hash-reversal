@@ -1,7 +1,7 @@
 from utils import ioi_string_to_hex, load_data, hashcat
 import pickle
 import re
-from typing import List, Optional, Tuple
+from typing import List, Optional, Tuple, Dict
 
 '''
 Q. Do any of them have altenterexit?
@@ -17,6 +17,8 @@ A. Just that one!
 '''
 
 data = load_data()
+with open('reverse.pickle', 'rb') as handle:
+    reverse: Dict[str, List[str]] = pickle.load(handle)
 
 def attempt_one():
     # Open the prefixes
@@ -44,6 +46,20 @@ def attempt_one():
     for hash in found:
         print(hash + '.' + data[hash]['type'] + ', ' + found[hash])
 
+def guess_mrtn_name_from_tblu(hash: str) -> Optional[str]:
+    # Check reverse hash from TEMP -> TBLU
+    if hash in reverse:
+        # For now, only one
+        if len(reverse[hash]) == 1:
+            for r in reverse[hash]:
+                if r in data and data[r]['type'] == 'TEMP':
+                    for d in data[r]['depends']:
+                        if d in data and data[d]['type'] == 'TBLU':
+                            for h in data[d]['hex_strings']:
+                                h = h.lower()
+                                if h.startswith('act_'):
+                                    return h.removeprefix('act_')
+    return None
 
 '''
 Things that this fails on:
@@ -215,72 +231,44 @@ def loose_expand(orig_guesses: List[Tuple[str, int]]) -> set[str]:
 print('Loaded')
 
 known_exceptions = [
-    '00D48551E6479601',
-    '00942EC0A63F14DF',
-    '00EC06ECA85A09B8',
-    '007584610AE12FE5',
-    '0056E8A0D2783184', # darksnipersuit_idle
-    '0020CB240F4A51DC', # clownsuit_idle (<- you can fix this TODO)
-    '0006FD4A21D6857C', # cowboysuit_idle
+    '00D48551E6479601', # hm_interact_place_sneak_60cm -> hm_interact_placement
+    '007584610AE12FE5', # mr_sit_bench_sick -> mr_sit_bench_poison_sick
+    # '0056E8A0D2783184', # darksnipersuit_idle
+    # '0020CB240F4A51DC', # clownsuit_idle (<- you can fix this TODO)
+    # '0006FD4A21D6857C', # cowboysuit_idle
 
     # TODO: we should do neutral stands for everyone
     '00380C7C35DA0DFA', # fh_stand_neutral/fh_model_stand_wait_1/fh_model_mr_stylist_stand_makeup - fh_model_stand_neutral
 
     '0030C9AB45CBB928', # hm_disguise_hips_sit_tablet -> disguisesafezone_readtablet_sit
 
-    '00FDB60A24B6C619', # mr_sato_stand_neutral -> mr_sato_stand_champagne
     '00B3731113F4D6E6', # hm_push_elevator_button -> elevatorpushbutton
     '00027A8D19596880', # hm_weapon_arm_and_grip_poses_1h_remote_detonator_detonate -> hm_remote_activate_detonator
     '00D572BC26F9B5DA', # hm_interact_vial_bottle_100cm_1 -> hm_interact_vialknife_bottle_100cm
     '00D180C1A5D45737', # hm_interact_vial_bottle_100cm -> hm_interact_vial_food_100cm
     '003A7A583C6DDFFE', # hm_interact_vial_bottle_100cm -> hm_interact_vial_glass_100cm
-    '009C5F666D1F2403', # mr_stand_sick_throw_up -> mr_stand_sick
-    '008EF93363C43FDD', # hm_idle_stand_bat -> baseball_bat_idle
     '00441D3D4B28F351', # hm_interact_vial_bottle_100cm -> hm_interact_vial_glass_120cm
     '006DA32411BEF322', # hm_weapon_arm_and_grip_poses_1h_remote_detonator_detonate_wolverine -> hm_remote_activate_detonator_wolverine
     '00884A91011B01F1', # hm_placement_place_stand_60cm_down -> hm_interact_placement_placeobject_60cm
     '00D22202379F2D01', # hm_placement_retrieve_stand_60cm_down -> hm_interact_placement_retrieveobject_60cm
-    '00351B1B304FE62F', # mr_stand_bardesk -> mr_stand_clean_surface_100cm
-    '005942F321735694', # mr_guard_stand_handcrossed -> mr_guard_stand_handscrossed
-    '00317C847FB2BE14', # mr_kneel_inspect_tieshoes_work -> mr_kneel_inspect
     '006F8644D9A8F2D1', # mr_stand_phone_text_pace -> mr_stand_phone_pace_text
-    # LMAOOOO
+    # # LMAOOOO
     '00DD13648025C431', # mr_stand_wall_lean_side_shoulder_left -> mr_stand_wall_lean_side_shoulder_right
     '005A8982427113DC', # hm_interact_flip_switches_horiz_140cm -> hm_interact_flip_switches_140cm_up
     '00385A27CB01A94A', # hm_interact_flip_switches_horiz_140cm_1 -> hm_interact_flip_switches_140cm_down
     '00005A83449DFF02', # hm_push_button_100cm_prologexit -> hm_interact_push_button_100cm_prologexit
     '0021DD8CC33BB8A7', # hm_interact_dumbwaiter_mid_put_take_1 -> hm_interact_placement_swapobjects_110cm
     '001A6D9FC79DE34C', # lots of stuff -> mr_hunting_act_guard
-    '00AF6E8ED89C6D5F', # stand_pour_wodka_100cm_1 -> mr_stand_invitetodrink
-    '00A8C00F771F36BA', # mr_military_stand_attention_push_up -> mr_military_full_behaviour
-    '009C6E1AED0772FB', # hm_mr_chessgame_100cm -> mr_stand_chessgame
-    # Huh.
+    # # Huh.
     '0097BCCD01FD6FCB', # mr_stand_submissive_01 -> mr_stand_sumissive_01
     '007DB78C218A7E45', # mr_stand_knightkgb_projectorreaction_1 -> mr_kgb_stand_reactionprojector
     '008B0958B5469A06', # <nothing> -> disguisesafezoneclipboard
     '000A03C9A2ED26AF', # hm_disguise_blendin_mop -> disguisesafezonejanitormop
     '00B8829435F03EEA', # mr_stand_wall_lean_back_transition -> talkact_mr_leanwall_back
     '00FC0D312CE3E152', # act_stand_piano_lean_enter_openlid -> mr_stand_piano_lean_open_lid
-    '004E9772057E7550', # act_stand_piano_lean_death -> mr_stand_piano_knockdown
-    # Huh
-    '00D5C32CF62A6807', # mr_stand_neutral -> mr_stand_frisk_b
-    '004FF13FD2A8A822', # mr_stand_neutral -> mr_stand_frisk_a
-    '0045FA0563952C3D', # fh_stand_phone_pace_02 -> fr_stand_phone_pace_slow
-    '00E7F814499080A1', # mr_guard_stand_walk_fire -> mr_military_stand_aim
-    '008E399A3E93E530', # mr_guard_stand_walk_fire -> mr_military_stand_aim_toaimvri
     '007280B3FD792FDC', # hm_interact_dumbwaiter_mid_put -> hm_interact_place_object_110_cm
-    '00BAB00D29EC3256', # fr_waiter_stand_armsback -> fr_staff_stand_wei_greet_armsback
-    '005D7D844BFD9B9A', # mr_kneel_inspect_tieshoes_work -> mr_kneel_tie_shoes
-    # Convertable
-    '001E41A51B2D321B', # fh_sit_head_in_hands -> fh_sit_headinhands
-    # Convertable
-    '00623F7103A4641C', # fr_heidi_sit_guitar_playing -> fr_heidi_sit_guitar
     '00E5721B66CCF47C', # mr_carryglass_putpick_100cm -> mr_stand_neutral_glass_putdown_100cm
     '0099CBEA613CC81C', # mr_carryglass_putpick_100cm_1 -> mr_stand_neutral_glass_pickup_100cm
-    '00D914D1177D6383', # fh_model_seamstress_mr_stylist_act -> mr_stylist_kneel_style_main_model
-    '000212131CD9E496', # fh_model_seamstress_mr_stylist_act -> mr_stylist_stand_style_main_model
-    # THIS IS GETTABLE FROM REVERSE TEMP -> TBLU TODO: run this
-    '00C83D876754731A', # mr_stand_neutral -> mr_surgeon_stand_remove_bandage
 ]
 
 count = 0
@@ -296,6 +284,9 @@ for hash in data:
             # Ex. 005C40E612CC9242 (only 72, should we be able to fix this?)
             continue
         names = guess_mrtn_name(hash)
+        from_tblu = guess_mrtn_name_from_tblu(hash)
+        if from_tblu is not None:
+            names.append((from_tblu, 1))
         
         # TODO: Idle should be guessable
         if 'idle' in data[hash]['name'] or hash in known_exceptions:
@@ -304,7 +295,8 @@ for hash in data:
             print(f'Found nothing ({count})')
             print(hash)
             print(data[hash]['name'])
-            exit()
+            if count > 1400:
+                exit()
         else:
             found = False
             # for each guessed name, it should be in it?
@@ -323,5 +315,6 @@ for hash in data:
                     print(data[hash]['name'])
                     print(names)
                     print(loose)
-                    exit()
+                    if count > 1400:
+                        exit()
 
