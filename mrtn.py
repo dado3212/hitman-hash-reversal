@@ -1,6 +1,5 @@
-from utils import ioi_string_to_hex, load_data, hashcat
-import pickle
-import re
+from utils import ioi_string_to_hex, load_data, hashcat, find_folder_patterns
+import pickle, re, string
 from typing import List, Optional, Tuple, Dict
 
 '''
@@ -302,22 +301,28 @@ def check_known_mrtns():
                         if count > 1400:
                             exit()
 
+# This takes the known folders, and finds the patterns
+# It also uses some relatively complex logic to extract best guesses for the 
+# base MRTN names from hex_strings and reverse TEMP -> TBLU dependencies.
+# Finally it tries to combine all of these
 def attempt_smarter():
     # Open the prefixes
     with open('mrtn_folders.pickle', 'rb') as handle:
         mrtn_folders: set[str] = set(pickle.load(handle))
 
-    for folder in list(mrtn_folders):
-        mrtn_folders.add(folder.replace('hitman01', 'hitman02'))
-        mrtn_folders.add(folder.replace('hitman01', 'hitman03'))
+    folder_patterns = find_folder_patterns(list(mrtn_folders))
+    formats: List[List[str]] = []
+    for pattern in folder_patterns:
+        pattern_pieces = pattern.split('*')
+        formats.append([pattern_pieces[0], pattern_pieces[1], '.aln].pc_rtn'])
+        if 'hitman01' in pattern:
+            pattern_pieces2 = pattern.replace('hitman01', 'hitman02').split('*')
+            formats.append([pattern_pieces2[0], pattern_pieces2[1], '.aln].pc_rtn'])
 
-    all_folders: set[str] = set()
-    for folder in mrtn_folders:
-        all_folders.add(folder)
-        all_folders.add(folder + 'mr_')
+            pattern_pieces3 = pattern.replace('hitman01', 'hitman03').split('*')
+            formats.append([pattern_pieces3[0], pattern_pieces3[1], '.aln].pc_rtn'])
 
     mrtn_strings: List[set[str]] = []
-
     for hash in data:
         if data[hash]['type'] == 'MRTN':
             names = guess_mrtn_name(hash)
@@ -329,10 +334,26 @@ def attempt_smarter():
     unique_mrtn_strings: set[str] = set()
     unique_mrtn_strings = unique_mrtn_strings.union(*mrtn_strings)
 
-    found = hashcat('MRTN', all_folders, unique_mrtn_strings,
-                    ['', '', '.aln].pc_rtn'])
-    for hash in found:
-        print(hash + '.' + data[hash]['type'] + ', ' + found[hash])
+    allowed = set(string.ascii_lowercase + '_')
+    with open('hitman_wordlist.txt', 'r') as f:
+        hitman_wordlist = set([x.strip() for x in f.readlines()])
+    with open('wordlist_12.txt', 'r') as f:
+        wordlist_12 = set([x.strip() for x in f.readlines()])
+    
+    wordlist = hitman_wordlist.union(wordlist_12)
+    wordlist = set([word for word in wordlist if set(word) <= allowed])
+        
+    index = 0
+    found_hashes: Dict[str, str] = {}
+    for format in formats:
+        index += 1
+        hashes = hashcat('MRTN', wordlist, unique_mrtn_strings, format, data)
+        print(f'For hash {index} of {len(formats)}, found {len(hashes)} hashes.')
+        for hash in hashes:
+            found_hashes[hash] = hashes[hash]
+        
+    for hash in found_hashes:
+        print(hash + '.' + data[hash]['type'] + ', ' + found_hashes[hash])
 
 # attempt_one()
 # with open('hitman_wordlist.txt', 'r') as f:

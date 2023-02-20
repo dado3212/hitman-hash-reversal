@@ -231,7 +231,7 @@ def targeted_hashcat(
 Takes in a list of folder paths. The function treats this as a set of tokens
 delimeted by `/` and goes through to finds patterns where one token
 appears to change (and thus could be ran through a wordlist). You can set two 
-parameters to control output. The folder paths should NOT end with a `/`.
+parameters to control output.
 
 Input:
  - unique_threshold: If a certain token has more than this many options then
@@ -249,6 +249,8 @@ set([
 ])
 '''
 def find_folder_patterns(templates: List[str], unique_threshold: int = 5, max_wildcards: int = 1) -> set[str]:
+    # This code requires that the templates not be suffixed with `/`
+    templates = [template.removesuffix('/') for template in templates]
     unique_formats: set[str] = set()
     for i in range(len(templates)):
         folder1 = templates[i].split('/')
