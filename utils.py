@@ -181,7 +181,6 @@ def hashcat(
         '-o', f'{target_type}-cracked.txt', # cracked hashes
     ])
     print(' '.join(commands))
-    # return {}
     process = subprocess.Popen(' '.join(commands), stdout=subprocess.PIPE, cwd=hashcat_path, shell=True)
 
     while process.stdout is not None and process.stdout.readable():
@@ -201,7 +200,13 @@ def hashcat(
         lines = f.readlines()
         for line in lines:
             line = line.split(':', 1)
-            new_hashes[line[0].upper()] = line[1].rstrip()
+            solution = line[1].rstrip()
+            # TODO: Current bug in hashcat, but while these are *cracked*
+            # the output isn't correct. For now, silently drop them. WE SHOULD 
+            # FIX THIS.
+            if len(solution) == 256:
+                continue
+            new_hashes[line[0].upper()] = solution
 
     return new_hashes
 
