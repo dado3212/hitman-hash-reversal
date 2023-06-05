@@ -351,6 +351,12 @@ def attempt_smarter():
         print(f'For hash {index} of {len(formats)}, found {len(hashes)} hashes.')
         for hash in hashes:
             found_hashes[hash] = hashes[hash]
+    
+    # Run with the known folders
+    found = hashcat('MRTN', mrtn_folders, unique_mrtn_strings,
+                    ['', '', '.aln].pc_rtn'])
+    for hash in found:
+        found_hashes[hash] = found[hash]
         
     for hash in found_hashes:
         print(hash + '.' + data[hash]['type'] + ', ' + found_hashes[hash])

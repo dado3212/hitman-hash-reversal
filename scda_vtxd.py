@@ -111,13 +111,14 @@ def extract_from_hex_strings():
         for expected_path in missing:
             f.write(expected_path + '\n')
 
-    for hash in data:
-        if data[hash]['type'] == 'SCDA' and data[hash]['correct_name']:
-            if data[hash]['name'] not in known_scda:
-                print(hash + ', ' + data[hash]['name'])
-        if data[hash]['type'] == 'VTXD' and data[hash]['correct_name']:
-            if data[hash]['name'] not in known_vtxd:
-                print(hash + ', ' + data[hash]['name'])
+    # Trying to identify novel ones...how did we find these?
+    # for hash in data:
+    #     if data[hash]['type'] == 'SCDA' and data[hash]['correct_name']:
+    #         if data[hash]['name'] not in known_scda:
+    #             print(hash + ', ' + data[hash]['name'])
+    #     if data[hash]['type'] == 'VTXD' and data[hash]['correct_name']:
+    #         if data[hash]['name'] not in known_vtxd:
+    #             print(hash + ', ' + data[hash]['name'])
 
 # Found nothing
 def guess_weird_suffixes():

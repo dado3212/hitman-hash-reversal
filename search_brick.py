@@ -1,10 +1,9 @@
-from utils import ioi_string_to_hex
+from utils import ioi_string_to_hex, load_data
 import pickle
 import os, shutil
 from typing import List, Dict
 
-with open('hashes.pickle', 'rb') as handle:
-    data = pickle.load(handle)
+data = load_data()
 
 text_names = []
 
@@ -32,31 +31,34 @@ def get_recursive_depends(hash: str, search_type: str) -> set[str]:
             lookup[depends] = set()
     return matching
 
-brick = '00E9F09C3B030590.TEMP'
-# scene = '00E4D6951CC4089E.TEMP'
-# smaller = '009A2D29F25BCA8F.PRIM'
-brick_recursion = get_recursive_depends(brick, 'TEXT')
-# recursion2 = get_recursive_depends(scene, 'TEXT')
+hashes = get_recursive_depends('00CBB0EDEDADBDF7', 'TEXT')
 
-# new_additions = [x for x in recursion2 if x not in recursion]
+for hash in hashes:
+    if 'asnormalmap' in data[hash]['name'] or 'specular' in data[hash]['name'] or 'asheightmap' in data[hash]['name']:
+        continue
+    print(hash + ', ' + data[hash]['name'])
+
+# # recursion2 = get_recursive_depends(scene, 'TEXT')
+
+# # new_additions = [x for x in recursion2 if x not in recursion]
+
+# # for dirpath,_,filenames in os.walk('D:\\Alex\\Desktop\\Hitman Modding\\Extracts\\Textures'):
+# #     for f in filenames:
+# #         for img in new_additions:
+# #             if '.png' in f and img in f:
+# #                 absolute = os.path.abspath(os.path.join(dirpath, f))
+# #                 shutil.copyfile(absolute, './scene/' + img + '.png')
+
+# apt = '00916FCA49E7A124.TEMP'
+# apt_recursion = get_recursive_depends(apt, 'TEXT')
+# apt_recursion = [x for x in apt_recursion if x not in brick_recursion]
 
 # for dirpath,_,filenames in os.walk('D:\\Alex\\Desktop\\Hitman Modding\\Extracts\\Textures'):
 #     for f in filenames:
-#         for img in new_additions:
+#         for img in apt_recursion:
 #             if '.png' in f and img in f:
 #                 absolute = os.path.abspath(os.path.join(dirpath, f))
-#                 shutil.copyfile(absolute, './scene/' + img + '.png')
-
-apt = '00916FCA49E7A124.TEMP'
-apt_recursion = get_recursive_depends(apt, 'TEXT')
-apt_recursion = [x for x in apt_recursion if x not in brick_recursion]
-
-for dirpath,_,filenames in os.walk('D:\\Alex\\Desktop\\Hitman Modding\\Extracts\\Textures'):
-    for f in filenames:
-        for img in apt_recursion:
-            if '.png' in f and img in f:
-                absolute = os.path.abspath(os.path.join(dirpath, f))
-                shutil.copyfile(absolute, './apt/' + img + '.png')
+#                 shutil.copyfile(absolute, './apt/' + img + '.png')
 
 # 002A945B6025BD1A.TEXT - deck of cards
 # wall_rug

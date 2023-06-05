@@ -8,16 +8,18 @@ from utils import crack
 #     5
 # )
 
-path = crack(
-    '00489C6AE025588E',
-    '[assembly:/localization/hitman6/conversations/ui/pro/online/challenges/',
-    '.sweetmenutext].pc_localized-textlist',
-    ['challenges', 'prison', 'sniperchallenge', 'sniperchallenges', 'missions', 'sniper', 'hawk', 'falcon', 'contract', 'mission', 'caged', 'salty', 'seagul', 'seagull', 'snipers', 'challenge', 's3', 's2', 'sc'],
-    ['sniperchallenge'],
-    1,
-    6
-)
-print(path)
+
+
+# path = crack(
+#     '00489C6AE025588E',
+#     '[assembly:/localization/hitman6/conversations/ui/pro/online/challenges/',
+#     '.sweetmenutext].pc_localized-textlist',
+#     ['challenges', 'prison', 'sniperchallenge', 'sniperchallenges', 'missions', 'sniper', 'hawk', 'falcon', 'contract', 'mission', 'caged', 'salty', 'seagul', 'seagull', 'snipers', 'challenge', 's3', 's2', 'sc'],
+#     ['sniperchallenge'],
+#     1,
+#     6
+# )
+# print(path)
 
 # hippo quest items?
 # path = crack(
