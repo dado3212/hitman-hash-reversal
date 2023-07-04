@@ -23,6 +23,108 @@ def ioi_string_to_hex(path: str) -> str:
 def load_data() -> Dict[str, HashData]:
     with open('hashes.pickle', 'rb') as handle:
         return pickle.load(handle)
+    
+def location_list() -> set[str]:
+    return [
+        'sniperchallenge',
+        'versus',
+        'base',
+        'boot',
+        'boot_base',
+        'qloc',
+        'reference',
+        'cinematic',
+        'tutorial',
+        'polarbear',
+        'thefacility',
+        'the facility',
+        'greenland',
+        'paris',
+        'peacock',
+        'france',
+        'italy',
+        'sapiensa',
+        'sapienza',
+        'serpienza',
+        'coastaltown',
+        'coastal_town',
+        'octopus',
+        'marrakesh',
+        'consulate',
+        'spider',
+        'bangkok',
+        'tiger',
+        'colorado',
+        'colorado_2',
+        'bull',
+        'hokkaido',
+        'snowcrane',
+        'newzealand',
+        'newzea',
+        'sheep',
+        'miami',
+        'flamingo',
+        'colombia',
+        'hippo',
+        'mumbai',
+        'mongoose',
+        'india',
+        'northamerica',
+        'vermont',
+        'suburbia',
+        'skunk',
+        'northsea',
+        'theark',
+        'sgail',
+        'theisland',
+        'island',
+        'magpie',
+        'greedy',
+        'raccoon',
+        'thebank',
+        'newyork',
+        'bank',
+        'opulent',
+        'stingray',
+        'maldives',
+        'hawk',
+        'austria',
+        'salty',
+        'seagull',
+        'harbour',
+        'caged',
+        'falcon',
+        'prison',
+        'golden',
+        'gecko',
+        'dubai',
+        'edgy',
+        'fox',
+        'berlin',
+        'germany',
+        'wet',
+        'rat',
+        'chongqing',
+        'china',
+        'ancestral',
+        'bulldog',
+        'dartmoor',
+        'uk',
+        'england',
+        'elegant',
+        'llama',
+        'mendoza',
+        'argentina',
+        'trapped',
+        'wolverine',
+        'carpathian',
+        'romania',
+        'snug',
+        'vanilla',
+        'rocky',
+        'dugong',
+    ]
+
 
 # Takes in a json_data and returns a list of strings
 def extract_strings_from_json(json_data: Any) -> set[str]:
@@ -109,6 +211,7 @@ def hashcat(
     format: List[str],
     data: Optional[Dict[str, HashData]] = None,
     override_hashes: Optional[set[str]] = None,
+    silence: bool = False,
 ) -> Dict[str, str]:
     # Confirm that format is wellformed
     if len(format) != 3:
@@ -134,7 +237,8 @@ def hashcat(
         if (data is None):
             data = load_data()
         possible_hashes = [hash for hash in data if data[hash]['type'] == target_type and not data[hash]['correct_name']]
-    print(f'Saving temporary wordlists: {len(left)} left, {len(right)} right, targeting {len(possible_hashes)} unknown hashes.')
+    if not silence:
+        print(f'Saving temporary wordlists: {len(left)} left, {len(right)} right, targeting {len(possible_hashes)} unknown hashes.')
     with open(f'{hashcat_path}/left.txt', 'w', encoding='utf-8', buffering=1) as f:
         f.write("\n".join(left))
 
@@ -180,7 +284,8 @@ def hashcat(
         '--potfile-disable', # we don't want to save the hashes (for now)
         '-o', f'{target_type}-cracked.txt', # cracked hashes
     ])
-    print(' '.join(commands))
+    if not silence:
+        print(' '.join(commands))
     process = subprocess.Popen(' '.join(commands), stdout=subprocess.PIPE, cwd=hashcat_path, shell=True)
 
     while process.stdout is not None and process.stdout.readable():
@@ -188,11 +293,12 @@ def hashcat(
         if not line:
             break
 
-        line = line.strip().decode('utf-8')
-        if line.startswith('Time.Estimated') or line.startswith('Progress') or line.startswith('Candidates.#1'):
-            print(line)
-        elif line.startswith('Hardware.Mon.#1'):
-            print(line + '\n')
+        if not silence:
+            line = line.strip().decode('utf-8')
+            if line.startswith('Time.Estimated') or line.startswith('Progress') or line.startswith('Candidates.#1'):
+                print(line)
+            elif line.startswith('Hardware.Mon.#1'):
+                print(line + '\n')
 
     # Read the new hashes
     new_hashes: Dict[str, str] = {}

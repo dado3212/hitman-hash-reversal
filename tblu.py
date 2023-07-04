@@ -1,4 +1,4 @@
-from utils import ioi_string_to_hex, load_data, hashcat, targeted_hashcat, find_folder_patterns
+from utils import ioi_string_to_hex, load_data, hashcat, targeted_hashcat, find_folder_patterns, location_list
 import pickle, re, itertools, string
 from typing import List, Dict
 from futzing import replaceable_sections, num_alts, replacements
@@ -359,6 +359,25 @@ def guess_tblus_from_patterns():
     for pattern in patterns:
         print(pattern)
 
+def mission_scenes_from_location():
+    allowed = set(string.ascii_lowercase + '_')
+    with open('hitman_wordlist.txt', 'r') as f:
+        hitman_wordlist = set([x.strip() for x in f.readlines()])
+    with open('wordlist_12.txt', 'r') as f:
+        wordlist_12 = set([x.strip() for x in f.readlines()])
+
+    wordlist = hitman_wordlist.union(wordlist_12)
+    wordlist = set([word for word in wordlist if set(word) <= allowed])
+    locations = location_list()
+    locations = sorted(locations)
+    data = load_data()
+    target_hashes = [hash for hash in data if data[hash]['type'] == 'TBLU' and not data[hash]['correct_name'] and '00FB9DB0E7990F91' in data[hash]['depends']]
+    for location in locations:
+        print(location)
+        f = hashcat('TBLU', wordlist, wordlist, ['[assembly:/_pro/scenes/missions/' + location + '/', '_', '.brick].pc_entityblueprint'], data, target_hashes, True)
+        for k in f:
+            print(k + ', ' + f[k])
+
 
 # When new stuff omes out
 # guess_tblus()
@@ -380,14 +399,3 @@ def guess_tblus_from_patterns():
 # ]))
 # [assembly:/_pro/environment/templates/props/plants/plants_potplants_b.template?/quixel_flowerpot_sizeb_bulldog_a.entitytemplate].pc_entityblueprint
 
-allowed = set(string.ascii_lowercase + '_')
-with open('hitman_wordlist.txt', 'r') as f:
-    hitman_wordlist = set([x.strip() for x in f.readlines()])
-with open('wordlist_12.txt', 'r') as f:
-    wordlist_12 = set([x.strip() for x in f.readlines()])
-
-wordlist = hitman_wordlist.union(wordlist_12)
-wordlist = set([word for word in wordlist if set(word) <= allowed])
-f = hashcat('TBLU', wordlist, wordlist, ['[assembly:/templates/geometrytemplate','','.template?/geomentity01.entitytemplate].pc_entityblueprint'])
-for k in f:
-    print(k + ', ' + f[k])

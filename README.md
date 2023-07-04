@@ -15,6 +15,8 @@ Recommended scripts after a new version bump:
 
 ## Current Progress
 
+(If none of this makes any sense to you, check out https://glaciermodding.org/docs/glacier2/fileformats).
+
 Current state of the world (calculate using `python3 unknown_calc.py`, and then run `\| +\n` -> `|\n` in regex replace):
 ### Finished
 All of these are reversed.
@@ -128,6 +130,8 @@ MRTN -> MJBA -> ATMD, MRTR
 * when you get MATI -> 
 
 ## Status on non-complete
+
+
 * DSWB (same as WSWB)
   Names come from hex_strings, wordlist guessing for the directory.
 * GFXV
@@ -307,7 +311,7 @@ with open('reverse.pickle', 'rb') as handle:
 
 Search for string 
 ```
-[hash for hash in data if any([x for x in data[hash]['hex_strings'] if 'picture_modern_penthouse_b_01' in x.lower()])]
+[hash for hash in data if any([x for x in data[hash]['hex_strings'] if 'female_clothing_formal' in x.lower()])]
 [hash + '.' + data[hash]['type'] for hash in data if any([x for x in data[hash]['hex_strings'] if 'hud.swf' in x.lower()])]
 ```
 

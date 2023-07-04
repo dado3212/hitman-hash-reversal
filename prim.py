@@ -96,4 +96,40 @@ def broadly_guess_from_tblu_prefix_synthesis():
     for hash in hashes:
         print(hash + ', ' + hashes[hash])
 
-broadly_guess_from_tblu_prefix_synthesis()
+# Inspired by:
+# [assembly:/_pro/characters/assets/individuals/fox/clubsecpick/geometry/male_reg_clubsecpick.wl2?/clubsecpick_torso.weightedprim](bodypart).pc_weightedprim
+def find_unique_bodyparts():
+    for hash in data:
+        if data[hash]['type'] == 'TEMP' and data[hash]['correct_name'] and 'unique' in data[hash]['name']:
+            pieces = re.search(r"^\[assembly:/_pro/characters/templates/(.*?)/(.*?).template\?/(.*?).entitytemplate\].pc_entitytemplate$", data[hash]['name'], re.IGNORECASE)
+            if pieces is None:
+                continue
+
+            # Let's just guess the name
+            split = re.search(r".*unique_(.*?)(_[mf][_$]|$).*", pieces.group(3))
+            if split is None:
+                # print(hash + ', ' + data[hash]['name'])
+                # 001392EB9BD9FE6E, [assembly:/_pro/characters/templates/colorado/char_colorado_guards.template?/outfit_militiabasic_m_actor_v10.entitytemplate].pc_entitytemplate
+                continue
+            type = split.group(1)
+            prefix = ''
+            if split.group(2) == '_m_':
+                prefix = 'male_reg_'
+            elif split.group(2) == '_f_':
+                prefix = 'female_reg_'
+            start = '[assembly:/_pro/characters/assets/individuals/' + pieces.group(1) + '/' + type + '/geometry/' + prefix + type + '.wl2?/' + type + '_'
+
+            # Calculated from:
+            # sorted(set([re.search(r".*_(.*?).wl2\?\/\1_(.*).weightedprim\]\(bodypart\).*", data[hash]['name']).group(2) for hash in data if data[hash]['type'] == 'PRIM' and re.match(r".*_(.*?).wl2\?\/\1_.*.weightedprim\]\(bodypart\).*", data[hash]['name']) is not None]))
+            bodyparts = ['accesories', 'accessories', 'apron', 'belt', 'coat', 'dress', 'earpiece', 'gloves', 'hair', 'hairhat', 'hands', 'hat', 'head', 'jacket', 'pants', 'sashbanner', 'scarf', 'shirt', 'shoes', 'sweater', 'tanktop', 'tie', 'tights', 'torso', 'vest']
+            for bodypart in bodyparts:
+                name = start + bodypart + '.weightedprim](bodypart).pc_weightedprim'
+                possible_hash = ioi_string_to_hex(name)
+                if possible_hash in data and not data[possible_hash]['correct_name']:
+                    print(possible_hash + ', ' + name)
+
+
+# Main thing
+# broadly_guess_from_tblu_prefix_synthesis()
+
+# Idle speculation
